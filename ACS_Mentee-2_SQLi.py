@@ -4,7 +4,7 @@ import time
 from datetime import datetime
 
 # Configuration for payloads path and logging
-PAYLOADS_PATH = ['C:\\Users\\jjag0\\Documents\\Classes\\ACS\\Basic Courses\\Coding\\sql-injection-payload-list-master\\Intruder\\payloads-sql-blind\\MySQL\\SQL-Time.txt']
+PAYLOADS_PATH = ['SQL-Time.txt']
 LOG = 1
 
 def get_processor(url):
