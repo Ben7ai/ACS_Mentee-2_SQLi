@@ -6,6 +6,7 @@ import tkinter as tk
 from tkinter import ttk
 import os
 import logging
+import threading
 
 # Configuration for payloads path and logging
 PAYLOADS_PATH = ['SQL-Time.txt']
@@ -27,7 +28,7 @@ class SQLInjectionTool:
         self.url_entry = tk.Entry(master, width=50)
         self.url_entry.pack(pady=5)
 
-        self.test_button = tk.Button(master, text="Start Testing", command=self.start_testing)
+        self.test_button = tk.Button(master, text="Start Testing", command=self.start_testing_thread)
         self.test_button.pack(pady=5)
 
         self.progress = ttk.Progressbar(master, orient="horizontal", length=300, mode="determinate")
@@ -184,6 +185,10 @@ class SQLInjectionTool:
         else:
             self.status_label.config(text="Website is not compatible. Exiting.")
             self.log_message("Website is not compatible. Exiting.")
+
+    def start_testing_thread(self):
+        testing_thread = threading.Thread(target=self.start_testing)
+        testing_thread.start()
 
 if __name__ == "__main__":
     try:
