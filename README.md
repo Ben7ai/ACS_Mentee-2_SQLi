@@ -4,8 +4,6 @@
 
 by: Ben7ai
 
-[!NOTE]
-
 > This is for educational purposes only.
 
 ## About The Project
