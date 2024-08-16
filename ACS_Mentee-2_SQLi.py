@@ -17,6 +17,8 @@ DISPLAY_PACKETS = True  # Toggle for displaying packets
 logging.basicConfig(filename='sql_injection_tool.log', level=logging.DEBUG,
                     format='%(asctime)s - %(levelname)s - %(message)s')
 
+MAX_RETRIES = 3  # Maximum number of retries in case of timeout
+
 class SQLInjectionTool:
     def __init__(self, master):
         self.master = master
@@ -66,17 +68,30 @@ class SQLInjectionTool:
 
     def get_request_send(self, url, data):
         """
-        Sends a POST request to the constructed URL with provided POST parameters (data).
+        Sends a POST request to the constructed URL with provided POST parameters (data),
+        implementing retry on timeout and error logging.
         """
-        try:
-            r = requests.post(url=url, data=data, timeout=10)
-            r.raise_for_status()
-            if DISPLAY_PACKETS:
-                self.log_message(f"Sent POST Request:\nURL: {url}\nData: {data}\nResponse Code: {r.status_code}")
-        except requests.exceptions.RequestException as e:
-            self.log_message(f"Error making request: {e}")
-            return None, url
-        return r, url
+        retries = 0
+        while retries < MAX_RETRIES:
+            try:
+                r = requests.post(url=url, data=data, timeout=10)
+                r.raise_for_status()
+                if DISPLAY_PACKETS:
+                    self.log_message(f"Sent POST Request:\nURL: {url}\nData: {data}\nResponse Code: {r.status_code}")
+                return r, url  # Successful request, return the response
+
+            except requests.exceptions.Timeout as e:
+                retries += 1
+                self.log_message(f"Timeout occurred: {e}. Retrying ({retries}/{MAX_RETRIES})...")
+                if retries >= MAX_RETRIES:
+                    self.log_message(f"Failed after {MAX_RETRIES} retries due to timeout.")
+                    return None, url  # Return None if max retries reached
+
+            except requests.exceptions.RequestException as e:
+                self.log_message(f"Error making request: {e}")
+                return None, url  # For other request-related errors
+
+        return None, url  # In case of failure after retries
 
     def check_compatibility(self, url, data):
         """
@@ -171,7 +186,7 @@ class SQLInjectionTool:
                     elapsed_total_time = time.time() - start_time
                     average_time_per_payload = elapsed_total_time / processed_payloads
                     remaining_payloads = total_payloads - processed_payloads
-                    estimated_time_remaining = max(average_time_per_payload * remaining_payloads, 0)  # Ensure non-negative value
+                    estimated_time_remaining = average_time_per_payload * remaining_payloads
                     self.time_label.config(text=f"Estimated Time: {self.format_time(estimated_time_remaining)}")
 
                     self.master.update_idletasks()
