@@ -1,295 +1,187 @@
-import requests
-from urllib.parse import urlparse, parse_qs, urljoin
-import time
-from datetime import datetime
 import tkinter as tk
-from tkinter import ttk, filedialog
+from tkinter import ttk, filedialog, messagebox
 import os
-import logging
-import threading
+import time
+import requests
 
-# Configuration for payloads path and logging
-LOG = 1
-DISPLAY_PACKETS = True  # Toggle for displaying packets
-MAX_RETRIES = 3  # Maximum number of retries in case of timeout
+class SQLInjectionTester(tk.Tk):
+    def __init__(self):
+        super().__init__()
+        self.title("SQL Injection Tester")
+        self.geometry("500x500")
 
-# Setup logging to a file
-logging.basicConfig(filename='sql_injection_tool.log', level=logging.DEBUG,
-                    format='%(asctime)s - %(levelname)s - %(message)s')
+        # Initializing variables
+        self.payloads_path = None
 
-class SQLInjectionTool:
-    def __init__(self, master):
-        self.master = master
-        self.master.title("SQL Injection Testing Tool")
+        # Creating GUI components
+        tk.Label(self, text="SQL Injection Tester", font=("Helvetica", 16)).pack(pady=10)
 
-        self.payloads_path = None  # Initialize payloads_path as None
-        self.post_data = None
-        self.endpoint = None
-        self.cookies = None
+        # Payload handling option
+        self.payload_option_var = tk.StringVar(value="Combine Payloads")
+        options = ["Combine Payloads", "Split Payloads", "URL Payloads", "Username POST Data Payloads"]
+        tk.Label(self, text="Payload Handling Option:").pack(pady=10)
+        self.payload_option_menu = ttk.Combobox(self, textvariable=self.payload_option_var, values=options, state="readonly")
+        self.payload_option_menu.pack(pady=10)
 
-        # Create and place widgets
-        self.upload_button = tk.Button(master, text="Upload Request File", command=self.upload_request_file)
-        self.upload_button.pack(pady=5)
-
-        self.url_label = tk.Label(master, text="Enter the URL:")
-        self.url_label.pack(pady=5)
-
-        self.url_entry = tk.Entry(master, width=50)
+        # URL and endpoint inputs
+        tk.Label(self, text="URL:").pack(pady=5)
+        self.url_entry = tk.Entry(self, width=50)
         self.url_entry.pack(pady=5)
 
-        self.endpoint_label = tk.Label(master, text="Endpoint (e.g., /login):")
-        self.endpoint_label.pack(pady=5)
-
-        self.endpoint_entry = tk.Entry(master, width=50)
+        tk.Label(self, text="Endpoint:").pack(pady=5)
+        self.endpoint_entry = tk.Entry(self, width=50)
         self.endpoint_entry.pack(pady=5)
 
-        self.param_label = tk.Label(master, text="POST Parameters (username=user&password=pass):")
-        self.param_label.pack(pady=5)
+        # POST data input
+        tk.Label(self, text="POST Data (e.g., 'username=admin&password=pass'):").pack(pady=5)
+        self.post_data_entry = tk.Entry(self, width=50)
+        self.post_data_entry.pack(pady=5)
 
-        self.param_entry = tk.Entry(master, width=50)
-        self.param_entry.pack(pady=5)
+        # Cookies input
+        tk.Label(self, text="Cookies (optional):").pack(pady=5)
+        self.cookies_entry = tk.Entry(self, width=50)
+        self.cookies_entry.pack(pady=5)
 
-        self.cookie_label = tk.Label(master, text="Cookies (optional):")
-        self.cookie_label.pack(pady=5)
+        # File selection button
+        self.select_file_btn = tk.Button(self, text="Select Payloads File", command=self.select_payload_file)
+        self.select_file_btn.pack(pady=10)
 
-        self.cookie_entry = tk.Entry(master, width=50)
-        self.cookie_entry.pack(pady=5)
+        # Progress bar and status label
+        self.progress = ttk.Progressbar(self, orient="horizontal", length=300, mode="determinate")
+        self.progress.pack(pady=10)
 
-        self.packet_toggle = tk.Checkbutton(master, text="Disable Display Packets", variable=tk.IntVar(value=DISPLAY_PACKETS), command=self.toggle_packets)
-        self.packet_toggle.pack(pady=5)
-
-        self.test_button = tk.Button(master, text="Start Testing", command=self.start_testing_thread)
-        self.test_button.pack(pady=5)
-
-        self.progress = ttk.Progressbar(master, orient="horizontal", length=300, mode="determinate")
-        self.progress.pack(pady=10, padx=10, side="bottom")
-
-        self.time_label = tk.Label(master, text="Estimated Time: N/A")
+        self.time_label = tk.Label(self, text="Estimated Time Remaining: N/A")
         self.time_label.pack(pady=5)
 
-        self.status_label = tk.Label(master, text="")
+        self.status_label = tk.Label(self, text="Status: Waiting for input.")
         self.status_label.pack(pady=5)
 
-        self.log_text = tk.Text(master, height=10, width=80, wrap=tk.WORD, state=tk.DISABLED)
-        self.log_text.pack(pady=5)
+        # Start button
+        self.start_button = tk.Button(self, text="Start Testing", command=self.start_testing)
+        self.start_button.pack(pady=10)
 
-    def toggle_packets(self):
-        global DISPLAY_PACKETS
-        DISPLAY_PACKETS = not DISPLAY_PACKETS
+        # Log box
+        self.log_box = tk.Text(self, height=10, width=60)
+        self.log_box.pack(pady=10)
 
-    def upload_request_file(self):
-        file_path = filedialog.askopenfilename(title="Select POST Request File", filetypes=(("Text files", "*.txt"), ("All files", "*.*")))
-        if file_path:
-            self.parse_request_file(file_path)
+    def log_message(self, message):
+        self.log_box.insert(tk.END, message + "\n")
+        self.log_box.see(tk.END)
+
+    def select_payload_file(self):
+        self.payloads_path = filedialog.askopenfilename(filetypes=[("Text files", "*.txt")])
+        if self.payloads_path:
+            self.log_message(f"Selected payloads file: {self.payloads_path}")
+            self.status_label.config(text="Payloads file selected.")
         else:
-            self.status_label.config(text="No request file selected.")
+            self.log_message("No payloads file selected.")
+            self.status_label.config(text="No payloads file selected.")
 
-    def parse_request_file(self, file_path):
-        try:
-            with open(file_path, 'r') as f:
-                lines = f.readlines()
+    def start_testing(self):
+        url = self.url_entry.get().strip()
+        endpoint = self.endpoint_entry.get().strip()
+        post_data = self.post_data_entry.get().strip()
+        cookies = self.cookies_entry.get().strip()
 
-            if not lines:
-                self.status_label.config(text="File is empty.")
-                return
+        if not url or not endpoint or not post_data:
+            messagebox.showerror("Input Error", "Please fill out the URL, endpoint, and POST data fields.")
+            return
 
-            # Extract URL and endpoint from the request
-            first_line = lines[0].strip()
-            method, path, _ = first_line.split()
-            if method == "POST":
-                self.endpoint = path
-                url = urlparse(file_path).scheme + "://" + urlparse(file_path).netloc
-                self.url_entry.delete(0, tk.END)
-                self.url_entry.insert(0, url)
+        # Parse POST data into a dictionary
+        post_data_dict = dict(x.split('=') for x in post_data.split('&'))
 
-            # Extract POST data
-            for i, line in enumerate(lines):
-                if line.startswith("Content-Length:"):
-                    content_length = int(line.split(":")[1].strip())
-                    post_data_start = i + 1
-                    post_data_end = post_data_start + content_length
-                    self.post_data = "".join(lines[post_data_start:post_data_end]).strip()
-                    self.param_entry.delete(0, tk.END)
-                    self.param_entry.insert(0, self.post_data)
-                    break
-
-            # Extract cookies
-            for line in lines:
-                if line.startswith("Cookie:"):
-                    cookie_str = line.split(":", 1)[1].strip()
-                    self.cookies = dict(parse_qs(cookie_str))
-                    self.cookie_entry.delete(0, tk.END)
-                    self.cookie_entry.insert(0, cookie_str)
-                    break
-
-            self.status_label.config(text="Request file processed successfully.")
-        except Exception as e:
-            self.log_message(f"Error processing request file: {e}")
-            self.status_label.config(text=f"Error processing request file: {e}")
-
-    def get_request_send(self, url, endpoint, data, cookies):
-        """
-        Sends a POST request to the constructed URL with provided POST parameters (data),
-        including cookies if provided, and implementing retry on timeout and error logging.
-        """
-        retries = 0
-        while retries < MAX_RETRIES:
-            try:
-                full_url = urljoin(url, endpoint)
-                r = requests.post(full_url, data=data, cookies=cookies, timeout=10, allow_redirects=False)
-                r.raise_for_status()
-                if DISPLAY_PACKETS:
-                    self.log_message(f"Sent POST Request:\nURL: {full_url}\nData: {data}\nCookies: {cookies}\nResponse Code: {r.status_code}")
-                return r, full_url  # Successful request, return the response
-
-            except requests.exceptions.Timeout as e:
-                retries += 1
-                self.log_message(f"Timeout occurred: {e}. Retrying ({retries}/{MAX_RETRIES})...")
-                if retries >= MAX_RETRIES:
-                    self.log_message(f"Failed after {MAX_RETRIES} retries due to timeout.")
-                    return None, full_url  # Return None if max retries reached
-
-            except requests.exceptions.RequestException as e:
-                self.log_message(f"Error making request: {e}")
-                return None, full_url  # For other request-related errors
-
-        return None, full_url  # In case of failure after retries
-
-    def check_compatibility(self, url, endpoint, data, cookies):
-        """
-        Checks if the website is compatible with this tool by testing basic queries via POST method.
-        """
-        test_payload = "1"
-        data_with_payload = {key: value + test_payload for key, value in data.items()}
-        r, url_test = self.get_request_send(url, endpoint, data_with_payload, cookies)
-        if r and r.status_code == 200:
-            return True
-        return False
+        # Start the SQL injection testing process
+        self.process_payload_sleep_post(url, endpoint, post_data_dict, cookies)
 
     def process_payload_sleep_post(self, url, endpoint, data, cookies):
         """
         Processes the payloads from the file and tests for SQL injection vulnerabilities.
+        Payloads will be applied according to the selected option.
         """
         if not self.payloads_path or not os.path.isfile(self.payloads_path):
-            self.log_message(f"Error: No payloads file selected or the file does not exist.")
-            self.status_label.config(text=f"Error: No payloads file selected or the file does not exist.")
+            self.status_label.config(text="No payloads file selected or the file does not exist.")
             return
 
         try:
             with open(self.payloads_path, 'r') as f:
                 payloads = f.readlines()
         except Exception as e:
-            self.log_message(f"Error opening file: {self.payloads_path} - {e}")
-            self.status_label.config(text=f"Error opening file: {self.payloads_path}")
+            self.log_message(f"Error reading payloads file: {e}")
             return
 
         total_payloads = len(payloads)
-        if total_payloads == 0:
-            self.status_label.config(text="No payloads to process.")
-            return
-
         self.progress["maximum"] = total_payloads
-        processed_payloads = 0
-        start_time = time.time()
 
-        for payload in payloads:
-            payload = payload.strip()
-            for key in data:
-                data_with_payload = data.copy()
-                data_with_payload[key] = data[key] + payload
-
-                start_time_payload = time.time()
-                r, url_test = self.get_request_send(url, endpoint, data_with_payload, cookies)
-                if r is None:
-                    continue
-
-                elapsed_time = time.time() - start_time_payload
-
-                if LOG == 1:
-                    current_time = datetime.now().time().strftime("%H:%M:%S")
-                    self.log_message(f'[{current_time}] Payload testing: {payload}')
-
-                if elapsed_time >= 5:
-                    recheck_payload = payload.replace("5", "10")
-                    data_with_payload[key] = data[key] + recheck_payload
-
-                    if LOG == 1:
-                        self.log_message(f"[!] Recheck payload: {recheck_payload}")
-
-                    recheck_start_time = time.time()
-                    r, url_test = self.get_request_send(url, endpoint, data_with_payload, cookies)
-                    if r is None:
-                        continue
-
-                    recheck_elapsed_time = time.time() - recheck_start_time
-                    if recheck_elapsed_time >= 10:
-                        self.log_message('[+] SQL injection vulnerabilities detected')
-                        self.log_message(f'[+] URL: {url_test}')
-                        self.log_message(f'[+] Payload: {payload}')
-                        self.status_label.config(text="SQL injection vulnerabilities detected")
-                        return
-
-                processed_payloads += 1
-                self.progress["value"] = processed_payloads
-                self.master.update_idletasks()
-
-                # Estimate remaining time
-                elapsed_total_time = time.time() - start_time
-                average_time_per_payload = elapsed_total_time / processed_payloads
-                remaining_payloads = total_payloads - processed_payloads
-                estimated_time_remaining = average_time_per_payload * remaining_payloads
-                self.time_label.config(text=f"Estimated Time: {self.format_time(estimated_time_remaining)}")
-
-                self.master.update_idletasks()
-
-    def format_time(self, seconds):
-        minutes, seconds = divmod(int(seconds), 60)
-        hours, minutes = divmod(minutes, 60)
-        return f"{hours:02}:{minutes:02}:{seconds:02}"
-
-    def log_message(self, message):
-        self.log_text.config(state=tk.NORMAL)
-        self.log_text.insert(tk.END, message + '\n')
-        self.log_text.yview(tk.END)
-        self.log_text.config(state=tk.DISABLED)
-        logging.info(message)
-
-    def start_testing(self):
-        url = self.url_entry.get()
-        endpoint = self.endpoint_entry.get()
-        if not url or not endpoint:
-            self.status_label.config(text="URL and endpoint cannot be empty.")
+        if not self.check_compatibility(url, endpoint, data, cookies):
+            self.log_message("The website did not return an expected response with test payload. Aborting.")
             return
 
-        post_params = self.param_entry.get()
-        data = dict(parse_qs(post_params))
-        data = {key: value[0] for key, value in data.items()}
+        start_time = time.time()
+        for i, payload in enumerate(payloads):
+            payload = payload.strip()
 
-        cookies = {}
-        cookie_string = self.cookie_entry.get()
-        if cookie_string:
-            cookies = dict(parse_qs(cookie_string))
-            cookies = {key: value[0] for key, value in cookies.items()}
+            # Handling payload application based on the selected option
+            option = self.payload_option_var.get()
 
-        self.status_label.config(text="Starting testing...")
-        self.log_message("Starting testing...")
-        
-        if self.check_compatibility(url, endpoint, data, cookies):
-            self.status_label.config(text="Website is compatible. Proceeding with the test.")
-            self.process_payload_sleep_post(url, endpoint, data, cookies)
-            self.status_label.config(text="Testing complete.")
-        else:
-            self.status_label.config(text="Website is not compatible. Exiting.")
-            self.log_message("Website is not compatible. Exiting.")
+            if option == "Combine Payloads":
+                # Apply the same payload to both URL and username POST data
+                data_with_payload = {key: payload if key == 'username' else value + payload for key, value in data.items()}
+                endpoint_with_payload = f"{endpoint}?username={payload}"
 
-    def start_testing_thread(self):
-        testing_thread = threading.Thread(target=self.start_testing)
-        testing_thread.start()
+            elif option == "Split Payloads":
+                # Apply different payloads for URL and username POST data
+                url_payload = payload + "_url"
+                post_payload = payload + "_post"
+                data_with_payload = {key: post_payload if key == 'username' else value + post_payload for key, value in data.items()}
+                endpoint_with_payload = f"{endpoint}?username={url_payload}"
+
+            elif option == "URL Payloads":
+                # Apply payloads only to the URL
+                endpoint_with_payload = f"{endpoint}?username={payload}"
+                data_with_payload = data  # No changes to POST data
+
+            elif option == "Username POST Data Payloads":
+                # Apply payloads only to the username POST data
+                data_with_payload = {key: payload if key == 'username' else value for key, value in data.items()}
+                endpoint_with_payload = endpoint  # No changes to URL
+
+            r, url_test = self.get_request_send(url, endpoint_with_payload, data_with_payload, cookies)
+            if r:
+                self.log_message(f"Testing with payload: {payload}")
+                if "delay" in r.text or r.elapsed.total_seconds() > 5:
+                    self.log_message(f"Possible SQL injection vulnerability detected with payload: {payload}")
+            else:
+                self.log_message(f"Failed to send payload: {payload}")
+
+            self.progress["value"] = i + 1
+            elapsed_time = time.time() - start_time
+            estimated_total_time = (elapsed_time / (i + 1)) * total_payloads
+            remaining_time = estimated_total_time - elapsed_time
+            self.time_label.config(text=f"Estimated Time Remaining: {int(remaining_time)}s")
+            self.master.update_idletasks()
+
+        self.log_message("SQL Injection Testing Complete.")
+        self.status_label.config(text="Testing completed. Check logs for details.")
+
+    def get_request_send(self, url, endpoint, data, cookies):
+        """Handles the request sending."""
+        try:
+            full_url = f"{url}/{endpoint}"
+            headers = {'Cookie': cookies} if cookies else {}
+            r = requests.post(full_url, data=data, headers=headers)
+            return r, full_url
+        except requests.RequestException as e:
+            self.log_message(f"Error sending request to {url}: {e}")
+            return None, None
+
+    def check_compatibility(self, url, endpoint, data, cookies):
+        """Checks if the website responds as expected with a test payload."""
+        test_payload = "test_payload"
+        test_endpoint = f"{endpoint}?username={test_payload}"
+        test_data = {key: test_payload if key == 'username' else value for key, value in data.items()}
+        r, _ = self.get_request_send(url, test_endpoint, test_data, cookies)
+        return r is not None
 
 if __name__ == "__main__":
-    try:
-        root = tk.Tk()
-        app = SQLInjectionTool(root)
-        root.mainloop()
-    except Exception as e:
-        logging.error(f"An error occurred: {e}")
+    app = SQLInjectionTester()
+    app.mainloop()

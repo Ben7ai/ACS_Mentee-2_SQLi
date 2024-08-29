@@ -5003,3 +5003,147 @@ Response Code: 200
 2024-08-16 22:09:32,109 - DEBUG - https://portswigger.net:443 "GET /error/antiforgery HTTP/1.1" 200 None
 2024-08-16 22:09:42,114 - INFO - Error making request: HTTPSConnectionPool(host='portswigger.net', port=443): Read timed out.
 2024-08-16 22:09:42,120 - INFO - Website is not compatible. Exiting.
+2024-08-24 11:20:34,318 - INFO - Starting testing...
+2024-08-24 11:20:34,330 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-08-24 11:20:35,939 - DEBUG - https://portswigger.net:443 "POST /users?returnurl=%2Facademy%2Flabs%2Flaunch%2F8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766%3Freferrer%3D%252fweb-security%252fclickjacking%252flab-prefilled-form-input/login HTTP/1.1" 302 0
+2024-08-24 11:20:35,950 - INFO - Sent POST Request:
+URL: https://portswigger.net/users?returnurl=%2facademy%2flabs%2flaunch%2f8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766%3freferrer%3d%252fweb-security%252fclickjacking%252flab-prefilled-form-input/login
+Data: {}
+Cookies: {}
+Response Code: 302
+2024-08-24 11:20:35,959 - INFO - Website is not compatible. Exiting.
+2024-08-24 11:20:57,449 - INFO - Starting testing...
+2024-08-24 11:20:57,451 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-08-24 11:20:58,836 - DEBUG - https://portswigger.net:443 "POST /users?returnurl=%2Facademy%2Flabs%2Flaunch%2F8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766%3Freferrer%3D%252fweb-security%252fclickjacking%252flab-prefilled-form-input/login HTTP/1.1" 302 0
+2024-08-24 11:20:58,842 - INFO - Sent POST Request:
+URL: https://portswigger.net/users?returnurl=%2facademy%2flabs%2flaunch%2f8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766%3freferrer%3d%252fweb-security%252fclickjacking%252flab-prefilled-form-input/login
+Data: {}
+Cookies: {}
+Response Code: 302
+2024-08-24 11:20:58,851 - INFO - Website is not compatible. Exiting.
+2024-08-24 11:30:48,609 - INFO - Starting testing...
+2024-08-24 11:30:48,612 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-08-24 11:30:51,039 - DEBUG - https://portswigger.net:443 "POST /users?returnurl=%2Facademy%2Flabs%2Flaunch%2Fbefc0f5ddbc0e32a7adc4c9d4d286582f462f70bf32a8d5df15489d679dcd5c9%3Freferrer%3D%252fweb-security%252fsql-injection%252flab-login-bypass/login HTTP/1.1" 302 0
+2024-08-24 11:30:51,050 - INFO - Sent POST Request:
+URL: https://portswigger.net/users?returnurl=%2facademy%2flabs%2flaunch%2fbefc0f5ddbc0e32a7adc4c9d4d286582f462f70bf32a8d5df15489d679dcd5c9%3freferrer%3d%252fweb-security%252fsql-injection%252flab-login-bypass/login
+Data: {}
+Cookies: {}
+Response Code: 302
+2024-08-24 11:30:51,066 - INFO - Website is not compatible. Exiting.
+2024-08-24 11:31:54,164 - INFO - Starting testing...
+2024-08-24 11:31:54,166 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-08-24 11:31:55,859 - DEBUG - https://portswigger.net:443 "POST /users?returnurl=%2Facademy%2Flabs%2Flaunch%2Fbefc0f5ddbc0e32a7adc4c9d4d286582f462f70bf32a8d5df15489d679dcd5c9%3Freferrer%3D%252fweb-security%252fsql-injection%252flab-login-bypass HTTP/1.1" 302 0
+2024-08-24 11:31:55,867 - INFO - Sent POST Request:
+URL: https://portswigger.net/users?returnurl=%2facademy%2flabs%2flaunch%2fbefc0f5ddbc0e32a7adc4c9d4d286582f462f70bf32a8d5df15489d679dcd5c9%3freferrer%3d%252fweb-security%252fsql-injection%252flab-login-bypass
+Data: {}
+Cookies: {}
+Response Code: 302
+2024-08-24 11:31:55,873 - INFO - Website is not compatible. Exiting.
+2024-08-24 11:42:17,185 - INFO - Starting testing...
+2024-08-24 11:42:17,188 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-08-24 11:42:21,461 - DEBUG - https://portswigger.net:443 "POST /users?returnurl=%2Facademy%2Flabs%2Flaunch%2Fbefc0f5ddbc0e32a7adc4c9d4d286582f462f70bf32a8d5df15489d679dcd5c9%3Freferrer%3D%252fweb-security%252fsql-injection%252flab-login-bypass/login.php HTTP/1.1" 302 0
+2024-08-24 11:42:21,466 - INFO - Sent POST Request:
+URL: https://portswigger.net/users?returnurl=%2facademy%2flabs%2flaunch%2fbefc0f5ddbc0e32a7adc4c9d4d286582f462f70bf32a8d5df15489d679dcd5c9%3freferrer%3d%252fweb-security%252fsql-injection%252flab-login-bypass/login.php
+Data: {}
+Cookies: {}
+Response Code: 302
+2024-08-24 11:42:21,476 - INFO - Website is not compatible. Exiting.
+2024-08-24 11:43:54,029 - INFO - Starting testing...
+2024-08-24 11:43:54,030 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-08-24 11:43:57,795 - DEBUG - https://portswigger.net:443 "POST /login HTTP/1.1" 404 None
+2024-08-24 11:43:57,924 - INFO - Error making request: 404 Client Error: Not Found for url: https://portswigger.net/login
+2024-08-24 11:43:57,932 - INFO - Website is not compatible. Exiting.
+2024-08-24 11:44:21,200 - INFO - Starting testing...
+2024-08-24 11:44:21,201 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-08-24 11:44:24,532 - DEBUG - https://portswigger.net:443 "POST /users?returnurl=%2Facademy%2Flabs%2Flaunch%2Fbefc0f5ddbc0e32a7adc4c9d4d286582f462f70bf32a8d5df15489d679dcd5c9%3Freferrer%3D%252fweb-security%252fsql-injection%252flab-login-bypass HTTP/1.1" 302 0
+2024-08-24 11:44:24,538 - INFO - Sent POST Request:
+URL: https://portswigger.net/users?returnurl=%2facademy%2flabs%2flaunch%2fbefc0f5ddbc0e32a7adc4c9d4d286582f462f70bf32a8d5df15489d679dcd5c9%3freferrer%3d%252fweb-security%252fsql-injection%252flab-login-bypass
+Data: {}
+Cookies: {}
+Response Code: 302
+2024-08-24 11:44:24,546 - INFO - Website is not compatible. Exiting.
+2024-08-24 11:45:07,891 - INFO - Starting testing...
+2024-08-24 11:45:07,892 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-08-24 11:45:21,250 - INFO - Timeout occurred: HTTPSConnectionPool(host='portswigger.net', port=443): Read timed out. (read timeout=10). Retrying (1/3)...
+2024-08-24 11:45:21,251 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-08-24 11:45:40,167 - INFO - Timeout occurred: HTTPSConnectionPool(host='portswigger.net', port=443): Read timed out. (read timeout=10). Retrying (2/3)...
+2024-08-24 11:45:40,169 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-08-24 11:45:46,643 - INFO - Starting testing...
+2024-08-24 11:45:46,645 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-08-24 11:45:47,335 - DEBUG - https://portswigger.net:443 "POST /users?returnurl=%2Facademy%2Flabs%2Flaunch%2Fbefc0f5ddbc0e32a7adc4c9d4d286582f462f70bf32a8d5df15489d679dcd5c9%3Freferrer%3D%252fweb-security%252fsql-injection%252flab-login-bypass/login/php HTTP/1.1" 302 0
+2024-08-24 11:45:47,341 - INFO - Sent POST Request:
+URL: https://portswigger.net/users?returnurl=%2facademy%2flabs%2flaunch%2fbefc0f5ddbc0e32a7adc4c9d4d286582f462f70bf32a8d5df15489d679dcd5c9%3freferrer%3d%252fweb-security%252fsql-injection%252flab-login-bypass/login/php
+Data: {}
+Cookies: {}
+Response Code: 302
+2024-08-24 11:45:47,348 - INFO - Website is not compatible. Exiting.
+2024-08-24 11:45:48,820 - DEBUG - https://portswigger.net:443 "POST /users?returnurl=%2Facademy%2Flabs%2Flaunch%2Fbefc0f5ddbc0e32a7adc4c9d4d286582f462f70bf32a8d5df15489d679dcd5c9%3Freferrer%3D%252fweb-security%252fsql-injection%252flab-login-bypass/login.php HTTP/1.1" 302 0
+2024-08-24 11:45:48,825 - INFO - Sent POST Request:
+URL: https://portswigger.net/users?returnurl=%2facademy%2flabs%2flaunch%2fbefc0f5ddbc0e32a7adc4c9d4d286582f462f70bf32a8d5df15489d679dcd5c9%3freferrer%3d%252fweb-security%252fsql-injection%252flab-login-bypass/login.php
+Data: {}
+Cookies: {}
+Response Code: 302
+2024-08-24 11:45:48,831 - INFO - Website is not compatible. Exiting.
+2024-08-24 11:46:18,672 - INFO - Starting testing...
+2024-08-24 11:46:18,674 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-08-24 11:46:21,232 - DEBUG - https://portswigger.net:443 "POST /users?returnurl=%2Facademy%2Flabs%2Flaunch%2Fbefc0f5ddbc0e32a7adc4c9d4d286582f462f70bf32a8d5df15489d679dcd5c9%3Freferrer%3D%252fweb-security%252fsql-injection%252flab-login-bypass/login.php HTTP/1.1" 302 0
+2024-08-24 11:46:21,237 - INFO - Sent POST Request:
+URL: https://portswigger.net/users?returnurl=%2facademy%2flabs%2flaunch%2fbefc0f5ddbc0e32a7adc4c9d4d286582f462f70bf32a8d5df15489d679dcd5c9%3freferrer%3d%252fweb-security%252fsql-injection%252flab-login-bypass/login.php
+Data: {'username': "administrator'--1"}
+Cookies: {}
+Response Code: 302
+2024-08-24 11:46:21,246 - INFO - Website is not compatible. Exiting.
+2024-08-24 11:47:08,108 - INFO - Starting testing...
+2024-08-24 11:47:08,109 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-08-24 11:47:09,568 - DEBUG - https://portswigger.net:443 "POST /users?returnurl=%2Facademy%2Flabs%2Flaunch%2Fbefc0f5ddbc0e32a7adc4c9d4d286582f462f70bf32a8d5df15489d679dcd5c9%3Freferrer%3D%252fweb-security%252fsql-injection%252flab-login-bypass/login.php HTTP/1.1" 302 0
+2024-08-24 11:47:09,576 - INFO - Sent POST Request:
+URL: https://portswigger.net/users?returnurl=%2facademy%2flabs%2flaunch%2fbefc0f5ddbc0e32a7adc4c9d4d286582f462f70bf32a8d5df15489d679dcd5c9%3freferrer%3d%252fweb-security%252fsql-injection%252flab-login-bypass/login.php
+Data: {'username': "administrator'--1"}
+Cookies: {}
+Response Code: 302
+2024-08-24 11:47:09,586 - INFO - Website is not compatible. Exiting.
+2024-08-24 11:53:20,567 - INFO - Starting testing...
+2024-08-24 11:53:20,570 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-08-24 11:53:22,593 - DEBUG - https://portswigger.net:443 "POST /users?returnurl=%2Facademy%2Flabs%2Flaunch%2Fbefc0f5ddbc0e32a7adc4c9d4d286582f462f70bf32a8d5df15489d679dcd5c9%3Freferrer%3D%252fweb-security%252fsql-injection%252flab-login-bypass HTTP/1.1" 302 0
+2024-08-24 11:53:22,600 - INFO - Sent POST Request:
+URL: https://portswigger.net/users?returnurl=%2facademy%2flabs%2flaunch%2fbefc0f5ddbc0e32a7adc4c9d4d286582f462f70bf32a8d5df15489d679dcd5c9%3freferrer%3d%252fweb-security%252fsql-injection%252flab-login-bypass
+Data: {}
+Cookies: {}
+Response Code: 302
+2024-08-24 11:53:22,608 - INFO - Website is not compatible. Exiting.
+2024-08-24 13:18:26,474 - INFO - Starting testing...
+2024-08-24 13:18:26,479 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-08-24 13:18:30,827 - DEBUG - https://portswigger.net:443 "POST /users?returnurl=%2Facademy%2Flabs%2Flaunch%2F8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766%3Freferrer%3D%252fweb-security%252fclickjacking%252flab-prefilled-form-input HTTP/1.1" 302 0
+2024-08-24 13:18:30,841 - INFO - Sent POST Request:
+URL: https://portswigger.net/users?returnurl=%2facademy%2flabs%2flaunch%2f8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766%3freferrer%3d%252fweb-security%252fclickjacking%252flab-prefilled-form-input
+Data: {}
+Cookies: {}
+Response Code: 302
+2024-08-24 13:18:30,854 - INFO - Website is not compatible. Exiting.
+2024-08-24 13:18:43,574 - INFO - Starting testing...
+2024-08-24 13:18:43,576 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-08-24 13:18:45,608 - DEBUG - https://portswigger.net:443 "POST /users?returnurl=%2Facademy%2Flabs%2Flaunch%2F8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766%3Freferrer%3D%252fweb-security%252fclickjacking%252flab-prefilled-form-input/login HTTP/1.1" 302 0
+2024-08-24 13:18:45,626 - INFO - Sent POST Request:
+URL: https://portswigger.net/users?returnurl=%2facademy%2flabs%2flaunch%2f8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766%3freferrer%3d%252fweb-security%252fclickjacking%252flab-prefilled-form-input/login
+Data: {}
+Cookies: {}
+Response Code: 302
+2024-08-24 13:18:45,640 - INFO - Website is not compatible. Exiting.
+2024-08-24 13:18:52,177 - INFO - Starting testing...
+2024-08-24 13:18:52,181 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-08-24 13:18:54,032 - DEBUG - https://portswigger.net:443 "POST /users?returnurl=%2Facademy%2Flabs%2Flaunch%2F8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766%3Freferrer%3D%252fweb-security%252fclickjacking%252flab-prefilled-form-input/login.php HTTP/1.1" 302 0
+2024-08-24 13:18:54,042 - INFO - Sent POST Request:
+URL: https://portswigger.net/users?returnurl=%2facademy%2flabs%2flaunch%2f8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766%3freferrer%3d%252fweb-security%252fclickjacking%252flab-prefilled-form-input/login.php
+Data: {}
+Cookies: {}
+Response Code: 302
+2024-08-24 13:18:54,056 - INFO - Website is not compatible. Exiting.
+2024-08-24 13:21:28,560 - INFO - Starting testing...
+2024-08-24 13:21:28,565 - DEBUG - Starting new HTTPS connection (1): portswigger.net:443
+2024-08-24 13:21:31,361 - DEBUG - https://portswigger.net:443 "POST /users?returnurl=%2Facademy%2Flabs%2Flaunch%2F8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766%3Freferrer%3D%252fweb-security%252fclickjacking%252flab-prefilled-form-input HTTP/1.1" 302 0
+2024-08-24 13:21:31,371 - INFO - Sent POST Request:
+URL: https://portswigger.net/users?returnurl=%2facademy%2flabs%2flaunch%2f8a7ec1665250f513f8ab3c341f7fcef5402a497d59fa90e673bfd30cd47ff766%3freferrer%3d%252fweb-security%252fclickjacking%252flab-prefilled-form-input
+Data: {}
+Cookies: {}
+Response Code: 302
+2024-08-24 13:21:31,384 - INFO - Website is not compatible. Exiting.
