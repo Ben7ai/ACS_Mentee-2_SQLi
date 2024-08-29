@@ -78,7 +78,12 @@ class ToolTip:
             return
         if self.tooltip_window:
             return
-        x, y, _, _ = self.widget.bbox("insert")
+
+        bbox = self.widget.bbox("insert")
+        if bbox is None:
+            return
+
+        x, y, _, _ = bbox
         x += self.widget.winfo_rootx() + 20
         y += self.widget.winfo_rooty() + 20
         self.tooltip_window = tk.Toplevel(self.widget)
@@ -100,6 +105,7 @@ class ToolTip:
         if self.tooltip_window:
             self.tooltip_window.destroy()
             self.tooltip_window = None
+
 
 class PlaceholderEntry(tk.Entry):
     def __init__(self, master=None, placeholder="", *args, **kwargs):
