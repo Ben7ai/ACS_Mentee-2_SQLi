@@ -106,7 +106,6 @@ class ToolTip:
             self.tooltip_window.destroy()
             self.tooltip_window = None
 
-
 class PlaceholderEntry(tk.Entry):
     def __init__(self, master=None, placeholder="", *args, **kwargs):
         super().__init__(master, *args, **kwargs)
@@ -213,53 +212,111 @@ class SQLInjectionTool:
 
         self.split_payload_menu = tk.OptionMenu(self.split_payload_option_frame, self.split_payload_option, "URL Payloads", "POST Data Payloads")
         self.split_payload_menu.pack(pady=5)
-        self.split_payload_tooltip = ToolTip(self.split_payload_menu, "Select type of payload for split options.")
 
-        # Progress Bar, Status, Play Button, and Time
-        self.progress_frame = tk.Frame(master, padx=10, pady=5)
-        self.progress_frame.grid(row=1, column=0, pady=5, sticky='ew')
+        # Submit Button
+        self.submit_button = tk.Button(self.control_frame, text="Send Request", command=self.send_request_to_all_payloads)
+        self.submit_button.grid(row=6, column=0, columnspan=2, pady=10)
 
-        self.progress = ttk.Progressbar(self.progress_frame, orient="horizontal", length=550, mode="determinate")
-        self.progress.pack(pady=5, fill='x')
+        # Result Text
+        self.result_text = tk.Text(self.control_frame, height=10, width=50)
+        self.result_text.grid(row=7, column=0, columnspan=2, pady=5)
 
-        # Status and Play Button, Elapsed Time
-        self.status_frame = tk.Frame(self.progress_frame)
-        self.status_frame.pack(pady=5, fill='x')
+        # Load payloads initially if the file exists
+        self.load_payload_file()
 
-        self.status_label = tk.Label(self.status_frame, text="Status: N/A")
-        self.status_label.pack(side='left', padx=5)
+    def upload_request_file(self):
+        file_path = filedialog.askopenfilename(filetypes=[("Text Files", "*.txt")])
+        if file_path:
+            with open(file_path, 'r') as file:
+                content = file.read()
+                try:
+                    url, endpoint, post_data, cookies = post_processor(content)
+                    if endpoint is None:
+                        raise ValueError("No endpoint found in the request file.")
+                    self.endpoint = endpoint
+                    self.post_data = post_data
+                    self.cookies = cookies
+                    self.host_endpoint_entry.delete(0, tk.END)
+                    self.host_endpoint_entry.insert(0, url + endpoint)
+                    self.param_entry.delete(0, tk.END)
+                    self.param_entry.insert(0, str(post_data))
+                    self.cookie_entry.delete(0, tk.END)
+                    self.cookie_entry.insert(0, str(cookies))
+                    self.log_message(f"Loaded request file from {file_path}.")
+                except Exception as e:
+                    self.log_message(f"Error processing request file: {e}")
+                    messagebox.showerror("Error", f"Error processing request file: {e}")
 
-        self.play_button = tk.Button(self.status_frame, text="Play", command=self.start_testing_thread, width=8)
-        self.play_button.pack(side='left', padx=5)
-        self.play_button_tooltip = ToolTip(self.play_button, "Start testing with the selected payloads.")
+    def load_payload_file(self):
+        try:
+            with open(self.payloads_path, 'r') as file:
+                self.payloads = [line.strip() for line in file.readlines() if line.strip()]
+            self.log_message(f"Loaded {len(self.payloads)} payloads from {self.payloads_path}.")
+        except Exception as e:
+            self.log_message(f"Error loading payloads file: {e}")
+            messagebox.showerror("Error", f"Error loading payloads file: {e}")
 
-        self.time_label = tk.Label(self.status_frame, text="Elapsed Time: 00:00")
-        self.time_label.pack(side='right', padx=5)
+    def update_split_payload_options(self, *args):
+        if self.selected_payload_option.get() == "Split Payloads":
+            self.split_payload_option_frame.pack(pady=5, fill='x')
+        else:
+            self.split_payload_option_frame.pack_forget()
 
-        # Log area
-        self.status_frame = tk.Frame(master, padx=10, pady=10)
-        self.status_frame.grid(row=2, column=0, pady=5, sticky='nsew')
+    def send_request(self, payload):
+        if self.endpoint is None:
+            raise ValueError("Endpoint is not set.")
+        
+        url = self.host_endpoint_entry.get()
+        if not url:
+            raise ValueError("Host URL is not set.")
+        
+        full_url = url + self.endpoint
+        headers = {'Content-Type': 'application/x-www-form-urlencoded'}
+        
+        response = requests.post(full_url, data={**self.post_data, 'payload': payload}, headers=headers, cookies=self.cookies)
+        
+        if DISPLAY_PACKETS:
+            logging.info(f"Request URL: {full_url}")
+            logging.info(f"Request Data: {self.post_data}")
+            logging.info(f"Payload: {payload}")
+            logging.info(f"Response Status Code: {response.status_code}")
+            logging.info(f"Response Content: {response.text}")
 
-        self.log_text = tk.Text(self.status_frame, wrap="word")
-        self.log_text.pack(pady=5, fill='both', expand=True)
-        self.log_tooltip = ToolTip(self.log_text, "Log area for displaying test results and errors.")
+        return response
 
-        # Configure row and column weights for centering
-        master.grid_rowconfigure(0, weight=0)
-        master.grid_rowconfigure(1, weight=0)
-        master.grid_rowconfigure(2, weight=1)
-        master.grid_columnconfigure(0, weight=1)
+    def send_request_to_all_payloads(self):
+        if not self.payloads:
+            self.log_message("No payloads to send.")
+            return
 
-        self.control_frame.grid_rowconfigure(0, weight=0)
-        self.control_frame.grid_rowconfigure(1, weight=0)
-        self.control_frame.grid_rowconfigure(2, weight=0)
-        self.control_frame.grid_rowconfigure(3, weight=0)
-        self.control_frame.grid_rowconfigure(4, weight=0)
-        self.control_frame.grid_rowconfigure(5, weight=1)
-        self.control_frame.grid_columnconfigure(0, weight=1)
-        self.control_frame.grid_columnconfigure(1, weight=1)
+        selected_option = self.selected_payload_option.get()
+        split_payload = selected_option == "Split Payloads"
+        split_by_url = self.split_payload_option.get() == "URL Payloads" if split_payload else True
 
-        self.update_split_payload_options(None)
+        for payload in self.payloads:
+            if split_payload:
+                if split_by_url:
+                    full_url = self.host_endpoint_entry.get().replace('?', f'?payload={payload}&')
+                    self.log_message(f"Sending payload to URL: {full_url}")
+                    response = requests.get(full_url, cookies=self.cookies)
+                else:
+                    self.log_message(f"Sending payload with POST data: {payload}")
+                    response = self.send_request(payload)
+            else:
+                self.log_message(f"Sending payload: {payload}")
+                response = self.send_request(payload)
+
+            status_code = response.status_code
+            self.log_message(f"Response Status Code: {status_code}")
+            self.log_message(f"Response Content: {response.text}")
+            self.log_message(f"Suggested Solution: {get_solution_for_status_code(status_code)}")
+            time.sleep(1)  # Sleep between requests to avoid overwhelming the server
+
+    def log_message(self, message):
+        if LOG:
+            logging.info(message)
+        self.result_text.insert(tk.END, message + '\n')
+        self.result_text.yview(tk.END)
 
     def toggle_tooltips(self):
         if self.tooltips_enabled:
@@ -269,9 +326,8 @@ class SQLInjectionTool:
             self.param_tooltip.disable()
             self.cookie_tooltip.disable()
             self.payload_tooltip.disable()
-            self.split_payload_tooltip.disable()
-            self.log_tooltip.disable()
             self.tooltips_enabled = False
+            self.log_message("Tooltips disabled.")
         else:
             self.upload_tooltip.enable()
             self.upload_payload_tooltip.enable()
@@ -279,112 +335,15 @@ class SQLInjectionTool:
             self.param_tooltip.enable()
             self.cookie_tooltip.enable()
             self.payload_tooltip.enable()
-            self.split_payload_tooltip.enable()
-            self.log_tooltip.enable()
             self.tooltips_enabled = True
+            self.log_message("Tooltips enabled.")
 
     def toggle_packets(self):
         global DISPLAY_PACKETS
         DISPLAY_PACKETS = not DISPLAY_PACKETS
-        status = "enabled" if DISPLAY_PACKETS else "disabled"
-        self.log_message(f"Display packets {status}.")
-
-    def upload_request_file(self):
-        file_path = filedialog.askopenfilename(filetypes=[("Text Files", "*.txt")])
-        if file_path:
-            with open(file_path, 'r') as file:
-                content = file.read()
-                try:
-                    self.endpoint, self.post_data, self.cookies = post_processor(content)
-                    self.host_endpoint_entry.delete(0, tk.END)
-                    self.host_endpoint_entry.insert(0, self.endpoint)
-                    self.param_entry.delete(0, tk.END)
-                    self.param_entry.insert(0, str(self.post_data))
-                    self.cookie_entry.delete(0, tk.END)
-                    self.cookie_entry.insert(0, str(self.cookies))
-                    self.log_message(f"Loaded request file from {file_path}.")
-                except Exception as e:
-                    self.log_message(f"Error processing request file: {e}")
-                    messagebox.showerror("Error", f"Error processing request file: {e}")
-
-    def load_payload_file(self):
-        file_path = filedialog.askopenfilename(filetypes=[("Text Files", "*.txt")])
-        if file_path:
-            try:
-                with open(file_path, 'r') as file:
-                    self.payloads = [line.strip() for line in file if line.strip()]
-                self.payloads_path = file_path
-                self.log_message(f"Loaded payloads file from {file_path}.")
-            except Exception as e:
-                self.log_message(f"Error loading payloads file: {e}")
-                messagebox.showerror("Error", f"Error loading payloads file: {e}")
-
-    def update_split_payload_options(self, value):
-        if self.selected_payload_option.get() == "Split Payloads":
-            self.split_payload_option_frame.pack(fill='x', pady=5)
-        else:
-            self.split_payload_option_frame.pack_forget()
-
-    def start_testing_thread(self):
-        thread = threading.Thread(target=self.start_testing)
-        thread.start()
-
-    def start_testing(self):
-        if not self.payloads:
-            messagebox.showwarning("Warning", "No payloads loaded.")
-            return
-
-        self.progress["value"] = 0
-        self.progress["maximum"] = len(self.payloads)
-        self.log_message("Testing started...")
-        start_time = time.time()
-
-        for index, payload in enumerate(self.payloads):
-            if self.selected_payload_option.get() == "Split Payloads":
-                # Handle split payloads here
-                pass
-
-            try:
-                response = self.send_request(payload)
-                self.log_message(f"Payload: {payload}, Status Code: {response.status_code}")
-
-                if response.status_code == 500:
-                    solution = get_solution_for_status_code(response.status_code)
-                    self.log_message(f"Error solution: {solution}")
-
-            except Exception as e:
-                self.log_message(f"Error sending request: {e}")
-
-            self.progress["value"] = index + 1
-            self.master.update_idletasks()
-
-        elapsed_time = time.time() - start_time
-        minutes, seconds = divmod(int(elapsed_time), 60)
-        self.time_label.config(text=f"Elapsed Time: {minutes:02}:{seconds:02}")
-        self.log_message("Testing completed.")
-
-    def send_request(self, payload):
-        if self.endpoint is None:
-            raise ValueError("Endpoint is not set.")
-        url = self.host_endpoint_entry.get() + self.endpoint
-
-        headers = {'Content-Type': 'application/x-www-form-urlencoded'}
-        response = requests.post(url, data={**self.post_data, 'payload': payload}, headers=headers, cookies=self.cookies)
-
-        if DISPLAY_PACKETS:
-            logging.info(f"Request URL: {url}")
-            logging.info(f"Request Data: {self.post_data}")
-            logging.info(f"Payload: {payload}")
-            logging.info(f"Response Status Code: {response.status_code}")
-            logging.info(f"Response Content: {response.text}")
-
-        return response
-
-    def log_message(self, message):
-        self.log_text.insert(tk.END, message + "\n")
-        self.log_text.yview(tk.END)
+        self.log_message(f"Display packets set to: {DISPLAY_PACKETS}")
 
 if __name__ == "__main__":
     root = tk.Tk()
-    app = SQLInjectionTool(root)
+    tool = SQLInjectionTool(root)
     root.mainloop()
