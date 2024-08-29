@@ -150,11 +150,11 @@ class SQLInjectionTool:
 
         # Title
         self.title_label = tk.Label(self.control_frame, text="SQL Injection Testing Tool", font=("Arial", 14))
-        self.title_label.grid(row=0, column=0, columnspan=2, pady=5, sticky='w')
+        self.title_label.grid(row=0, column=0, columnspan=2, pady=5, sticky='nsew')
 
         # Upload Request File
         self.upload_button = tk.Button(self.control_frame, text="Upload Request File", command=self.upload_request_file)
-        self.upload_button.grid(row=1, column=0, pady=5, sticky='ew')
+        self.upload_button.grid(row=1, column=0, pady=5, padx=5, sticky='ew')
         self.upload_tooltip = ToolTip(self.upload_button, "Select the file containing the HTTP request.")
 
         # Upload Payloads File
@@ -164,7 +164,7 @@ class SQLInjectionTool:
 
         # Host and Endpoint
         self.host_endpoint_label = tk.Label(self.control_frame, text="Host and Endpoint:")
-        self.host_endpoint_label.grid(row=2, column=0, sticky='w', pady=5)
+        self.host_endpoint_label.grid(row=2, column=0, pady=5, sticky='w')
 
         self.host_endpoint_entry = PlaceholderEntry(self.control_frame, placeholder="e.g., http://example.com/api/endpoint")
         self.host_endpoint_entry.grid(row=2, column=1, pady=5, sticky='ew')
@@ -172,7 +172,7 @@ class SQLInjectionTool:
 
         # POST Parameters
         self.param_label = tk.Label(self.control_frame, text="POST Parameters:")
-        self.param_label.grid(row=3, column=0, sticky='w', pady=5)
+        self.param_label.grid(row=3, column=0, pady=5, sticky='w')
 
         self.param_entry = PlaceholderEntry(self.control_frame, placeholder="e.g., param1=value1&param2=value2")
         self.param_entry.grid(row=3, column=1, pady=5, sticky='ew')
@@ -180,7 +180,7 @@ class SQLInjectionTool:
 
         # Cookies
         self.cookie_label = tk.Label(self.control_frame, text="Cookies (optional):")
-        self.cookie_label.grid(row=4, column=0, sticky='w', pady=5)
+        self.cookie_label.grid(row=4, column=0, pady=5, sticky='w')
 
         self.cookie_entry = PlaceholderEntry(self.control_frame, placeholder="e.g., sessionid=abc123")
         self.cookie_entry.grid(row=4, column=1, pady=5, sticky='ew')
@@ -211,7 +211,7 @@ class SQLInjectionTool:
 
         # Progress Bar, Status, Play Button, and Time
         self.progress_frame = tk.Frame(master, padx=10, pady=5)
-        self.progress_frame.grid(row=1, column=0, sticky='ew')
+        self.progress_frame.grid(row=1, column=0, pady=5, sticky='ew')
 
         self.progress = ttk.Progressbar(self.progress_frame, orient="horizontal", length=550, mode="determinate")
         self.progress.pack(pady=5, fill='x')
@@ -229,19 +229,27 @@ class SQLInjectionTool:
 
         # Log area
         self.status_frame = tk.Frame(master, padx=10, pady=10)
-        self.status_frame.grid(row=2, column=0, sticky='nsew')
+        self.status_frame.grid(row=2, column=0, pady=5, sticky='nsew')
 
         self.log_text = tk.Text(self.status_frame, wrap="word")
         self.log_text.pack(pady=5, fill='both', expand=True)
         self.log_tooltip = ToolTip(self.log_text, "Log area for displaying test results and errors.")
 
-        # Configure row and column weights
-        master.grid_rowconfigure(0, weight=1)
+        # Configure row and column weights for centering
+        master.grid_rowconfigure(0, weight=0)
         master.grid_rowconfigure(1, weight=0)
         master.grid_rowconfigure(2, weight=1)
         master.grid_columnconfigure(0, weight=1)
 
-        # Initialize
+        self.control_frame.grid_rowconfigure(0, weight=0)
+        self.control_frame.grid_rowconfigure(1, weight=0)
+        self.control_frame.grid_rowconfigure(2, weight=0)
+        self.control_frame.grid_rowconfigure(3, weight=0)
+        self.control_frame.grid_rowconfigure(4, weight=0)
+        self.control_frame.grid_rowconfigure(5, weight=1)
+        self.control_frame.grid_columnconfigure(0, weight=1)
+        self.control_frame.grid_columnconfigure(1, weight=1)
+
         self.update_split_payload_options(None)
 
     def toggle_tooltips(self):
