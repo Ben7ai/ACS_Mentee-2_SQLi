@@ -217,15 +217,18 @@ class SQLInjectionTool:
         self.progress.pack(pady=5, fill='x')
 
         # Status and Play Button, Elapsed Time
-        self.status_label = tk.Label(self.progress_frame, text="Status: N/A")
-        self.status_label.pack(side='left', padx=5, pady=5)
+        self.status_frame = tk.Frame(self.progress_frame)
+        self.status_frame.pack(pady=5, fill='x')
 
-        self.play_button = tk.Button(self.progress_frame, text="Play", command=self.start_testing_thread, width=8)
-        self.play_button.pack(side='left', padx=5, pady=5)
+        self.status_label = tk.Label(self.status_frame, text="Status: N/A")
+        self.status_label.pack(side='left', padx=5)
+
+        self.play_button = tk.Button(self.status_frame, text="Play", command=self.start_testing_thread, width=8)
+        self.play_button.pack(side='left', padx=5)
         self.play_button_tooltip = ToolTip(self.play_button, "Start testing with the selected payloads.")
 
-        self.time_label = tk.Label(self.progress_frame, text="Elapsed Time: 0.00 seconds")
-        self.time_label.pack(side='right', padx=5, pady=5)
+        self.time_label = tk.Label(self.status_frame, text="Elapsed Time: 00:00")
+        self.time_label.pack(side='right', padx=5)
 
         # Log area
         self.status_frame = tk.Frame(master, padx=10, pady=10)
@@ -350,7 +353,8 @@ class SQLInjectionTool:
             self.master.update_idletasks()
 
         elapsed_time = time.time() - start_time
-        self.time_label.config(text=f"Elapsed Time: {elapsed_time:.2f} seconds")
+        minutes, seconds = divmod(int(elapsed_time), 60)
+        self.time_label.config(text=f"Elapsed Time: {minutes:02}:{seconds:02}")
         self.log_message("Testing completed.")
 
     def send_request(self, payload):
