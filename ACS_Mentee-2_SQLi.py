@@ -1,187 +1,359 @@
+import requests
+from urllib.parse import urlparse, parse_qs
 import tkinter as tk
 from tkinter import ttk, filedialog, messagebox
-import os
+import threading
+import logging
 import time
-import requests
 
-class SQLInjectionTester(tk.Tk):
-    def __init__(self):
-        super().__init__()
-        self.title("SQL Injection Tester")
-        self.geometry("500x500")
+# Configuration
+LOG = 1
+DISPLAY_PACKETS = True
+MAX_RETRIES = 3
+PAYLOADS_FILE_PATH = 'SQL-Time.txt'
 
-        # Initializing variables
-        self.payloads_path = None
+# Setup logging
+logging.basicConfig(filename='sql_injection_tool.log', level=logging.DEBUG,
+                    format='%(asctime)s - %(levelname)s - %(message)s')
 
-        # Creating GUI components
-        tk.Label(self, text="SQL Injection Tester", font=("Helvetica", 16)).pack(pady=10)
+def post_processor(request_file_content):
+    lines = request_file_content.splitlines()
+    if not lines:
+        return None, None, None, None
 
-        # Payload handling option
-        self.payload_option_var = tk.StringVar(value="Combine Payloads")
-        options = ["Combine Payloads", "Split Payloads", "URL Payloads", "Username POST Data Payloads"]
-        tk.Label(self, text="Payload Handling Option:").pack(pady=10)
-        self.payload_option_menu = ttk.Combobox(self, textvariable=self.payload_option_var, values=options, state="readonly")
-        self.payload_option_menu.pack(pady=10)
+    method, path, _ = lines[0].split()
+    if method != "POST":
+        raise ValueError("Only POST requests are supported.")
 
-        # URL and endpoint inputs
-        tk.Label(self, text="URL:").pack(pady=5)
-        self.url_entry = tk.Entry(self, width=50)
-        self.url_entry.pack(pady=5)
+    url = urlparse(path).scheme + "://" + urlparse(path).netloc
+    endpoint = path
 
-        tk.Label(self, text="Endpoint:").pack(pady=5)
-        self.endpoint_entry = tk.Entry(self, width=50)
-        self.endpoint_entry.pack(pady=5)
+    post_data = {}
+    content_length = None
+    for line in lines:
+        if line.startswith("Content-Length:"):
+            content_length = int(line.split(":")[1].strip())
+            break
 
-        # POST data input
-        tk.Label(self, text="POST Data (e.g., 'username=admin&password=pass'):").pack(pady=5)
-        self.post_data_entry = tk.Entry(self, width=50)
-        self.post_data_entry.pack(pady=5)
+    if content_length is not None:
+        post_data_index = lines.index(f"Content-Length: {content_length}") + 1
+        post_data = "\n".join(lines[post_data_index:post_data_index + content_length]).strip()
+        post_data = dict(parse_qs(post_data))
+        post_data = {key: value[0] for key, value in post_data.items()}
 
-        # Cookies input
-        tk.Label(self, text="Cookies (optional):").pack(pady=5)
-        self.cookies_entry = tk.Entry(self, width=50)
-        self.cookies_entry.pack(pady=5)
+    cookies = {}
+    for line in lines:
+        if line.startswith("Cookie:"):
+            cookie_str = line.split(":", 1)[1].strip()
+            cookies = dict(parse_qs(cookie_str))
+            cookies = {key: value[0] for key, value in cookies.items()}
+            break
 
-        # File selection button
-        self.select_file_btn = tk.Button(self, text="Select Payloads File", command=self.select_payload_file)
-        self.select_file_btn.pack(pady=10)
+    return url, endpoint, post_data, cookies
 
-        # Progress bar and status label
-        self.progress = ttk.Progressbar(self, orient="horizontal", length=300, mode="determinate")
-        self.progress.pack(pady=10)
+def get_solution_for_status_code(status_code):
+    solutions = {
+        400: "Bad Request - Ensure request parameters and syntax are correct.",
+        401: "Unauthorized - Verify credentials or API key.",
+        403: "Forbidden - Check permissions or API limits.",
+        404: "Not Found - Verify URL or endpoint.",
+        500: "Internal Server Error - Check server logs.",
+        502: "Bad Gateway - Try again later.",
+        503: "Service Unavailable - Try again later.",
+        504: "Gateway Timeout - Check server status or try again later."
+    }
+    return solutions.get(status_code, "Unknown error. Check server logs.")
 
-        self.time_label = tk.Label(self, text="Estimated Time Remaining: N/A")
-        self.time_label.pack(pady=5)
+class ToolTip:
+    def __init__(self, widget, text):
+        self.widget = widget
+        self.text = text
+        self.tooltip_window = None
+        self.widget.bind("<Enter>", self.show_tooltip)
+        self.widget.bind("<Leave>", self.hide_tooltip)
+        self.enabled = True
 
-        self.status_label = tk.Label(self, text="Status: Waiting for input.")
+    def show_tooltip(self, event=None):
+        if not self.enabled or not self.text:
+            return
+        if self.tooltip_window:
+            return
+        x, y, _, _ = self.widget.bbox("insert")
+        x += self.widget.winfo_rootx() + 20
+        y += self.widget.winfo_rooty() + 20
+        self.tooltip_window = tk.Toplevel(self.widget)
+        self.tooltip_window.wm_overrideredirect(True)
+        self.tooltip_window.wm_geometry(f"+{x}+{y}")
+        label = tk.Label(self.tooltip_window, text=self.text, background="lightyellow", relief="solid", borderwidth=1, padx=5, pady=5)
+        label.pack()
+
+    def hide_tooltip(self, event=None):
+        if self.tooltip_window:
+            self.tooltip_window.destroy()
+            self.tooltip_window = None
+
+    def enable(self):
+        self.enabled = True
+
+    def disable(self):
+        self.enabled = False
+        if self.tooltip_window:
+            self.tooltip_window.destroy()
+            self.tooltip_window = None
+
+class SQLInjectionTool:
+    def __init__(self, master):
+        self.master = master
+        self.master.title("SQL Injection Tool")
+
+        self.payloads = []
+        self.payloads_path = PAYLOADS_FILE_PATH
+        self.post_data = None
+        self.endpoint = None
+        self.cookies = None
+        self.tooltips_enabled = True
+
+        # Create the ribbon menu
+        self.menu_bar = tk.Menu(master)
+        master.config(menu=self.menu_bar)
+
+        self.settings_menu = tk.Menu(self.menu_bar, tearoff=0)
+        self.menu_bar.add_cascade(label="Settings", menu=self.settings_menu)
+        self.settings_menu.add_command(label="Disable Tooltips", command=self.toggle_tooltips)
+        self.settings_menu.add_command(label="Toggle Display Packets", command=self.toggle_packets)
+
+        # Frame for main controls
+        self.control_frame = tk.Frame(master, padx=10, pady=10)
+        self.control_frame.grid(row=0, column=0, sticky='nsew')
+
+        # Title
+        self.title_label = tk.Label(self.control_frame, text="SQL Injection Testing Tool", font=("Arial", 14))
+        self.title_label.grid(row=0, column=0, columnspan=2, pady=5)
+
+        # Upload Request File
+        self.upload_button = tk.Button(self.control_frame, text="Upload Request File", command=self.upload_request_file)
+        self.upload_button.grid(row=1, column=0, pady=5, sticky='ew')
+        self.upload_tooltip = ToolTip(self.upload_button, "Select the file containing the HTTP request.")
+
+        # Upload Payloads File
+        self.upload_payload_button = tk.Button(self.control_frame, text="Upload Payloads File", command=self.load_payload_file)
+        self.upload_payload_button.grid(row=1, column=1, pady=5, padx=5, sticky='ew')
+        self.upload_payload_tooltip = ToolTip(self.upload_payload_button, "Select the file containing the payloads.")
+
+        # Host and Endpoint
+        self.host_endpoint_label = tk.Label(self.control_frame, text="Host and Endpoint:")
+        self.host_endpoint_label.grid(row=2, column=0, sticky='w', pady=5)
+
+        self.host_endpoint_entry = tk.Entry(self.control_frame, width=50)
+        self.host_endpoint_entry.grid(row=2, column=1, pady=5, sticky='ew')
+        self.host_endpoint_tooltip = ToolTip(self.host_endpoint_entry, "Enter the URL and endpoint for the POST request.")
+
+        # POST Parameters
+        self.param_label = tk.Label(self.control_frame, text="POST Parameters:")
+        self.param_label.grid(row=3, column=0, sticky='w', pady=5)
+
+        self.param_entry = tk.Entry(self.control_frame, width=50)
+        self.param_entry.grid(row=3, column=1, pady=5, sticky='ew')
+        self.param_tooltip = ToolTip(self.param_entry, "Enter the POST parameters in key=value format.")
+
+        # Cookies
+        self.cookie_label = tk.Label(self.control_frame, text="Cookies (optional):")
+        self.cookie_label.grid(row=4, column=0, sticky='w', pady=5)
+
+        self.cookie_entry = tk.Entry(self.control_frame, width=50)
+        self.cookie_entry.grid(row=4, column=1, pady=5, sticky='ew')
+        self.cookie_tooltip = ToolTip(self.cookie_entry, "Enter cookies if required.")
+
+        # Payload Handling Options
+        self.payload_frame = tk.LabelFrame(self.control_frame, text="Payload Handling Options", padx=10, pady=10)
+        self.payload_frame.grid(row=5, column=0, columnspan=2, pady=10, padx=5, sticky='ew')
+
+        self.payload_options = ["Combine Payloads", "Split Payloads"]
+        self.selected_payload_option = tk.StringVar()
+        self.selected_payload_option.set(self.payload_options[0])
+
+        self.payload_menu = tk.OptionMenu(self.payload_frame, self.selected_payload_option, *self.payload_options, command=self.update_split_payload_options)
+        self.payload_menu.pack(pady=5, fill='x')
+        self.payload_tooltip = ToolTip(self.payload_menu, "Choose how to handle payloads.")
+
+        # Frame for split payload options (initially hidden)
+        self.split_payload_option_frame = tk.Frame(self.payload_frame)
+        self.split_payload_option_frame.pack_forget()
+
+        self.split_payload_option = tk.StringVar()
+        self.split_payload_option.set("URL Payloads")
+
+        self.split_payload_menu = tk.OptionMenu(self.split_payload_option_frame, self.split_payload_option, "URL Payloads", "POST Data Payloads")
+        self.split_payload_menu.pack(pady=5)
+        self.split_payload_tooltip = ToolTip(self.split_payload_menu, "Select type of payload for split options.")
+
+        # Progress Bar and Time Estimate
+        self.progress_frame = tk.Frame(master, padx=10, pady=5)
+        self.progress_frame.grid(row=1, column=0, pady=10, sticky='ew')
+
+        self.progress = ttk.Progressbar(self.progress_frame, orient="horizontal", length=550, mode="determinate")
+        self.progress.pack(side=tk.LEFT, pady=5, fill='x', expand=True)
+
+        self.time_label = tk.Label(self.progress_frame, text="Elapsed Time: N/A")
+        self.time_label.pack(side=tk.LEFT, pady=5)
+
+        self.start_testing_button = tk.Button(self.progress_frame, text="▶", command=self.start_testing_thread, font=("Arial", 12), width=3)
+        self.start_testing_button.pack(side=tk.RIGHT, padx=5)
+        self.test_tooltip = ToolTip(self.start_testing_button, "Start testing with the selected payloads.")
+
+        # Status and Log
+        self.status_frame = tk.Frame(master, padx=10, pady=10)
+        self.status_frame.grid(row=2, column=0, pady=10, sticky='ew')
+
+        self.status_label = tk.Label(self.status_frame, text="Status: N/A")
         self.status_label.pack(pady=5)
 
-        # Start button
-        self.start_button = tk.Button(self, text="Start Testing", command=self.start_testing)
-        self.start_button.pack(pady=10)
+        self.log_text = tk.Text(self.status_frame, height=20, wrap="word")
+        self.log_text.pack(pady=5, fill='both', expand=True)
+        self.log_tooltip = ToolTip(self.log_text, "Log area for displaying test results and errors.")
 
-        # Log box
-        self.log_box = tk.Text(self, height=10, width=60)
-        self.log_box.pack(pady=10)
+        # Configure grid rows and columns to expand
+        self.control_frame.grid_rowconfigure(5, weight=1)
+        self.control_frame.grid_columnconfigure(0, weight=1)
+        self.control_frame.grid_columnconfigure(1, weight=1)
 
-    def log_message(self, message):
-        self.log_box.insert(tk.END, message + "\n")
-        self.log_box.see(tk.END)
+        self.master.grid_rowconfigure(0, weight=0)
+        self.master.grid_rowconfigure(1, weight=0)
+        self.master.grid_rowconfigure(2, weight=1)
+        self.master.grid_columnconfigure(0, weight=1)
 
-    def select_payload_file(self):
-        self.payloads_path = filedialog.askopenfilename(filetypes=[("Text files", "*.txt")])
-        if self.payloads_path:
-            self.log_message(f"Selected payloads file: {self.payloads_path}")
-            self.status_label.config(text="Payloads file selected.")
+        # Initialize
+        self.update_split_payload_options(None)
+
+    def toggle_tooltips(self):
+        if self.tooltips_enabled:
+            self.upload_tooltip.disable()
+            self.upload_payload_tooltip.disable()
+            self.host_endpoint_tooltip.disable()
+            self.param_tooltip.disable()
+            self.cookie_tooltip.disable()
+            self.packet_tooltip.disable()
+            self.payload_tooltip.disable()
+            self.split_payload_tooltip.disable()
+            self.test_tooltip.disable()
+            self.settings_menu.entryconfig("Disable Tooltips", label="Enable Tooltips")
         else:
-            self.log_message("No payloads file selected.")
-            self.status_label.config(text="No payloads file selected.")
+            self.upload_tooltip.enable()
+            self.upload_payload_tooltip.enable()
+            self.host_endpoint_tooltip.enable()
+            self.param_tooltip.enable()
+            self.cookie_tooltip.enable()
+            self.packet_tooltip.enable()
+            self.payload_tooltip.enable()
+            self.split_payload_tooltip.enable()
+            self.test_tooltip.enable()
+            self.settings_menu.entryconfig("Enable Tooltips", label="Disable Tooltips")
+        self.tooltips_enabled = not self.tooltips_enabled
+
+    def toggle_packets(self):
+        global DISPLAY_PACKETS
+        DISPLAY_PACKETS = not DISPLAY_PACKETS
+        self.settings_menu.entryconfig("Toggle Display Packets", label="Hide Display Packets" if DISPLAY_PACKETS else "Show Display Packets")
+
+    def upload_request_file(self):
+        file_path = filedialog.askopenfilename(title="Select Request File")
+        if file_path:
+            try:
+                with open(file_path, 'r') as file:
+                    content = file.read()
+                    self.url, self.endpoint, self.post_data, self.cookies = post_processor(content)
+                    self.host_endpoint_entry.delete(0, tk.END)
+                    self.host_endpoint_entry.insert(0, self.url + self.endpoint)
+                    if self.post_data:
+                        post_data_str = '&'.join([f"{key}={value}" for key, value in self.post_data.items()])
+                        self.param_entry.delete(0, tk.END)
+                        self.param_entry.insert(0, post_data_str)
+                    if self.cookies:
+                        cookies_str = '&'.join([f"{key}={value}" for key, value in self.cookies.items()])
+                        self.cookie_entry.delete(0, tk.END)
+                        self.cookie_entry.insert(0, cookies_str)
+            except Exception as e:
+                logging.error(f"Error reading request file: {e}")
+                messagebox.showerror("Error", f"Error reading request file: {e}")
+
+    def load_payload_file(self):
+        file_path = filedialog.askopenfilename(title="Select Payloads File")
+        if file_path:
+            try:
+                with open(file_path, 'r') as file:
+                    self.payloads = file.read().splitlines()
+            except Exception as e:
+                logging.error(f"Error reading payloads file: {e}")
+                messagebox.showerror("Error", f"Error reading payloads file: {e}")
+
+    def update_split_payload_options(self, selected_option):
+        if selected_option == "Split Payloads":
+            self.split_payload_option_frame.pack(pady=5, fill='x')
+        else:
+            self.split_payload_option_frame.pack_forget()
+
+    def start_testing_thread(self):
+        thread = threading.Thread(target=self.start_testing)
+        thread.start()
 
     def start_testing(self):
-        url = self.url_entry.get().strip()
-        endpoint = self.endpoint_entry.get().strip()
-        post_data = self.post_data_entry.get().strip()
-        cookies = self.cookies_entry.get().strip()
-
-        if not url or not endpoint or not post_data:
-            messagebox.showerror("Input Error", "Please fill out the URL, endpoint, and POST data fields.")
-            return
-
-        # Parse POST data into a dictionary
-        post_data_dict = dict(x.split('=') for x in post_data.split('&'))
-
-        # Start the SQL injection testing process
-        self.process_payload_sleep_post(url, endpoint, post_data_dict, cookies)
-
-    def process_payload_sleep_post(self, url, endpoint, data, cookies):
-        """
-        Processes the payloads from the file and tests for SQL injection vulnerabilities.
-        Payloads will be applied according to the selected option.
-        """
-        if not self.payloads_path or not os.path.isfile(self.payloads_path):
-            self.status_label.config(text="No payloads file selected or the file does not exist.")
-            return
-
-        try:
-            with open(self.payloads_path, 'r') as f:
-                payloads = f.readlines()
-        except Exception as e:
-            self.log_message(f"Error reading payloads file: {e}")
-            return
-
-        total_payloads = len(payloads)
-        self.progress["maximum"] = total_payloads
-
-        if not self.check_compatibility(url, endpoint, data, cookies):
-            self.log_message("The website did not return an expected response with test payload. Aborting.")
-            return
-
+        self.progress["value"] = 0
+        self.status_label.config(text="Status: Running")
+        self.log_text.delete(1.0, tk.END)
         start_time = time.time()
-        for i, payload in enumerate(payloads):
-            payload = payload.strip()
 
-            # Handling payload application based on the selected option
-            option = self.payload_option_var.get()
-
-            if option == "Combine Payloads":
-                # Apply the same payload to both URL and username POST data
-                data_with_payload = {key: payload if key == 'username' else value + payload for key, value in data.items()}
-                endpoint_with_payload = f"{endpoint}?username={payload}"
-
-            elif option == "Split Payloads":
-                # Apply different payloads for URL and username POST data
-                url_payload = payload + "_url"
-                post_payload = payload + "_post"
-                data_with_payload = {key: post_payload if key == 'username' else value + post_payload for key, value in data.items()}
-                endpoint_with_payload = f"{endpoint}?username={url_payload}"
-
-            elif option == "URL Payloads":
-                # Apply payloads only to the URL
-                endpoint_with_payload = f"{endpoint}?username={payload}"
-                data_with_payload = data  # No changes to POST data
-
-            elif option == "Username POST Data Payloads":
-                # Apply payloads only to the username POST data
-                data_with_payload = {key: payload if key == 'username' else value for key, value in data.items()}
-                endpoint_with_payload = endpoint  # No changes to URL
-
-            r, url_test = self.get_request_send(url, endpoint_with_payload, data_with_payload, cookies)
-            if r:
-                self.log_message(f"Testing with payload: {payload}")
-                if "delay" in r.text or r.elapsed.total_seconds() > 5:
-                    self.log_message(f"Possible SQL injection vulnerability detected with payload: {payload}")
+        for payload in self.payloads:
+            if self.selected_payload_option.get() == "Split Payloads":
+                payload_parts = [payload[i:i + len(payload) // 2] for i in range(0, len(payload), len(payload) // 2)]
+                payloads_to_test = payload_parts
             else:
-                self.log_message(f"Failed to send payload: {payload}")
+                payloads_to_test = [payload]
 
-            self.progress["value"] = i + 1
-            elapsed_time = time.time() - start_time
-            estimated_total_time = (elapsed_time / (i + 1)) * total_payloads
-            remaining_time = estimated_total_time - elapsed_time
-            self.time_label.config(text=f"Estimated Time Remaining: {int(remaining_time)}s")
-            self.master.update_idletasks()
+            for p in payloads_to_test:
+                if self.url:
+                    self.test_payload(p)
 
-        self.log_message("SQL Injection Testing Complete.")
-        self.status_label.config(text="Testing completed. Check logs for details.")
+        elapsed_time = time.time() - start_time
+        self.time_label.config(text=f"Elapsed Time: {elapsed_time:.2f} seconds")
+        self.status_label.config(text="Status: Complete")
 
-    def get_request_send(self, url, endpoint, data, cookies):
-        """Handles the request sending."""
+    def test_payload(self, payload):
         try:
-            full_url = f"{url}/{endpoint}"
-            headers = {'Cookie': cookies} if cookies else {}
-            r = requests.post(full_url, data=data, headers=headers)
-            return r, full_url
+            if self.selected_payload_option.get() == "Split Payloads":
+                if self.split_payload_option.get() == "URL Payloads":
+                    full_url_with_payload = f"{self.url}{self.endpoint}?{payload}"
+                    r = requests.get(full_url_with_payload, cookies=self.cookies)
+                elif self.split_payload_option.get() == "POST Data Payloads":
+                    data_with_payload = {key: value + payload for key, value in self.post_data.items()}
+                    r = requests.post(f"{self.url}{self.endpoint}", data=data_with_payload, cookies=self.cookies)
+            else:
+                if self.endpoint:
+                    full_url_with_payload = f"{self.url}{self.endpoint}?{payload}"
+                    r = requests.get(full_url_with_payload, cookies=self.cookies)
+                else:
+                    data_with_payload = {key: value + payload for key, value in self.post_data.items()}
+                    r = requests.post(self.url, data=data_with_payload, cookies=self.cookies)
+
+            if DISPLAY_PACKETS:
+                self.log_text.insert(tk.END, f"Testing payload: {payload}\n")
+                self.log_text.insert(tk.END, f"URL: {r.url}\n")
+                self.log_text.insert(tk.END, f"Status Code: {r.status_code}\n")
+                self.log_text.insert(tk.END, f"Response: {r.text}\n")
+                self.log_text.insert(tk.END, "-"*80 + "\n")
+
+            if r.status_code != 200:
+                solution = get_solution_for_status_code(r.status_code)
+                self.log_text.insert(tk.END, f"Suggested Solution: {solution}\n")
+
+            self.progress["value"] += (100 / len(self.payloads))
+
         except requests.RequestException as e:
-            self.log_message(f"Error sending request to {url}: {e}")
-            return None, None
+            logging.error(f"Request failed: {e}")
+            self.log_text.insert(tk.END, f"Error testing payload {payload}: {e}\n")
 
-    def check_compatibility(self, url, endpoint, data, cookies):
-        """Checks if the website responds as expected with a test payload."""
-        test_payload = "test_payload"
-        test_endpoint = f"{endpoint}?username={test_payload}"
-        test_data = {key: test_payload if key == 'username' else value for key, value in data.items()}
-        r, _ = self.get_request_send(url, test_endpoint, test_data, cookies)
-        return r is not None
-
+# Create and run the application
 if __name__ == "__main__":
-    app = SQLInjectionTester()
-    app.mainloop()
+    root = tk.Tk()
+    root.geometry("800x600")  # Set a compact window size
+    app = SQLInjectionTool(root)
+    root.mainloop()
