@@ -5147,3 +5147,906 @@ Data: {}
 Cookies: {}
 Response Code: 302
 2024-08-24 13:21:31,384 - INFO - Website is not compatible. Exiting.
+2024-08-29 23:08:17,142 - INFO - Loaded 95 payloads from SQL-Time.txt.
+2024-08-29 23:09:06,258 - INFO - Sending payload to URL: https://0ab3005503e57f8080a894b700f40080.web-security-academy.net/login
+2024-08-29 23:09:06,305 - DEBUG - Starting new HTTPS connection (1): 0ab3005503e57f8080a894b700f40080.web-security-academy.net:443
+2024-08-29 23:09:07,527 - DEBUG - https://0ab3005503e57f8080a894b700f40080.web-security-academy.net:443 "GET /login HTTP/1.1" 504 197
+2024-08-29 23:09:07,533 - INFO - Response Status Code: 504
+2024-08-29 23:09:07,534 - INFO - Response Content: <html><head><title>Server Error: Gateway Timeout</title></head><body><h1>Server Error: Gateway Timeout (0) connecting to 0ab3005503e57f8080a894b700f40080.web-security-academy.net</h1></body></html>
+2024-08-29 23:09:07,535 - INFO - Suggested Solution: Gateway Timeout - Check server status or try again later.
+2024-08-29 23:09:08,548 - INFO - Sending payload to URL: https://0ab3005503e57f8080a894b700f40080.web-security-academy.net/login
+2024-08-29 23:09:08,553 - DEBUG - Starting new HTTPS connection (1): 0ab3005503e57f8080a894b700f40080.web-security-academy.net:443
+2024-08-29 23:09:09,496 - DEBUG - https://0ab3005503e57f8080a894b700f40080.web-security-academy.net:443 "GET /login HTTP/1.1" 504 197
+2024-08-29 23:09:09,500 - INFO - Response Status Code: 504
+2024-08-29 23:09:09,501 - INFO - Response Content: <html><head><title>Server Error: Gateway Timeout</title></head><body><h1>Server Error: Gateway Timeout (0) connecting to 0ab3005503e57f8080a894b700f40080.web-security-academy.net</h1></body></html>
+2024-08-29 23:09:09,501 - INFO - Suggested Solution: Gateway Timeout - Check server status or try again later.
+2024-08-29 23:09:10,517 - INFO - Sending payload to URL: https://0ab3005503e57f8080a894b700f40080.web-security-academy.net/login
+2024-08-29 23:09:10,523 - DEBUG - Starting new HTTPS connection (1): 0ab3005503e57f8080a894b700f40080.web-security-academy.net:443
+2024-08-29 23:09:11,477 - DEBUG - https://0ab3005503e57f8080a894b700f40080.web-security-academy.net:443 "GET /login HTTP/1.1" 504 197
+2024-08-29 23:09:11,480 - INFO - Response Status Code: 504
+2024-08-29 23:09:11,481 - INFO - Response Content: <html><head><title>Server Error: Gateway Timeout</title></head><body><h1>Server Error: Gateway Timeout (0) connecting to 0ab3005503e57f8080a894b700f40080.web-security-academy.net</h1></body></html>
+2024-08-29 23:09:11,483 - INFO - Suggested Solution: Gateway Timeout - Check server status or try again later.
+2024-08-29 23:09:12,485 - INFO - Sending payload to URL: https://0ab3005503e57f8080a894b700f40080.web-security-academy.net/login
+2024-08-29 23:09:12,491 - DEBUG - Starting new HTTPS connection (1): 0ab3005503e57f8080a894b700f40080.web-security-academy.net:443
+2024-08-29 23:09:13,922 - DEBUG - https://0ab3005503e57f8080a894b700f40080.web-security-academy.net:443 "GET /login HTTP/1.1" 504 197
+2024-08-29 23:09:13,927 - INFO - Response Status Code: 504
+2024-08-29 23:09:13,928 - INFO - Response Content: <html><head><title>Server Error: Gateway Timeout</title></head><body><h1>Server Error: Gateway Timeout (0) connecting to 0ab3005503e57f8080a894b700f40080.web-security-academy.net</h1></body></html>
+2024-08-29 23:09:13,929 - INFO - Suggested Solution: Gateway Timeout - Check server status or try again later.
+2024-08-29 23:09:14,943 - INFO - Sending payload to URL: https://0ab3005503e57f8080a894b700f40080.web-security-academy.net/login
+2024-08-29 23:09:14,949 - DEBUG - Starting new HTTPS connection (1): 0ab3005503e57f8080a894b700f40080.web-security-academy.net:443
+2024-08-29 23:09:16,070 - DEBUG - https://0ab3005503e57f8080a894b700f40080.web-security-academy.net:443 "GET /login HTTP/1.1" 504 197
+2024-08-29 23:09:16,074 - INFO - Response Status Code: 504
+2024-08-29 23:09:16,075 - INFO - Response Content: <html><head><title>Server Error: Gateway Timeout</title></head><body><h1>Server Error: Gateway Timeout (0) connecting to 0ab3005503e57f8080a894b700f40080.web-security-academy.net</h1></body></html>
+2024-08-29 23:09:16,076 - INFO - Suggested Solution: Gateway Timeout - Check server status or try again later.
+2024-08-29 23:09:17,090 - INFO - Sending payload to URL: https://0ab3005503e57f8080a894b700f40080.web-security-academy.net/login
+2024-08-29 23:09:17,097 - DEBUG - Starting new HTTPS connection (1): 0ab3005503e57f8080a894b700f40080.web-security-academy.net:443
+2024-08-29 23:09:18,158 - DEBUG - https://0ab3005503e57f8080a894b700f40080.web-security-academy.net:443 "GET /login HTTP/1.1" 504 197
+2024-08-29 23:09:18,161 - INFO - Response Status Code: 504
+2024-08-29 23:09:18,162 - INFO - Response Content: <html><head><title>Server Error: Gateway Timeout</title></head><body><h1>Server Error: Gateway Timeout (0) connecting to 0ab3005503e57f8080a894b700f40080.web-security-academy.net</h1></body></html>
+2024-08-29 23:09:18,163 - INFO - Suggested Solution: Gateway Timeout - Check server status or try again later.
+2024-08-29 23:09:19,173 - INFO - Sending payload to URL: https://0ab3005503e57f8080a894b700f40080.web-security-academy.net/login
+2024-08-29 23:09:19,180 - DEBUG - Starting new HTTPS connection (1): 0ab3005503e57f8080a894b700f40080.web-security-academy.net:443
+2024-08-29 23:09:20,144 - DEBUG - https://0ab3005503e57f8080a894b700f40080.web-security-academy.net:443 "GET /login HTTP/1.1" 504 197
+2024-08-29 23:09:20,147 - INFO - Response Status Code: 504
+2024-08-29 23:09:20,149 - INFO - Response Content: <html><head><title>Server Error: Gateway Timeout</title></head><body><h1>Server Error: Gateway Timeout (0) connecting to 0ab3005503e57f8080a894b700f40080.web-security-academy.net</h1></body></html>
+2024-08-29 23:09:20,150 - INFO - Suggested Solution: Gateway Timeout - Check server status or try again later.
+2024-08-29 23:09:21,156 - INFO - Sending payload to URL: https://0ab3005503e57f8080a894b700f40080.web-security-academy.net/login
+2024-08-29 23:09:21,162 - DEBUG - Starting new HTTPS connection (1): 0ab3005503e57f8080a894b700f40080.web-security-academy.net:443
+2024-08-29 23:09:22,255 - DEBUG - https://0ab3005503e57f8080a894b700f40080.web-security-academy.net:443 "GET /login HTTP/1.1" 504 197
+2024-08-29 23:09:22,260 - INFO - Response Status Code: 504
+2024-08-29 23:09:22,261 - INFO - Response Content: <html><head><title>Server Error: Gateway Timeout</title></head><body><h1>Server Error: Gateway Timeout (0) connecting to 0ab3005503e57f8080a894b700f40080.web-security-academy.net</h1></body></html>
+2024-08-29 23:09:22,262 - INFO - Suggested Solution: Gateway Timeout - Check server status or try again later.
+2024-08-29 23:09:23,276 - INFO - Sending payload to URL: https://0ab3005503e57f8080a894b700f40080.web-security-academy.net/login
+2024-08-29 23:09:23,282 - DEBUG - Starting new HTTPS connection (1): 0ab3005503e57f8080a894b700f40080.web-security-academy.net:443
+2024-08-29 23:09:24,430 - DEBUG - https://0ab3005503e57f8080a894b700f40080.web-security-academy.net:443 "GET /login HTTP/1.1" 504 197
+2024-08-29 23:09:24,434 - INFO - Response Status Code: 504
+2024-08-29 23:09:24,436 - INFO - Response Content: <html><head><title>Server Error: Gateway Timeout</title></head><body><h1>Server Error: Gateway Timeout (0) connecting to 0ab3005503e57f8080a894b700f40080.web-security-academy.net</h1></body></html>
+2024-08-29 23:09:24,437 - INFO - Suggested Solution: Gateway Timeout - Check server status or try again later.
+2024-08-29 23:09:25,452 - INFO - Sending payload to URL: https://0ab3005503e57f8080a894b700f40080.web-security-academy.net/login
+2024-08-29 23:09:25,459 - DEBUG - Starting new HTTPS connection (1): 0ab3005503e57f8080a894b700f40080.web-security-academy.net:443
+2024-08-29 23:09:26,517 - DEBUG - https://0ab3005503e57f8080a894b700f40080.web-security-academy.net:443 "GET /login HTTP/1.1" 504 197
+2024-08-29 23:09:26,523 - INFO - Response Status Code: 504
+2024-08-29 23:09:26,524 - INFO - Response Content: <html><head><title>Server Error: Gateway Timeout</title></head><body><h1>Server Error: Gateway Timeout (0) connecting to 0ab3005503e57f8080a894b700f40080.web-security-academy.net</h1></body></html>
+2024-08-29 23:09:26,526 - INFO - Suggested Solution: Gateway Timeout - Check server status or try again later.
+2024-08-29 23:09:27,530 - INFO - Sending payload to URL: https://0ab3005503e57f8080a894b700f40080.web-security-academy.net/login
+2024-08-29 23:09:27,537 - DEBUG - Starting new HTTPS connection (1): 0ab3005503e57f8080a894b700f40080.web-security-academy.net:443
+2024-08-29 23:09:28,490 - DEBUG - https://0ab3005503e57f8080a894b700f40080.web-security-academy.net:443 "GET /login HTTP/1.1" 504 197
+2024-08-29 23:09:28,493 - INFO - Response Status Code: 504
+2024-08-29 23:09:28,496 - INFO - Response Content: <html><head><title>Server Error: Gateway Timeout</title></head><body><h1>Server Error: Gateway Timeout (0) connecting to 0ab3005503e57f8080a894b700f40080.web-security-academy.net</h1></body></html>
+2024-08-29 23:09:28,498 - INFO - Suggested Solution: Gateway Timeout - Check server status or try again later.
+2024-08-29 23:09:29,505 - INFO - Sending payload to URL: https://0ab3005503e57f8080a894b700f40080.web-security-academy.net/login
+2024-08-29 23:09:29,515 - DEBUG - Starting new HTTPS connection (1): 0ab3005503e57f8080a894b700f40080.web-security-academy.net:443
+2024-08-29 23:09:30,587 - DEBUG - https://0ab3005503e57f8080a894b700f40080.web-security-academy.net:443 "GET /login HTTP/1.1" 504 197
+2024-08-29 23:09:30,591 - INFO - Response Status Code: 504
+2024-08-29 23:09:30,593 - INFO - Response Content: <html><head><title>Server Error: Gateway Timeout</title></head><body><h1>Server Error: Gateway Timeout (0) connecting to 0ab3005503e57f8080a894b700f40080.web-security-academy.net</h1></body></html>
+2024-08-29 23:09:30,593 - INFO - Suggested Solution: Gateway Timeout - Check server status or try again later.
+2024-08-29 23:09:31,600 - INFO - Sending payload to URL: https://0ab3005503e57f8080a894b700f40080.web-security-academy.net/login
+2024-08-29 23:09:31,606 - DEBUG - Starting new HTTPS connection (1): 0ab3005503e57f8080a894b700f40080.web-security-academy.net:443
+2024-08-29 23:09:32,702 - DEBUG - https://0ab3005503e57f8080a894b700f40080.web-security-academy.net:443 "GET /login HTTP/1.1" 504 197
+2024-08-29 23:09:32,707 - INFO - Response Status Code: 504
+2024-08-29 23:09:32,708 - INFO - Response Content: <html><head><title>Server Error: Gateway Timeout</title></head><body><h1>Server Error: Gateway Timeout (0) connecting to 0ab3005503e57f8080a894b700f40080.web-security-academy.net</h1></body></html>
+2024-08-29 23:09:32,710 - INFO - Suggested Solution: Gateway Timeout - Check server status or try again later.
+2024-08-29 23:09:33,725 - INFO - Sending payload to URL: https://0ab3005503e57f8080a894b700f40080.web-security-academy.net/login
+2024-08-29 23:09:33,733 - DEBUG - Starting new HTTPS connection (1): 0ab3005503e57f8080a894b700f40080.web-security-academy.net:443
+2024-08-29 23:09:35,477 - DEBUG - https://0ab3005503e57f8080a894b700f40080.web-security-academy.net:443 "GET /login HTTP/1.1" 504 197
+2024-08-29 23:09:35,480 - INFO - Response Status Code: 504
+2024-08-29 23:09:35,482 - INFO - Response Content: <html><head><title>Server Error: Gateway Timeout</title></head><body><h1>Server Error: Gateway Timeout (0) connecting to 0ab3005503e57f8080a894b700f40080.web-security-academy.net</h1></body></html>
+2024-08-29 23:09:35,483 - INFO - Suggested Solution: Gateway Timeout - Check server status or try again later.
+2024-08-29 23:09:36,485 - INFO - Sending payload to URL: https://0ab3005503e57f8080a894b700f40080.web-security-academy.net/login
+2024-08-29 23:09:36,491 - DEBUG - Starting new HTTPS connection (1): 0ab3005503e57f8080a894b700f40080.web-security-academy.net:443
+2024-08-29 23:09:37,438 - DEBUG - https://0ab3005503e57f8080a894b700f40080.web-security-academy.net:443 "GET /login HTTP/1.1" 504 197
+2024-08-29 23:09:37,443 - INFO - Response Status Code: 504
+2024-08-29 23:09:37,443 - INFO - Response Content: <html><head><title>Server Error: Gateway Timeout</title></head><body><h1>Server Error: Gateway Timeout (0) connecting to 0ab3005503e57f8080a894b700f40080.web-security-academy.net</h1></body></html>
+2024-08-29 23:09:37,444 - INFO - Suggested Solution: Gateway Timeout - Check server status or try again later.
+2024-08-29 23:09:38,454 - INFO - Sending payload to URL: https://0ab3005503e57f8080a894b700f40080.web-security-academy.net/login
+2024-08-29 23:09:38,459 - DEBUG - Starting new HTTPS connection (1): 0ab3005503e57f8080a894b700f40080.web-security-academy.net:443
+2024-08-29 23:09:39,421 - DEBUG - https://0ab3005503e57f8080a894b700f40080.web-security-academy.net:443 "GET /login HTTP/1.1" 504 197
+2024-08-29 23:09:39,425 - INFO - Response Status Code: 504
+2024-08-29 23:09:39,426 - INFO - Response Content: <html><head><title>Server Error: Gateway Timeout</title></head><body><h1>Server Error: Gateway Timeout (0) connecting to 0ab3005503e57f8080a894b700f40080.web-security-academy.net</h1></body></html>
+2024-08-29 23:09:39,427 - INFO - Suggested Solution: Gateway Timeout - Check server status or try again later.
+2024-08-29 23:09:40,429 - INFO - Sending payload to URL: https://0ab3005503e57f8080a894b700f40080.web-security-academy.net/login
+2024-08-29 23:09:40,436 - DEBUG - Starting new HTTPS connection (1): 0ab3005503e57f8080a894b700f40080.web-security-academy.net:443
+2024-08-29 23:09:41,494 - DEBUG - https://0ab3005503e57f8080a894b700f40080.web-security-academy.net:443 "GET /login HTTP/1.1" 504 197
+2024-08-29 23:09:41,498 - INFO - Response Status Code: 504
+2024-08-29 23:09:41,499 - INFO - Response Content: <html><head><title>Server Error: Gateway Timeout</title></head><body><h1>Server Error: Gateway Timeout (0) connecting to 0ab3005503e57f8080a894b700f40080.web-security-academy.net</h1></body></html>
+2024-08-29 23:09:41,502 - INFO - Suggested Solution: Gateway Timeout - Check server status or try again later.
+2024-08-29 23:09:42,506 - INFO - Sending payload to URL: https://0ab3005503e57f8080a894b700f40080.web-security-academy.net/login
+2024-08-29 23:09:42,511 - DEBUG - Starting new HTTPS connection (1): 0ab3005503e57f8080a894b700f40080.web-security-academy.net:443
+2024-08-29 23:09:43,596 - DEBUG - https://0ab3005503e57f8080a894b700f40080.web-security-academy.net:443 "GET /login HTTP/1.1" 504 197
+2024-08-29 23:09:43,600 - INFO - Response Status Code: 504
+2024-08-29 23:09:43,602 - INFO - Response Content: <html><head><title>Server Error: Gateway Timeout</title></head><body><h1>Server Error: Gateway Timeout (0) connecting to 0ab3005503e57f8080a894b700f40080.web-security-academy.net</h1></body></html>
+2024-08-29 23:09:43,603 - INFO - Suggested Solution: Gateway Timeout - Check server status or try again later.
+2024-08-29 23:09:44,603 - INFO - Sending payload to URL: https://0ab3005503e57f8080a894b700f40080.web-security-academy.net/login
+2024-08-29 23:09:44,607 - DEBUG - Starting new HTTPS connection (1): 0ab3005503e57f8080a894b700f40080.web-security-academy.net:443
+2024-08-29 23:09:45,587 - DEBUG - https://0ab3005503e57f8080a894b700f40080.web-security-academy.net:443 "GET /login HTTP/1.1" 504 197
+2024-08-29 23:09:45,590 - INFO - Response Status Code: 504
+2024-08-29 23:09:45,593 - INFO - Response Content: <html><head><title>Server Error: Gateway Timeout</title></head><body><h1>Server Error: Gateway Timeout (0) connecting to 0ab3005503e57f8080a894b700f40080.web-security-academy.net</h1></body></html>
+2024-08-29 23:09:45,594 - INFO - Suggested Solution: Gateway Timeout - Check server status or try again later.
+2024-08-29 23:09:46,608 - INFO - Sending payload to URL: https://0ab3005503e57f8080a894b700f40080.web-security-academy.net/login
+2024-08-29 23:09:46,615 - DEBUG - Starting new HTTPS connection (1): 0ab3005503e57f8080a894b700f40080.web-security-academy.net:443
+2024-08-29 23:09:47,583 - DEBUG - https://0ab3005503e57f8080a894b700f40080.web-security-academy.net:443 "GET /login HTTP/1.1" 504 197
+2024-08-29 23:09:47,587 - INFO - Response Status Code: 504
+2024-08-29 23:09:47,588 - INFO - Response Content: <html><head><title>Server Error: Gateway Timeout</title></head><body><h1>Server Error: Gateway Timeout (0) connecting to 0ab3005503e57f8080a894b700f40080.web-security-academy.net</h1></body></html>
+2024-08-29 23:09:47,588 - INFO - Suggested Solution: Gateway Timeout - Check server status or try again later.
+2024-08-29 23:09:48,592 - INFO - Sending payload to URL: https://0ab3005503e57f8080a894b700f40080.web-security-academy.net/login
+2024-08-29 23:09:48,599 - DEBUG - Starting new HTTPS connection (1): 0ab3005503e57f8080a894b700f40080.web-security-academy.net:443
+2024-08-29 23:09:49,685 - DEBUG - https://0ab3005503e57f8080a894b700f40080.web-security-academy.net:443 "GET /login HTTP/1.1" 504 197
+2024-08-29 23:09:49,688 - INFO - Response Status Code: 504
+2024-08-29 23:09:49,688 - INFO - Response Content: <html><head><title>Server Error: Gateway Timeout</title></head><body><h1>Server Error: Gateway Timeout (0) connecting to 0ab3005503e57f8080a894b700f40080.web-security-academy.net</h1></body></html>
+2024-08-29 23:09:49,689 - INFO - Suggested Solution: Gateway Timeout - Check server status or try again later.
+2024-08-29 23:09:50,700 - INFO - Sending payload to URL: https://0ab3005503e57f8080a894b700f40080.web-security-academy.net/login
+2024-08-29 23:09:50,705 - DEBUG - Starting new HTTPS connection (1): 0ab3005503e57f8080a894b700f40080.web-security-academy.net:443
+2024-08-29 23:09:51,673 - DEBUG - https://0ab3005503e57f8080a894b700f40080.web-security-academy.net:443 "GET /login HTTP/1.1" 504 197
+2024-08-29 23:09:51,675 - INFO - Response Status Code: 504
+2024-08-29 23:09:51,676 - INFO - Response Content: <html><head><title>Server Error: Gateway Timeout</title></head><body><h1>Server Error: Gateway Timeout (0) connecting to 0ab3005503e57f8080a894b700f40080.web-security-academy.net</h1></body></html>
+2024-08-29 23:09:51,679 - INFO - Suggested Solution: Gateway Timeout - Check server status or try again later.
+2024-08-29 23:09:52,682 - INFO - Sending payload to URL: https://0ab3005503e57f8080a894b700f40080.web-security-academy.net/login
+2024-08-29 23:09:52,688 - DEBUG - Starting new HTTPS connection (1): 0ab3005503e57f8080a894b700f40080.web-security-academy.net:443
+2024-08-29 23:09:53,662 - DEBUG - https://0ab3005503e57f8080a894b700f40080.web-security-academy.net:443 "GET /login HTTP/1.1" 504 197
+2024-08-29 23:09:53,664 - INFO - Response Status Code: 504
+2024-08-29 23:09:53,665 - INFO - Response Content: <html><head><title>Server Error: Gateway Timeout</title></head><body><h1>Server Error: Gateway Timeout (0) connecting to 0ab3005503e57f8080a894b700f40080.web-security-academy.net</h1></body></html>
+2024-08-29 23:09:53,667 - INFO - Suggested Solution: Gateway Timeout - Check server status or try again later.
+2024-08-29 23:09:54,674 - INFO - Sending payload to URL: https://0ab3005503e57f8080a894b700f40080.web-security-academy.net/login
+2024-08-29 23:09:54,680 - DEBUG - Starting new HTTPS connection (1): 0ab3005503e57f8080a894b700f40080.web-security-academy.net:443
+2024-08-29 23:09:55,749 - DEBUG - https://0ab3005503e57f8080a894b700f40080.web-security-academy.net:443 "GET /login HTTP/1.1" 504 197
+2024-08-29 23:09:55,753 - INFO - Response Status Code: 504
+2024-08-29 23:09:55,755 - INFO - Response Content: <html><head><title>Server Error: Gateway Timeout</title></head><body><h1>Server Error: Gateway Timeout (0) connecting to 0ab3005503e57f8080a894b700f40080.web-security-academy.net</h1></body></html>
+2024-08-29 23:09:55,757 - INFO - Suggested Solution: Gateway Timeout - Check server status or try again later.
+2024-08-29 23:09:56,767 - INFO - Sending payload to URL: https://0ab3005503e57f8080a894b700f40080.web-security-academy.net/login
+2024-08-29 23:09:56,775 - DEBUG - Starting new HTTPS connection (1): 0ab3005503e57f8080a894b700f40080.web-security-academy.net:443
+2024-08-29 23:09:57,915 - DEBUG - https://0ab3005503e57f8080a894b700f40080.web-security-academy.net:443 "GET /login HTTP/1.1" 504 197
+2024-08-29 23:09:57,920 - INFO - Response Status Code: 504
+2024-08-29 23:09:57,923 - INFO - Response Content: <html><head><title>Server Error: Gateway Timeout</title></head><body><h1>Server Error: Gateway Timeout (0) connecting to 0ab3005503e57f8080a894b700f40080.web-security-academy.net</h1></body></html>
+2024-08-29 23:09:57,925 - INFO - Suggested Solution: Gateway Timeout - Check server status or try again later.
+2024-08-29 23:09:58,941 - INFO - Sending payload to URL: https://0ab3005503e57f8080a894b700f40080.web-security-academy.net/login
+2024-08-29 23:09:58,947 - DEBUG - Starting new HTTPS connection (1): 0ab3005503e57f8080a894b700f40080.web-security-academy.net:443
+2024-08-29 23:10:00,028 - DEBUG - https://0ab3005503e57f8080a894b700f40080.web-security-academy.net:443 "GET /login HTTP/1.1" 504 197
+2024-08-29 23:10:00,032 - INFO - Response Status Code: 504
+2024-08-29 23:10:00,033 - INFO - Response Content: <html><head><title>Server Error: Gateway Timeout</title></head><body><h1>Server Error: Gateway Timeout (0) connecting to 0ab3005503e57f8080a894b700f40080.web-security-academy.net</h1></body></html>
+2024-08-29 23:10:00,036 - INFO - Suggested Solution: Gateway Timeout - Check server status or try again later.
+2024-08-29 23:10:01,042 - INFO - Sending payload to URL: https://0ab3005503e57f8080a894b700f40080.web-security-academy.net/login
+2024-08-29 23:10:01,054 - DEBUG - Starting new HTTPS connection (1): 0ab3005503e57f8080a894b700f40080.web-security-academy.net:443
+2024-08-29 23:10:02,033 - DEBUG - https://0ab3005503e57f8080a894b700f40080.web-security-academy.net:443 "GET /login HTTP/1.1" 504 197
+2024-08-29 23:10:02,039 - INFO - Response Status Code: 504
+2024-08-29 23:10:02,041 - INFO - Response Content: <html><head><title>Server Error: Gateway Timeout</title></head><body><h1>Server Error: Gateway Timeout (0) connecting to 0ab3005503e57f8080a894b700f40080.web-security-academy.net</h1></body></html>
+2024-08-29 23:10:02,042 - INFO - Suggested Solution: Gateway Timeout - Check server status or try again later.
+2024-08-29 23:10:03,052 - INFO - Sending payload to URL: https://0ab3005503e57f8080a894b700f40080.web-security-academy.net/login
+2024-08-29 23:10:03,058 - DEBUG - Starting new HTTPS connection (1): 0ab3005503e57f8080a894b700f40080.web-security-academy.net:443
+2024-08-29 23:10:04,139 - DEBUG - https://0ab3005503e57f8080a894b700f40080.web-security-academy.net:443 "GET /login HTTP/1.1" 504 197
+2024-08-29 23:10:04,144 - INFO - Response Status Code: 504
+2024-08-29 23:10:04,145 - INFO - Response Content: <html><head><title>Server Error: Gateway Timeout</title></head><body><h1>Server Error: Gateway Timeout (0) connecting to 0ab3005503e57f8080a894b700f40080.web-security-academy.net</h1></body></html>
+2024-08-29 23:10:04,146 - INFO - Suggested Solution: Gateway Timeout - Check server status or try again later.
+2024-08-29 23:10:05,160 - INFO - Sending payload to URL: https://0ab3005503e57f8080a894b700f40080.web-security-academy.net/login
+2024-08-29 23:10:05,168 - DEBUG - Starting new HTTPS connection (1): 0ab3005503e57f8080a894b700f40080.web-security-academy.net:443
+2024-08-29 23:10:06,234 - DEBUG - https://0ab3005503e57f8080a894b700f40080.web-security-academy.net:443 "GET /login HTTP/1.1" 504 197
+2024-08-29 23:10:06,239 - INFO - Response Status Code: 504
+2024-08-29 23:10:06,240 - INFO - Response Content: <html><head><title>Server Error: Gateway Timeout</title></head><body><h1>Server Error: Gateway Timeout (0) connecting to 0ab3005503e57f8080a894b700f40080.web-security-academy.net</h1></body></html>
+2024-08-29 23:10:06,241 - INFO - Suggested Solution: Gateway Timeout - Check server status or try again later.
+2024-08-29 23:10:07,252 - INFO - Sending payload to URL: https://0ab3005503e57f8080a894b700f40080.web-security-academy.net/login
+2024-08-29 23:10:07,259 - DEBUG - Starting new HTTPS connection (1): 0ab3005503e57f8080a894b700f40080.web-security-academy.net:443
+2024-08-29 23:10:08,418 - DEBUG - https://0ab3005503e57f8080a894b700f40080.web-security-academy.net:443 "GET /login HTTP/1.1" 504 197
+2024-08-29 23:10:08,422 - INFO - Response Status Code: 504
+2024-08-29 23:10:08,423 - INFO - Response Content: <html><head><title>Server Error: Gateway Timeout</title></head><body><h1>Server Error: Gateway Timeout (0) connecting to 0ab3005503e57f8080a894b700f40080.web-security-academy.net</h1></body></html>
+2024-08-29 23:10:08,423 - INFO - Suggested Solution: Gateway Timeout - Check server status or try again later.
+2024-08-29 23:10:09,432 - INFO - Sending payload to URL: https://0ab3005503e57f8080a894b700f40080.web-security-academy.net/login
+2024-08-29 23:10:09,438 - DEBUG - Starting new HTTPS connection (1): 0ab3005503e57f8080a894b700f40080.web-security-academy.net:443
+2024-08-29 23:10:10,531 - DEBUG - https://0ab3005503e57f8080a894b700f40080.web-security-academy.net:443 "GET /login HTTP/1.1" 504 197
+2024-08-29 23:10:10,535 - INFO - Response Status Code: 504
+2024-08-29 23:10:10,537 - INFO - Response Content: <html><head><title>Server Error: Gateway Timeout</title></head><body><h1>Server Error: Gateway Timeout (0) connecting to 0ab3005503e57f8080a894b700f40080.web-security-academy.net</h1></body></html>
+2024-08-29 23:10:10,539 - INFO - Suggested Solution: Gateway Timeout - Check server status or try again later.
+2024-08-29 23:10:11,545 - INFO - Sending payload to URL: https://0ab3005503e57f8080a894b700f40080.web-security-academy.net/login
+2024-08-29 23:10:11,554 - DEBUG - Starting new HTTPS connection (1): 0ab3005503e57f8080a894b700f40080.web-security-academy.net:443
+2024-08-29 23:10:12,673 - DEBUG - https://0ab3005503e57f8080a894b700f40080.web-security-academy.net:443 "GET /login HTTP/1.1" 504 197
+2024-08-29 23:10:12,679 - INFO - Response Status Code: 504
+2024-08-29 23:10:12,679 - INFO - Response Content: <html><head><title>Server Error: Gateway Timeout</title></head><body><h1>Server Error: Gateway Timeout (0) connecting to 0ab3005503e57f8080a894b700f40080.web-security-academy.net</h1></body></html>
+2024-08-29 23:10:12,680 - INFO - Suggested Solution: Gateway Timeout - Check server status or try again later.
+2024-08-29 23:10:13,685 - INFO - Sending payload to URL: https://0ab3005503e57f8080a894b700f40080.web-security-academy.net/login
+2024-08-29 23:10:13,692 - DEBUG - Starting new HTTPS connection (1): 0ab3005503e57f8080a894b700f40080.web-security-academy.net:443
+2024-08-29 23:10:14,767 - DEBUG - https://0ab3005503e57f8080a894b700f40080.web-security-academy.net:443 "GET /login HTTP/1.1" 504 197
+2024-08-29 23:10:14,771 - INFO - Response Status Code: 504
+2024-08-29 23:10:14,772 - INFO - Response Content: <html><head><title>Server Error: Gateway Timeout</title></head><body><h1>Server Error: Gateway Timeout (0) connecting to 0ab3005503e57f8080a894b700f40080.web-security-academy.net</h1></body></html>
+2024-08-29 23:10:14,776 - INFO - Suggested Solution: Gateway Timeout - Check server status or try again later.
+2024-08-29 23:10:15,781 - INFO - Sending payload to URL: https://0ab3005503e57f8080a894b700f40080.web-security-academy.net/login
+2024-08-29 23:10:15,790 - DEBUG - Starting new HTTPS connection (1): 0ab3005503e57f8080a894b700f40080.web-security-academy.net:443
+2024-08-29 23:10:16,747 - DEBUG - https://0ab3005503e57f8080a894b700f40080.web-security-academy.net:443 "GET /login HTTP/1.1" 504 197
+2024-08-29 23:10:16,751 - INFO - Response Status Code: 504
+2024-08-29 23:10:16,753 - INFO - Response Content: <html><head><title>Server Error: Gateway Timeout</title></head><body><h1>Server Error: Gateway Timeout (0) connecting to 0ab3005503e57f8080a894b700f40080.web-security-academy.net</h1></body></html>
+2024-08-29 23:10:16,755 - INFO - Suggested Solution: Gateway Timeout - Check server status or try again later.
+2024-08-29 23:10:17,765 - INFO - Sending payload to URL: https://0ab3005503e57f8080a894b700f40080.web-security-academy.net/login
+2024-08-29 23:10:17,775 - DEBUG - Starting new HTTPS connection (1): 0ab3005503e57f8080a894b700f40080.web-security-academy.net:443
+2024-08-29 23:10:18,877 - DEBUG - https://0ab3005503e57f8080a894b700f40080.web-security-academy.net:443 "GET /login HTTP/1.1" 504 197
+2024-08-29 23:10:18,880 - INFO - Response Status Code: 504
+2024-08-29 23:10:18,882 - INFO - Response Content: <html><head><title>Server Error: Gateway Timeout</title></head><body><h1>Server Error: Gateway Timeout (0) connecting to 0ab3005503e57f8080a894b700f40080.web-security-academy.net</h1></body></html>
+2024-08-29 23:10:18,883 - INFO - Suggested Solution: Gateway Timeout - Check server status or try again later.
+2024-08-29 23:10:19,890 - INFO - Sending payload to URL: https://0ab3005503e57f8080a894b700f40080.web-security-academy.net/login
+2024-08-29 23:10:19,898 - DEBUG - Starting new HTTPS connection (1): 0ab3005503e57f8080a894b700f40080.web-security-academy.net:443
+2024-08-29 23:10:20,848 - DEBUG - https://0ab3005503e57f8080a894b700f40080.web-security-academy.net:443 "GET /login HTTP/1.1" 504 197
+2024-08-29 23:10:20,851 - INFO - Response Status Code: 504
+2024-08-29 23:10:20,854 - INFO - Response Content: <html><head><title>Server Error: Gateway Timeout</title></head><body><h1>Server Error: Gateway Timeout (0) connecting to 0ab3005503e57f8080a894b700f40080.web-security-academy.net</h1></body></html>
+2024-08-29 23:10:20,856 - INFO - Suggested Solution: Gateway Timeout - Check server status or try again later.
+2024-08-29 23:10:21,862 - INFO - Sending payload to URL: https://0ab3005503e57f8080a894b700f40080.web-security-academy.net/login
+2024-08-29 23:10:21,872 - DEBUG - Starting new HTTPS connection (1): 0ab3005503e57f8080a894b700f40080.web-security-academy.net:443
+2024-08-29 23:10:22,803 - DEBUG - https://0ab3005503e57f8080a894b700f40080.web-security-academy.net:443 "GET /login HTTP/1.1" 504 197
+2024-08-29 23:10:22,807 - INFO - Response Status Code: 504
+2024-08-29 23:10:22,808 - INFO - Response Content: <html><head><title>Server Error: Gateway Timeout</title></head><body><h1>Server Error: Gateway Timeout (0) connecting to 0ab3005503e57f8080a894b700f40080.web-security-academy.net</h1></body></html>
+2024-08-29 23:10:22,808 - INFO - Suggested Solution: Gateway Timeout - Check server status or try again later.
+2024-08-29 23:10:23,818 - INFO - Sending payload to URL: https://0ab3005503e57f8080a894b700f40080.web-security-academy.net/login
+2024-08-29 23:10:23,825 - DEBUG - Starting new HTTPS connection (1): 0ab3005503e57f8080a894b700f40080.web-security-academy.net:443
+2024-08-29 23:10:24,913 - DEBUG - https://0ab3005503e57f8080a894b700f40080.web-security-academy.net:443 "GET /login HTTP/1.1" 504 197
+2024-08-29 23:10:24,918 - INFO - Response Status Code: 504
+2024-08-29 23:10:24,920 - INFO - Response Content: <html><head><title>Server Error: Gateway Timeout</title></head><body><h1>Server Error: Gateway Timeout (0) connecting to 0ab3005503e57f8080a894b700f40080.web-security-academy.net</h1></body></html>
+2024-08-29 23:10:24,922 - INFO - Suggested Solution: Gateway Timeout - Check server status or try again later.
+2024-08-29 23:10:25,930 - INFO - Sending payload to URL: https://0ab3005503e57f8080a894b700f40080.web-security-academy.net/login
+2024-08-29 23:10:25,937 - DEBUG - Starting new HTTPS connection (1): 0ab3005503e57f8080a894b700f40080.web-security-academy.net:443
+2024-08-29 23:10:27,005 - DEBUG - https://0ab3005503e57f8080a894b700f40080.web-security-academy.net:443 "GET /login HTTP/1.1" 504 197
+2024-08-29 23:10:27,011 - INFO - Response Status Code: 504
+2024-08-29 23:10:27,012 - INFO - Response Content: <html><head><title>Server Error: Gateway Timeout</title></head><body><h1>Server Error: Gateway Timeout (0) connecting to 0ab3005503e57f8080a894b700f40080.web-security-academy.net</h1></body></html>
+2024-08-29 23:10:27,014 - INFO - Suggested Solution: Gateway Timeout - Check server status or try again later.
+2024-08-29 23:10:28,026 - INFO - Sending payload to URL: https://0ab3005503e57f8080a894b700f40080.web-security-academy.net/login
+2024-08-29 23:10:28,032 - DEBUG - Starting new HTTPS connection (1): 0ab3005503e57f8080a894b700f40080.web-security-academy.net:443
+2024-08-29 23:10:28,953 - DEBUG - https://0ab3005503e57f8080a894b700f40080.web-security-academy.net:443 "GET /login HTTP/1.1" 504 197
+2024-08-29 23:10:28,958 - INFO - Response Status Code: 504
+2024-08-29 23:10:28,959 - INFO - Response Content: <html><head><title>Server Error: Gateway Timeout</title></head><body><h1>Server Error: Gateway Timeout (0) connecting to 0ab3005503e57f8080a894b700f40080.web-security-academy.net</h1></body></html>
+2024-08-29 23:10:28,960 - INFO - Suggested Solution: Gateway Timeout - Check server status or try again later.
+2024-08-29 23:10:29,976 - INFO - Sending payload to URL: https://0ab3005503e57f8080a894b700f40080.web-security-academy.net/login
+2024-08-29 23:10:29,985 - DEBUG - Starting new HTTPS connection (1): 0ab3005503e57f8080a894b700f40080.web-security-academy.net:443
+2024-08-29 23:10:30,941 - DEBUG - https://0ab3005503e57f8080a894b700f40080.web-security-academy.net:443 "GET /login HTTP/1.1" 504 197
+2024-08-29 23:10:30,946 - INFO - Response Status Code: 504
+2024-08-29 23:10:30,948 - INFO - Response Content: <html><head><title>Server Error: Gateway Timeout</title></head><body><h1>Server Error: Gateway Timeout (0) connecting to 0ab3005503e57f8080a894b700f40080.web-security-academy.net</h1></body></html>
+2024-08-29 23:10:30,949 - INFO - Suggested Solution: Gateway Timeout - Check server status or try again later.
+2024-08-29 23:10:31,964 - INFO - Sending payload to URL: https://0ab3005503e57f8080a894b700f40080.web-security-academy.net/login
+2024-08-29 23:10:31,970 - DEBUG - Starting new HTTPS connection (1): 0ab3005503e57f8080a894b700f40080.web-security-academy.net:443
+2024-08-29 23:10:33,167 - DEBUG - https://0ab3005503e57f8080a894b700f40080.web-security-academy.net:443 "GET /login HTTP/1.1" 504 197
+2024-08-29 23:10:33,169 - INFO - Response Status Code: 504
+2024-08-29 23:10:33,171 - INFO - Response Content: <html><head><title>Server Error: Gateway Timeout</title></head><body><h1>Server Error: Gateway Timeout (0) connecting to 0ab3005503e57f8080a894b700f40080.web-security-academy.net</h1></body></html>
+2024-08-29 23:10:33,172 - INFO - Suggested Solution: Gateway Timeout - Check server status or try again later.
+2024-08-29 23:10:34,181 - INFO - Sending payload to URL: https://0ab3005503e57f8080a894b700f40080.web-security-academy.net/login
+2024-08-29 23:10:34,188 - DEBUG - Starting new HTTPS connection (1): 0ab3005503e57f8080a894b700f40080.web-security-academy.net:443
+2024-08-29 23:10:35,275 - DEBUG - https://0ab3005503e57f8080a894b700f40080.web-security-academy.net:443 "GET /login HTTP/1.1" 504 197
+2024-08-29 23:10:35,279 - INFO - Response Status Code: 504
+2024-08-29 23:10:35,280 - INFO - Response Content: <html><head><title>Server Error: Gateway Timeout</title></head><body><h1>Server Error: Gateway Timeout (0) connecting to 0ab3005503e57f8080a894b700f40080.web-security-academy.net</h1></body></html>
+2024-08-29 23:10:35,282 - INFO - Suggested Solution: Gateway Timeout - Check server status or try again later.
+2024-08-29 23:10:36,294 - INFO - Sending payload to URL: https://0ab3005503e57f8080a894b700f40080.web-security-academy.net/login
+2024-08-29 23:10:36,303 - DEBUG - Starting new HTTPS connection (1): 0ab3005503e57f8080a894b700f40080.web-security-academy.net:443
+2024-08-29 23:10:37,285 - DEBUG - https://0ab3005503e57f8080a894b700f40080.web-security-academy.net:443 "GET /login HTTP/1.1" 504 197
+2024-08-29 23:10:37,291 - INFO - Response Status Code: 504
+2024-08-29 23:10:37,292 - INFO - Response Content: <html><head><title>Server Error: Gateway Timeout</title></head><body><h1>Server Error: Gateway Timeout (0) connecting to 0ab3005503e57f8080a894b700f40080.web-security-academy.net</h1></body></html>
+2024-08-29 23:10:37,294 - INFO - Suggested Solution: Gateway Timeout - Check server status or try again later.
+2024-08-29 23:10:38,298 - INFO - Sending payload to URL: https://0ab3005503e57f8080a894b700f40080.web-security-academy.net/login
+2024-08-29 23:10:38,304 - DEBUG - Starting new HTTPS connection (1): 0ab3005503e57f8080a894b700f40080.web-security-academy.net:443
+2024-08-29 23:10:39,312 - DEBUG - https://0ab3005503e57f8080a894b700f40080.web-security-academy.net:443 "GET /login HTTP/1.1" 504 197
+2024-08-29 23:10:39,316 - INFO - Response Status Code: 504
+2024-08-29 23:10:39,317 - INFO - Response Content: <html><head><title>Server Error: Gateway Timeout</title></head><body><h1>Server Error: Gateway Timeout (0) connecting to 0ab3005503e57f8080a894b700f40080.web-security-academy.net</h1></body></html>
+2024-08-29 23:10:39,318 - INFO - Suggested Solution: Gateway Timeout - Check server status or try again later.
+2024-08-29 23:10:40,325 - INFO - Sending payload to URL: https://0ab3005503e57f8080a894b700f40080.web-security-academy.net/login
+2024-08-29 23:10:40,331 - DEBUG - Starting new HTTPS connection (1): 0ab3005503e57f8080a894b700f40080.web-security-academy.net:443
+2024-08-29 23:10:41,433 - DEBUG - https://0ab3005503e57f8080a894b700f40080.web-security-academy.net:443 "GET /login HTTP/1.1" 504 197
+2024-08-29 23:10:41,437 - INFO - Response Status Code: 504
+2024-08-29 23:10:41,439 - INFO - Response Content: <html><head><title>Server Error: Gateway Timeout</title></head><body><h1>Server Error: Gateway Timeout (0) connecting to 0ab3005503e57f8080a894b700f40080.web-security-academy.net</h1></body></html>
+2024-08-29 23:10:41,440 - INFO - Suggested Solution: Gateway Timeout - Check server status or try again later.
+2024-08-29 23:10:42,451 - INFO - Sending payload to URL: https://0ab3005503e57f8080a894b700f40080.web-security-academy.net/login
+2024-08-29 23:10:42,458 - DEBUG - Starting new HTTPS connection (1): 0ab3005503e57f8080a894b700f40080.web-security-academy.net:443
+2024-08-29 23:10:43,548 - DEBUG - https://0ab3005503e57f8080a894b700f40080.web-security-academy.net:443 "GET /login HTTP/1.1" 504 197
+2024-08-29 23:10:43,554 - INFO - Response Status Code: 504
+2024-08-29 23:10:43,557 - INFO - Response Content: <html><head><title>Server Error: Gateway Timeout</title></head><body><h1>Server Error: Gateway Timeout (0) connecting to 0ab3005503e57f8080a894b700f40080.web-security-academy.net</h1></body></html>
+2024-08-29 23:10:43,557 - INFO - Suggested Solution: Gateway Timeout - Check server status or try again later.
+2024-08-29 23:10:44,566 - INFO - Sending payload to URL: https://0ab3005503e57f8080a894b700f40080.web-security-academy.net/login
+2024-08-29 23:10:44,573 - DEBUG - Starting new HTTPS connection (1): 0ab3005503e57f8080a894b700f40080.web-security-academy.net:443
+2024-08-29 23:10:45,510 - DEBUG - https://0ab3005503e57f8080a894b700f40080.web-security-academy.net:443 "GET /login HTTP/1.1" 504 197
+2024-08-29 23:10:45,514 - INFO - Response Status Code: 504
+2024-08-29 23:10:45,515 - INFO - Response Content: <html><head><title>Server Error: Gateway Timeout</title></head><body><h1>Server Error: Gateway Timeout (0) connecting to 0ab3005503e57f8080a894b700f40080.web-security-academy.net</h1></body></html>
+2024-08-29 23:10:45,518 - INFO - Suggested Solution: Gateway Timeout - Check server status or try again later.
+2024-08-29 23:10:46,524 - INFO - Sending payload to URL: https://0ab3005503e57f8080a894b700f40080.web-security-academy.net/login
+2024-08-29 23:10:46,531 - DEBUG - Starting new HTTPS connection (1): 0ab3005503e57f8080a894b700f40080.web-security-academy.net:443
+2024-08-29 23:10:47,641 - DEBUG - https://0ab3005503e57f8080a894b700f40080.web-security-academy.net:443 "GET /login HTTP/1.1" 504 197
+2024-08-29 23:10:47,645 - INFO - Response Status Code: 504
+2024-08-29 23:10:47,647 - INFO - Response Content: <html><head><title>Server Error: Gateway Timeout</title></head><body><h1>Server Error: Gateway Timeout (0) connecting to 0ab3005503e57f8080a894b700f40080.web-security-academy.net</h1></body></html>
+2024-08-29 23:10:47,648 - INFO - Suggested Solution: Gateway Timeout - Check server status or try again later.
+2024-08-29 23:10:48,653 - INFO - Sending payload to URL: https://0ab3005503e57f8080a894b700f40080.web-security-academy.net/login
+2024-08-29 23:10:48,658 - DEBUG - Starting new HTTPS connection (1): 0ab3005503e57f8080a894b700f40080.web-security-academy.net:443
+2024-08-29 23:10:49,751 - DEBUG - https://0ab3005503e57f8080a894b700f40080.web-security-academy.net:443 "GET /login HTTP/1.1" 504 197
+2024-08-29 23:10:49,756 - INFO - Response Status Code: 504
+2024-08-29 23:10:49,757 - INFO - Response Content: <html><head><title>Server Error: Gateway Timeout</title></head><body><h1>Server Error: Gateway Timeout (0) connecting to 0ab3005503e57f8080a894b700f40080.web-security-academy.net</h1></body></html>
+2024-08-29 23:10:49,758 - INFO - Suggested Solution: Gateway Timeout - Check server status or try again later.
+2024-08-29 23:10:50,765 - INFO - Sending payload to URL: https://0ab3005503e57f8080a894b700f40080.web-security-academy.net/login
+2024-08-29 23:10:50,771 - DEBUG - Starting new HTTPS connection (1): 0ab3005503e57f8080a894b700f40080.web-security-academy.net:443
+2024-08-29 23:10:51,847 - DEBUG - https://0ab3005503e57f8080a894b700f40080.web-security-academy.net:443 "GET /login HTTP/1.1" 504 197
+2024-08-29 23:10:51,851 - INFO - Response Status Code: 504
+2024-08-29 23:10:51,852 - INFO - Response Content: <html><head><title>Server Error: Gateway Timeout</title></head><body><h1>Server Error: Gateway Timeout (0) connecting to 0ab3005503e57f8080a894b700f40080.web-security-academy.net</h1></body></html>
+2024-08-29 23:10:51,853 - INFO - Suggested Solution: Gateway Timeout - Check server status or try again later.
+2024-08-29 23:10:52,868 - INFO - Sending payload to URL: https://0ab3005503e57f8080a894b700f40080.web-security-academy.net/login
+2024-08-29 23:10:52,876 - DEBUG - Starting new HTTPS connection (1): 0ab3005503e57f8080a894b700f40080.web-security-academy.net:443
+2024-08-29 23:10:53,817 - DEBUG - https://0ab3005503e57f8080a894b700f40080.web-security-academy.net:443 "GET /login HTTP/1.1" 504 197
+2024-08-29 23:10:53,820 - INFO - Response Status Code: 504
+2024-08-29 23:10:53,822 - INFO - Response Content: <html><head><title>Server Error: Gateway Timeout</title></head><body><h1>Server Error: Gateway Timeout (0) connecting to 0ab3005503e57f8080a894b700f40080.web-security-academy.net</h1></body></html>
+2024-08-29 23:10:53,823 - INFO - Suggested Solution: Gateway Timeout - Check server status or try again later.
+2024-08-29 23:10:54,835 - INFO - Sending payload to URL: https://0ab3005503e57f8080a894b700f40080.web-security-academy.net/login
+2024-08-29 23:10:54,844 - DEBUG - Starting new HTTPS connection (1): 0ab3005503e57f8080a894b700f40080.web-security-academy.net:443
+2024-08-29 23:10:55,824 - INFO - Sending payload to URL: https://0ab3005503e57f8080a894b700f40080.web-security-academy.net/login
+2024-08-29 23:10:55,834 - DEBUG - Starting new HTTPS connection (1): 0ab3005503e57f8080a894b700f40080.web-security-academy.net:443
+2024-08-29 23:13:15,701 - INFO - Loaded 95 payloads from SQL-Time.txt.
+2024-08-29 23:13:50,962 - INFO - Sending payload: # from wapiti
+2024-08-29 23:14:00,614 - INFO - Sending payload: # from wapiti
+2024-08-29 23:14:09,659 - INFO - Sending payload: # from wapiti
+2024-08-29 23:14:11,056 - INFO - Sending payload: # from wapiti
+2024-08-29 23:14:12,037 - INFO - Sending payload: # from wapiti
+2024-08-29 23:15:46,746 - INFO - Loaded 95 payloads from SQL-Time.txt.
+2024-08-29 23:15:49,153 - INFO - Sending payload: # from wapiti
+2024-08-29 23:15:53,506 - INFO - Error processing request file: Only POST requests are supported.
+2024-08-29 23:16:01,128 - INFO - Sending payload: # from wapiti
+2024-08-29 23:16:07,586 - INFO - Sending payload with POST data: # from wapiti
+2024-08-29 23:16:11,475 - INFO - Sending payload to URL: https://0ab3005503e57f8080a894b700f40080.web-security-academy.net/login
+2024-08-29 23:16:11,486 - DEBUG - Starting new HTTPS connection (1): 0ab3005503e57f8080a894b700f40080.web-security-academy.net:443
+2024-08-29 23:16:12,856 - DEBUG - https://0ab3005503e57f8080a894b700f40080.web-security-academy.net:443 "GET /login HTTP/1.1" 504 197
+2024-08-29 23:16:12,860 - INFO - Response Status Code: 504
+2024-08-29 23:16:12,862 - INFO - Response Content: <html><head><title>Server Error: Gateway Timeout</title></head><body><h1>Server Error: Gateway Timeout (0) connecting to 0ab3005503e57f8080a894b700f40080.web-security-academy.net</h1></body></html>
+2024-08-29 23:16:12,867 - INFO - Suggested Solution: Gateway Timeout - Check server status or try again later.
+2024-08-29 23:16:13,879 - INFO - Sending payload to URL: https://0ab3005503e57f8080a894b700f40080.web-security-academy.net/login
+2024-08-29 23:16:13,885 - DEBUG - Starting new HTTPS connection (1): 0ab3005503e57f8080a894b700f40080.web-security-academy.net:443
+2024-08-29 23:16:14,893 - DEBUG - https://0ab3005503e57f8080a894b700f40080.web-security-academy.net:443 "GET /login HTTP/1.1" 504 197
+2024-08-29 23:16:14,897 - INFO - Response Status Code: 504
+2024-08-29 23:16:14,898 - INFO - Response Content: <html><head><title>Server Error: Gateway Timeout</title></head><body><h1>Server Error: Gateway Timeout (0) connecting to 0ab3005503e57f8080a894b700f40080.web-security-academy.net</h1></body></html>
+2024-08-29 23:16:14,903 - INFO - Suggested Solution: Gateway Timeout - Check server status or try again later.
+2024-08-29 23:16:15,914 - INFO - Sending payload to URL: https://0ab3005503e57f8080a894b700f40080.web-security-academy.net/login
+2024-08-29 23:16:15,921 - DEBUG - Starting new HTTPS connection (1): 0ab3005503e57f8080a894b700f40080.web-security-academy.net:443
+2024-08-29 23:16:17,092 - DEBUG - https://0ab3005503e57f8080a894b700f40080.web-security-academy.net:443 "GET /login HTTP/1.1" 504 197
+2024-08-29 23:16:17,095 - INFO - Response Status Code: 504
+2024-08-29 23:16:17,097 - INFO - Response Content: <html><head><title>Server Error: Gateway Timeout</title></head><body><h1>Server Error: Gateway Timeout (0) connecting to 0ab3005503e57f8080a894b700f40080.web-security-academy.net</h1></body></html>
+2024-08-29 23:16:17,098 - INFO - Suggested Solution: Gateway Timeout - Check server status or try again later.
+2024-08-29 23:16:18,114 - INFO - Sending payload to URL: https://0ab3005503e57f8080a894b700f40080.web-security-academy.net/login
+2024-08-29 23:16:18,119 - DEBUG - Starting new HTTPS connection (1): 0ab3005503e57f8080a894b700f40080.web-security-academy.net:443
+2024-08-29 23:16:19,337 - DEBUG - https://0ab3005503e57f8080a894b700f40080.web-security-academy.net:443 "GET /login HTTP/1.1" 504 197
+2024-08-29 23:16:19,340 - INFO - Response Status Code: 504
+2024-08-29 23:16:19,342 - INFO - Response Content: <html><head><title>Server Error: Gateway Timeout</title></head><body><h1>Server Error: Gateway Timeout (0) connecting to 0ab3005503e57f8080a894b700f40080.web-security-academy.net</h1></body></html>
+2024-08-29 23:16:19,347 - INFO - Suggested Solution: Gateway Timeout - Check server status or try again later.
+2024-08-29 23:16:20,352 - INFO - Sending payload to URL: https://0ab3005503e57f8080a894b700f40080.web-security-academy.net/login
+2024-08-29 23:16:20,358 - DEBUG - Starting new HTTPS connection (1): 0ab3005503e57f8080a894b700f40080.web-security-academy.net:443
+2024-08-29 23:16:21,514 - DEBUG - https://0ab3005503e57f8080a894b700f40080.web-security-academy.net:443 "GET /login HTTP/1.1" 504 197
+2024-08-29 23:16:21,517 - INFO - Response Status Code: 504
+2024-08-29 23:16:21,519 - INFO - Response Content: <html><head><title>Server Error: Gateway Timeout</title></head><body><h1>Server Error: Gateway Timeout (0) connecting to 0ab3005503e57f8080a894b700f40080.web-security-academy.net</h1></body></html>
+2024-08-29 23:16:21,524 - INFO - Suggested Solution: Gateway Timeout - Check server status or try again later.
+2024-08-29 23:16:22,539 - INFO - Sending payload to URL: https://0ab3005503e57f8080a894b700f40080.web-security-academy.net/login
+2024-08-29 23:16:22,545 - DEBUG - Starting new HTTPS connection (1): 0ab3005503e57f8080a894b700f40080.web-security-academy.net:443
+2024-08-29 23:16:23,571 - DEBUG - https://0ab3005503e57f8080a894b700f40080.web-security-academy.net:443 "GET /login HTTP/1.1" 504 197
+2024-08-29 23:16:23,577 - INFO - Response Status Code: 504
+2024-08-29 23:16:23,579 - INFO - Response Content: <html><head><title>Server Error: Gateway Timeout</title></head><body><h1>Server Error: Gateway Timeout (0) connecting to 0ab3005503e57f8080a894b700f40080.web-security-academy.net</h1></body></html>
+2024-08-29 23:16:23,584 - INFO - Suggested Solution: Gateway Timeout - Check server status or try again later.
+2024-08-29 23:16:24,599 - INFO - Sending payload to URL: https://0ab3005503e57f8080a894b700f40080.web-security-academy.net/login
+2024-08-29 23:16:24,606 - DEBUG - Starting new HTTPS connection (1): 0ab3005503e57f8080a894b700f40080.web-security-academy.net:443
+2024-08-29 23:16:25,761 - DEBUG - https://0ab3005503e57f8080a894b700f40080.web-security-academy.net:443 "GET /login HTTP/1.1" 504 197
+2024-08-29 23:16:25,764 - INFO - Response Status Code: 504
+2024-08-29 23:16:25,765 - INFO - Response Content: <html><head><title>Server Error: Gateway Timeout</title></head><body><h1>Server Error: Gateway Timeout (0) connecting to 0ab3005503e57f8080a894b700f40080.web-security-academy.net</h1></body></html>
+2024-08-29 23:16:25,770 - INFO - Suggested Solution: Gateway Timeout - Check server status or try again later.
+2024-08-29 23:16:26,787 - INFO - Sending payload to URL: https://0ab3005503e57f8080a894b700f40080.web-security-academy.net/login
+2024-08-29 23:16:26,794 - DEBUG - Starting new HTTPS connection (1): 0ab3005503e57f8080a894b700f40080.web-security-academy.net:443
+2024-08-29 23:16:27,825 - DEBUG - https://0ab3005503e57f8080a894b700f40080.web-security-academy.net:443 "GET /login HTTP/1.1" 504 197
+2024-08-29 23:16:27,834 - INFO - Response Status Code: 504
+2024-08-29 23:16:27,844 - INFO - Response Content: <html><head><title>Server Error: Gateway Timeout</title></head><body><h1>Server Error: Gateway Timeout (0) connecting to 0ab3005503e57f8080a894b700f40080.web-security-academy.net</h1></body></html>
+2024-08-29 23:16:27,847 - INFO - Suggested Solution: Gateway Timeout - Check server status or try again later.
+2024-08-29 23:16:28,865 - INFO - Sending payload to URL: https://0ab3005503e57f8080a894b700f40080.web-security-academy.net/login
+2024-08-29 23:16:28,872 - DEBUG - Starting new HTTPS connection (1): 0ab3005503e57f8080a894b700f40080.web-security-academy.net:443
+2024-08-29 23:16:30,202 - DEBUG - https://0ab3005503e57f8080a894b700f40080.web-security-academy.net:443 "GET /login HTTP/1.1" 504 197
+2024-08-29 23:16:30,206 - INFO - Response Status Code: 504
+2024-08-29 23:16:30,208 - INFO - Response Content: <html><head><title>Server Error: Gateway Timeout</title></head><body><h1>Server Error: Gateway Timeout (0) connecting to 0ab3005503e57f8080a894b700f40080.web-security-academy.net</h1></body></html>
+2024-08-29 23:16:30,214 - INFO - Suggested Solution: Gateway Timeout - Check server status or try again later.
+2024-08-29 23:16:31,228 - INFO - Sending payload to URL: https://0ab3005503e57f8080a894b700f40080.web-security-academy.net/login
+2024-08-29 23:16:31,237 - DEBUG - Starting new HTTPS connection (1): 0ab3005503e57f8080a894b700f40080.web-security-academy.net:443
+2024-08-29 23:16:32,217 - DEBUG - https://0ab3005503e57f8080a894b700f40080.web-security-academy.net:443 "GET /login HTTP/1.1" 504 197
+2024-08-29 23:16:32,221 - INFO - Response Status Code: 504
+2024-08-29 23:16:32,222 - INFO - Response Content: <html><head><title>Server Error: Gateway Timeout</title></head><body><h1>Server Error: Gateway Timeout (0) connecting to 0ab3005503e57f8080a894b700f40080.web-security-academy.net</h1></body></html>
+2024-08-29 23:16:32,227 - INFO - Suggested Solution: Gateway Timeout - Check server status or try again later.
+2024-08-29 23:16:33,250 - INFO - Sending payload to URL: https://0ab3005503e57f8080a894b700f40080.web-security-academy.net/login
+2024-08-29 23:16:33,256 - DEBUG - Starting new HTTPS connection (1): 0ab3005503e57f8080a894b700f40080.web-security-academy.net:443
+2024-08-29 23:16:34,178 - DEBUG - https://0ab3005503e57f8080a894b700f40080.web-security-academy.net:443 "GET /login HTTP/1.1" 504 197
+2024-08-29 23:16:34,183 - INFO - Response Status Code: 504
+2024-08-29 23:16:34,186 - INFO - Response Content: <html><head><title>Server Error: Gateway Timeout</title></head><body><h1>Server Error: Gateway Timeout (0) connecting to 0ab3005503e57f8080a894b700f40080.web-security-academy.net</h1></body></html>
+2024-08-29 23:16:34,188 - INFO - Suggested Solution: Gateway Timeout - Check server status or try again later.
+2024-08-29 23:16:35,213 - INFO - Sending payload to URL: https://0ab3005503e57f8080a894b700f40080.web-security-academy.net/login
+2024-08-29 23:16:35,219 - DEBUG - Starting new HTTPS connection (1): 0ab3005503e57f8080a894b700f40080.web-security-academy.net:443
+2024-08-29 23:16:36,254 - DEBUG - https://0ab3005503e57f8080a894b700f40080.web-security-academy.net:443 "GET /login HTTP/1.1" 504 197
+2024-08-29 23:16:36,257 - INFO - Response Status Code: 504
+2024-08-29 23:16:36,258 - INFO - Response Content: <html><head><title>Server Error: Gateway Timeout</title></head><body><h1>Server Error: Gateway Timeout (0) connecting to 0ab3005503e57f8080a894b700f40080.web-security-academy.net</h1></body></html>
+2024-08-29 23:16:36,264 - INFO - Suggested Solution: Gateway Timeout - Check server status or try again later.
+2024-08-29 23:16:37,278 - INFO - Sending payload to URL: https://0ab3005503e57f8080a894b700f40080.web-security-academy.net/login
+2024-08-29 23:16:37,285 - DEBUG - Starting new HTTPS connection (1): 0ab3005503e57f8080a894b700f40080.web-security-academy.net:443
+2024-08-29 23:16:38,250 - DEBUG - https://0ab3005503e57f8080a894b700f40080.web-security-academy.net:443 "GET /login HTTP/1.1" 504 197
+2024-08-29 23:16:38,253 - INFO - Response Status Code: 504
+2024-08-29 23:16:38,255 - INFO - Response Content: <html><head><title>Server Error: Gateway Timeout</title></head><body><h1>Server Error: Gateway Timeout (0) connecting to 0ab3005503e57f8080a894b700f40080.web-security-academy.net</h1></body></html>
+2024-08-29 23:16:38,259 - INFO - Suggested Solution: Gateway Timeout - Check server status or try again later.
+2024-08-29 23:16:39,265 - INFO - Sending payload to URL: https://0ab3005503e57f8080a894b700f40080.web-security-academy.net/login
+2024-08-29 23:16:39,270 - DEBUG - Starting new HTTPS connection (1): 0ab3005503e57f8080a894b700f40080.web-security-academy.net:443
+2024-08-29 23:16:40,359 - DEBUG - https://0ab3005503e57f8080a894b700f40080.web-security-academy.net:443 "GET /login HTTP/1.1" 504 197
+2024-08-29 23:16:40,363 - INFO - Response Status Code: 504
+2024-08-29 23:16:40,365 - INFO - Response Content: <html><head><title>Server Error: Gateway Timeout</title></head><body><h1>Server Error: Gateway Timeout (0) connecting to 0ab3005503e57f8080a894b700f40080.web-security-academy.net</h1></body></html>
+2024-08-29 23:16:40,370 - INFO - Suggested Solution: Gateway Timeout - Check server status or try again later.
+2024-08-29 23:16:41,382 - INFO - Sending payload to URL: https://0ab3005503e57f8080a894b700f40080.web-security-academy.net/login
+2024-08-29 23:16:41,387 - DEBUG - Starting new HTTPS connection (1): 0ab3005503e57f8080a894b700f40080.web-security-academy.net:443
+2024-08-29 23:16:42,707 - DEBUG - https://0ab3005503e57f8080a894b700f40080.web-security-academy.net:443 "GET /login HTTP/1.1" 504 197
+2024-08-29 23:16:42,711 - INFO - Response Status Code: 504
+2024-08-29 23:16:42,712 - INFO - Response Content: <html><head><title>Server Error: Gateway Timeout</title></head><body><h1>Server Error: Gateway Timeout (0) connecting to 0ab3005503e57f8080a894b700f40080.web-security-academy.net</h1></body></html>
+2024-08-29 23:16:42,717 - INFO - Suggested Solution: Gateway Timeout - Check server status or try again later.
+2024-08-29 23:16:43,726 - INFO - Sending payload to URL: https://0ab3005503e57f8080a894b700f40080.web-security-academy.net/login
+2024-08-29 23:16:43,731 - DEBUG - Starting new HTTPS connection (1): 0ab3005503e57f8080a894b700f40080.web-security-academy.net:443
+2024-08-29 23:16:44,871 - DEBUG - https://0ab3005503e57f8080a894b700f40080.web-security-academy.net:443 "GET /login HTTP/1.1" 504 197
+2024-08-29 23:16:44,875 - INFO - Response Status Code: 504
+2024-08-29 23:16:44,878 - INFO - Response Content: <html><head><title>Server Error: Gateway Timeout</title></head><body><h1>Server Error: Gateway Timeout (0) connecting to 0ab3005503e57f8080a894b700f40080.web-security-academy.net</h1></body></html>
+2024-08-29 23:16:44,882 - INFO - Suggested Solution: Gateway Timeout - Check server status or try again later.
+2024-08-29 23:16:45,901 - INFO - Sending payload to URL: https://0ab3005503e57f8080a894b700f40080.web-security-academy.net/login
+2024-08-29 23:16:45,908 - DEBUG - Starting new HTTPS connection (1): 0ab3005503e57f8080a894b700f40080.web-security-academy.net:443
+2024-08-29 23:16:46,877 - DEBUG - https://0ab3005503e57f8080a894b700f40080.web-security-academy.net:443 "GET /login HTTP/1.1" 504 197
+2024-08-29 23:16:46,881 - INFO - Response Status Code: 504
+2024-08-29 23:16:46,881 - INFO - Response Content: <html><head><title>Server Error: Gateway Timeout</title></head><body><h1>Server Error: Gateway Timeout (0) connecting to 0ab3005503e57f8080a894b700f40080.web-security-academy.net</h1></body></html>
+2024-08-29 23:16:46,886 - INFO - Suggested Solution: Gateway Timeout - Check server status or try again later.
+2024-08-29 23:16:47,892 - INFO - Sending payload to URL: https://0ab3005503e57f8080a894b700f40080.web-security-academy.net/login
+2024-08-29 23:16:47,898 - DEBUG - Starting new HTTPS connection (1): 0ab3005503e57f8080a894b700f40080.web-security-academy.net:443
+2024-08-29 23:16:49,145 - DEBUG - https://0ab3005503e57f8080a894b700f40080.web-security-academy.net:443 "GET /login HTTP/1.1" 504 197
+2024-08-29 23:16:49,149 - INFO - Response Status Code: 504
+2024-08-29 23:16:49,150 - INFO - Response Content: <html><head><title>Server Error: Gateway Timeout</title></head><body><h1>Server Error: Gateway Timeout (0) connecting to 0ab3005503e57f8080a894b700f40080.web-security-academy.net</h1></body></html>
+2024-08-29 23:16:49,155 - INFO - Suggested Solution: Gateway Timeout - Check server status or try again later.
+2024-08-29 23:16:50,169 - INFO - Sending payload to URL: https://0ab3005503e57f8080a894b700f40080.web-security-academy.net/login
+2024-08-29 23:16:50,177 - DEBUG - Starting new HTTPS connection (1): 0ab3005503e57f8080a894b700f40080.web-security-academy.net:443
+2024-08-29 23:16:51,266 - DEBUG - https://0ab3005503e57f8080a894b700f40080.web-security-academy.net:443 "GET /login HTTP/1.1" 504 197
+2024-08-29 23:16:51,271 - INFO - Response Status Code: 504
+2024-08-29 23:16:51,272 - INFO - Response Content: <html><head><title>Server Error: Gateway Timeout</title></head><body><h1>Server Error: Gateway Timeout (0) connecting to 0ab3005503e57f8080a894b700f40080.web-security-academy.net</h1></body></html>
+2024-08-29 23:16:51,277 - INFO - Suggested Solution: Gateway Timeout - Check server status or try again later.
+2024-08-29 23:16:52,285 - INFO - Sending payload to URL: https://0ab3005503e57f8080a894b700f40080.web-security-academy.net/login
+2024-08-29 23:16:52,292 - DEBUG - Starting new HTTPS connection (1): 0ab3005503e57f8080a894b700f40080.web-security-academy.net:443
+2024-08-29 23:16:53,211 - DEBUG - https://0ab3005503e57f8080a894b700f40080.web-security-academy.net:443 "GET /login HTTP/1.1" 504 197
+2024-08-29 23:16:53,216 - INFO - Response Status Code: 504
+2024-08-29 23:16:53,217 - INFO - Response Content: <html><head><title>Server Error: Gateway Timeout</title></head><body><h1>Server Error: Gateway Timeout (0) connecting to 0ab3005503e57f8080a894b700f40080.web-security-academy.net</h1></body></html>
+2024-08-29 23:16:53,225 - INFO - Suggested Solution: Gateway Timeout - Check server status or try again later.
+2024-08-29 23:16:54,231 - INFO - Sending payload to URL: https://0ab3005503e57f8080a894b700f40080.web-security-academy.net/login
+2024-08-29 23:16:54,237 - DEBUG - Starting new HTTPS connection (1): 0ab3005503e57f8080a894b700f40080.web-security-academy.net:443
+2024-08-29 23:16:58,562 - DEBUG - https://0ab3005503e57f8080a894b700f40080.web-security-academy.net:443 "GET /login HTTP/1.1" 504 197
+2024-08-29 23:16:58,565 - INFO - Response Status Code: 504
+2024-08-29 23:16:58,567 - INFO - Response Content: <html><head><title>Server Error: Gateway Timeout</title></head><body><h1>Server Error: Gateway Timeout (0) connecting to 0ab3005503e57f8080a894b700f40080.web-security-academy.net</h1></body></html>
+2024-08-29 23:16:58,572 - INFO - Suggested Solution: Gateway Timeout - Check server status or try again later.
+2024-08-29 23:16:59,592 - INFO - Sending payload to URL: https://0ab3005503e57f8080a894b700f40080.web-security-academy.net/login
+2024-08-29 23:16:59,600 - DEBUG - Starting new HTTPS connection (1): 0ab3005503e57f8080a894b700f40080.web-security-academy.net:443
+2024-08-29 23:17:00,598 - DEBUG - https://0ab3005503e57f8080a894b700f40080.web-security-academy.net:443 "GET /login HTTP/1.1" 504 197
+2024-08-29 23:17:00,603 - INFO - Response Status Code: 504
+2024-08-29 23:17:00,604 - INFO - Response Content: <html><head><title>Server Error: Gateway Timeout</title></head><body><h1>Server Error: Gateway Timeout (0) connecting to 0ab3005503e57f8080a894b700f40080.web-security-academy.net</h1></body></html>
+2024-08-29 23:17:00,612 - INFO - Suggested Solution: Gateway Timeout - Check server status or try again later.
+2024-08-29 23:17:01,622 - INFO - Sending payload to URL: https://0ab3005503e57f8080a894b700f40080.web-security-academy.net/login
+2024-08-29 23:17:01,628 - DEBUG - Starting new HTTPS connection (1): 0ab3005503e57f8080a894b700f40080.web-security-academy.net:443
+2024-08-29 23:17:02,740 - DEBUG - https://0ab3005503e57f8080a894b700f40080.web-security-academy.net:443 "GET /login HTTP/1.1" 504 197
+2024-08-29 23:17:02,743 - INFO - Response Status Code: 504
+2024-08-29 23:17:02,744 - INFO - Response Content: <html><head><title>Server Error: Gateway Timeout</title></head><body><h1>Server Error: Gateway Timeout (0) connecting to 0ab3005503e57f8080a894b700f40080.web-security-academy.net</h1></body></html>
+2024-08-29 23:17:02,748 - INFO - Suggested Solution: Gateway Timeout - Check server status or try again later.
+2024-08-29 23:17:03,763 - INFO - Sending payload to URL: https://0ab3005503e57f8080a894b700f40080.web-security-academy.net/login
+2024-08-29 23:17:03,769 - DEBUG - Starting new HTTPS connection (1): 0ab3005503e57f8080a894b700f40080.web-security-academy.net:443
+2024-08-29 23:17:04,762 - DEBUG - https://0ab3005503e57f8080a894b700f40080.web-security-academy.net:443 "GET /login HTTP/1.1" 504 197
+2024-08-29 23:17:04,766 - INFO - Response Status Code: 504
+2024-08-29 23:17:04,801 - INFO - Response Content: <html><head><title>Server Error: Gateway Timeout</title></head><body><h1>Server Error: Gateway Timeout (0) connecting to 0ab3005503e57f8080a894b700f40080.web-security-academy.net</h1></body></html>
+2024-08-29 23:17:04,809 - INFO - Suggested Solution: Gateway Timeout - Check server status or try again later.
+2024-08-29 23:17:05,831 - INFO - Sending payload to URL: https://0ab3005503e57f8080a894b700f40080.web-security-academy.net/login
+2024-08-29 23:17:05,842 - DEBUG - Starting new HTTPS connection (1): 0ab3005503e57f8080a894b700f40080.web-security-academy.net:443
+2024-08-29 23:17:08,186 - DEBUG - https://0ab3005503e57f8080a894b700f40080.web-security-academy.net:443 "GET /login HTTP/1.1" 504 197
+2024-08-29 23:17:08,188 - INFO - Response Status Code: 504
+2024-08-29 23:17:08,190 - INFO - Response Content: <html><head><title>Server Error: Gateway Timeout</title></head><body><h1>Server Error: Gateway Timeout (0) connecting to 0ab3005503e57f8080a894b700f40080.web-security-academy.net</h1></body></html>
+2024-08-29 23:17:08,197 - INFO - Suggested Solution: Gateway Timeout - Check server status or try again later.
+2024-08-29 23:17:09,214 - INFO - Sending payload to URL: https://0ab3005503e57f8080a894b700f40080.web-security-academy.net/login
+2024-08-29 23:17:09,224 - DEBUG - Starting new HTTPS connection (1): 0ab3005503e57f8080a894b700f40080.web-security-academy.net:443
+2024-08-29 23:17:10,236 - DEBUG - https://0ab3005503e57f8080a894b700f40080.web-security-academy.net:443 "GET /login HTTP/1.1" 504 197
+2024-08-29 23:17:10,242 - INFO - Response Status Code: 504
+2024-08-29 23:17:10,243 - INFO - Response Content: <html><head><title>Server Error: Gateway Timeout</title></head><body><h1>Server Error: Gateway Timeout (0) connecting to 0ab3005503e57f8080a894b700f40080.web-security-academy.net</h1></body></html>
+2024-08-29 23:17:10,254 - INFO - Suggested Solution: Gateway Timeout - Check server status or try again later.
+2024-08-29 23:17:11,271 - INFO - Sending payload to URL: https://0ab3005503e57f8080a894b700f40080.web-security-academy.net/login
+2024-08-29 23:17:11,276 - DEBUG - Starting new HTTPS connection (1): 0ab3005503e57f8080a894b700f40080.web-security-academy.net:443
+2024-08-29 23:17:12,326 - DEBUG - https://0ab3005503e57f8080a894b700f40080.web-security-academy.net:443 "GET /login HTTP/1.1" 504 197
+2024-08-29 23:17:12,329 - INFO - Response Status Code: 504
+2024-08-29 23:17:12,331 - INFO - Response Content: <html><head><title>Server Error: Gateway Timeout</title></head><body><h1>Server Error: Gateway Timeout (0) connecting to 0ab3005503e57f8080a894b700f40080.web-security-academy.net</h1></body></html>
+2024-08-29 23:17:12,336 - INFO - Suggested Solution: Gateway Timeout - Check server status or try again later.
+2024-08-29 23:17:13,346 - INFO - Sending payload to URL: https://0ab3005503e57f8080a894b700f40080.web-security-academy.net/login
+2024-08-29 23:17:13,357 - DEBUG - Starting new HTTPS connection (1): 0ab3005503e57f8080a894b700f40080.web-security-academy.net:443
+2024-08-29 23:17:14,693 - DEBUG - https://0ab3005503e57f8080a894b700f40080.web-security-academy.net:443 "GET /login HTTP/1.1" 504 197
+2024-08-29 23:17:14,697 - INFO - Response Status Code: 504
+2024-08-29 23:17:14,699 - INFO - Response Content: <html><head><title>Server Error: Gateway Timeout</title></head><body><h1>Server Error: Gateway Timeout (0) connecting to 0ab3005503e57f8080a894b700f40080.web-security-academy.net</h1></body></html>
+2024-08-29 23:17:14,703 - INFO - Suggested Solution: Gateway Timeout - Check server status or try again later.
+2024-08-29 23:17:15,719 - INFO - Sending payload to URL: https://0ab3005503e57f8080a894b700f40080.web-security-academy.net/login
+2024-08-29 23:17:15,725 - DEBUG - Starting new HTTPS connection (1): 0ab3005503e57f8080a894b700f40080.web-security-academy.net:443
+2024-08-29 23:17:16,794 - DEBUG - https://0ab3005503e57f8080a894b700f40080.web-security-academy.net:443 "GET /login HTTP/1.1" 504 197
+2024-08-29 23:17:16,799 - INFO - Response Status Code: 504
+2024-08-29 23:17:16,800 - INFO - Response Content: <html><head><title>Server Error: Gateway Timeout</title></head><body><h1>Server Error: Gateway Timeout (0) connecting to 0ab3005503e57f8080a894b700f40080.web-security-academy.net</h1></body></html>
+2024-08-29 23:17:16,805 - INFO - Suggested Solution: Gateway Timeout - Check server status or try again later.
+2024-08-29 23:17:17,826 - INFO - Sending payload to URL: https://0ab3005503e57f8080a894b700f40080.web-security-academy.net/login
+2024-08-29 23:17:17,832 - DEBUG - Starting new HTTPS connection (1): 0ab3005503e57f8080a894b700f40080.web-security-academy.net:443
+2024-08-29 23:17:18,791 - DEBUG - https://0ab3005503e57f8080a894b700f40080.web-security-academy.net:443 "GET /login HTTP/1.1" 504 197
+2024-08-29 23:17:18,795 - INFO - Response Status Code: 504
+2024-08-29 23:17:18,796 - INFO - Response Content: <html><head><title>Server Error: Gateway Timeout</title></head><body><h1>Server Error: Gateway Timeout (0) connecting to 0ab3005503e57f8080a894b700f40080.web-security-academy.net</h1></body></html>
+2024-08-29 23:17:18,803 - INFO - Suggested Solution: Gateway Timeout - Check server status or try again later.
+2024-08-29 23:17:19,813 - INFO - Sending payload to URL: https://0ab3005503e57f8080a894b700f40080.web-security-academy.net/login
+2024-08-29 23:17:19,822 - DEBUG - Starting new HTTPS connection (1): 0ab3005503e57f8080a894b700f40080.web-security-academy.net:443
+2024-08-29 23:17:20,791 - DEBUG - https://0ab3005503e57f8080a894b700f40080.web-security-academy.net:443 "GET /login HTTP/1.1" 504 197
+2024-08-29 23:17:20,796 - INFO - Response Status Code: 504
+2024-08-29 23:17:20,797 - INFO - Response Content: <html><head><title>Server Error: Gateway Timeout</title></head><body><h1>Server Error: Gateway Timeout (0) connecting to 0ab3005503e57f8080a894b700f40080.web-security-academy.net</h1></body></html>
+2024-08-29 23:17:20,804 - INFO - Suggested Solution: Gateway Timeout - Check server status or try again later.
+2024-08-29 23:17:21,825 - INFO - Sending payload to URL: https://0ab3005503e57f8080a894b700f40080.web-security-academy.net/login
+2024-08-29 23:17:21,833 - DEBUG - Starting new HTTPS connection (1): 0ab3005503e57f8080a894b700f40080.web-security-academy.net:443
+2024-08-29 23:17:22,823 - DEBUG - https://0ab3005503e57f8080a894b700f40080.web-security-academy.net:443 "GET /login HTTP/1.1" 504 197
+2024-08-29 23:17:22,828 - INFO - Response Status Code: 504
+2024-08-29 23:17:22,830 - INFO - Response Content: <html><head><title>Server Error: Gateway Timeout</title></head><body><h1>Server Error: Gateway Timeout (0) connecting to 0ab3005503e57f8080a894b700f40080.web-security-academy.net</h1></body></html>
+2024-08-29 23:17:22,857 - INFO - Suggested Solution: Gateway Timeout - Check server status or try again later.
+2024-08-29 23:17:23,890 - INFO - Sending payload to URL: https://0ab3005503e57f8080a894b700f40080.web-security-academy.net/login
+2024-08-29 23:17:23,896 - DEBUG - Starting new HTTPS connection (1): 0ab3005503e57f8080a894b700f40080.web-security-academy.net:443
+2024-08-29 23:17:25,036 - DEBUG - https://0ab3005503e57f8080a894b700f40080.web-security-academy.net:443 "GET /login HTTP/1.1" 504 197
+2024-08-29 23:17:25,041 - INFO - Response Status Code: 504
+2024-08-29 23:17:25,042 - INFO - Response Content: <html><head><title>Server Error: Gateway Timeout</title></head><body><h1>Server Error: Gateway Timeout (0) connecting to 0ab3005503e57f8080a894b700f40080.web-security-academy.net</h1></body></html>
+2024-08-29 23:17:25,048 - INFO - Suggested Solution: Gateway Timeout - Check server status or try again later.
+2024-08-29 23:17:26,386 - INFO - Sending payload to URL: https://0ab3005503e57f8080a894b700f40080.web-security-academy.net/login
+2024-08-29 23:17:26,427 - DEBUG - Starting new HTTPS connection (1): 0ab3005503e57f8080a894b700f40080.web-security-academy.net:443
+2024-08-29 23:17:27,554 - DEBUG - https://0ab3005503e57f8080a894b700f40080.web-security-academy.net:443 "GET /login HTTP/1.1" 504 197
+2024-08-29 23:17:27,557 - INFO - Response Status Code: 504
+2024-08-29 23:17:27,558 - INFO - Response Content: <html><head><title>Server Error: Gateway Timeout</title></head><body><h1>Server Error: Gateway Timeout (0) connecting to 0ab3005503e57f8080a894b700f40080.web-security-academy.net</h1></body></html>
+2024-08-29 23:17:27,563 - INFO - Suggested Solution: Gateway Timeout - Check server status or try again later.
+2024-08-29 23:17:28,577 - INFO - Sending payload to URL: https://0ab3005503e57f8080a894b700f40080.web-security-academy.net/login
+2024-08-29 23:17:28,582 - DEBUG - Starting new HTTPS connection (1): 0ab3005503e57f8080a894b700f40080.web-security-academy.net:443
+2024-08-29 23:17:29,766 - DEBUG - https://0ab3005503e57f8080a894b700f40080.web-security-academy.net:443 "GET /login HTTP/1.1" 504 197
+2024-08-29 23:17:29,770 - INFO - Response Status Code: 504
+2024-08-29 23:17:29,771 - INFO - Response Content: <html><head><title>Server Error: Gateway Timeout</title></head><body><h1>Server Error: Gateway Timeout (0) connecting to 0ab3005503e57f8080a894b700f40080.web-security-academy.net</h1></body></html>
+2024-08-29 23:17:29,781 - INFO - Suggested Solution: Gateway Timeout - Check server status or try again later.
+2024-08-29 23:17:30,802 - INFO - Sending payload to URL: https://0ab3005503e57f8080a894b700f40080.web-security-academy.net/login
+2024-08-29 23:17:30,805 - DEBUG - Starting new HTTPS connection (1): 0ab3005503e57f8080a894b700f40080.web-security-academy.net:443
+2024-08-29 23:17:31,753 - DEBUG - https://0ab3005503e57f8080a894b700f40080.web-security-academy.net:443 "GET /login HTTP/1.1" 504 197
+2024-08-29 23:17:31,756 - INFO - Response Status Code: 504
+2024-08-29 23:17:31,757 - INFO - Response Content: <html><head><title>Server Error: Gateway Timeout</title></head><body><h1>Server Error: Gateway Timeout (0) connecting to 0ab3005503e57f8080a894b700f40080.web-security-academy.net</h1></body></html>
+2024-08-29 23:17:31,761 - INFO - Suggested Solution: Gateway Timeout - Check server status or try again later.
+2024-08-29 23:17:32,804 - INFO - Sending payload to URL: https://0ab3005503e57f8080a894b700f40080.web-security-academy.net/login
+2024-08-29 23:17:32,810 - DEBUG - Starting new HTTPS connection (1): 0ab3005503e57f8080a894b700f40080.web-security-academy.net:443
+2024-08-29 23:17:33,793 - DEBUG - https://0ab3005503e57f8080a894b700f40080.web-security-academy.net:443 "GET /login HTTP/1.1" 504 197
+2024-08-29 23:17:33,797 - INFO - Response Status Code: 504
+2024-08-29 23:17:33,797 - INFO - Response Content: <html><head><title>Server Error: Gateway Timeout</title></head><body><h1>Server Error: Gateway Timeout (0) connecting to 0ab3005503e57f8080a894b700f40080.web-security-academy.net</h1></body></html>
+2024-08-29 23:17:33,802 - INFO - Suggested Solution: Gateway Timeout - Check server status or try again later.
+2024-08-29 23:17:34,828 - INFO - Sending payload to URL: https://0ab3005503e57f8080a894b700f40080.web-security-academy.net/login
+2024-08-29 23:17:34,836 - DEBUG - Starting new HTTPS connection (1): 0ab3005503e57f8080a894b700f40080.web-security-academy.net:443
+2024-08-29 23:17:36,049 - DEBUG - https://0ab3005503e57f8080a894b700f40080.web-security-academy.net:443 "GET /login HTTP/1.1" 504 197
+2024-08-29 23:17:36,053 - INFO - Response Status Code: 504
+2024-08-29 23:17:36,054 - INFO - Response Content: <html><head><title>Server Error: Gateway Timeout</title></head><body><h1>Server Error: Gateway Timeout (0) connecting to 0ab3005503e57f8080a894b700f40080.web-security-academy.net</h1></body></html>
+2024-08-29 23:17:36,057 - INFO - Suggested Solution: Gateway Timeout - Check server status or try again later.
+2024-08-29 23:17:37,078 - INFO - Sending payload to URL: https://0ab3005503e57f8080a894b700f40080.web-security-academy.net/login
+2024-08-29 23:17:37,086 - DEBUG - Starting new HTTPS connection (1): 0ab3005503e57f8080a894b700f40080.web-security-academy.net:443
+2024-08-29 23:17:38,194 - DEBUG - https://0ab3005503e57f8080a894b700f40080.web-security-academy.net:443 "GET /login HTTP/1.1" 504 197
+2024-08-29 23:17:38,198 - INFO - Response Status Code: 504
+2024-08-29 23:17:38,199 - INFO - Response Content: <html><head><title>Server Error: Gateway Timeout</title></head><body><h1>Server Error: Gateway Timeout (0) connecting to 0ab3005503e57f8080a894b700f40080.web-security-academy.net</h1></body></html>
+2024-08-29 23:17:38,204 - INFO - Suggested Solution: Gateway Timeout - Check server status or try again later.
+2024-08-29 23:17:39,216 - INFO - Sending payload to URL: https://0ab3005503e57f8080a894b700f40080.web-security-academy.net/login
+2024-08-29 23:17:39,225 - DEBUG - Starting new HTTPS connection (1): 0ab3005503e57f8080a894b700f40080.web-security-academy.net:443
+2024-08-29 23:17:40,316 - DEBUG - https://0ab3005503e57f8080a894b700f40080.web-security-academy.net:443 "GET /login HTTP/1.1" 504 197
+2024-08-29 23:17:40,321 - INFO - Response Status Code: 504
+2024-08-29 23:17:40,326 - INFO - Response Content: <html><head><title>Server Error: Gateway Timeout</title></head><body><h1>Server Error: Gateway Timeout (0) connecting to 0ab3005503e57f8080a894b700f40080.web-security-academy.net</h1></body></html>
+2024-08-29 23:17:40,332 - INFO - Suggested Solution: Gateway Timeout - Check server status or try again later.
+2024-08-29 23:17:41,354 - INFO - Sending payload to URL: https://0ab3005503e57f8080a894b700f40080.web-security-academy.net/login
+2024-08-29 23:17:41,362 - DEBUG - Starting new HTTPS connection (1): 0ab3005503e57f8080a894b700f40080.web-security-academy.net:443
+2024-08-29 23:17:43,542 - DEBUG - https://0ab3005503e57f8080a894b700f40080.web-security-academy.net:443 "GET /login HTTP/1.1" 504 197
+2024-08-29 23:17:43,548 - INFO - Response Status Code: 504
+2024-08-29 23:17:43,854 - INFO - Response Content: <html><head><title>Server Error: Gateway Timeout</title></head><body><h1>Server Error: Gateway Timeout (0) connecting to 0ab3005503e57f8080a894b700f40080.web-security-academy.net</h1></body></html>
+2024-08-29 23:17:43,864 - INFO - Suggested Solution: Gateway Timeout - Check server status or try again later.
+2024-08-29 23:17:45,397 - INFO - Error processing request file: not enough values to unpack (expected 3, got 2)
+2024-08-29 23:17:45,397 - INFO - Sending payload to URL: https://0ab3005503e57f8080a894b700f40080.web-security-academy.net/login
+2024-08-29 23:17:45,409 - DEBUG - Starting new HTTPS connection (1): 0ab3005503e57f8080a894b700f40080.web-security-academy.net:443
+2024-08-29 23:17:46,558 - DEBUG - https://0ab3005503e57f8080a894b700f40080.web-security-academy.net:443 "GET /login HTTP/1.1" 504 197
+2024-08-29 23:17:46,561 - INFO - Response Status Code: 504
+2024-08-29 23:17:46,562 - INFO - Response Content: <html><head><title>Server Error: Gateway Timeout</title></head><body><h1>Server Error: Gateway Timeout (0) connecting to 0ab3005503e57f8080a894b700f40080.web-security-academy.net</h1></body></html>
+2024-08-29 23:17:46,571 - INFO - Suggested Solution: Gateway Timeout - Check server status or try again later.
+2024-08-29 23:17:47,579 - INFO - Sending payload to URL: https://0ab3005503e57f8080a894b700f40080.web-security-academy.net/login
+2024-08-29 23:17:47,583 - DEBUG - Starting new HTTPS connection (1): 0ab3005503e57f8080a894b700f40080.web-security-academy.net:443
+2024-08-29 23:17:48,704 - DEBUG - https://0ab3005503e57f8080a894b700f40080.web-security-academy.net:443 "GET /login HTTP/1.1" 504 197
+2024-08-29 23:17:48,707 - INFO - Response Status Code: 504
+2024-08-29 23:17:48,709 - INFO - Response Content: <html><head><title>Server Error: Gateway Timeout</title></head><body><h1>Server Error: Gateway Timeout (0) connecting to 0ab3005503e57f8080a894b700f40080.web-security-academy.net</h1></body></html>
+2024-08-29 23:17:48,714 - INFO - Suggested Solution: Gateway Timeout - Check server status or try again later.
+2024-08-29 23:17:49,723 - INFO - Sending payload to URL: https://0ab3005503e57f8080a894b700f40080.web-security-academy.net/login
+2024-08-29 23:17:49,728 - DEBUG - Starting new HTTPS connection (1): 0ab3005503e57f8080a894b700f40080.web-security-academy.net:443
+2024-08-29 23:17:50,854 - DEBUG - https://0ab3005503e57f8080a894b700f40080.web-security-academy.net:443 "GET /login HTTP/1.1" 504 197
+2024-08-29 23:17:50,857 - INFO - Response Status Code: 504
+2024-08-29 23:17:50,858 - INFO - Response Content: <html><head><title>Server Error: Gateway Timeout</title></head><body><h1>Server Error: Gateway Timeout (0) connecting to 0ab3005503e57f8080a894b700f40080.web-security-academy.net</h1></body></html>
+2024-08-29 23:17:50,863 - INFO - Suggested Solution: Gateway Timeout - Check server status or try again later.
+2024-08-29 23:17:51,884 - INFO - Sending payload to URL: https://0ab3005503e57f8080a894b700f40080.web-security-academy.net/login
+2024-08-29 23:17:51,889 - DEBUG - Starting new HTTPS connection (1): 0ab3005503e57f8080a894b700f40080.web-security-academy.net:443
+2024-08-29 23:17:52,957 - DEBUG - https://0ab3005503e57f8080a894b700f40080.web-security-academy.net:443 "GET /login HTTP/1.1" 504 197
+2024-08-29 23:17:52,959 - INFO - Response Status Code: 504
+2024-08-29 23:17:52,962 - INFO - Response Content: <html><head><title>Server Error: Gateway Timeout</title></head><body><h1>Server Error: Gateway Timeout (0) connecting to 0ab3005503e57f8080a894b700f40080.web-security-academy.net</h1></body></html>
+2024-08-29 23:17:52,970 - INFO - Suggested Solution: Gateway Timeout - Check server status or try again later.
+2024-08-29 23:17:53,982 - INFO - Sending payload to URL: https://0ab3005503e57f8080a894b700f40080.web-security-academy.net/login
+2024-08-29 23:17:53,989 - DEBUG - Starting new HTTPS connection (1): 0ab3005503e57f8080a894b700f40080.web-security-academy.net:443
+2024-08-29 23:17:55,405 - DEBUG - https://0ab3005503e57f8080a894b700f40080.web-security-academy.net:443 "GET /login HTTP/1.1" 504 197
+2024-08-29 23:17:55,410 - INFO - Response Status Code: 504
+2024-08-29 23:17:55,413 - INFO - Response Content: <html><head><title>Server Error: Gateway Timeout</title></head><body><h1>Server Error: Gateway Timeout (0) connecting to 0ab3005503e57f8080a894b700f40080.web-security-academy.net</h1></body></html>
+2024-08-29 23:17:55,419 - INFO - Suggested Solution: Gateway Timeout - Check server status or try again later.
+2024-08-29 23:17:56,425 - INFO - Sending payload to URL: https://0ab3005503e57f8080a894b700f40080.web-security-academy.net/login
+2024-08-29 23:17:56,432 - DEBUG - Starting new HTTPS connection (1): 0ab3005503e57f8080a894b700f40080.web-security-academy.net:443
+2024-08-29 23:17:57,398 - DEBUG - https://0ab3005503e57f8080a894b700f40080.web-security-academy.net:443 "GET /login HTTP/1.1" 504 197
+2024-08-29 23:17:57,402 - INFO - Response Status Code: 504
+2024-08-29 23:17:57,402 - INFO - Response Content: <html><head><title>Server Error: Gateway Timeout</title></head><body><h1>Server Error: Gateway Timeout (0) connecting to 0ab3005503e57f8080a894b700f40080.web-security-academy.net</h1></body></html>
+2024-08-29 23:17:57,406 - INFO - Suggested Solution: Gateway Timeout - Check server status or try again later.
+2024-08-29 23:17:58,427 - INFO - Sending payload to URL: https://0ab3005503e57f8080a894b700f40080.web-security-academy.net/login
+2024-08-29 23:17:58,432 - DEBUG - Starting new HTTPS connection (1): 0ab3005503e57f8080a894b700f40080.web-security-academy.net:443
+2024-08-29 23:17:59,393 - DEBUG - https://0ab3005503e57f8080a894b700f40080.web-security-academy.net:443 "GET /login HTTP/1.1" 504 197
+2024-08-29 23:17:59,398 - INFO - Response Status Code: 504
+2024-08-29 23:17:59,399 - INFO - Response Content: <html><head><title>Server Error: Gateway Timeout</title></head><body><h1>Server Error: Gateway Timeout (0) connecting to 0ab3005503e57f8080a894b700f40080.web-security-academy.net</h1></body></html>
+2024-08-29 23:17:59,405 - INFO - Suggested Solution: Gateway Timeout - Check server status or try again later.
+2024-08-29 23:18:00,428 - INFO - Sending payload to URL: https://0ab3005503e57f8080a894b700f40080.web-security-academy.net/login
+2024-08-29 23:18:00,435 - DEBUG - Starting new HTTPS connection (1): 0ab3005503e57f8080a894b700f40080.web-security-academy.net:443
+2024-08-29 23:18:01,392 - DEBUG - https://0ab3005503e57f8080a894b700f40080.web-security-academy.net:443 "GET /login HTTP/1.1" 504 197
+2024-08-29 23:18:01,396 - INFO - Response Status Code: 504
+2024-08-29 23:18:01,397 - INFO - Response Content: <html><head><title>Server Error: Gateway Timeout</title></head><body><h1>Server Error: Gateway Timeout (0) connecting to 0ab3005503e57f8080a894b700f40080.web-security-academy.net</h1></body></html>
+2024-08-29 23:18:01,401 - INFO - Suggested Solution: Gateway Timeout - Check server status or try again later.
+2024-08-29 23:18:02,421 - INFO - Sending payload to URL: https://0ab3005503e57f8080a894b700f40080.web-security-academy.net/login
+2024-08-29 23:18:02,429 - DEBUG - Starting new HTTPS connection (1): 0ab3005503e57f8080a894b700f40080.web-security-academy.net:443
+2024-08-29 23:18:03,613 - DEBUG - https://0ab3005503e57f8080a894b700f40080.web-security-academy.net:443 "GET /login HTTP/1.1" 504 197
+2024-08-29 23:18:03,617 - INFO - Response Status Code: 504
+2024-08-29 23:18:03,618 - INFO - Response Content: <html><head><title>Server Error: Gateway Timeout</title></head><body><h1>Server Error: Gateway Timeout (0) connecting to 0ab3005503e57f8080a894b700f40080.web-security-academy.net</h1></body></html>
+2024-08-29 23:18:03,624 - INFO - Suggested Solution: Gateway Timeout - Check server status or try again later.
+2024-08-29 23:18:04,644 - INFO - Sending payload to URL: https://0ab3005503e57f8080a894b700f40080.web-security-academy.net/login
+2024-08-29 23:18:04,651 - DEBUG - Starting new HTTPS connection (1): 0ab3005503e57f8080a894b700f40080.web-security-academy.net:443
+2024-08-29 23:18:05,739 - DEBUG - https://0ab3005503e57f8080a894b700f40080.web-security-academy.net:443 "GET /login HTTP/1.1" 504 197
+2024-08-29 23:18:05,743 - INFO - Response Status Code: 504
+2024-08-29 23:18:05,744 - INFO - Response Content: <html><head><title>Server Error: Gateway Timeout</title></head><body><h1>Server Error: Gateway Timeout (0) connecting to 0ab3005503e57f8080a894b700f40080.web-security-academy.net</h1></body></html>
+2024-08-29 23:18:05,749 - INFO - Suggested Solution: Gateway Timeout - Check server status or try again later.
+2024-08-29 23:18:06,756 - INFO - Sending payload to URL: https://0ab3005503e57f8080a894b700f40080.web-security-academy.net/login
+2024-08-29 23:18:06,762 - DEBUG - Starting new HTTPS connection (1): 0ab3005503e57f8080a894b700f40080.web-security-academy.net:443
+2024-08-29 23:18:07,725 - DEBUG - https://0ab3005503e57f8080a894b700f40080.web-security-academy.net:443 "GET /login HTTP/1.1" 504 197
+2024-08-29 23:18:07,729 - INFO - Response Status Code: 504
+2024-08-29 23:18:07,730 - INFO - Response Content: <html><head><title>Server Error: Gateway Timeout</title></head><body><h1>Server Error: Gateway Timeout (0) connecting to 0ab3005503e57f8080a894b700f40080.web-security-academy.net</h1></body></html>
+2024-08-29 23:18:07,738 - INFO - Suggested Solution: Gateway Timeout - Check server status or try again later.
+2024-08-29 23:18:08,750 - INFO - Sending payload to URL: https://0ab3005503e57f8080a894b700f40080.web-security-academy.net/login
+2024-08-29 23:18:08,755 - DEBUG - Starting new HTTPS connection (1): 0ab3005503e57f8080a894b700f40080.web-security-academy.net:443
+2024-08-29 23:18:09,677 - DEBUG - https://0ab3005503e57f8080a894b700f40080.web-security-academy.net:443 "GET /login HTTP/1.1" 504 197
+2024-08-29 23:18:09,681 - INFO - Response Status Code: 504
+2024-08-29 23:18:09,682 - INFO - Response Content: <html><head><title>Server Error: Gateway Timeout</title></head><body><h1>Server Error: Gateway Timeout (0) connecting to 0ab3005503e57f8080a894b700f40080.web-security-academy.net</h1></body></html>
+2024-08-29 23:18:09,688 - INFO - Suggested Solution: Gateway Timeout - Check server status or try again later.
+2024-08-29 23:18:10,705 - INFO - Sending payload to URL: https://0ab3005503e57f8080a894b700f40080.web-security-academy.net/login
+2024-08-29 23:18:10,712 - DEBUG - Starting new HTTPS connection (1): 0ab3005503e57f8080a894b700f40080.web-security-academy.net:443
+2024-08-29 23:18:11,847 - DEBUG - https://0ab3005503e57f8080a894b700f40080.web-security-academy.net:443 "GET /login HTTP/1.1" 504 197
+2024-08-29 23:18:11,857 - INFO - Response Status Code: 504
+2024-08-29 23:18:11,859 - INFO - Response Content: <html><head><title>Server Error: Gateway Timeout</title></head><body><h1>Server Error: Gateway Timeout (0) connecting to 0ab3005503e57f8080a894b700f40080.web-security-academy.net</h1></body></html>
+2024-08-29 23:18:11,867 - INFO - Suggested Solution: Gateway Timeout - Check server status or try again later.
+2024-08-29 23:18:12,886 - INFO - Sending payload to URL: https://0ab3005503e57f8080a894b700f40080.web-security-academy.net/login
+2024-08-29 23:18:12,893 - DEBUG - Starting new HTTPS connection (1): 0ab3005503e57f8080a894b700f40080.web-security-academy.net:443
+2024-08-29 23:18:14,000 - DEBUG - https://0ab3005503e57f8080a894b700f40080.web-security-academy.net:443 "GET /login HTTP/1.1" 504 197
+2024-08-29 23:18:14,003 - INFO - Response Status Code: 504
+2024-08-29 23:18:14,005 - INFO - Response Content: <html><head><title>Server Error: Gateway Timeout</title></head><body><h1>Server Error: Gateway Timeout (0) connecting to 0ab3005503e57f8080a894b700f40080.web-security-academy.net</h1></body></html>
+2024-08-29 23:18:14,010 - INFO - Suggested Solution: Gateway Timeout - Check server status or try again later.
+2024-08-29 23:18:15,030 - INFO - Sending payload to URL: https://0ab3005503e57f8080a894b700f40080.web-security-academy.net/login
+2024-08-29 23:18:15,043 - DEBUG - Starting new HTTPS connection (1): 0ab3005503e57f8080a894b700f40080.web-security-academy.net:443
+2024-08-29 23:18:16,575 - DEBUG - https://0ab3005503e57f8080a894b700f40080.web-security-academy.net:443 "GET /login HTTP/1.1" 504 197
+2024-08-29 23:18:16,580 - INFO - Response Status Code: 504
+2024-08-29 23:18:16,585 - INFO - Response Content: <html><head><title>Server Error: Gateway Timeout</title></head><body><h1>Server Error: Gateway Timeout (0) connecting to 0ab3005503e57f8080a894b700f40080.web-security-academy.net</h1></body></html>
+2024-08-29 23:18:16,594 - INFO - Suggested Solution: Gateway Timeout - Check server status or try again later.
+2024-08-29 23:18:17,622 - INFO - Sending payload to URL: https://0ab3005503e57f8080a894b700f40080.web-security-academy.net/login
+2024-08-29 23:18:17,629 - DEBUG - Starting new HTTPS connection (1): 0ab3005503e57f8080a894b700f40080.web-security-academy.net:443
+2024-08-29 23:18:18,809 - DEBUG - https://0ab3005503e57f8080a894b700f40080.web-security-academy.net:443 "GET /login HTTP/1.1" 504 197
+2024-08-29 23:18:18,814 - INFO - Response Status Code: 504
+2024-08-29 23:18:18,816 - INFO - Response Content: <html><head><title>Server Error: Gateway Timeout</title></head><body><h1>Server Error: Gateway Timeout (0) connecting to 0ab3005503e57f8080a894b700f40080.web-security-academy.net</h1></body></html>
+2024-08-29 23:18:18,827 - INFO - Suggested Solution: Gateway Timeout - Check server status or try again later.
+2024-08-29 23:18:19,846 - INFO - Sending payload to URL: https://0ab3005503e57f8080a894b700f40080.web-security-academy.net/login
+2024-08-29 23:18:19,853 - DEBUG - Starting new HTTPS connection (1): 0ab3005503e57f8080a894b700f40080.web-security-academy.net:443
+2024-08-29 23:18:21,019 - DEBUG - https://0ab3005503e57f8080a894b700f40080.web-security-academy.net:443 "GET /login HTTP/1.1" 504 197
+2024-08-29 23:18:21,024 - INFO - Response Status Code: 504
+2024-08-29 23:18:21,026 - INFO - Response Content: <html><head><title>Server Error: Gateway Timeout</title></head><body><h1>Server Error: Gateway Timeout (0) connecting to 0ab3005503e57f8080a894b700f40080.web-security-academy.net</h1></body></html>
+2024-08-29 23:18:21,033 - INFO - Suggested Solution: Gateway Timeout - Check server status or try again later.
+2024-08-29 23:18:22,048 - INFO - Sending payload to URL: https://0ab3005503e57f8080a894b700f40080.web-security-academy.net/login
+2024-08-29 23:18:22,054 - DEBUG - Starting new HTTPS connection (1): 0ab3005503e57f8080a894b700f40080.web-security-academy.net:443
+2024-08-29 23:18:23,231 - DEBUG - https://0ab3005503e57f8080a894b700f40080.web-security-academy.net:443 "GET /login HTTP/1.1" 504 197
+2024-08-29 23:18:23,235 - INFO - Response Status Code: 504
+2024-08-29 23:18:23,236 - INFO - Response Content: <html><head><title>Server Error: Gateway Timeout</title></head><body><h1>Server Error: Gateway Timeout (0) connecting to 0ab3005503e57f8080a894b700f40080.web-security-academy.net</h1></body></html>
+2024-08-29 23:18:23,244 - INFO - Suggested Solution: Gateway Timeout - Check server status or try again later.
+2024-08-29 23:18:24,261 - INFO - Sending payload to URL: https://0ab3005503e57f8080a894b700f40080.web-security-academy.net/login
+2024-08-29 23:18:24,267 - DEBUG - Starting new HTTPS connection (1): 0ab3005503e57f8080a894b700f40080.web-security-academy.net:443
+2024-08-29 23:18:25,409 - DEBUG - https://0ab3005503e57f8080a894b700f40080.web-security-academy.net:443 "GET /login HTTP/1.1" 504 197
+2024-08-29 23:18:25,412 - INFO - Response Status Code: 504
+2024-08-29 23:18:25,413 - INFO - Response Content: <html><head><title>Server Error: Gateway Timeout</title></head><body><h1>Server Error: Gateway Timeout (0) connecting to 0ab3005503e57f8080a894b700f40080.web-security-academy.net</h1></body></html>
+2024-08-29 23:18:25,419 - INFO - Suggested Solution: Gateway Timeout - Check server status or try again later.
+2024-08-29 23:18:26,439 - INFO - Sending payload to URL: https://0ab3005503e57f8080a894b700f40080.web-security-academy.net/login
+2024-08-29 23:18:26,450 - DEBUG - Starting new HTTPS connection (1): 0ab3005503e57f8080a894b700f40080.web-security-academy.net:443
+2024-08-29 23:18:27,491 - DEBUG - https://0ab3005503e57f8080a894b700f40080.web-security-academy.net:443 "GET /login HTTP/1.1" 504 197
+2024-08-29 23:18:27,493 - INFO - Response Status Code: 504
+2024-08-29 23:18:27,495 - INFO - Response Content: <html><head><title>Server Error: Gateway Timeout</title></head><body><h1>Server Error: Gateway Timeout (0) connecting to 0ab3005503e57f8080a894b700f40080.web-security-academy.net</h1></body></html>
+2024-08-29 23:18:27,500 - INFO - Suggested Solution: Gateway Timeout - Check server status or try again later.
+2024-08-29 23:18:28,522 - INFO - Sending payload to URL: https://0ab3005503e57f8080a894b700f40080.web-security-academy.net/login
+2024-08-29 23:18:28,528 - DEBUG - Starting new HTTPS connection (1): 0ab3005503e57f8080a894b700f40080.web-security-academy.net:443
+2024-08-29 23:18:29,572 - DEBUG - https://0ab3005503e57f8080a894b700f40080.web-security-academy.net:443 "GET /login HTTP/1.1" 504 197
+2024-08-29 23:18:29,576 - INFO - Response Status Code: 504
+2024-08-29 23:18:29,577 - INFO - Response Content: <html><head><title>Server Error: Gateway Timeout</title></head><body><h1>Server Error: Gateway Timeout (0) connecting to 0ab3005503e57f8080a894b700f40080.web-security-academy.net</h1></body></html>
+2024-08-29 23:18:29,579 - INFO - Suggested Solution: Gateway Timeout - Check server status or try again later.
+2024-08-29 23:18:30,600 - INFO - Sending payload to URL: https://0ab3005503e57f8080a894b700f40080.web-security-academy.net/login
+2024-08-29 23:18:30,606 - DEBUG - Starting new HTTPS connection (1): 0ab3005503e57f8080a894b700f40080.web-security-academy.net:443
+2024-08-29 23:18:31,673 - DEBUG - https://0ab3005503e57f8080a894b700f40080.web-security-academy.net:443 "GET /login HTTP/1.1" 504 197
+2024-08-29 23:18:31,678 - INFO - Response Status Code: 504
+2024-08-29 23:18:31,679 - INFO - Response Content: <html><head><title>Server Error: Gateway Timeout</title></head><body><h1>Server Error: Gateway Timeout (0) connecting to 0ab3005503e57f8080a894b700f40080.web-security-academy.net</h1></body></html>
+2024-08-29 23:18:31,685 - INFO - Suggested Solution: Gateway Timeout - Check server status or try again later.
+2024-08-29 23:18:32,701 - INFO - Sending payload to URL: https://0ab3005503e57f8080a894b700f40080.web-security-academy.net/login
+2024-08-29 23:18:32,706 - DEBUG - Starting new HTTPS connection (1): 0ab3005503e57f8080a894b700f40080.web-security-academy.net:443
+2024-08-29 23:18:33,897 - DEBUG - https://0ab3005503e57f8080a894b700f40080.web-security-academy.net:443 "GET /login HTTP/1.1" 504 197
+2024-08-29 23:18:33,902 - INFO - Response Status Code: 504
+2024-08-29 23:18:33,905 - INFO - Response Content: <html><head><title>Server Error: Gateway Timeout</title></head><body><h1>Server Error: Gateway Timeout (0) connecting to 0ab3005503e57f8080a894b700f40080.web-security-academy.net</h1></body></html>
+2024-08-29 23:18:33,917 - INFO - Suggested Solution: Gateway Timeout - Check server status or try again later.
+2024-08-29 23:18:34,937 - INFO - Sending payload to URL: https://0ab3005503e57f8080a894b700f40080.web-security-academy.net/login
+2024-08-29 23:18:34,943 - DEBUG - Starting new HTTPS connection (1): 0ab3005503e57f8080a894b700f40080.web-security-academy.net:443
+2024-08-29 23:18:36,154 - DEBUG - https://0ab3005503e57f8080a894b700f40080.web-security-academy.net:443 "GET /login HTTP/1.1" 504 197
+2024-08-29 23:18:36,159 - INFO - Response Status Code: 504
+2024-08-29 23:18:36,160 - INFO - Response Content: <html><head><title>Server Error: Gateway Timeout</title></head><body><h1>Server Error: Gateway Timeout (0) connecting to 0ab3005503e57f8080a894b700f40080.web-security-academy.net</h1></body></html>
+2024-08-29 23:18:36,167 - INFO - Suggested Solution: Gateway Timeout - Check server status or try again later.
+2024-08-29 23:18:37,185 - INFO - Sending payload to URL: https://0ab3005503e57f8080a894b700f40080.web-security-academy.net/login
+2024-08-29 23:18:37,191 - DEBUG - Starting new HTTPS connection (1): 0ab3005503e57f8080a894b700f40080.web-security-academy.net:443
+2024-08-29 23:18:38,215 - DEBUG - https://0ab3005503e57f8080a894b700f40080.web-security-academy.net:443 "GET /login HTTP/1.1" 504 197
+2024-08-29 23:18:38,218 - INFO - Response Status Code: 504
+2024-08-29 23:18:38,219 - INFO - Response Content: <html><head><title>Server Error: Gateway Timeout</title></head><body><h1>Server Error: Gateway Timeout (0) connecting to 0ab3005503e57f8080a894b700f40080.web-security-academy.net</h1></body></html>
+2024-08-29 23:18:38,223 - INFO - Suggested Solution: Gateway Timeout - Check server status or try again later.
+2024-08-29 23:18:39,234 - INFO - Sending payload to URL: https://0ab3005503e57f8080a894b700f40080.web-security-academy.net/login
+2024-08-29 23:18:39,240 - DEBUG - Starting new HTTPS connection (1): 0ab3005503e57f8080a894b700f40080.web-security-academy.net:443
+2024-08-29 23:18:40,290 - DEBUG - https://0ab3005503e57f8080a894b700f40080.web-security-academy.net:443 "GET /login HTTP/1.1" 504 197
+2024-08-29 23:18:40,295 - INFO - Response Status Code: 504
+2024-08-29 23:18:40,295 - INFO - Response Content: <html><head><title>Server Error: Gateway Timeout</title></head><body><h1>Server Error: Gateway Timeout (0) connecting to 0ab3005503e57f8080a894b700f40080.web-security-academy.net</h1></body></html>
+2024-08-29 23:18:40,301 - INFO - Suggested Solution: Gateway Timeout - Check server status or try again later.
+2024-08-29 23:18:41,318 - INFO - Sending payload to URL: https://0ab3005503e57f8080a894b700f40080.web-security-academy.net/login
+2024-08-29 23:18:41,326 - DEBUG - Starting new HTTPS connection (1): 0ab3005503e57f8080a894b700f40080.web-security-academy.net:443
+2024-08-29 23:18:42,494 - DEBUG - https://0ab3005503e57f8080a894b700f40080.web-security-academy.net:443 "GET /login HTTP/1.1" 504 197
+2024-08-29 23:18:42,496 - INFO - Response Status Code: 504
+2024-08-29 23:18:42,498 - INFO - Response Content: <html><head><title>Server Error: Gateway Timeout</title></head><body><h1>Server Error: Gateway Timeout (0) connecting to 0ab3005503e57f8080a894b700f40080.web-security-academy.net</h1></body></html>
+2024-08-29 23:18:42,502 - INFO - Suggested Solution: Gateway Timeout - Check server status or try again later.
+2024-08-29 23:18:43,512 - INFO - Sending payload to URL: https://0ab3005503e57f8080a894b700f40080.web-security-academy.net/login
+2024-08-29 23:18:43,518 - DEBUG - Starting new HTTPS connection (1): 0ab3005503e57f8080a894b700f40080.web-security-academy.net:443
+2024-08-29 23:18:44,891 - DEBUG - https://0ab3005503e57f8080a894b700f40080.web-security-academy.net:443 "GET /login HTTP/1.1" 504 197
+2024-08-29 23:18:44,894 - INFO - Response Status Code: 504
+2024-08-29 23:18:44,895 - INFO - Response Content: <html><head><title>Server Error: Gateway Timeout</title></head><body><h1>Server Error: Gateway Timeout (0) connecting to 0ab3005503e57f8080a894b700f40080.web-security-academy.net</h1></body></html>
+2024-08-29 23:18:44,900 - INFO - Suggested Solution: Gateway Timeout - Check server status or try again later.
+2024-08-29 23:18:45,909 - INFO - Sending payload to URL: https://0ab3005503e57f8080a894b700f40080.web-security-academy.net/login
+2024-08-29 23:18:45,916 - DEBUG - Starting new HTTPS connection (1): 0ab3005503e57f8080a894b700f40080.web-security-academy.net:443
+2024-08-29 23:18:47,194 - DEBUG - https://0ab3005503e57f8080a894b700f40080.web-security-academy.net:443 "GET /login HTTP/1.1" 504 197
+2024-08-29 23:18:47,198 - INFO - Response Status Code: 504
+2024-08-29 23:18:47,199 - INFO - Response Content: <html><head><title>Server Error: Gateway Timeout</title></head><body><h1>Server Error: Gateway Timeout (0) connecting to 0ab3005503e57f8080a894b700f40080.web-security-academy.net</h1></body></html>
+2024-08-29 23:18:47,206 - INFO - Suggested Solution: Gateway Timeout - Check server status or try again later.
+2024-08-29 23:18:48,218 - INFO - Sending payload to URL: https://0ab3005503e57f8080a894b700f40080.web-security-academy.net/login
+2024-08-29 23:18:48,226 - DEBUG - Starting new HTTPS connection (1): 0ab3005503e57f8080a894b700f40080.web-security-academy.net:443
+2024-08-29 23:18:49,356 - DEBUG - https://0ab3005503e57f8080a894b700f40080.web-security-academy.net:443 "GET /login HTTP/1.1" 504 197
+2024-08-29 23:18:49,359 - INFO - Response Status Code: 504
+2024-08-29 23:18:49,361 - INFO - Response Content: <html><head><title>Server Error: Gateway Timeout</title></head><body><h1>Server Error: Gateway Timeout (0) connecting to 0ab3005503e57f8080a894b700f40080.web-security-academy.net</h1></body></html>
+2024-08-29 23:18:49,363 - INFO - Suggested Solution: Gateway Timeout - Check server status or try again later.
+2024-08-29 23:18:50,375 - INFO - Sending payload to URL: https://0ab3005503e57f8080a894b700f40080.web-security-academy.net/login
+2024-08-29 23:18:50,381 - DEBUG - Starting new HTTPS connection (1): 0ab3005503e57f8080a894b700f40080.web-security-academy.net:443
+2024-08-29 23:18:51,404 - DEBUG - https://0ab3005503e57f8080a894b700f40080.web-security-academy.net:443 "GET /login HTTP/1.1" 504 197
+2024-08-29 23:18:51,409 - INFO - Response Status Code: 504
+2024-08-29 23:18:51,411 - INFO - Response Content: <html><head><title>Server Error: Gateway Timeout</title></head><body><h1>Server Error: Gateway Timeout (0) connecting to 0ab3005503e57f8080a894b700f40080.web-security-academy.net</h1></body></html>
+2024-08-29 23:18:51,417 - INFO - Suggested Solution: Gateway Timeout - Check server status or try again later.
+2024-08-29 23:18:52,435 - INFO - Sending payload to URL: https://0ab3005503e57f8080a894b700f40080.web-security-academy.net/login
+2024-08-29 23:18:52,444 - DEBUG - Starting new HTTPS connection (1): 0ab3005503e57f8080a894b700f40080.web-security-academy.net:443
+2024-08-29 23:18:53,445 - DEBUG - https://0ab3005503e57f8080a894b700f40080.web-security-academy.net:443 "GET /login HTTP/1.1" 504 197
+2024-08-29 23:18:53,450 - INFO - Response Status Code: 504
+2024-08-29 23:18:53,451 - INFO - Response Content: <html><head><title>Server Error: Gateway Timeout</title></head><body><h1>Server Error: Gateway Timeout (0) connecting to 0ab3005503e57f8080a894b700f40080.web-security-academy.net</h1></body></html>
+2024-08-29 23:18:53,456 - INFO - Suggested Solution: Gateway Timeout - Check server status or try again later.
+2024-08-29 23:18:54,474 - INFO - Sending payload to URL: https://0ab3005503e57f8080a894b700f40080.web-security-academy.net/login
+2024-08-29 23:18:54,482 - DEBUG - Starting new HTTPS connection (1): 0ab3005503e57f8080a894b700f40080.web-security-academy.net:443
+2024-08-29 23:18:55,605 - INFO - Tooltips disabled.
+2024-08-29 23:18:55,849 - DEBUG - https://0ab3005503e57f8080a894b700f40080.web-security-academy.net:443 "GET /login HTTP/1.1" 504 197
+2024-08-29 23:18:55,854 - INFO - Response Status Code: 504
+2024-08-29 23:18:55,854 - INFO - Response Content: <html><head><title>Server Error: Gateway Timeout</title></head><body><h1>Server Error: Gateway Timeout (0) connecting to 0ab3005503e57f8080a894b700f40080.web-security-academy.net</h1></body></html>
+2024-08-29 23:18:55,860 - INFO - Suggested Solution: Gateway Timeout - Check server status or try again later.
+2024-08-29 23:18:56,879 - INFO - Sending payload to URL: https://0ab3005503e57f8080a894b700f40080.web-security-academy.net/login
+2024-08-29 23:18:56,885 - DEBUG - Starting new HTTPS connection (1): 0ab3005503e57f8080a894b700f40080.web-security-academy.net:443
+2024-08-29 23:18:57,863 - DEBUG - https://0ab3005503e57f8080a894b700f40080.web-security-academy.net:443 "GET /login HTTP/1.1" 504 197
+2024-08-29 23:18:57,868 - INFO - Response Status Code: 504
+2024-08-29 23:18:57,869 - INFO - Response Content: <html><head><title>Server Error: Gateway Timeout</title></head><body><h1>Server Error: Gateway Timeout (0) connecting to 0ab3005503e57f8080a894b700f40080.web-security-academy.net</h1></body></html>
+2024-08-29 23:18:57,897 - INFO - Suggested Solution: Gateway Timeout - Check server status or try again later.
+2024-08-29 23:18:58,900 - INFO - Sending payload to URL: https://0ab3005503e57f8080a894b700f40080.web-security-academy.net/login
+2024-08-29 23:18:58,917 - DEBUG - Starting new HTTPS connection (1): 0ab3005503e57f8080a894b700f40080.web-security-academy.net:443
+2024-08-29 23:18:59,998 - DEBUG - https://0ab3005503e57f8080a894b700f40080.web-security-academy.net:443 "GET /login HTTP/1.1" 504 197
+2024-08-29 23:19:00,001 - INFO - Response Status Code: 504
+2024-08-29 23:19:00,004 - INFO - Response Content: <html><head><title>Server Error: Gateway Timeout</title></head><body><h1>Server Error: Gateway Timeout (0) connecting to 0ab3005503e57f8080a894b700f40080.web-security-academy.net</h1></body></html>
+2024-08-29 23:19:00,009 - INFO - Suggested Solution: Gateway Timeout - Check server status or try again later.
+2024-08-29 23:19:01,015 - INFO - Sending payload to URL: https://0ab3005503e57f8080a894b700f40080.web-security-academy.net/login
+2024-08-29 23:19:01,021 - DEBUG - Starting new HTTPS connection (1): 0ab3005503e57f8080a894b700f40080.web-security-academy.net:443
+2024-08-29 23:19:01,216 - INFO - Tooltips enabled.
+2024-08-29 23:19:02,014 - DEBUG - https://0ab3005503e57f8080a894b700f40080.web-security-academy.net:443 "GET /login HTTP/1.1" 504 197
+2024-08-29 23:19:02,018 - INFO - Response Status Code: 504
+2024-08-29 23:19:02,020 - INFO - Response Content: <html><head><title>Server Error: Gateway Timeout</title></head><body><h1>Server Error: Gateway Timeout (0) connecting to 0ab3005503e57f8080a894b700f40080.web-security-academy.net</h1></body></html>
+2024-08-29 23:19:02,026 - INFO - Suggested Solution: Gateway Timeout - Check server status or try again later.
+2024-08-29 23:19:03,031 - INFO - Sending payload to URL: https://0ab3005503e57f8080a894b700f40080.web-security-academy.net/login
+2024-08-29 23:19:03,038 - DEBUG - Starting new HTTPS connection (1): 0ab3005503e57f8080a894b700f40080.web-security-academy.net:443
+2024-08-29 23:19:04,048 - DEBUG - https://0ab3005503e57f8080a894b700f40080.web-security-academy.net:443 "GET /login HTTP/1.1" 504 197
+2024-08-29 23:19:04,050 - INFO - Response Status Code: 504
+2024-08-29 23:19:04,051 - INFO - Response Content: <html><head><title>Server Error: Gateway Timeout</title></head><body><h1>Server Error: Gateway Timeout (0) connecting to 0ab3005503e57f8080a894b700f40080.web-security-academy.net</h1></body></html>
+2024-08-29 23:19:04,057 - INFO - Suggested Solution: Gateway Timeout - Check server status or try again later.
+2024-08-29 23:19:05,072 - INFO - Sending payload to URL: https://0ab3005503e57f8080a894b700f40080.web-security-academy.net/login
+2024-08-29 23:19:05,079 - DEBUG - Starting new HTTPS connection (1): 0ab3005503e57f8080a894b700f40080.web-security-academy.net:443
+2024-08-29 23:19:06,032 - DEBUG - https://0ab3005503e57f8080a894b700f40080.web-security-academy.net:443 "GET /login HTTP/1.1" 504 197
+2024-08-29 23:19:06,036 - INFO - Response Status Code: 504
+2024-08-29 23:19:06,039 - INFO - Response Content: <html><head><title>Server Error: Gateway Timeout</title></head><body><h1>Server Error: Gateway Timeout (0) connecting to 0ab3005503e57f8080a894b700f40080.web-security-academy.net</h1></body></html>
+2024-08-29 23:19:06,041 - INFO - Suggested Solution: Gateway Timeout - Check server status or try again later.
+2024-08-29 23:19:07,057 - INFO - Sending payload to URL: https://0ab3005503e57f8080a894b700f40080.web-security-academy.net/login
+2024-08-29 23:19:07,064 - DEBUG - Starting new HTTPS connection (1): 0ab3005503e57f8080a894b700f40080.web-security-academy.net:443
+2024-08-29 23:19:08,063 - DEBUG - https://0ab3005503e57f8080a894b700f40080.web-security-academy.net:443 "GET /login HTTP/1.1" 504 197
+2024-08-29 23:19:08,068 - INFO - Response Status Code: 504
+2024-08-29 23:19:08,069 - INFO - Response Content: <html><head><title>Server Error: Gateway Timeout</title></head><body><h1>Server Error: Gateway Timeout (0) connecting to 0ab3005503e57f8080a894b700f40080.web-security-academy.net</h1></body></html>
+2024-08-29 23:19:08,075 - INFO - Suggested Solution: Gateway Timeout - Check server status or try again later.
+2024-08-29 23:19:09,090 - INFO - Sending payload to URL: https://0ab3005503e57f8080a894b700f40080.web-security-academy.net/login
+2024-08-29 23:19:09,096 - DEBUG - Starting new HTTPS connection (1): 0ab3005503e57f8080a894b700f40080.web-security-academy.net:443
+2024-08-29 23:19:10,184 - DEBUG - https://0ab3005503e57f8080a894b700f40080.web-security-academy.net:443 "GET /login HTTP/1.1" 504 197
+2024-08-29 23:19:10,189 - INFO - Response Status Code: 504
+2024-08-29 23:19:10,190 - INFO - Response Content: <html><head><title>Server Error: Gateway Timeout</title></head><body><h1>Server Error: Gateway Timeout (0) connecting to 0ab3005503e57f8080a894b700f40080.web-security-academy.net</h1></body></html>
+2024-08-29 23:19:10,195 - INFO - Suggested Solution: Gateway Timeout - Check server status or try again later.
+2024-08-29 23:19:11,208 - INFO - Sending payload to URL: https://0ab3005503e57f8080a894b700f40080.web-security-academy.net/login
+2024-08-29 23:19:11,214 - DEBUG - Starting new HTTPS connection (1): 0ab3005503e57f8080a894b700f40080.web-security-academy.net:443
+2024-08-29 23:19:12,396 - DEBUG - https://0ab3005503e57f8080a894b700f40080.web-security-academy.net:443 "GET /login HTTP/1.1" 504 197
+2024-08-29 23:19:12,401 - INFO - Response Status Code: 504
+2024-08-29 23:19:12,404 - INFO - Response Content: <html><head><title>Server Error: Gateway Timeout</title></head><body><h1>Server Error: Gateway Timeout (0) connecting to 0ab3005503e57f8080a894b700f40080.web-security-academy.net</h1></body></html>
+2024-08-29 23:19:12,413 - INFO - Suggested Solution: Gateway Timeout - Check server status or try again later.
+2024-08-29 23:19:13,425 - INFO - Sending payload to URL: https://0ab3005503e57f8080a894b700f40080.web-security-academy.net/login
+2024-08-29 23:19:13,434 - DEBUG - Starting new HTTPS connection (1): 0ab3005503e57f8080a894b700f40080.web-security-academy.net:443
+2024-08-29 23:19:14,567 - DEBUG - https://0ab3005503e57f8080a894b700f40080.web-security-academy.net:443 "GET /login HTTP/1.1" 504 197
+2024-08-29 23:19:14,573 - INFO - Response Status Code: 504
+2024-08-29 23:19:14,574 - INFO - Response Content: <html><head><title>Server Error: Gateway Timeout</title></head><body><h1>Server Error: Gateway Timeout (0) connecting to 0ab3005503e57f8080a894b700f40080.web-security-academy.net</h1></body></html>
+2024-08-29 23:19:14,582 - INFO - Suggested Solution: Gateway Timeout - Check server status or try again later.
+2024-08-29 23:19:15,598 - INFO - Sending payload to URL: https://0ab3005503e57f8080a894b700f40080.web-security-academy.net/login
+2024-08-29 23:19:15,605 - DEBUG - Starting new HTTPS connection (1): 0ab3005503e57f8080a894b700f40080.web-security-academy.net:443
+2024-08-29 23:19:17,002 - DEBUG - https://0ab3005503e57f8080a894b700f40080.web-security-academy.net:443 "GET /login HTTP/1.1" 504 197
+2024-08-29 23:19:17,005 - INFO - Response Status Code: 504
+2024-08-29 23:19:17,006 - INFO - Response Content: <html><head><title>Server Error: Gateway Timeout</title></head><body><h1>Server Error: Gateway Timeout (0) connecting to 0ab3005503e57f8080a894b700f40080.web-security-academy.net</h1></body></html>
+2024-08-29 23:19:17,014 - INFO - Suggested Solution: Gateway Timeout - Check server status or try again later.
+2024-08-29 23:19:18,032 - INFO - Sending payload to URL: https://0ab3005503e57f8080a894b700f40080.web-security-academy.net/login
+2024-08-29 23:19:18,039 - DEBUG - Starting new HTTPS connection (1): 0ab3005503e57f8080a894b700f40080.web-security-academy.net:443
+2024-08-29 23:19:19,124 - DEBUG - https://0ab3005503e57f8080a894b700f40080.web-security-academy.net:443 "GET /login HTTP/1.1" 504 197
+2024-08-29 23:19:19,129 - INFO - Response Status Code: 504
+2024-08-29 23:19:19,130 - INFO - Response Content: <html><head><title>Server Error: Gateway Timeout</title></head><body><h1>Server Error: Gateway Timeout (0) connecting to 0ab3005503e57f8080a894b700f40080.web-security-academy.net</h1></body></html>
+2024-08-29 23:19:19,135 - INFO - Suggested Solution: Gateway Timeout - Check server status or try again later.
+2024-08-29 23:19:20,144 - INFO - Sending payload to URL: https://0ab3005503e57f8080a894b700f40080.web-security-academy.net/login
+2024-08-29 23:19:20,151 - DEBUG - Starting new HTTPS connection (1): 0ab3005503e57f8080a894b700f40080.web-security-academy.net:443
+2024-08-29 23:19:21,388 - DEBUG - https://0ab3005503e57f8080a894b700f40080.web-security-academy.net:443 "GET /login HTTP/1.1" 504 197
+2024-08-29 23:19:21,392 - INFO - Response Status Code: 504
+2024-08-29 23:19:21,393 - INFO - Response Content: <html><head><title>Server Error: Gateway Timeout</title></head><body><h1>Server Error: Gateway Timeout (0) connecting to 0ab3005503e57f8080a894b700f40080.web-security-academy.net</h1></body></html>
+2024-08-29 23:19:21,398 - INFO - Suggested Solution: Gateway Timeout - Check server status or try again later.
+2024-08-29 23:19:22,406 - INFO - Sending payload to URL: https://0ab3005503e57f8080a894b700f40080.web-security-academy.net/login
+2024-08-29 23:19:22,413 - DEBUG - Starting new HTTPS connection (1): 0ab3005503e57f8080a894b700f40080.web-security-academy.net:443
+2024-08-29 23:19:23,528 - DEBUG - https://0ab3005503e57f8080a894b700f40080.web-security-academy.net:443 "GET /login HTTP/1.1" 504 197
+2024-08-29 23:19:23,531 - INFO - Response Status Code: 504
+2024-08-29 23:19:23,532 - INFO - Response Content: <html><head><title>Server Error: Gateway Timeout</title></head><body><h1>Server Error: Gateway Timeout (0) connecting to 0ab3005503e57f8080a894b700f40080.web-security-academy.net</h1></body></html>
+2024-08-29 23:19:23,536 - INFO - Suggested Solution: Gateway Timeout - Check server status or try again later.
+2024-08-29 23:19:24,547 - INFO - Sending payload to URL: https://0ab3005503e57f8080a894b700f40080.web-security-academy.net/login
+2024-08-29 23:19:24,555 - DEBUG - Starting new HTTPS connection (1): 0ab3005503e57f8080a894b700f40080.web-security-academy.net:443
+2024-08-29 23:19:25,564 - DEBUG - https://0ab3005503e57f8080a894b700f40080.web-security-academy.net:443 "GET /login HTTP/1.1" 504 197
+2024-08-29 23:19:25,567 - INFO - Response Status Code: 504
+2024-08-29 23:19:25,568 - INFO - Response Content: <html><head><title>Server Error: Gateway Timeout</title></head><body><h1>Server Error: Gateway Timeout (0) connecting to 0ab3005503e57f8080a894b700f40080.web-security-academy.net</h1></body></html>
+2024-08-29 23:19:25,574 - INFO - Suggested Solution: Gateway Timeout - Check server status or try again later.
+2024-08-29 23:19:26,589 - INFO - Sending payload to URL: https://0ab3005503e57f8080a894b700f40080.web-security-academy.net/login
+2024-08-29 23:19:26,599 - DEBUG - Starting new HTTPS connection (1): 0ab3005503e57f8080a894b700f40080.web-security-academy.net:443
+2024-08-29 23:19:27,610 - DEBUG - https://0ab3005503e57f8080a894b700f40080.web-security-academy.net:443 "GET /login HTTP/1.1" 504 197
+2024-08-29 23:19:27,614 - INFO - Response Status Code: 504
+2024-08-29 23:19:27,615 - INFO - Response Content: <html><head><title>Server Error: Gateway Timeout</title></head><body><h1>Server Error: Gateway Timeout (0) connecting to 0ab3005503e57f8080a894b700f40080.web-security-academy.net</h1></body></html>
+2024-08-29 23:19:27,621 - INFO - Suggested Solution: Gateway Timeout - Check server status or try again later.
+2024-08-29 23:19:28,636 - INFO - Sending payload to URL: https://0ab3005503e57f8080a894b700f40080.web-security-academy.net/login
+2024-08-29 23:19:28,644 - DEBUG - Starting new HTTPS connection (1): 0ab3005503e57f8080a894b700f40080.web-security-academy.net:443
+2024-08-29 23:19:29,618 - DEBUG - https://0ab3005503e57f8080a894b700f40080.web-security-academy.net:443 "GET /login HTTP/1.1" 504 197
+2024-08-29 23:19:29,624 - INFO - Response Status Code: 504
+2024-08-29 23:19:29,624 - INFO - Response Content: <html><head><title>Server Error: Gateway Timeout</title></head><body><h1>Server Error: Gateway Timeout (0) connecting to 0ab3005503e57f8080a894b700f40080.web-security-academy.net</h1></body></html>
+2024-08-29 23:19:29,629 - INFO - Suggested Solution: Gateway Timeout - Check server status or try again later.
+2024-08-29 23:19:30,642 - INFO - Sending payload to URL: https://0ab3005503e57f8080a894b700f40080.web-security-academy.net/login
+2024-08-29 23:19:30,647 - DEBUG - Starting new HTTPS connection (1): 0ab3005503e57f8080a894b700f40080.web-security-academy.net:443
+2024-08-29 23:19:31,636 - DEBUG - https://0ab3005503e57f8080a894b700f40080.web-security-academy.net:443 "GET /login HTTP/1.1" 504 197
+2024-08-29 23:19:31,641 - INFO - Response Status Code: 504
+2024-08-29 23:19:31,642 - INFO - Response Content: <html><head><title>Server Error: Gateway Timeout</title></head><body><h1>Server Error: Gateway Timeout (0) connecting to 0ab3005503e57f8080a894b700f40080.web-security-academy.net</h1></body></html>
+2024-08-29 23:19:31,647 - INFO - Suggested Solution: Gateway Timeout - Check server status or try again later.
+2024-08-29 23:19:32,660 - INFO - Sending payload to URL: https://0ab3005503e57f8080a894b700f40080.web-security-academy.net/login
+2024-08-29 23:19:32,665 - DEBUG - Starting new HTTPS connection (1): 0ab3005503e57f8080a894b700f40080.web-security-academy.net:443
+2024-08-29 23:19:33,709 - DEBUG - https://0ab3005503e57f8080a894b700f40080.web-security-academy.net:443 "GET /login HTTP/1.1" 504 197
+2024-08-29 23:19:33,714 - INFO - Response Status Code: 504
+2024-08-29 23:19:33,715 - INFO - Response Content: <html><head><title>Server Error: Gateway Timeout</title></head><body><h1>Server Error: Gateway Timeout (0) connecting to 0ab3005503e57f8080a894b700f40080.web-security-academy.net</h1></body></html>
+2024-08-29 23:19:33,720 - INFO - Suggested Solution: Gateway Timeout - Check server status or try again later.
+2024-08-29 23:19:34,731 - INFO - Sending payload to URL: https://0ab3005503e57f8080a894b700f40080.web-security-academy.net/login
+2024-08-29 23:19:34,737 - DEBUG - Starting new HTTPS connection (1): 0ab3005503e57f8080a894b700f40080.web-security-academy.net:443
+2024-08-29 23:19:35,698 - DEBUG - https://0ab3005503e57f8080a894b700f40080.web-security-academy.net:443 "GET /login HTTP/1.1" 504 197
+2024-08-29 23:19:35,703 - INFO - Response Status Code: 504
+2024-08-29 23:19:35,703 - INFO - Response Content: <html><head><title>Server Error: Gateway Timeout</title></head><body><h1>Server Error: Gateway Timeout (0) connecting to 0ab3005503e57f8080a894b700f40080.web-security-academy.net</h1></body></html>
+2024-08-29 23:19:35,710 - INFO - Suggested Solution: Gateway Timeout - Check server status or try again later.
+2024-08-29 23:19:36,725 - INFO - Sending payload to URL: https://0ab3005503e57f8080a894b700f40080.web-security-academy.net/login
+2024-08-29 23:19:36,731 - DEBUG - Starting new HTTPS connection (1): 0ab3005503e57f8080a894b700f40080.web-security-academy.net:443
+2024-08-29 23:19:37,698 - DEBUG - https://0ab3005503e57f8080a894b700f40080.web-security-academy.net:443 "GET /login HTTP/1.1" 504 197
+2024-08-29 23:19:37,701 - INFO - Response Status Code: 504
+2024-08-29 23:19:37,702 - INFO - Response Content: <html><head><title>Server Error: Gateway Timeout</title></head><body><h1>Server Error: Gateway Timeout (0) connecting to 0ab3005503e57f8080a894b700f40080.web-security-academy.net</h1></body></html>
+2024-08-29 23:19:37,710 - INFO - Suggested Solution: Gateway Timeout - Check server status or try again later.
+2024-08-29 23:19:38,730 - INFO - Sending payload to URL: https://0ab3005503e57f8080a894b700f40080.web-security-academy.net/login
+2024-08-29 23:19:38,734 - DEBUG - Starting new HTTPS connection (1): 0ab3005503e57f8080a894b700f40080.web-security-academy.net:443
+2024-08-29 23:19:39,833 - DEBUG - https://0ab3005503e57f8080a894b700f40080.web-security-academy.net:443 "GET /login HTTP/1.1" 504 197
+2024-08-29 23:19:39,838 - INFO - Response Status Code: 504
+2024-08-29 23:19:39,840 - INFO - Response Content: <html><head><title>Server Error: Gateway Timeout</title></head><body><h1>Server Error: Gateway Timeout (0) connecting to 0ab3005503e57f8080a894b700f40080.web-security-academy.net</h1></body></html>
+2024-08-29 23:19:39,854 - INFO - Suggested Solution: Gateway Timeout - Check server status or try again later.
+2024-08-30 09:27:23,951 - INFO - Loaded 95 payloads from SQL-Time.txt.
+2024-08-30 09:27:26,685 - INFO - Sending payload: # from wapiti

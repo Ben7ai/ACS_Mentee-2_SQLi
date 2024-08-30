@@ -131,7 +131,7 @@ class PlaceholderEntry(tk.Entry):
 class SQLInjectionTool:
     def __init__(self, master):
         self.master = master
-        self.master.title("SQL Injection Tool")
+        self.master.title("SQLi Detection Tool")
 
         self.payloads = []
         self.payloads_path = PAYLOADS_FILE_PATH
@@ -154,7 +154,7 @@ class SQLInjectionTool:
         self.control_frame.grid(row=0, column=0, sticky='nsew')
 
         # Title
-        self.title_label = tk.Label(self.control_frame, text="SQL Injection Testing Tool", font=("Arial", 14))
+        self.title_label = tk.Label(self.control_frame, text="SQLi Detection Tool", font=("Arial", 14))
         self.title_label.grid(row=0, column=0, columnspan=2, pady=5, sticky='nsew')
 
         # Upload Request File
@@ -211,15 +211,23 @@ class SQLInjectionTool:
         self.split_payload_option.set("URL Payloads")
 
         self.split_payload_menu = tk.OptionMenu(self.split_payload_option_frame, self.split_payload_option, "URL Payloads", "POST Data Payloads")
-        self.split_payload_menu.pack(pady=5)
+        self.split_payload_menu.pack(pady=5, fill='x')
 
         # Submit Button
-        self.submit_button = tk.Button(self.control_frame, text="Send Request", command=self.send_request_to_all_payloads)
+        self.submit_button = tk.Button(self.control_frame, text="Send Request", command=self.start_request_thread)
         self.submit_button.grid(row=6, column=0, columnspan=2, pady=10)
 
         # Result Text
         self.result_text = tk.Text(self.control_frame, height=10, width=50)
         self.result_text.grid(row=7, column=0, columnspan=2, pady=5)
+
+        # Progress Frame
+        self.progress_frame = tk.Frame(self.control_frame)
+        self.progress_frame.grid(row=8, column=0, columnspan=2, pady=5, sticky='ew')
+        self.progress_label = tk.Label(self.progress_frame, text="Progress:")
+        self.progress_label.pack(side='left')
+        self.progress = ttk.Progressbar(self.progress_frame, mode='indeterminate')
+        self.progress.pack(fill='x', expand=True)
 
         # Load payloads initially if the file exists
         self.load_payload_file()
@@ -261,6 +269,20 @@ class SQLInjectionTool:
             self.split_payload_option_frame.pack(pady=5, fill='x')
         else:
             self.split_payload_option_frame.pack_forget()
+
+    def start_request_thread(self):
+        self.progress.start()
+        self.master.after(100, self.send_request_thread)
+
+    def send_request_thread(self):
+        threading.Thread(target=self.send_request_to_all_payloads, daemon=True).start()
+        self.master.after(500, self.check_thread_status)
+
+    def check_thread_status(self):
+        if threading.active_count() > 1:
+            self.master.after(500, self.check_thread_status)
+        else:
+            self.progress.stop()
 
     def send_request(self, payload):
         if self.endpoint is None:
