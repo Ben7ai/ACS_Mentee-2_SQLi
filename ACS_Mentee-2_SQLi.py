@@ -1,5 +1,5 @@
 import requests
-from urllib.parse import urlparse, parse_qs
+from urllib.parse import urljoin, urlparse, parse_qs
 import tkinter as tk
 from tkinter import ttk, filedialog, messagebox
 import threading
@@ -21,35 +21,43 @@ def post_processor(request_file_content):
     if not lines:
         return None, None, None, None
 
-    method, path, _ = lines[0].split()
-    if method != "POST":
-        raise ValueError("Only POST requests are supported.")
+    try:
+        method, path, _ = lines[0].split()
+        if method != "POST":
+            raise ValueError("Only POST requests are supported.")
 
-    url = urlparse(path).scheme + "://" + urlparse(path).netloc
-    endpoint = path
+        parsed_url = urlparse(path)
+        url = f"{parsed_url.scheme}://{parsed_url.netloc}"
+        endpoint = parsed_url.path
 
-    post_data = {}
-    content_length = None
-    for line in lines:
-        if line.startswith("Content-Length:"):
-            content_length = int(line.split(":")[1].strip())
-            break
+        post_data = {}
+        cookies = {}
 
-    if content_length is not None:
-        post_data_index = lines.index(f"Content-Length: {content_length}") + 1
-        post_data = "\n".join(lines[post_data_index:post_data_index + content_length]).strip()
-        post_data = dict(parse_qs(post_data))
-        post_data = {key: value[0] for key, value in post_data.items()}
+        # Extract POST data
+        content_length = None
+        for line in lines:
+            if line.startswith("Content-Length:"):
+                content_length = int(line.split(":")[1].strip())
+                break
 
-    cookies = {}
-    for line in lines:
-        if line.startswith("Cookie:"):
-            cookie_str = line.split(":", 1)[1].strip()
-            cookies = dict(parse_qs(cookie_str))
-            cookies = {key: value[0] for key, value in cookies.items()}
-            break
+        if content_length is not None:
+            post_data_index = lines.index(f"Content-Length: {content_length}") + 1
+            post_data = "\n".join(lines[post_data_index:post_data_index + content_length]).strip()
+            post_data = dict(parse_qs(post_data))
+            post_data = {key: value[0] for key, value in post_data.items()}
 
-    return url, endpoint, post_data, cookies
+        # Extract cookies
+        for line in lines:
+            if line.startswith("Cookie:"):
+                cookie_str = line.split(":", 1)[1].strip()
+                cookies = dict(parse_qs(cookie_str))
+                cookies = {key: value[0] for key, value in cookies.items()}
+                break
+
+        return url, endpoint, post_data, cookies
+    except Exception as e:
+        logging.error(f"Error processing request file: {e}")
+        return None, None, None, None
 
 def get_solution_for_status_code(status_code):
     solutions = {
@@ -135,9 +143,9 @@ class SQLInjectionTool:
 
         self.payloads = []
         self.payloads_path = PAYLOADS_FILE_PATH
-        self.post_data = None
+        self.post_data = {}
         self.endpoint = None
-        self.cookies = None
+        self.cookies = {}
         self.tooltips_enabled = True
 
         # Create the ribbon menu
@@ -237,23 +245,20 @@ class SQLInjectionTool:
         if file_path:
             with open(file_path, 'r') as file:
                 content = file.read()
-                try:
-                    url, endpoint, post_data, cookies = post_processor(content)
-                    if endpoint is None:
-                        raise ValueError("No endpoint found in the request file.")
-                    self.endpoint = endpoint
-                    self.post_data = post_data
-                    self.cookies = cookies
-                    self.host_endpoint_entry.delete(0, tk.END)
-                    self.host_endpoint_entry.insert(0, url + endpoint)
-                    self.param_entry.delete(0, tk.END)
-                    self.param_entry.insert(0, str(post_data))
-                    self.cookie_entry.delete(0, tk.END)
-                    self.cookie_entry.insert(0, str(cookies))
-                    self.log_message(f"Loaded request file from {file_path}.")
-                except Exception as e:
-                    self.log_message(f"Error processing request file: {e}")
-                    messagebox.showerror("Error", f"Error processing request file: {e}")
+                url, endpoint, post_data, cookies = post_processor(content)
+                if not url or not endpoint:
+                    messagebox.showerror("Error", "Failed to extract URL and endpoint from the request file.")
+                    return
+                self.endpoint = endpoint
+                self.post_data = post_data if post_data else {}
+                self.cookies = cookies if cookies else {}
+                self.host_endpoint_entry.delete(0, tk.END)
+                self.host_endpoint_entry.insert(0, url + endpoint)
+                self.param_entry.delete(0, tk.END)
+                self.param_entry.insert(0, "&".join(f"{key}={value}" for key, value in post_data.items()))
+                self.cookie_entry.delete(0, tk.END)
+                self.cookie_entry.insert(0, "&".join(f"{key}={value}" for key, value in cookies.items()))
+                self.log_message(f"Loaded request file from {file_path}.")
 
     def load_payload_file(self):
         try:
@@ -272,9 +277,6 @@ class SQLInjectionTool:
 
     def start_request_thread(self):
         self.progress.start()
-        self.master.after(100, self.send_request_thread)
-
-    def send_request_thread(self):
         threading.Thread(target=self.send_request_to_all_payloads, daemon=True).start()
         self.master.after(500, self.check_thread_status)
 
@@ -285,18 +287,26 @@ class SQLInjectionTool:
             self.progress.stop()
 
     def send_request(self, payload):
-        if self.endpoint is None:
-            raise ValueError("Endpoint is not set.")
-        
-        url = self.host_endpoint_entry.get()
+        url = self.host_endpoint_entry.get().strip()
         if not url:
+            self.log_message("Host URL is not set.")
             raise ValueError("Host URL is not set.")
-        
-        full_url = url + self.endpoint
+
+        if not self.endpoint:
+            parsed_url = urlparse(url)
+            self.endpoint = parsed_url.path
+            url = f"{parsed_url.scheme}://{parsed_url.netloc}"
+
+        full_url = urljoin(url, self.endpoint)
         headers = {'Content-Type': 'application/x-www-form-urlencoded'}
-        
-        response = requests.post(full_url, data={**self.post_data, 'payload': payload}, headers=headers, cookies=self.cookies)
-        
+
+        # Determine whether to use GET or POST
+        if self.selected_payload_option.get() == "Split Payloads" and self.split_payload_option.get() == "URL Payloads":
+            full_url_with_payload = f"{full_url}?{payload}"
+            response = requests.get(full_url_with_payload, cookies=self.cookies)
+        else:
+            response = requests.post(full_url, data={**self.post_data, 'payload': payload}, headers=headers, cookies=self.cookies)
+
         if DISPLAY_PACKETS:
             logging.info(f"Request URL: {full_url}")
             logging.info(f"Request Data: {self.post_data}")
@@ -311,27 +321,17 @@ class SQLInjectionTool:
             self.log_message("No payloads to send.")
             return
 
-        selected_option = self.selected_payload_option.get()
-        split_payload = selected_option == "Split Payloads"
-        split_by_url = self.split_payload_option.get() == "URL Payloads" if split_payload else True
-
         for payload in self.payloads:
-            if split_payload:
-                if split_by_url:
-                    full_url = self.host_endpoint_entry.get().replace('?', f'?payload={payload}&')
-                    self.log_message(f"Sending payload to URL: {full_url}")
-                    response = requests.get(full_url, cookies=self.cookies)
-                else:
-                    self.log_message(f"Sending payload with POST data: {payload}")
-                    response = self.send_request(payload)
-            else:
-                self.log_message(f"Sending payload: {payload}")
+            try:
                 response = self.send_request(payload)
 
-            status_code = response.status_code
-            self.log_message(f"Response Status Code: {status_code}")
-            self.log_message(f"Response Content: {response.text}")
-            self.log_message(f"Suggested Solution: {get_solution_for_status_code(status_code)}")
+                status_code = response.status_code
+                self.log_message(f"Response Status Code: {status_code}")
+                self.log_message(f"Response Content: {response.text}")
+                self.log_message(f"Suggested Solution: {get_solution_for_status_code(status_code)}")
+            except Exception as e:
+                self.log_message(f"Error sending payload '{payload}': {e}")
+
             time.sleep(1)  # Sleep between requests to avoid overwhelming the server
 
     def log_message(self, message):
